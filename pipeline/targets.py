@@ -17,8 +17,8 @@ import urllib.parse
 RETRY_DAYS = 7
 # Sites whose terms or bot checks rule out automated reading. Their roles stay "not read" unless the
 # same role is found on the employer's own board.
-NO_READ = re.compile(r"(^|\.)(csjobs\.ca|linkedin\.com|indeed\.com|glassdoor\.[a-z.]+|simplify\.jobs|dreamworkhq\.com|grind\.fyi)$")
-SHORT = re.compile(r"(^|\.)(go\.vansh\.nyc|bit\.ly|lnkd\.in|tinyurl\.com)$")
+NO_READ = re.compile(r"(^|\.)(csjobs\.ca|linkedin\.com|indeed\.com|glassdoor\.[a-z.]+|simplify\.jobs|dreamworkhq\.com)$")
+SHORT = re.compile(r"(^|\.)(go\.vansh\.nyc|grind\.fyi|bit\.ly|lnkd\.in|tinyurl\.com)$")
 
 
 def host(u):

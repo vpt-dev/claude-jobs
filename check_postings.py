@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -21,6 +22,7 @@ TIMEOUT = 25
 LOOKS_LIKE_A_POSTING = re.compile(r"responsibilit|qualif|requirement|about you|what you|who you are|we are looking|you will|your role", re.I)
 
 
+SHORT_LINK = re.compile(r"(^|\.)(go\.vansh\.nyc|grind\.fyi|bit\.ly|lnkd\.in|tinyurl\.com)$")
 ATS_LINK = re.compile(r"greenhouse\.io/|lever\.co/|myworkdayjobs\.com/|jobs\.smartrecruiters\.com/")
 
 
@@ -87,6 +89,10 @@ def check(target):
     jid, url = target
     try:
         desc, final = describe(url)
+    except urllib.error.HTTPError as e:
+        # The employer's site refused the read, but a short link has still told us where the posting lives.
+        end = getattr(e, "filename", None) or ""  # the address that answered, after redirects
+        return jid, None, "HTTPError", end if SHORT_LINK.search(host(url)) and host(end) and host(end) != host(url) else None
     except Exception as e:  # one bad posting must not stop the run
         return jid, None, type(e).__name__, None
     moved = final if host(final) and host(final) != host(url) else None
