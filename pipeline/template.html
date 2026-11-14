@@ -476,6 +476,7 @@ $('gsform').addEventListener('submit', e => { e.preventDefault();
 document.addEventListener('click', e => { if (e.target.id !== 'gsoff') return;
   gs = null; try { localStorage.removeItem(CFG); } catch (err) {} mode = 'local'; syncNote = 'Disconnected. Your tracker is still saved on this device.'; paintSync(); });
 document.addEventListener('visibilitychange', () => { if (!document.hidden) gsSync(); });
+if (STANDALONE) { $('sheetlink').href = 'https://docs.google.com/spreadsheets/'; }
 
 /* ---------- storage: synced to the account when possible, else this device ---------- */
 const LS = 'ecj-tracker-v1';
