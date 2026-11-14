@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Early-Career Tech & Quant Jobs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a dense board with three views (Board, Tracker, Insights). Filter rail on wide screens, collapsible on phones; one row per job, pay in mono on the right. */
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#111a2c; --muted:#5a6578; --line:#d9dee6;
+  --accent:#1f4fd8; --accent-ink:#ffffff; --pay:#0b7a52; --pay-bg:#e3f4ec; --chip:#e9edf3;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --seq-lo:#cde2fb; --seq-hi:#104281; --warn:#b45309;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d1320; --surface:#151d2e; --ink:#e8ecf4; --muted:#9aa5b8; --line:#28334a;
+    --accent:#7da2ff; --accent-ink:#0d1320; --pay:#5fd6a4; --pay-bg:#143327; --chip:#1f2a40;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --seq-lo:#184f95; --seq-hi:#b7d3f6; --warn:#fbbf24;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d1320; --surface:#151d2e; --ink:#e8ecf4; --muted:#9aa5b8; --line:#28334a;
+  --accent:#7da2ff; --accent-ink:#0d1320; --pay:#5fd6a4; --pay-bg:#143327; --chip:#1f2a40;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --seq-lo:#184f95; --seq-hi:#b7d3f6; --warn:#fbbf24;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
+header{margin-bottom:12px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(26px,5vw,40px);line-height:1.05;margin:0 0 6px;text-wrap:balance;letter-spacing:-.01em}
+h2{font-family:var(--display);font-size:20px;margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0;max-width:62ch}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;white-space:nowrap;margin:14px 0;border-bottom:1px solid var(--line)}
+nav.tabs a{padding:9px 14px;text-decoration:none;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav.tabs small{font-family:var(--mono);font-weight:400;margin-left:4px}
+.view[hidden]{display:none}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-width:104px}
+.stat b{display:block;font-family:var(--mono);font-size:18px;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:280px 1fr;gap:20px;align-items:start}
+aside{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;position:sticky;top:12px}
+.fbody{display:flex;flex-direction:column;gap:13px}
+summary{font-weight:600;cursor:pointer;font-size:16px}
+details#fd[open]>summary{margin-bottom:12px}
+@media (min-width:821px){details#fd>summary{display:none}}
+fieldset{border:0;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+legend,label.l{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding:0;margin-bottom:2px}
+input[type=search],input[type=text],input[type=date],select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 10px}
+textarea{min-height:44px;resize:vertical}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.check{display:flex;gap:8px;align-items:center;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:6px 11px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.chip small{opacity:.75;font-family:var(--mono);font-size:11px;margin-left:4px}
+.chip .x{margin-left:6px;opacity:.7}
+.btn{font:inherit;font-weight:600;background:var(--accent);color:var(--accent-ink);border:0;border-radius:8px;padding:9px 16px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
+.link{font:inherit;background:none;border:0;color:var(--accent);padding:0;cursor:pointer;text-align:left;text-decoration:underline}
+.saved{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:10px}
+.saved form{display:flex;gap:6px;flex:1 1 220px}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px}
+.bar p{margin:0;font-weight:600}
+.bar select{width:auto}
+.list{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:6px 14px}
+.job.above{border-left:4px solid var(--pay)}
+.co{font-size:13px;color:var(--muted);font-weight:600}
+.ti{font-weight:600;font-size:16px;text-decoration:none;overflow-wrap:anywhere}
+.ti:hover{text-decoration:underline;color:var(--accent)}
+.meta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--muted)}
+.tag{background:var(--chip);border-radius:6px;padding:2px 7px;color:var(--ink)}
+.tag.tier{border:1px solid var(--accent);background:transparent;color:var(--accent);font-weight:600}
+.tag.bar2{background:var(--pay-bg);color:var(--pay);font-weight:600}
+.tag.bar1{border:1px dashed var(--pay);background:transparent;color:var(--pay)}
+.tag.new{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.tag.chk{color:var(--warn);border:1px dashed var(--warn);background:transparent}
+.tag.fit{background:var(--accent);color:var(--accent-ink)}
+.tag.no{color:var(--warn);border:1px solid var(--warn);background:transparent}
+.pay{font-family:var(--mono);font-weight:600;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;align-self:start}
+.pay.has{color:var(--pay);background:var(--pay-bg);border-radius:6px;padding:2px 8px}
+.pay.est{color:var(--pay);border:1px dashed var(--pay);border-radius:6px;padding:2px 8px;white-space:normal;max-width:210px}
+.pay.none{color:var(--muted);font-weight:400;font-size:12px}
+.pay small{display:block;font-weight:400;font-size:11px}
+.track{grid-column:1/-1;display:flex;gap:8px;align-items:center}
+.track select{width:auto;padding:6px 8px;font-size:13px}
+.track select.on{border-color:var(--accent);font-weight:600}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:10px;padding:24px;text-align:center;color:var(--muted)}
+.more{margin:14px auto 0;display:block}
+.sync{font-size:13px;color:var(--muted);margin:0 0 12px}
+.sync b{color:var(--ink)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+.card>p{color:var(--muted);margin:0 0 12px;max-width:70ch;font-size:14px}
+.funnel{display:grid;grid-template-columns:auto 1fr auto;gap:6px 10px;align-items:center;font-size:14px}
+.funnel i{display:block;height:14px;border-radius:0 4px 4px 0;background:var(--s1);min-width:2px}
+.funnel b{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.app{display:grid;grid-template-columns:1fr 150px 150px;gap:8px 12px;padding:12px 0;border-top:1px solid var(--line)}
+.app textarea{grid-column:1/-1}
+.app .rm{grid-column:1/-1;justify-self:start;font-size:13px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.mult{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mult h3,.card h3{font-size:14px;margin:0 0 6px;font-weight:600}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--body);font-size:11px;fill:var(--muted)}
+svg .v{fill:var(--ink);font-family:var(--mono)}
+svg .grid-l{stroke:var(--line);stroke-width:1}
+svg [data-tip]{cursor:default}
+svg [data-tip]:hover{opacity:.8}
+.scroll{overflow-x:auto}
+.legend{display:flex;gap:6px;align-items:center;font-size:12px;color:var(--muted);margin-top:8px}
+.legend i{width:16px;height:12px;border-radius:2px;display:inline-block}
+#tip{position:fixed;z-index:9;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12.5px;padding:6px 9px;border-radius:6px;max-width:240px;display:none}
+footer{margin-top:32px;color:var(--muted);font-size:13px;max-width:75ch}
+footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
+@media (max-width:820px){
+  .grid{grid-template-columns:1fr}
+  aside{position:static}
+  .job{grid-template-columns:1fr}
+  .pay{text-align:left;justify-self:start}
+  .mult{grid-template-columns:1fr}
+  .app{grid-template-columns:1fr 1fr}
+  .app>div:first-child{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:no-preference){.funnel i{transition:width .2s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Early-career tech &amp; quant jobs</h1>
+    <p class="sub">Internships and new grad roles across the US, UK and Canada, with your own application tracker. Listings last refreshed <span id="snap"></span>.</p>
+  </header>
+
+  <nav class="tabs" aria-label="Views">
+    <a href="#board" data-v="board">Board</a>
+    <a href="#for-you" data-v="for-you">For you</a>
+    <a href="#tracker" data-v="tracker">Tracker<small id="ntrack"></small></a>
+    <a href="#insights" data-v="insights">Insights</a>
+  </nav>
+
+  <section class="view" id="v-board">
+    <div class="stats" id="stats"></div>
+    <div class="grid">
+      <aside aria-label="Filters"><details id="fd"><summary>Filters</summary><div class="fbody">
+        <fieldset><label class="l" for="q">Search</label>
+          <input type="search" id="q" placeholder="Company, title or keyword"></fieldset>
+        <fieldset><legend>Country</legend><div class="chips" id="f-country"></div></fieldset>
+        <fieldset><legend>Role type</legend><div class="chips" id="f-type"></div></fieldset>
+        <fieldset><legend>Field</legend><div class="chips" id="f-cat"></div></fieldset>
+        <fieldset><label class="l" for="loc">Location</label>
+          <input type="text" id="loc" placeholder="City or state, e.g. London, NY, Remote" list="loclist"><datalist id="loclist"></datalist></fieldset>
+        <fieldset><label class="l" for="deg">Degree</label>
+          <select id="deg">
+            <option value="any">Any</option>
+            <option value="ms">Master's students named</option>
+            <option value="nophd">Hide PhD-only roles</option>
+            <option value="phd">PhD roles</option>
+          </select></fieldset>
+        <fieldset><label class="l" for="term">Season or start</label>
+          <select id="term"><option value="any">Any</option></select></fieldset>
+        <fieldset><label class="l" for="visa">Visa (US listings only)</label>
+          <select id="visa">
+            <option value="any">Any</option>
+            <option value="ok">Hide roles that rule out sponsorship</option>
+            <option value="yes">Sponsorship stated</option>
+          </select></fieldset>
+        <fieldset><label class="l" for="bar">Pay band (£60k UK, $95k US, C$100k Canada)</label>
+          <select id="bar">
+            <option value="all">All roles</option>
+            <option value="bar">Clears the band or likely to</option>
+            <option value="sure">Clears the band, with evidence</option>
+          </select></fieldset>
+        <fieldset><label class="l" for="pay">Salary</label>
+          <select id="pay">
+            <option value="any">Any, including unlisted</option>
+            <option value="stated">Stated by the employer</option>
+            <option value="listed">Stated or estimated</option>
+            <option value="median">Above the national median</option>
+            <option value="60">$60k+ a year</option>
+            <option value="80">$80k+ a year</option>
+            <option value="100">$100k+ a year</option>
+            <option value="150">$150k+ a year</option>
+            <option value="200">$200k+ a year</option>
+            <option value="300">$300k+ a year</option>
+          </select></fieldset>
+        <fieldset><label class="l" for="age">Posted</label>
+          <select id="age">
+            <option value="0">Any time</option>
+            <option value="3">Last 3 days</option>
+            <option value="7">Last 7 days</option>
+            <option value="30">Last 30 days</option>
+            <option value="90">Last 90 days</option>
+          </select></fieldset>
+        <fieldset><legend>Employer</legend><div class="chips" id="f-tier"></div></fieldset>
+        <label class="check"><input type="checkbox" id="hidedone" checked> Hide roles I've applied to or dismissed</label>
+        <label class="check"><input type="checkbox" id="onlynew"> New since my last visit <span id="nnew"></span></label>
+        <button class="link" id="reset" type="button">Clear all filters</button>
+      </div></details></aside>
+
+      <main>
+        <div class="saved" id="saved"></div>
+        <div class="bar">
+          <p id="count"></p>
+          <label>Sort <select id="sort">
+            <option value="new">Newest first</option>
+            <option value="pay">Highest pay first</option>
+            <option value="co">Company A to Z</option>
+          </select></label>
+        </div>
+        <ul class="list" id="list"></ul>
+        <button class="btn more" id="more" type="button">Show 60 more</button>
+      </main>
+    </div>
+  </section>
+
+  <section class="view" id="v-for-you" hidden>
+    <div class="card">
+      <h2>Summer 2027 internships in Greater London, Greater Toronto or remote</h2>
+      <p>Set up for you: final-year BSc computer science student, free to work in the UK and Canada, available for summer 2027 only, with a master's to follow. Software and data, AI and ML roles in Greater London, the Greater Toronto Area, or fully remote within the UK or Canada. Engineering roles at quant and finance firms and research internships are included with their own tags and can be hidden below. Left out: PhD-only, hardware, trading, product and MBA roles, first-year schemes, French-language postings, roles longer than a summer or dated for another season, and by default anything that looks like a placement year, penultimate-year scheme or co-op.</p>
+      <p><b>No listing here has been confirmed as open to final-year students.</b> The sources do not carry year-of-study rules, so read the eligibility line of each posting before you apply. Roles tagged “Check year eligibility” are the likeliest to turn finalists away.</p>
+      <div class="chips" id="fy-country">
+        <button type="button" class="chip" data-c="UK" aria-pressed="true">Greater London and UK remote</button>
+        <button type="button" class="chip" data-c="CA" aria-pressed="true">Greater Toronto and Canada remote</button>
+        <button type="button" class="chip" data-c="??" aria-pressed="true">City not stated</button>
+      </div>
+      <p style="margin:12px 0 0"><label class="check"><input type="checkbox" id="fy-dated"> Only roles dated summer 2027</label></p>
+      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-brand"> Well-known firms only</label></p>
+      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-check" checked> Hide placement-year, penultimate-year and co-op roles</label></p>
+      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-research"> Hide research internships, which often want current master's or PhD students</label></p>
+      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-quant"> Hide engineering roles at quant and finance firms</label></p>
+      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-bank"> Hide bank summer schemes, which often want penultimate-year students</label></p>
+    </div>
+    <div class="bar"><p id="fy-count"></p></div>
+    <ul class="list" id="fy-list"></ul>
+    <button class="btn more" id="fy-more" type="button">Show 60 more</button>
+  </section>
+
+  <section class="view" id="v-tracker" hidden>
+    <p class="sync" id="sync"></p>
+    <div class="card">
+      <h2>Your pipeline</h2>
+      <p>Counts of the roles you are tracking, by stage.</p>
+      <div class="funnel" id="funnel"></div>
+    </div>
+    <div class="card">
+      <h2>Applications</h2>
+      <p>Set a status on any role from the Board and it appears here. Notes and dates save as you leave each field, and each change is written to the Applications tab of your Google Sheet. The site is the master copy, so edit here, not in the sheet.</p>
+      <div class="tools">
+        <button class="btn" id="push" type="button" hidden>Update Google Sheet now</button>
+        <a class="btn ghost" id="sheetlink" href="https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit" target="_blank" rel="noopener" style="text-decoration:none">Open the sheet</a>
+        <button class="btn ghost" id="copy" type="button">Copy rows</button>
+        <button class="btn ghost" id="csv" type="button" hidden>Download CSV</button>
+        <span id="toolmsg" class="sync" role="status"></span>
+      </div>
+      <div id="apps"></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-insights" hidden>
+    <div class="card">
+      <h2>New roles posted each week</h2>
+      <p>Weekly count of roles by posting date over the last 20 weeks. Each country has its own scale.</p>
+      <div class="mult" id="c-week"></div>
+    </div>
+    <div class="card">
+      <h2>When firms post summer 2027 internships</h2>
+      <p>Number of summer 2027 internship roles each firm posted per month, for the 18 firms in the pay band with the most. Darker means more.</p>
+      <div class="scroll" id="c-open"></div>
+      <div class="legend"><span>Fewer</span><i style="background:var(--seq-lo)"></i><i style="background:color-mix(in oklab,var(--seq-lo),var(--seq-hi))"></i><i style="background:var(--seq-hi)"></i><span>More</span></div>
+    </div>
+    <div class="card">
+      <h2>Stated pay by firm</h2>
+      <p>Median yearly pay stated in US listings, for the 20 highest-paying firms with stated figures. Hourly intern pay is scaled to a year.</p>
+      <div id="c-pay"></div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>The pay band</h2>
+    <p>Roles at firms that clear a pay band are tagged: £60,000 a year in the UK, and the same multiple of the national median elsewhere, about $95,000 in the US and C$100,000 in Canada. A solid tag means there is evidence: pay stated in a US listing, or published reports of graduate pay at that firm in that country. A dashed tag means likely: a top quant firm, big tech company or AI lab with no firm-specific figure, or a US estimate. Reported figures are often total first-year pay including bonus and stock, and intern pay is pro rata.</p>
+    <h2>How pay is handled</h2>
+    <p>Stated pay comes straight from the source listing and is in US dollars. Where a US role states none, a dashed figure shows an estimate: the median of the same employer's stated pay for the same role type. Hourly intern pay is converted to a yearly figure at 2,080 hours. The green edge marks roles above the US median for full-time workers, $64,064 a year (BLS, Q3 2026). The UK median is £40,911 (ONS, April 2026) and Canada's is C$68,640 (Statistics Canada, 2025).</p>
+    <h2>Degree, season and visa labels</h2>
+    <p>These come from the source lists and from words in the job title. Many roles carry none, so the filters only narrow by what is stated. Visa notes exist for a few hundred US roles only.</p>
+    <h2>Where the listings come from</h2>
+    <p>Combined and de-duplicated from public GitHub lists: SimplifyJobs, vanshb03, speedyapply, zshah101, sndsh404, negarprh, northwesternfintech and LorenzoLaCorte, plus a few roles read from employer career sites. Every title links to the listing itself.</p>
+  </footer>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<script src="data.js"></script>
+<script>
+const D = window.JOBS || [];
+const SNAP = window.SNAP || new Date().toISOString().slice(0,10);
+const TODAY = new Date(SNAP+'T00:00:00Z');
+const C = {co:0,ti:1,locs:2,ctry:3,type:4,cat:5,url:6,date:7,pay:8,annual:9,tier:10,spons:11,srcs:12,above:13,est:14,bar:15,deg:16,terms:17,id:18};
+const NAMES = {US:'United States',UK:'United Kingdom',CA:'Canada'};
+const STATUS = ['Saved','Applied','Online test','Interview','Offer','Rejected','Not interested'];
+const DONE = new Set(['Applied','Online test','Interview','Offer','Rejected','Not interested']);
+const BYID = new Map();
+D.forEach(r => { r.s = (r[0]+' '+r[1]+' '+r[5]).toLowerCase(); r.l = r[2].join(' | ').toLowerCase(); BYID.set(r[C.id], r); });
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num = n => n.toLocaleString('en-US');
+const today = () => new Date().toISOString().slice(0,10);
+$('snap').textContent = TODAY.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+
+/* ---------- filters ---------- */
+const DEF = {q:'',loc:'',country:[],type:[],cat:[],tier:[],bar:'all',pay:'any',age:0,deg:'any',term:'any',visa:'any',hidedone:true,onlynew:false,sort:'new'};
+const st = JSON.parse(JSON.stringify(DEF)); let shown = 60;
+const SETS = ['country','type','cat','tier'];
+function count(idx, val){ let n=0; for(const r of D){ const v=r[idx]; if(Array.isArray(v)?v.includes(val):v===val) n++; } return n; }
+function chips(el, key, idx, opts){
+  $(el).innerHTML = opts.map(([v,label]) => `<button type="button" class="chip" aria-pressed="false" data-k="${key}" data-v="${esc(v)}">${esc(label)}<small>${num(count(idx,v))}</small></button>`).join('');
+  $(el).addEventListener('click', e => { const b=e.target.closest('.chip'); if(!b) return;
+    const v=b.dataset.v, a=st[key], i=a.indexOf(v); i<0?a.push(v):a.splice(i,1); sync(); render(); });
+}
+chips('f-country','country',C.ctry,[['US','US'],['UK','UK'],['CA','Canada']]);
+chips('f-type','type',C.type,[['Internship','Internship'],['New Grad','New grad']]);
+chips('f-cat','cat',C.cat,[['Software','Software'],['Data, AI & Stats','Data, AI & stats'],['Quant','Quant'],['Hardware','Hardware'],['Product','Product']]);
+chips('f-tier','tier',C.tier,[['FAANG+','Big tech'],['Quant firm','Quant firm']]);
+(function(){ const m=new Map(); for(const r of D) for(const l of r[2]) m.set(l,(m.get(l)||0)+1);
+  $('loclist').innerHTML=[...m].sort((a,b)=>b[1]-a[1]).slice(0,150).map(([l])=>`<option value="${esc(l)}">`).join('');
+  const t=new Map(); for(const r of D) for(const x of r[C.terms]) t.set(x,(t.get(x)||0)+1);
+  $('term').innerHTML='<option value="any">Any</option>'+[...t].sort((a,b)=>b[1]-a[1]).slice(0,12).map(([x,n])=>`<option value="${esc(x)}">${esc(x)} (${num(n)})</option>`).join(''); })();
+
+function sync(){ // push state into the controls
+  document.querySelectorAll('.chip[data-k]').forEach(b=>b.setAttribute('aria-pressed', st[b.dataset.k].includes(b.dataset.v)));
+  for(const k of ['q','loc','bar','pay','deg','term','visa','sort']) $(k).value = st[k];
+  $('age').value = String(st.age); $('hidedone').checked = st.hidedone; $('onlynew').checked = st.onlynew; shown = 60;
+}
+function daysOld(d){ return d ? Math.round((TODAY - new Date(d+'T00:00:00Z'))/864e5) : 9999; }
+function ageLabel(d){ if(!d) return 'date unknown'; const n=daysOld(d); return n<=0?'today':n===1?'1 day ago':n<60?n+' days ago':Math.round(n/30)+' months ago'; }
+let prevVisit = '';
+const isNew = r => !!prevVisit && r[C.date] > prevVisit;
+
+function filtered(){
+  const q=st.q.trim().toLowerCase().split(/\s+/).filter(Boolean), loc=st.loc.trim().toLowerCase();
+  const out=D.filter(r=>{
+    if(st.country.length && !r[C.ctry].some(c=>st.country.includes(c))) return false;
+    if(st.type.length && !st.type.includes(r[C.type])) return false;
+    if(st.cat.length && !st.cat.includes(r[C.cat])) return false;
+    if(st.tier.length && !st.tier.includes(r[C.tier])) return false;
+    if(st.bar==='bar' && !r[C.bar]) return false;
+    if(st.bar==='sure' && r[C.bar]<2) return false;
+    if(loc && !r.l.includes(loc)) return false;
+    if(st.deg==='ms' && !(r[C.deg]&2)) return false;
+    if(st.deg==='nophd' && r[C.deg]===4) return false;
+    if(st.deg==='phd' && !(r[C.deg]&4)) return false;
+    if(st.term!=='any' && !r[C.terms].includes(st.term)) return false;
+    if(st.visa==='ok' && (r[C.spons]==='No sponsorship'||r[C.spons]==='Citizens only')) return false;
+    if(st.visa==='yes' && r[C.spons]!=='Sponsors') return false;
+    if(st.pay==='listed' && !r[C.annual]) return false;
+    if(st.pay==='stated' && (!r[C.annual] || r[C.est])) return false;
+    if(st.pay==='median' && !r[C.above]) return false;
+    if(/^\d+$/.test(st.pay) && r[C.annual] < +st.pay*1000) return false;
+    if(st.age && daysOld(r[C.date])>st.age) return false;
+    if(st.hidedone && DONE.has((store.apps[r[C.id]]||{}).s)) return false;
+    if(st.onlynew && !isNew(r)) return false;
+    for(const w of q) if(!r.s.includes(w)) return false;
+    return true;
+  });
+  if(st.sort==='pay') out.sort((a,b)=>b[C.annual]-a[C.annual] || (a[C.date]<b[C.date]?1:-1));
+  else if(st.sort==='co') out.sort((a,b)=>a[0].localeCompare(b[0]));
+  return out;
+}
+const statusSelect = (id, cur) => `<select data-app="${id}" aria-label="Application status" class="${cur?'on':''}"><option value="">Track this role…</option>${STATUS.map(s=>`<option${s===cur?' selected':''}>${s}</option>`).join('')}</select>`;
+const DEGL = d => d===4?'PhD only':(d&2)?"Master's named":'';
+function row(r, extra){
+  const yr = /hr$/.test(r[C.pay]) ? `about $${Math.round(r[C.annual]/1000)}k a year` : '';
+  const pay = !r[C.annual] ? `<div class="pay none">Pay not listed</div>`
+    : r[C.est] ? `<div class="pay est">~${esc(r[C.pay])}<small>estimate from ${r[C.est]} other ${r[C.est]===1?'listing':'listings'} at this employer</small></div>`
+    : `<div class="pay has">${esc(r[C.pay])}${yr?`<small>${yr}</small>`:''}</div>`;
+  const locs = r[C.locs].length ? r[C.locs].slice(0,3).join(' · ') + (r[C.locs].length>3?` +${r[C.locs].length-3} more`:'') : r[C.ctry].map(c=>NAMES[c]).join(', ');
+  const sp = r[C.spons], a = store.apps[r[C.id]];
+  return `<li class="job${r[C.above]?' above':''}">
+    <div><div class="co">${esc(r[C.co])}</div><a class="ti" href="${esc(r[C.url])}" target="_blank" rel="noopener">${esc(r[C.ti])}</a></div>
+    ${pay}
+    <div class="meta"><span>${esc(locs)}</span>
+      ${extra||''}${isNew(r)?'<span class="tag new">New</span>':''}
+      <span class="tag">${r[C.type]==='New Grad'?'New grad':'Internship'}</span><span class="tag">${esc(r[C.cat])}</span>
+      ${r[C.terms].slice(0,2).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}
+      ${DEGL(r[C.deg])?`<span class="tag">${DEGL(r[C.deg])}</span>`:''}
+      ${r[C.tier]?`<span class="tag tier">${r[C.tier]==='FAANG+'?'Big tech':'Quant firm'}</span>`:''}
+      ${r[C.bar]===2?'<span class="tag bar2">Clears pay band</span>':r[C.bar]===1?'<span class="tag bar1">Likely clears pay band</span>':''}
+      ${sp?`<span class="tag${sp==='Sponsors'?'':' no'}">${esc(sp)}</span>`:''}
+      <span>${ageLabel(r[C.date])}</span></div>
+    <div class="track">${statusSelect(r[C.id], a&&a.s)}</div>
+  </li>`;
+}
+function render(){
+  const f=filtered();
+  $('count').textContent = `${num(f.length)} of ${num(D.length)} roles`;
+  $('list').innerHTML = f.length ? f.slice(0,shown).map(row).join('')
+    : '<li class="empty">No roles match these filters. Remove one, or clear them all.</li>';
+  const left=f.length-shown; $('more').hidden = left<=0; $('more').textContent = `Show ${Math.min(60,left)} more`;
+  $('nnew').textContent = prevVisit ? `(${num(D.filter(isNew).length)})` : '';
+}
+let t; const deb = fn => { clearTimeout(t); t=setTimeout(fn,120); };
+for(const k of ['q','loc']) $(k).addEventListener('input', e=>deb(()=>{st[k]=e.target.value; shown=60; render();}));
+for(const k of ['bar','deg','term','visa','sort']) $(k).addEventListener('change', e=>{st[k]=e.target.value; shown=60; render();});
+$('pay').addEventListener('change', e=>{st.pay=e.target.value; if(st.pay!=='any' && st.sort==='new') st.sort='pay'; sync(); render();});
+$('age').addEventListener('change', e=>{st.age=+e.target.value; shown=60; render();});
+$('hidedone').addEventListener('change', e=>{st.hidedone=e.target.checked; shown=60; render();});
+$('onlynew').addEventListener('change', e=>{st.onlynew=e.target.checked; shown=60; render();});
+$('more').addEventListener('click', ()=>{shown+=60; render();});
+$('reset').addEventListener('click', ()=>{ Object.assign(st, JSON.parse(JSON.stringify(DEF))); sync(); render(); });
+
+/* ---------- storage: synced to the account when possible, else this device ---------- */
+const LS = 'ecj-tracker-v1';
+const store = {apps:{}, prefs:{saved:[], lastVisit:''}};
+let remote = null, mode = 'local', syncNote = '';
+try { const j = JSON.parse(localStorage.getItem(LS) || 'null'); if (j) { store.apps = j.apps || {}; store.prefs = Object.assign(store.prefs, j.prefs || {}); } } catch (e) {}
+const saveLocal = () => { try { localStorage.setItem(LS, JSON.stringify(store)); } catch (e) {} };
+const chain = {};
+function write(key, ref, body){ // one write at a time per document
+  if (!remote) return;
+  chain[key] = (chain[key] || Promise.resolve()).then(() => body ? ref.set(body) : ref.delete())
+    .catch(e => { syncNote = 'A change could not be saved to your account. It is kept on this device.'; paintSync(); });
+}
+function setApp(id, patch){
+  const r = BYID.get(id), cur = store.apps[id] || {};
+  const a = Object.assign({}, cur, patch, {up: today()});
+  if (r) Object.assign(a, {c:r[C.co], t:r[C.ti], ty:r[C.type], l:r[C.locs].slice(0,2).join('; ') || r[C.ctry].join(', '), u:r[C.url]});
+  if (a.s === 'Applied' && !a.ad) a.ad = today();
+  if (!a.s) delete store.apps[id]; else store.apps[id] = a;
+  saveLocal(); write('a'+id, remote && remote.apps.doc(id), a.s ? a : null);
+  paintTracker(); queuePush();
+}
+function setPrefs(patch){ Object.assign(store.prefs, patch); saveLocal(); write('prefs', remote && remote.prefs, store.prefs); }
+function paintSync(){
+  $('sync').innerHTML = (mode==='synced' ? '<b>Synced to your Claude account.</b> Open this page on any device where you are signed in and your tracker follows you.'
+    : mode==='wait' ? 'Connecting to your account…'
+    : '<b>Saved on this device only.</b> Account sync is not available in this view.') + (syncNote ? ' ' + esc(syncNote) : '');
+}
+function settleVisit(){ if (settleVisit.done) return; settleVisit.done = true;
+  prevVisit = store.prefs.lastVisit || ''; if (prevVisit !== today()) setPrefs({lastVisit: today(), prevVisit}); else prevVisit = store.prefs.prevVisit || '';
+  render(); }
+async function connect(){
+  if (!(window.claude && claude.use)) { settleVisit(); return; }
+  mode = 'wait'; paintSync();
+  const giveUp = setTimeout(() => { if (mode==='wait') { mode='local'; paintSync(); settleVisit(); } }, 10000);
+  try {
+    const [db, user, dl, m] = await Promise.all([claude.use('db'), claude.use('user'), claude.use('downloads'), claude.use('mcp')]);
+    if (m) { mcp = m; $('push').hidden = false; $('push').addEventListener('click', () => pushSheet(true)); }
+    if (dl) { $('csv').hidden = false; $('csv').addEventListener('click', async () => {
+      try { await dl.save({filename:'applications.csv', data: table(',')}); msg('CSV saved.'); } catch (e) { msg(e && e.code==='declined' ? 'Download cancelled.' : 'The download did not go through.'); } }); }
+    const uid = user && await user.id();
+    if (!db || !uid) { clearTimeout(giveUp); mode='local'; paintSync(); settleVisit(); return; }
+    const base = db.doc('trackers/' + uid);
+    remote = {apps: base.collection('apps'), prefs: base.collection('meta').doc('prefs')};
+    write('idx', base, {seen: today()}); // lets the daily refresh find this tracker
+    let first = true;
+    remote.apps.onSnapshot(snap => {
+      if (snap.metadata.fromCache && snap.empty) return;
+      const got = {}; snap.docs.forEach(d => { got[d.id] = Object.assign({}, d.data()); });
+      if (first) { first = false; clearTimeout(giveUp); mode = 'synced';
+        for (const id in store.apps) if (!got[id]) { got[id] = store.apps[id]; write('a'+id, remote.apps.doc(id), store.apps[id]); } } // carry over what this device had
+      store.apps = got; saveLocal(); paintSync(); paintTracker(); render();
+    }, e => { mode='local'; remote=null; paintSync(); settleVisit(); });
+    remote.prefs.onSnapshot(d => {
+      if (d.exists) { const p = d.data(); store.prefs = {saved: (p.saved||[]).slice(), lastVisit: p.lastVisit||'', prevVisit: p.prevVisit||''}; saveLocal(); }
+      else if (d.metadata.fromCache) return;
+      paintSaved(); settleVisit();
+    }, e => settleVisit());
+  } catch (e) { clearTimeout(giveUp); mode='local'; paintSync(); settleVisit(); }
+}
+
+/* ---------- saved searches ---------- */
+const PRESETS = [
+  {name:'UK quant', f:{country:['UK'],cat:['Quant']}},
+  {name:'Canada new grad', f:{country:['CA'],type:['New Grad']}},
+  {name:"Master's, pay band", f:{deg:'ms',bar:'bar'}},
+  {name:'US $150k+', f:{country:['US'],pay:'150',sort:'pay'}},
+];
+function paintSaved(){
+  const mine = store.prefs.saved || [];
+  $('saved').innerHTML = PRESETS.map((p,i)=>`<button type="button" class="chip" data-p="${i}">${esc(p.name)}</button>`).join('')
+    + mine.map((p,i)=>`<button type="button" class="chip" data-m="${i}">${esc(p.name)}<span class="x" data-del="${i}" aria-label="Delete saved search">✕</span></button>`).join('')
+    + `<form id="savef"><input type="text" id="savename" placeholder="Name this search" aria-label="Name for this search" maxlength="40"><button class="btn ghost" type="submit">Save</button></form>`;
+}
+$('saved').addEventListener('click', e => {
+  const del = e.target.closest('[data-del]');
+  if (del) { const a = (store.prefs.saved||[]).slice(); a.splice(+del.dataset.del,1); setPrefs({saved:a}); paintSaved(); return; }
+  const b = e.target.closest('.chip'); if (!b) return;
+  const p = b.dataset.p != null ? PRESETS[+b.dataset.p] : (store.prefs.saved||[])[+b.dataset.m]; if (!p) return;
+  Object.assign(st, JSON.parse(JSON.stringify(DEF)), JSON.parse(JSON.stringify(p.f))); sync(); render();
+});
+$('saved').addEventListener('submit', e => { e.preventDefault();
+  const name = $('savename').value.trim(); if (!name) return;
+  const f = {}; for (const k in DEF) if (JSON.stringify(st[k]) !== JSON.stringify(DEF[k])) f[k] = JSON.parse(JSON.stringify(st[k]));
+  setPrefs({saved: (store.prefs.saved||[]).concat([{name, f}]).slice(-12)}); paintSaved();
+});
+
+/* ---------- tracker ---------- */
+document.addEventListener('change', e => {
+  const s = e.target.closest('select[data-app]'); if (s) { setApp(s.dataset.app, {s: s.value}); s.classList.toggle('on', !!s.value); if (st.hidedone) render(); if (!$('v-for-you').hidden) paintFY(); return; }
+  const n = e.target.closest('[data-note]'); if (n) { setApp(n.dataset.note, {n: n.value.slice(0,2000)}); return; }
+  const d = e.target.closest('[data-date]'); if (d) setApp(d.dataset.date, {ad: d.value});
+});
+document.addEventListener('click', e => { const b = e.target.closest('[data-rm]'); if (b) { setApp(b.dataset.rm, {s:''}); render(); } });
+function paintTracker(){
+  const ids = Object.keys(store.apps), by = {}; STATUS.forEach(s=>by[s]=[]);
+  ids.forEach(id => { const a = store.apps[id]; (by[a.s] || (by[a.s]=[])).push(id); });
+  $('ntrack').textContent = ids.length ? ids.length : '';
+  const max = Math.max(1, ...STATUS.map(s=>by[s].length));
+  $('funnel').innerHTML = STATUS.map(s=>`<span>${s}</span><i style="width:${by[s].length/max*100}%"></i><b>${by[s].length}</b>`).join('');
+  if (document.activeElement && document.activeElement.closest && document.activeElement.closest('#apps') && /TEXTAREA|INPUT/.test(document.activeElement.tagName)) return; // don't redraw under the cursor
+  $('apps').innerHTML = ids.length ? STATUS.filter(s=>by[s].length).map(s => `<h3>${s} (${by[s].length})</h3>` + by[s].sort((a,b)=>(store.apps[b].up||'').localeCompare(store.apps[a].up||'')).map(id => { const a = store.apps[id];
+    return `<div class="app"><div><div class="co">${esc(a.c)}${BYID.has(id)?'':' · no longer listed'}</div><a class="ti" href="${esc(a.u)}" target="_blank" rel="noopener">${esc(a.t)}</a><div class="meta"><span>${esc(a.l)}</span></div></div>
+      ${statusSelect(id, a.s)}<input type="date" data-date="${id}" value="${esc(a.ad||'')}" aria-label="Date applied">
+      <textarea data-note="${id}" placeholder="Notes: recruiter, referral, test link, next step" aria-label="Notes">${esc(a.n||'')}</textarea>
+      <button class="link rm" type="button" data-rm="${id}">Stop tracking</button></div>`; }).join('')).join('')
+    : '<div class="empty">Nothing tracked yet. On the Board, use “Track this role…” on any listing.</div>';
+}
+function table(sep){
+  const q = v => { v = String(v == null ? '' : v).replace(/[\r\n\t]+/g,' '); return sep===',' ? '"'+v.replace(/"/g,'""')+'"' : v; };
+  const rows = [['Company','Role','Type','Location','Status','Date applied','Last updated','Notes','Link']];
+  Object.keys(store.apps).sort((a,b)=>STATUS.indexOf(store.apps[a].s)-STATUS.indexOf(store.apps[b].s)).forEach(id => { const a = store.apps[id];
+    rows.push([a.c,a.t,a.ty,a.l,a.s,a.ad||'',a.up||'',a.n||'',a.u]); });
+  return rows.map(r=>r.map(q).join(sep)).join('\n');
+}
+function msg(m){ $('toolmsg').textContent = m; }
+/* ---------- Google Sheet mirror ---------- */
+const SHEET_ID = 'YOUR_SHEET_ID', GS = 'Google Sheets';
+let mcp = null, pushing = false, pushAgain = false, pushTimer = null;
+const cell = v => { v = String(v == null ? '' : v).replace(/[\r\n\t]+/g,' '); return /^[=+\-@']/.test(v) ? "'" + v : v; };
+function sheetRows(){
+  return Object.keys(store.apps).sort((a,b)=>STATUS.indexOf(store.apps[a].s)-STATUS.indexOf(store.apps[b].s) || (store.apps[b].up||'').localeCompare(store.apps[a].up||''))
+    .map(id => { const a = store.apps[id]; return [cell(a.c),cell(a.t),cell(a.ty),cell(a.l),cell(a.s),a.ad||'',a.up||'',cell(a.n),a.u||'',"'"+id]; });
+}
+const SHEET_ERR = {
+  needs_reauth: 'Google Sheets needs reconnecting in claude.ai Settings, under Connectors.',
+  server_not_connected: 'Google Sheets is not connected. Add it in claude.ai Settings, under Connectors.',
+  not_in_manifest: 'Google Sheets is switched off for this page, so the sheet was not updated.',
+  consent_required: 'Allow Google Sheets for this page, then press Update Google Sheet now.',
+  approval_required: 'The sheet update needs your approval. Press Update Google Sheet now.',
+  blocked_by_policy: 'Your organisation blocks this Google Sheets action.',
+  tool_error: 'Google Sheets refused the update. Check that the Applications tab still exists.',
+};
+async function pushSheet(manual){
+  if (!mcp) return;
+  if (pushing) { pushAgain = true; return; }
+  pushing = true; msg('Updating your Google Sheet…');
+  try {
+    const rows = sheetRows();
+    await mcp.callTool(GS, 'batch_clear_values', {spreadsheetId: SHEET_ID, ranges: ['Applications!A2:J']}, {cache:false});
+    if (rows.length) await mcp.callTool(GS, 'update_values', {spreadsheetId: SHEET_ID, range: 'Applications!A2', values: rows}, {cache:false});
+    msg(`Google Sheet updated with ${rows.length} role${rows.length===1?'':'s'} at ${new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}.`);
+  } catch (e) {
+    msg(SHEET_ERR[e && e.code] || 'The sheet could not be reached just now. Your tracker is safe here; press Update Google Sheet now to try again.');
+  }
+  pushing = false; if (pushAgain) { pushAgain = false; queuePush(); }
+}
+function queuePush(){ if (!mcp) return; clearTimeout(pushTimer); pushTimer = setTimeout(() => pushSheet(false), 2500); }
+$('copy').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(table('\t')); msg('Copied. Paste into any spreadsheet.'); }
+  catch (e) { msg('Copying was blocked here. Use Download CSV, or open the page on claude.ai.'); }
+});
+
+/* ---------- charts ---------- */
+const tip = $('tip');
+document.addEventListener('pointermove', e => { const m = e.target.closest && e.target.closest('[data-tip]');
+  if (!m) { tip.style.display='none'; return; }
+  tip.textContent = m.dataset.tip; tip.style.display='block';
+  tip.style.left = Math.min(e.clientX+12, innerWidth-250)+'px'; tip.style.top = (e.clientY+14)+'px'; });
+document.addEventListener('pointerdown', e => { if (!(e.target.closest && e.target.closest('[data-tip]'))) tip.style.display='none'; });
+function weekChart(country, color){
+  const W=20, bins=new Array(W).fill(0);
+  for(const r of D){ if(!r[C.ctry].includes(country)||!r[C.date]) continue; const w=Math.floor(daysOld(r[C.date])/7); if(w>=0&&w<W) bins[W-1-w]++; }
+  const max=Math.max(1,...bins), w=320, h=130, pl=30, pb=20, bw=(w-pl)/W, mag=Math.pow(10,Math.floor(Math.log10(max))), top=Math.max(4,Math.ceil(max/mag*2)/2*mag);
+  const y=v=>(h-pb)-(v/top)*(h-pb-8);
+  let s=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Weekly new roles, ${NAMES[country]}">`;
+  for(const g of [0,top/2,top]) s+=`<line class="grid-l" x1="${pl}" x2="${w}" y1="${y(g)}" y2="${y(g)}"/><text x="${pl-5}" y="${y(g)+4}" text-anchor="end">${g}</text>`;
+  bins.forEach((v,i)=>{ const d=new Date(TODAY-(W-1-i)*7*864e5), lab=d.toLocaleDateString('en-GB',{day:'numeric',month:'short',timeZone:'UTC'});
+    s+=`<path d="M${pl+i*bw+1},${y(0)} V${y(v)+Math.min(3,(y(0)-y(v))/2)} q0,-3 3,-3 H${pl+(i+1)*bw-4} q3,0 3,3 V${y(0)} Z" fill="${color}" data-tip="Week to ${lab}: ${v} new roles"/>`;
+    if(i%5===0||i===W-1) s+=`<text x="${pl+i*bw+bw/2}" y="${h-5}" text-anchor="middle">${lab}</text>`; });
+  return `<div><h3>${NAMES[country]}</h3>${s}</svg></div>`;
+}
+function openChart(){
+  const months=[], m0=new Date(Date.UTC(TODAY.getUTCFullYear(),TODAY.getUTCMonth()-7,1));
+  for(let i=0;i<8;i++){ const d=new Date(Date.UTC(m0.getUTCFullYear(),m0.getUTCMonth()+i,1)); months.push(d.toISOString().slice(0,7)); }
+  const by=new Map();
+  for(const r of D){ if(r[C.type]!=='Internship'||!r[C.bar]||!r[C.terms].includes('Summer 2027')||!r[C.date]) continue;
+    const k=r[C.date].slice(0,7), a=by.get(r[C.co])||by.set(r[C.co],{n:0}).get(r[C.co]); a.n++; a[k]=(a[k]||0)+1; }
+  const firms=[...by].sort((a,b)=>b[1].n-a[1].n).slice(0,18); if(!firms.length) return '<p>No dated summer 2027 roles yet.</p>';
+  const max=Math.max(...firms.flatMap(([,a])=>months.map(m=>a[m]||0)),1), pl=150, cw=52, ch=22, w=pl+cw*months.length, h=24+ch*firms.length;
+  let s=`<svg viewBox="0 0 ${w} ${h}" style="min-width:${w}px" role="img" aria-label="Summer 2027 internship postings by firm and month">`;
+  months.forEach((m,i)=>{ s+=`<text x="${pl+i*cw+cw/2}" y="14" text-anchor="middle">${new Date(m+'-01T00:00:00Z').toLocaleDateString('en-GB',{month:'short',timeZone:'UTC'})}</text>`; });
+  firms.forEach(([f,a],j)=>{ s+=`<text class="v" x="${pl-8}" y="${24+j*ch+15}" text-anchor="end" style="font-family:var(--body)">${esc(f.length>22?f.slice(0,21)+'…':f)}</text>`;
+    months.forEach((m,i)=>{ const v=a[m]||0, p=v?Math.round(20+80*Math.sqrt(v/max)):0;
+      s+=`<rect x="${pl+i*cw+1}" y="${24+j*ch+1}" width="${cw-2}" height="${ch-2}" rx="3" fill="${v?`color-mix(in oklab,var(--seq-hi) ${p}%,var(--seq-lo))`:'var(--chip)'}" data-tip="${esc(f)}, ${m}: ${v} role${v===1?'':'s'}"/>`; }); });
+  return s+'</svg>';
+}
+function payChart(){
+  const by=new Map(); for(const r of D){ if(!r[C.annual]||r[C.est]) continue; (by.get(r[C.co])||by.set(r[C.co],[]).get(r[C.co])).push(r[C.annual]); }
+  const rows=[...by].map(([f,v])=>{ v.sort((a,b)=>a-b); return [f, v[Math.floor(v.length/2)], v.length]; }).sort((a,b)=>b[1]-a[1]).slice(0,20);
+  if(!rows.length) return '<p>No stated pay in this snapshot.</p>';
+  const max=rows[0][1], pl=150, w=640, bh=20, h=rows.length*bh+4;
+  let s=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Median stated yearly pay by firm">`;
+  rows.forEach(([f,v,n],j)=>{ const bw=(w-pl-70)*v/max, y=j*bh+3;
+    s+=`<text class="v" x="${pl-8}" y="${y+12}" text-anchor="end" style="font-family:var(--body)">${esc(f.length>22?f.slice(0,21)+'…':f)}</text>
+      <path d="M${pl},${y} H${pl+bw-4} q4,0 4,4 V${y+bh-10} q0,4 -4,4 H${pl} Z" fill="var(--s1)" data-tip="${esc(f)}: median $${num(v)} a year across ${n} listing${n===1?'':'s'}"/>
+      <text class="v" x="${pl+bw+6}" y="${y+12}">$${Math.round(v/1000)}k</text>`; });
+  return s+'</svg>';
+}
+let chartsDone = false;
+function paintCharts(){ if (chartsDone) return; chartsDone = true;
+  $('c-week').innerHTML = weekChart('US','var(--s1)') + weekChart('UK','var(--s2)') + weekChart('CA','var(--s3)');
+  $('c-open').innerHTML = openChart(); $('c-pay').innerHTML = payChart(); }
+
+/* ---------- For you ---------- */
+const FY_EX = /first.year|1st.year|spring week|insight|sophomore|freshman|high school|apprentice|school leaver|\bmba\b|ph\.?d|doctoral|stagiaire|\bstage\b|[éèêàç]|thesis|\b(6|8|9|10|12|16).?months?\b|year.long|winter|\bfall\b|autumn|january|september|off.?cycle|new grad|graduate (program|scheme)/i;
+const FY_CHK = /penultimate|placement|industrial|year in industry|sandwich|co-?op|second.year|2nd.year|rising|junior year|class of 2028|2028|returning/i;
+const FY_BANK = /barclays|goldman|morgan stanley|jpmorgan|j\.p\. morgan|jpmc|\bciti|\bubs\b|hsbc|deutsche|bnp|nomura|bank of america|\brbc\b|royal bank|\btd\b|scotiabank|\bbmo\b|cibc|lloyds|natwest|santander|standard chartered|macquarie|blackrock/i;
+const fy = {c:['UK','CA','??'], brand:false, check:true, dated:false, bank:false, research:false, quant:false, shown:60};
+const FY_RES = /research/i, FY_QENG = /developer|engineer|software|technolog|data|machine learning/i;
+const fyQuant = r => r[C.cat] === 'Quant';
+const fyFit = r => { const d27 = r[C.terms].includes('Summer 2027'); return d27 && (r[C.deg]&3) ? 3 : d27 ? 2 : 1; };
+const brand = r => r[C.bar] > 0 || !!r[C.tier];
+const FY_LON = /london|canary wharf|croydon|uxbridge|hounslow|wembley|ealing|kingston upon thames|stratford, (uk|london|england)/i;
+const FY_GTA = /toronto|mississauga|markham|brampton|vaughan|richmond hill|oakville|scarborough|north york|etobicoke|pickering|\bajax\b|whitby|oshawa|burlington, (on|canada)|milton, (on|canada)|newmarket|aurora, (on|canada)|thornhill|\bGTA\b/i;
+const fyCity = r => { const o = new Set();
+  for (const l of r[C.locs]) {
+    if (FY_LON.test(l) && !/\bON\b|ontario|canada/i.test(l)) o.add('UK');
+    if (FY_GTA.test(l)) o.add('CA');
+    if (/remote/i.test(l)) {
+      if (/\buk\b|united kingdom|england/i.test(l)) o.add('UK');
+      else if (/canada/i.test(l)) o.add('CA');
+      else if (/^remote$/i.test(l.trim()) && r[C.ctry].length === 1 && r[C.ctry][0] !== 'US') o.add(r[C.ctry][0]);
+    }
+  }
+  return [...o]; };
+const fyUnclear = r => !fyCity(r).length && r[C.ctry].some(c => c !== 'US') && r[C.locs].every(l => /^(canada|united kingdom|uk|england|ontario(, canada)?|on, canada)$/i.test(l.trim()));
+const fyBase = D.filter(r => {
+  const field = r[C.cat] === 'Software' || r[C.cat] === 'Data, AI & Stats' || (r[C.cat] === 'Quant' && FY_QENG.test(r[C.ti]));
+  if (r[C.type] !== 'Internship' || !field || r[C.deg] === 4 || FY_EX.test(r[C.ti])) return false;
+  if (!fyCity(r).length && !fyUnclear(r)) return false;
+  const t = r[C.terms]; return !t.length || t.includes('Summer 2027');
+});
+function fyList(){
+  return fyBase.filter(r => {
+    const here = fyCity(r).some(c => fy.c.includes(c)) || (fy.c.includes('??') && fyUnclear(r));
+    if (!here) return false;
+    if (fy.brand && !brand(r)) return false;
+    if (fy.dated && fyFit(r) < 2) return false;
+    if (fy.check && FY_CHK.test(r[C.ti])) return false;
+    if (fy.bank && FY_BANK.test(r[C.co])) return false;
+    if (fy.research && FY_RES.test(r[C.ti])) return false;
+    if (fy.quant && fyQuant(r)) return false;
+    if (DONE.has((store.apps[r[C.id]]||{}).s)) return false;
+    return true;
+  }).sort((a,b) => ((fyFit(b)-(FY_RES.test(b[C.ti])?.5:0))-(fyFit(a)-(FY_RES.test(a[C.ti])?.5:0))) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1));
+}
+function paintFY(){
+  const f = fyList();
+  $('fy-count').textContent = `${num(f.length)} internships`;
+  $('fy-list').innerHTML = f.length ? f.slice(0,fy.shown).map(r => row(r,
+      (fyFit(r)===3?'<span class="tag bar2">Summer 2027, your degree level</span>':fyFit(r)===2?'<span class="tag bar2">Summer 2027</span>':'<span class="tag">Season not stated</span>') + (brand(r)?'<span class="tag fit">Well-known firm</span>':'') + (fyUnclear(r)?'<span class="tag chk">Location unclear</span>':'') + (FY_RES.test(r[C.ti])?'<span class="tag chk">Research: check enrolment rules</span>':'') + (fyQuant(r)?'<span class="tag">Engineering at a finance firm</span>':'') + (FY_CHK.test(r[C.ti])||FY_BANK.test(r[C.co])?'<span class="tag chk">Check year eligibility</span>':''))).join('')
+    : '<li class="empty">Nothing matches. Select a city above or untick a box.</li>';
+  const left = f.length - fy.shown; $('fy-more').hidden = left <= 0; $('fy-more').textContent = `Show ${Math.min(60,left)} more`;
+}
+$('fy-country').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return;
+  const c = b.dataset.c, i = fy.c.indexOf(c); i<0 ? fy.c.push(c) : fy.c.splice(i,1); b.setAttribute('aria-pressed', i<0); fy.shown = 60; paintFY(); });
+$('fy-brand').addEventListener('change', e => { fy.brand = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-dated').addEventListener('change', e => { fy.dated = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-research').addEventListener('change', e => { fy.research = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-quant').addEventListener('change', e => { fy.quant = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-bank').addEventListener('change', e => { fy.bank = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-check').addEventListener('change', e => { fy.check = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-more').addEventListener('click', () => { fy.shown += 60; paintFY(); });
+
+/* ---------- views ---------- */
+function route(){ const VS = ['board','for-you','tracker','insights'], v = VS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'board';
+  for (const k of VS) $('v-'+k).hidden = k !== v;
+  if (v==='for-you') paintFY();
+  document.querySelectorAll('nav.tabs a').forEach(a => a.dataset.v===v ? a.setAttribute('aria-current','page') : a.removeAttribute('aria-current'));
+  if (v==='insights') paintCharts(); }
+addEventListener('hashchange', route);
+
+if (window.matchMedia('(min-width:821px)').matches) $('fd').open = true;
+const week = D.filter(r=>daysOld(r[C.date])<=7).length;
+$('stats').innerHTML = [
+  [num(D.length),'open roles'],[num(count(C.type,'Internship')),'internships'],[num(count(C.type,'New Grad')),'new grad'],
+  [num(D.filter(r=>r[C.bar]).length),'clear the pay band or likely to'],[num(week),'posted this week']
+].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('');
+paintSaved(); paintSync(); paintTracker(); route(); render(); connect();
+setTimeout(settleVisit, 6000);
+</script>
+</body>
+</html>
