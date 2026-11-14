@@ -1,9 +1,9 @@
 #!/bin/sh
 # Download every source list into the folder given as $1.
-set -e
 mkdir -p "$1"; cd "$1"
 G=https://raw.githubusercontent.com
-get() { curl -sSf -m 90 -L -o "$1" "$G/$2"; }
+# A list that fails to download keeps its previous copy, so one missing source never stops a refresh.
+get() { if curl -sSf -m 90 -L -o "$1.new" "$G/$2" && [ -s "$1.new" ]; then mv "$1.new" "$1"; else rm -f "$1.new"; echo "  could not fetch $2 (kept the last copy)"; [ -f "$1" ] || : > "$1"; fi; }
 get simplify_intern.out SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json
 get simplify_newgrad.out SimplifyJobs/New-Grad-Positions/dev/.github/scripts/listings.json
 get vansh_intern.out vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json

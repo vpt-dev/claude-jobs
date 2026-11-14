@@ -374,8 +374,10 @@ for fn, dc in (("dw_uk.md", "UK"), ("dw_ca.md", "CA")):
         add("dreamworkhq", strip_md(c[0]), strip_md(c[1]), [loc], re.sub(r"\?utm_.*$", "", first_url(c[1])), "Internship", age_date(c[4]) if len(c) > 4 else None, default_country=dc)
 
 # ---- employer boards crawled from the user's machine (crawl.py output) ----
-if os.path.exists(f"{RAW}/ats_jobs.json"):
-    for x in json.load(open(f"{RAW}/ats_jobs.json"))["jobs"]:
+for _fn in ("ats_jobs.json", "reed_jobs.json"):
+    if not os.path.exists(f"{RAW}/{_fn}"):
+        continue
+    for x in json.load(open(f"{RAW}/{_fn}"))["jobs"]:
         pay, sal = x.get("pay"), None
         if pay and pay.get("cur") == "USD" and pay.get("min"):
             v = (pay["min"] + (pay.get("max") or pay["min"])) / 2
@@ -383,8 +385,8 @@ if os.path.exists(f"{RAW}/ats_jobs.json"):
                 sal = {"text": f"${v:g}/hr", "annual": round(v * 2080), "cur": "USD", "hourly": True}
             elif pay.get("period") == "year" and 20000 <= v <= 600000:
                 sal = {"text": f"${v/1000:g}k/yr", "annual": round(v), "cur": "USD", "hourly": False}
-        read = bool(x.get("elig")) or x.get("ats") in ("greenhouse", "lever", "ashby")
-        add("employer-site", x["company"], x["title"], x.get("locations") or [], x["url"], x.get("type") or "Internship", (x.get("posted") or "")[:10] or None,
+        read = bool(x.get("elig")) or x.get("ats") in ("greenhouse", "lever", "ashby", "reed")
+        add("Reed" if x.get("ats") == "reed" else "employer-site", x["company"], x["title"], x.get("locations") or [], x["url"], x.get("type") or "Internship", (x.get("posted") or "")[:10] or None,
             salary=sal, default_country=(x.get("countries") or ["US"])[0], elig=(x.get("elig") or {}) if read else None)
 
 # ---- collected by hand from employer career sites ----
