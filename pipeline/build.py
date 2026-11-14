@@ -1,7 +1,7 @@
 """Normalise every downloaded job list into one deduplicated dataset.
 Usage: python3 -I build.py <raw_dir> <out_json>
 """
-import json, re, sys, html, time, datetime, collections, hashlib
+import json, re, sys, html, time, datetime, collections, hashlib, os
 
 RAW, OUT = sys.argv[1], sys.argv[2]
 TODAY = datetime.date.today()
@@ -252,6 +252,88 @@ for line in open(f"{RAW}/nu_quant.md", encoding="utf-8"):
             var = label.replace("✅", "").strip()
             add("northwesternfintech", comp, f"{ROLE[c[0]]} Intern" + (f" ({var})" if var else ""), locs, url, "Internship",
                 cat="Quant" if c[0] in ("QD", "QR", "QT") else None, tier="Quant firm")
+
+# ---- extra lists added Nov 2026 (skipped quietly when a file is missing) ----
+def _rows(name):
+    path = f"{RAW}/{name}"
+    if not os.path.exists(path):
+        return
+    for line in open(path, encoding="utf-8"):
+        yield line.rstrip("\n")
+
+
+ISO3 = {"GBR": "UK", "CAN": "Canada", "USA": "USA"}
+CITY_HINT = {"London": "London, UK", "Toronto": "Toronto, ON, Canada", "Montreal": "Montreal, QC, Canada", "Vancouver": "Vancouver, BC, Canada",
+             "Waterloo": "Waterloo, ON, Canada", "Cambridge UK": "Cambridge, UK", "Edinburgh": "Edinburgh, UK", "Manchester": "Manchester, UK",
+             "Bristol": "Bristol, UK", "Oxford": "Oxford, UK", "New York": "New York, NY", "Chicago": "Chicago, IL", "Austin": "Austin, TX",
+             "Boston": "Boston, MA", "San Francisco": "San Francisco, CA", "Houston": "Houston, TX", "Miami": "Miami, FL", "Greenwich": "Greenwich, CT",
+             "Philadelphia": "Philadelphia, PA", "Bala Cynwyd": "Bala Cynwyd, PA", "Seattle": "Seattle, WA", "Los Angeles": "Los Angeles, CA"}
+
+
+def iso_loc(s):
+    return re.sub(r",\s*([A-Z]{3})$", lambda m: ", " + ISO3.get(m.group(1), m.group(1)), s.strip())
+
+
+# Emjumaev big-tech trackers: one "## Company" section per employer
+for fn in ("emj_us.md", "emj_eu.md"):
+    comp = ""
+    for line in _rows(fn):
+        if line.startswith("## "):
+            comp = line[3:].strip()
+            continue
+        if not line.startswith("| [") or not comp:
+            continue
+        c = cells(line)
+        if len(c) < 5:
+            continue
+        deg = c[2].lower()
+        add("emjumaev", comp, strip_md(c[0]), [iso_loc(x) for x in split_locs(c[3])], first_url(c[0]), "Internship", nice_date(c[4]),
+            default_country="XX", degrees=tuple(d for d, k in (("PhD", "phd"), ("Master's", "master"), ("Bachelor's", "bachelor")) if k in deg))
+
+# frogg Canadian internships: Company | Role | Location | Apply | Date | Term
+for line in _rows("frogg.md"):
+    c = cells(line) if line.startswith("|") else []
+    if len(c) < 6 or c[0] in ("Company", "") or set(c[0]) <= set("-: ") or not first_url(c[3]):
+        continue
+    term = c[5] if re.search(r"20\d\d", c[5]) else ""
+    add("frogg", strip_md(c[0]), strip_md(c[1]), split_locs(c[2].replace(", Remote in Canada", "")), first_url(c[3]), "Internship", nice_date(c[4]),
+        default_country="CA", terms=(term,) if term else ())
+
+# Toronto AI/ML radar (MIT licence): Role | Company | Location | Term | Posted
+for line in _rows("krishi.md"):
+    c = cells(line) if line.startswith("| [") else []
+    if len(c) < 5:
+        continue
+    term = c[3] if re.search(r"20\d\d", c[3]) else ""
+    add("toronto-radar", strip_md(c[1]), strip_md(c[0]), split_locs(c[2]), first_url(c[0]), "Internship", age_date(c[4].replace(" days ago", "d").replace(" day ago", "d")),
+        default_country="CA", terms=(term,) if term else ())
+
+# Francklin Canada list: Company | Role | Location | Details | Posted | Apply
+typ = "Internship"
+for line in _rows("francklin.md"):
+    if line.startswith("#"):
+        typ = "New Grad" if "new-grad" in line.lower() or "new grad" in line.lower() else "Internship"
+        continue
+    c = cells(line) if line.startswith("|") else []
+    if len(c) < 6 or c[0] in ("Company", "") or set(c[0]) <= set("-: ") or not first_url(c[5]):
+        continue
+    add("francklin", strip_md(c[0]), re.sub(r"^NEW\s+", "", strip_md(c[1])), split_locs(c[2]), first_url(c[5]), typ, nice_date(c[4].split("<")[0]), default_country="CA")
+
+# QuantScraper student list: Company | Role | Location | (Focus) | Salary | Posted
+typ, prev = "Internship", ""
+for line in _rows("quantscraper.md"):
+    if line.startswith("#"):
+        low = line.lower()
+        typ = "New Grad" if "graduate" in low or "new grad" in low else "Internship" if "intern" in low else typ
+        continue
+    c = cells(line) if line.startswith("|") else []
+    if len(c) < 5 or "](http" not in c[1]:
+        continue
+    comp = strip_md(c[0])
+    comp = prev if comp == "↳" else comp
+    prev = comp
+    locs = [CITY_HINT.get(x.strip(), x.strip()) for x in strip_md(c[2]).split(",")]
+    add("quantscraper", comp, strip_md(c[1]), locs, first_url(c[1]), typ, None, cat="Quant", default_country="XX")
 
 # ---- collected by hand from employer career sites ----
 import os

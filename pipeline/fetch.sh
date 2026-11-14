@@ -19,4 +19,10 @@ get euro.md LorenzoLaCorte/european-tech-internships-2026/main/README.md
 get nu_quant.md northwesternfintech/2027QuantInternships/main/README.md
 get zshah.md zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-Internships/main/README.md
 get sndsh.md sndsh404/summer-2027-internships/main/README.md
+get emj_us.md Emjumaev/FAANG-2027-Internships-Tracker/HEAD/README.md
+get emj_eu.md Emjumaev/FAANG-2027-Internships-Tracker-Europe/HEAD/README.md
+get frogg.md seun-ipaye/frogg-canadian-internships/HEAD/README.md
+get krishi.md krishi-shah/Toronto-AI-ML-internship-radar/HEAD/README.md
+get francklin.md Francklin9999/canada-internship/HEAD/README.md
+get quantscraper.md quant-scraper/Quant-Internships-New-Grad-2027/HEAD/README.md
 echo fetched
