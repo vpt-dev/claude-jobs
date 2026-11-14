@@ -1,0 +1,1414 @@
+{
+"fetched_at": "2026-11-14T17:57:07Z",
+"jobs": [
+{
+"company": "McGregor Boyall",
+"title": "Graduate Software Engineer",
+"locations": [
+"Belfast, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-engineer/57453136",
+"posted": "2026-10-13",
+"pay": {
+"min": 35000.0,
+"max": 40000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "sional development and technical certifications Apply Now If you're a recent graduate or early-career software engineer looking to build your career in a t"
+},
+"reed_id": 57453136,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Team Energy",
+"title": "Graduate Software Developer - Hybrid",
+"locations": [
+"MK58PJ, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-developer-hybrid/57484827",
+"posted": "2026-10-22",
+"pay": {
+"min": 27500.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57484827,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Saab UK",
+"title": "Software Engineering Graduate",
+"locations": [
+"Farnborough, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447758",
+"posted": "2026-10-12",
+"pay": null,
+"elig": {
+"final_year_ok": "med forces training. The Graduate Programme: By joining the Saab UK's Graduate Engineering programme in September 2027, you'll have the opportunity to have hands on practical experience wi"
+},
+"reed_id": 57447758,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Saab UK",
+"title": "Software Engineering Graduate",
+"locations": [
+"Bedford, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447819",
+"posted": "2026-10-12",
+"pay": null,
+"elig": {
+"final_year_ok": "med forces training. The Graduate Programme: By joining the Saab UK's Graduate Engineering programme in September 2027, you'll have the opportunity to have hands on practical experience wi"
+},
+"reed_id": 57447819,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Saab UK",
+"title": "Software Engineering Graduate",
+"locations": [
+"Fareham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447699",
+"posted": "2026-10-12",
+"pay": null,
+"elig": {
+"final_year_ok": "med forces training. The Graduate Programme: By joining the Saab UK's Graduate Engineering programme in September 2027, you'll have the opportunity to have hands on practical experience wi"
+},
+"reed_id": 57447699,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Saab UK",
+"title": "Hardware Engineering Graduate",
+"locations": [
+"Fareham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/hardware-engineering-graduate/57447733",
+"posted": "2026-10-12",
+"pay": null,
+"elig": {
+"final_year_ok": "med forces training. The Graduate Programme: By joining the Saab UK's Graduate Engineering programme in September 2027, you'll have the opportunity to have hands on practical experience wi"
+},
+"reed_id": 57447733,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Saab UK",
+"title": "Hardware Engineering Graduate",
+"locations": [
+"Fareham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/hardware-engineering-graduate/57447687",
+"posted": "2026-10-12",
+"pay": {
+"min": 30000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "of several nations. The Graduate Programme: By joining the Saab UK's Graduate Engineering programme in September 2027, you'll have the opportunity to have hands on practical experience wi"
+},
+"reed_id": 57447687,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Spectrum IT Recruitment",
+"title": "Graduate Software Developer",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57545790",
+"posted": "2026-11-09",
+"pay": {
+"min": 45000.0,
+"max": 50000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57545790,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Oscar Technology",
+"title": "Graduate Software Developer",
+"locations": [
+"Bristol, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57428456",
+"posted": "2026-10-06",
+"pay": {
+"min": 25000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57428456,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "ITSS Recruitment Ltd",
+"title": "Junior Software Engineer",
+"locations": [
+"Lincoln, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/junior-software-engineer/57442832",
+"posted": "2026-10-09",
+"pay": {
+"min": 25000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57442832,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Bluetown",
+"title": "Junior Software Engineer",
+"locations": [
+"Birmingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/junior-software-engineer/57467780",
+"posted": "2026-10-16",
+"pay": {
+"min": 28000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57467780,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Ernest Gordon Recruitment Limited",
+"title": "Graduate Mechanical Engineer",
+"locations": [
+"Lanarkshire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-mechanical-engineer/57431960",
+"posted": "2026-10-07",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57431960,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Sheffield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57554813",
+"posted": "2026-11-10",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57554813,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Nottingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436143",
+"posted": "2026-10-08",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57436143,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Cardiff, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57565757",
+"posted": "2026-11-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57565757,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Si Recruitment",
+"title": "Graduate Support Engineer",
+"locations": [
+"Sedgefield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-support-engineer/57553979",
+"posted": "2026-11-10",
+"pay": {
+"min": 30000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57553979,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Bedfordshire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57468206",
+"posted": "2026-10-16",
+"pay": {
+"min": 25000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"masters_ok": "ments To be considered for this opportunity, you will need: A BEng or MEng degree in Civil Engineering , achieving a 2:1 or above . A keen inter"
+},
+"reed_id": 57468206,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Cardiff, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
+"posted": "2026-11-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57566379,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Chelmsford, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57506305",
+"posted": "2026-10-29",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "p. About You A degree in Civil Engineering or a related discipline. A recent graduate or someone with up to two years' relevant experience. Good numeracy,"
+},
+"reed_id": 57506305,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Nottingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436884",
+"posted": "2026-10-08",
+"pay": {
+"min": 27500.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57436884,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Glasgow, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57506315",
+"posted": "2026-10-29",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "p. About You A degree in Civil Engineering or a related discipline. A recent graduate or someone with up to two years' relevant experience. Good numeracy,"
+},
+"reed_id": 57506315,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Norwich, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57506293",
+"posted": "2026-10-29",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "p. About You A degree in Civil Engineering or a related discipline. A recent graduate or someone with up to two years' relevant experience. Good numeracy,"
+},
+"reed_id": 57506293,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Sheffield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57559529",
+"posted": "2026-11-11",
+"pay": {
+"min": 27000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57559529,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Arlesey, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57540895",
+"posted": "2026-11-06",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57540895,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Wigan, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57540922",
+"posted": "2026-11-06",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57540922,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Rotherham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57497883",
+"posted": "2026-10-27",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57497883,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Nottingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436154",
+"posted": "2026-10-08",
+"pay": {
+"min": 27500.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57436154,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Wakefield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57500823",
+"posted": "2026-10-28",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57500823,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Leeds, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57505760",
+"posted": "2026-10-29",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57505760,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Cardiff, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566089",
+"posted": "2026-11-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "for progression. Competitive salary and benefits package. If you're a recent graduate looking for the opportunity to build your career, develop your skills"
+},
+"reed_id": 57566089,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Louth, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57497907",
+"posted": "2026-10-27",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57497907,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Geotechnical Engineer",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-geotechnical-engineer/57424611",
+"posted": "2026-10-05",
+"pay": {
+"min": 25000.0,
+"max": 28000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57424611,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "hayden nash consultants",
+"title": "graduate electrical engineer",
+"locations": [
+"Woking, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-electrical-engineer/57488941",
+"posted": "2026-10-23",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57488941,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Bedfordshire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57488041",
+"posted": "2026-10-23",
+"pay": {
+"min": 26000.0,
+"max": 33000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57488041,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Huddersfield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57507420",
+"posted": "2026-10-30",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57507420,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Derby, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57438044",
+"posted": "2026-10-08",
+"pay": {
+"min": 27500.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57438044,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Avanti",
+"title": "Graduate / Junior Electronics Engineer",
+"locations": [
+"Worcestershire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-junior-electronics-engineer/57463027",
+"posted": "2026-10-15",
+"pay": {
+"min": 30000.0,
+"max": 37000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57463027,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Geotechnical Design Engineer",
+"locations": [
+"York, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-geotechnical-design-engineer/57437352",
+"posted": "2026-10-08",
+"pay": {
+"min": 27000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"masters_ok": "ngineering, Civil Engineering (with a geotechnical focus) or similar (MSc preferred), with a focus on pilings. Have a full and clean UK Driving"
+},
+"reed_id": 57437352,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer - Nothampton",
+"locations": [
+"Northampton, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer-nothampton/57540863",
+"posted": "2026-11-06",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "K driving licence and access to your own transport. Applications from recent graduates are welcome. Previous consultancy experience is not essential. PRP of"
+},
+"reed_id": 57540863,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Dynex Semiconductor",
+"title": "Graduate Power Electronics Engineer",
+"locations": [
+"LN13AE, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-power-electronics-engineer/57505748",
+"posted": "2026-10-29",
+"pay": null,
+"elig": {
+"final_year_ok": "our growing engineering team. This is an excellent opportunity for a recent graduate or early-career engineer to gain hands-on experience designing and de"
+},
+"reed_id": 57505748,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Hays Specialist Recruitment Limited",
+"title": "Graduate Building Services Engineer",
+"locations": [
+"Cambridge, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-building-services-engineer/57541662",
+"posted": "2026-11-07",
+"pay": {
+"min": 28000.0,
+"max": 38000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57541662,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Ernest Gordon Recruitment Limited",
+"title": "Graduate Controls Engineer (C/C++)",
+"locations": [
+"Knutsford, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-controls-engineer-c-c/57451315",
+"posted": "2026-10-12",
+"pay": {
+"min": 35000.0,
+"max": 45000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57451315,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Ernest Gordon Recruitment Limited",
+"title": "Graduate Design Engineer (Bespoke Manufacturing)",
+"locations": [
+"Saffron Walden, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-design-engineer-bespoke-manufacturing/57539836",
+"posted": "2026-11-06",
+"pay": {
+"min": 27000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "ring processes and efficiency. This is an excellent opportunity for a recent graduate in Design, Mechanical or Product Design Engineering to join an establ"
+},
+"reed_id": 57539836,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Ernest Gordon Recruitment Limited",
+"title": "Graduate Mechanical Design Engineer (Manufacturing)",
+"locations": [
+"Bedford, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-mechanical-design-engineer-manufacturing/57474961",
+"posted": "2026-10-20",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "Discretionary Company Bonus + Free On-Site Parking Bedford Are you a recent Graduate from an engineering discipline who is looking for an exciting opportu"
+},
+"reed_id": 57474961,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Noir",
+"title": "Graduate .NET Developer",
+"locations": [
+"EC3R8EE, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-net-developer/57512005",
+"posted": "2026-11-02",
+"pay": {
+"min": 35000.0,
+"max": 60000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "y. We are seeking several passionate Graduate .NET Developer who have recently graduated with a degree in Computer Science (or a related subject) and have a b"
+},
+"reed_id": 57512005,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Adsyst Automation Ltd",
+"title": "Graduate/Trainee Network Control Systems Engineer",
+"locations": [
+"GU467AA, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-trainee-network-control-systems-engineer/57479640",
+"posted": "2026-10-21",
+"pay": {
+"min": 22000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57479640,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Rise Technical Recruitment Limited",
+"title": "Junior LabVIEW Engineer",
+"locations": [
+"Gloucestershire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/junior-labview-engineer/57440504",
+"posted": "2026-10-09",
+"pay": {
+"min": 25000.0,
+"max": 38000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "te Healthcare + Salary Reviews + 33 Days Holiday Gloucester Are you a recent graduate or a junior with a background in software engineering, computer scien"
+},
+"reed_id": 57440504,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Noir",
+"title": ".NET Developer, Graduate / Junior",
+"locations": [
+"M11AR, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/net-developer-graduate-junior/57512901",
+"posted": "2026-11-02",
+"pay": {
+"min": 35000.0,
+"max": 45000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "ese roles would be suitable Graduate / Junior .NET Developer who have recently graduated from university and have a basic understanding of the .NET framework"
+},
+"reed_id": 57512901,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Noir",
+"title": ".NET Developer, Graduate / Junior",
+"locations": [
+"EC3R8EE, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/net-developer-graduate-junior/57512001",
+"posted": "2026-11-02",
+"pay": {
+"min": 35000.0,
+"max": 45000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "ese roles would be suitable Graduate / Junior .NET Developer who have recently graduated from university and have a basic understanding of the .NET framework"
+},
+"reed_id": 57512001,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": " Deerfoot Recruitment Solutions Ltd",
+"title": "Product Support Associate Engineer",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/product-support-associate-engineer/57492196",
+"posted": "2026-10-26",
+"pay": {
+"min": 160.0,
+"max": 170.0,
+"cur": "GBP",
+"period": "day"
+},
+"elig": {},
+"reed_id": 57492196,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Ernest Gordon Recruitment Limited",
+"title": "Junior Automation Engineer (PLC/Siemens Tia Portal)",
+"locations": [
+"Plymouth, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/junior-automation-engineer-plc-siemens-tia-portal/57459127",
+"posted": "2026-10-14",
+"pay": {
+"min": 40000.0,
+"max": 50000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57459127,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Bennett & Game Recruitment",
+"title": "Junior Design Engineer / CAD Technician - Valves",
+"locations": [
+"Basingstoke, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/junior-design-engineer-cad-technician-valves/57459217",
+"posted": "2026-10-14",
+"pay": {
+"min": 26000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57459217,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": " Deerfoot Recruitment Solutions Ltd",
+"title": "Contract Product Support Associate Engineer",
+"locations": [
+"Hounslow, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/contract-product-support-associate-engineer/57491839",
+"posted": "2026-10-26",
+"pay": {
+"min": 160.0,
+"max": 170.0,
+"cur": "GBP",
+"period": "day"
+},
+"elig": {},
+"reed_id": 57491839,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Noir",
+"title": "Graduate / Junior Developer, Python, Linux, C#, Java - London",
+"locations": [
+"EC3R8EE, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-linux-c-java-london/57512004",
+"posted": "2026-11-02",
+"pay": {
+"min": 30000.0,
+"max": 40000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "g. These roles would be suitable Graduate / Junior Developer who have recently graduated from university and have a basic understanding of any of the followin"
+},
+"reed_id": 57512004,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Noir",
+"title": "Graduate / Junior Developer, Python, JavaScript, PHP - London",
+"locations": [
+"EC3R8EE, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-javascript-php-london/57512006",
+"posted": "2026-11-02",
+"pay": {
+"min": 35000.0,
+"max": 50000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "y! These roles would be suitable Graduate / Junior Developer who have recently graduated from university and have a basic understanding of any of the followin"
+},
+"reed_id": 57512006,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Pure Resourcing Solutions",
+"title": "Performance Engineer (Junior) | AI Infrastructure | Cambridge (Hybrid) |",
+"locations": [
+"CB238SL, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/performance-engineer-junior--ai-infrastructure--cambridge-hybrid/57481418",
+"posted": "2026-10-21",
+"pay": {
+"min": 55000.0,
+"max": 70000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"masters_ok": "al ownership early, with senior support close by. What you'll bring A postgraduate research background, ideally a PhD in computer science, mathematics,"
+},
+"reed_id": 57481418,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Robert Walters",
+"title": "Graduate AI Engineer- PE Firm",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-ai-engineer-pe-firm/57484884",
+"posted": "2026-10-22",
+"pay": null,
+"elig": {},
+"reed_id": 57484884,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Robert Walters",
+"title": "Graduate AI Engineer- PE Firm-CTO office",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-ai-engineer-pe-firm-cto-office/57484912",
+"posted": "2026-10-22",
+"pay": null,
+"elig": {},
+"reed_id": 57484912,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "SF Partners",
+"title": "Graduate R&D Engineer",
+"locations": [
+"Birmingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-r-d-engineer/57454624",
+"posted": "2026-10-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57454624,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "James Frank Associates",
+"title": "Graduate Project Management Analyst - Legal",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-project-management-analyst-legal/57531454",
+"posted": "2026-11-04",
+"pay": {
+"min": 40000.0,
+"max": 40000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57531454,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "eFinancialCareers",
+"title": "London Start Up Hiring Junior Quant Researcher With Internship Experience",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/london-start-up-hiring-junior-quant-researcher-with-internship-experience/57527832",
+"posted": "2026-11-04",
+"pay": null,
+"elig": {},
+"reed_id": 57527832,
+"type": "Internship",
+"ats": "reed",
+"board": "reed"
+}
+]
+}
