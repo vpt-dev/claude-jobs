@@ -6,6 +6,7 @@ Usage: python3 pipeline/elig_build.py elig.json site/elig.js
 Each posting that was read gets [score, reason, short quote], scored for a final-year
 bachelor's student who will start a master's after the summer.
 """
+import html
 import json
 import os
 import re
@@ -15,14 +16,16 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from crawl import ELIG  # noqa: E402
 
 RX = dict(ELIG)
-FINAL = re.compile(r"final[- ]year (student|undergrad)|or (a )?final[- ]year|final or penultimate|in (your|their|the) final year of|graduat\w+ in (the )?(summer |spring |june |july |may )?(of )?2027|class of 2027|recent(ly)? graduat\w*[^.]{0,60}(welcome|eligible|encouraged|may apply|can apply)|or recent(ly)? graduat", re.I)
-POSTGRAD_ONLY = re.compile(r"year of (a |an |your |their )?(master|msc|phd|doctora)|graduated from (a |an )?(master|msc|phd)", re.I)
+FINAL = re.compile(r"final[- ]year (student|undergrad)|or (a )?final[- ]year|final or penultimate|in (your|their|the) final year of|graduat\w+ in (the )?(summer |spring |june |july |may )?(of )?2027|class of 2027|recent(ly)? graduat\w*[^.]{0,60}(welcome|eligible|encouraged|may apply|can apply)|\bor recent(ly)? graduat", re.I)
+POSTGRAD_ONLY = re.compile(r"year of (a |an |your |their )?(master|msc|phd|doctora)|graduated from (a |an )?(master|msc|phd)|final[- ]year (phd|master|msc|doctoral|postgrad)|final year of\)? (a |an )?(postgrad|master|phd)|master'?s'? degree in progress", re.I)
 UNDERGRAD = re.compile(r"bachelor|undergrad|\\b(2nd|second|3rd|third)[- ]year|sophomore|junior", re.I)
+NOT_FINAL = re.compile(r"non[- ]?\s?final|not (be )?in (your|their|the) final|excluding final", re.I)
 COOP = re.compile(r"co-?op (program|term|student)|placement year|year in industry", re.I)
 
 
 def quote(key, excerpt):
     """At most 14 words around the phrase that triggered the signal."""
+    excerpt = html.unescape(html.unescape(excerpt)).replace("\xa0", " ")
     m = RX[key].search(excerpt)
     if not m:
         return ""
@@ -37,6 +40,8 @@ def quote(key, excerpt):
 def score(v):
     s, x = set(v["s"]), v["x"]
     fin = x.get("final_year_ok", "")
+    if fin and NOT_FINAL.search(fin):
+        return 1, "the posting asks for students who are not in their final year", quote("final_year_ok", fin)
     if fin and FINAL.search(fin) and not re.search(r"or later", fin, re.I):
         if POSTGRAD_ONLY.search(fin):
             return 1, "the posting asks for master's or PhD students", quote("final_year_ok", fin)
