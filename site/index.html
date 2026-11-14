@@ -385,6 +385,7 @@ function filtered(){
 const statusSelect = (id, cur) => `<select data-app="${id}" aria-label="Application status" class="${cur?'on':''}"><option value="">Track this role…</option>${STATUS.map(s=>`<option${s===cur?' selected':''}>${s}</option>`).join('')}</select>`;
 const DEGL = d => d===4?'PhD only':(d&2)?"Master's named":'';
 function row(r, extra, bare){
+  if (typeof extra !== 'string') extra = ''; bare = bare === true; // also called as a plain map() callback
   const yr = /hr$/.test(r[C.pay]) ? `about $${Math.round(r[C.annual]/1000)}k a year` : '';
   const pay = !r[C.annual] ? `<div class="pay none">Pay not listed</div>`
     : r[C.est] ? `<div class="pay est">~${esc(r[C.pay])}<small>estimate from ${r[C.est]} other ${r[C.est]===1?'listing':'listings'} at this employer</small></div>`
