@@ -1,5 +1,5 @@
 {
-"fetched_at": "2026-11-14T17:57:07Z",
+"fetched_at": "2026-11-14T18:16:39Z",
 "jobs": [
 {
 "company": "McGregor Boyall",
@@ -365,6 +365,29 @@
 "company": "Penguin Recruitment Ltd",
 "title": "Graduate Civil Engineer",
 "locations": [
+"Cardiff, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
+"posted": "2026-11-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57566379,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
 "Bedfordshire, UK"
 ],
 "countries": [
@@ -382,29 +405,6 @@
 "masters_ok": "ments To be considered for this opportunity, you will need: A BEng or MEng degree in Civil Engineering , achieving a 2:1 or above . A keen inter"
 },
 "reed_id": 57468206,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed"
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Cardiff, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
-"posted": "2026-11-13",
-"pay": {
-"min": 28000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"elig": {},
-"reed_id": 57566379,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed"
@@ -557,6 +557,29 @@
 "company": "Penguin Recruitment Ltd",
 "title": "Graduate Civil Engineer",
 "locations": [
+"Nottingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436154",
+"posted": "2026-10-08",
+"pay": {
+"min": 27500.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57436154,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
 "Wigan, UK"
 ],
 "countries": [
@@ -595,52 +618,6 @@
 },
 "elig": {},
 "reed_id": 57497883,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed"
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Nottingham, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436154",
-"posted": "2026-10-08",
-"pay": {
-"min": 27500.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"elig": {},
-"reed_id": 57436154,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed"
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Wakefield, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57500823",
-"posted": "2026-10-28",
-"pay": {
-"min": 28000.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"elig": {},
-"reed_id": 57500823,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed"
@@ -718,6 +695,29 @@
 },
 {
 "company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Wakefield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57500823",
+"posted": "2026-10-28",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57500823,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Penguin Recruitment Ltd",
 "title": "Graduate Geotechnical Engineer",
 "locations": [
 "London, UK"
@@ -735,29 +735,6 @@
 },
 "elig": {},
 "reed_id": 57424611,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed"
-},
-{
-"company": "hayden nash consultants",
-"title": "graduate electrical engineer",
-"locations": [
-"Woking, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-electrical-engineer/57488941",
-"posted": "2026-10-23",
-"pay": {
-"min": 28000.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"elig": {},
-"reed_id": 57488941,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed"
@@ -781,6 +758,29 @@
 },
 "elig": {},
 "reed_id": 57488041,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "hayden nash consultants",
+"title": "graduate electrical engineer",
+"locations": [
+"Woking, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-electrical-engineer/57488941",
+"posted": "2026-10-23",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {},
+"reed_id": 57488941,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed"
@@ -1261,31 +1261,6 @@
 "board": "reed"
 },
 {
-"company": "Noir",
-"title": "Graduate / Junior Developer, Python, JavaScript, PHP - London",
-"locations": [
-"EC3R8EE, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-javascript-php-london/57512006",
-"posted": "2026-11-02",
-"pay": {
-"min": 35000.0,
-"max": 50000.0,
-"cur": "GBP",
-"period": "year"
-},
-"elig": {
-"final_year_ok": "y! These roles would be suitable Graduate / Junior Developer who have recently graduated from university and have a basic understanding of any of the followin"
-},
-"reed_id": 57512006,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed"
-},
-{
 "company": "Pure Resourcing Solutions",
 "title": "Performance Engineer (Junior) | AI Infrastructure | Cambridge (Hybrid) |",
 "locations": [
@@ -1306,6 +1281,31 @@
 "masters_ok": "al ownership early, with senior support close by. What you'll bring A postgraduate research background, ideally a PhD in computer science, mathematics,"
 },
 "reed_id": 57481418,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed"
+},
+{
+"company": "Noir",
+"title": "Graduate / Junior Developer, Python, JavaScript, PHP - London",
+"locations": [
+"EC3R8EE, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-javascript-php-london/57512006",
+"posted": "2026-11-02",
+"pay": {
+"min": 35000.0,
+"max": 50000.0,
+"cur": "GBP",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "y! These roles would be suitable Graduate / Junior Developer who have recently graduated from university and have a basic understanding of any of the followin"
+},
+"reed_id": 57512006,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed"

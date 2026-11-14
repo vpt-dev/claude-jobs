@@ -117922,6 +117922,3056 @@
 "US"
 ],
 "type": "Internship"
+},
+{
+"company": "Datadog",
+"title": "Research Science Intern (PhD)",
+"locations": [
+"New York, New York, USA; Pittsburgh, Pennsylvania, USA"
+],
+"url": "https://careers.datadoghq.com/detail/8203657/?gh_jid=8203657",
+"posted": "2026-09-15",
+"pay": {
+"min": 110000.0,
+"max": 140000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"must_be_enrolled": "tion See research reach production, when it works &nbsp; Who You Are: Currently enrolled in a PhD program at Carnegie Mellon in machine learning, computer science,"
+},
+"ats": "greenhouse",
+"board": "datadog",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Datadog",
+"title": "Software Engineering Intern (Summer)",
+"locations": [
+"Boston, Massachusetts, USA; New York, New York, USA"
+],
+"url": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118",
+"posted": "2026-09-08",
+"pay": {
+"min": 100000.0,
+"max": 110000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "datadog",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Roblox",
+"title": "[2027] Applied Scientist - PhD Intern",
+"locations": [
+"San Mateo, CA, United States"
+],
+"url": "https://careers.roblox.com/jobs/8242621?gh_jid=8242621",
+"posted": "2026-10-08",
+"pay": {
+"min": 72.0,
+"max": 72.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "roblox",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Roblox",
+"title": "[2027] Data Scientist - PhD Intern",
+"locations": [
+"San Mateo, CA, United States"
+],
+"url": "https://careers.roblox.com/jobs/8242619?gh_jid=8242619",
+"posted": "2026-10-08",
+"pay": {
+"min": 66.0,
+"max": 66.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "roblox",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Roblox",
+"title": "[2027] Software Engineer, Early Career",
+"locations": [
+"San Mateo, CA, United States"
+],
+"url": "https://careers.roblox.com/jobs/8072244?gh_jid=8072244",
+"posted": "2026-08-05",
+"pay": {
+"min": 153000.0,
+"max": 153000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "roblox",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Roblox",
+"title": "[Summer 2027] Software Engineer Intern",
+"locations": [
+"San Mateo, CA, United States"
+],
+"url": "https://careers.roblox.com/jobs/8072713?gh_jid=8072713",
+"posted": "2026-08-05",
+"pay": {
+"min": 62.0,
+"max": 62.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "roblox",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Coinbase",
+"title": "Analytics Engineer Intern",
+"locations": [
+"Hybrid - New York, NY"
+],
+"url": "https://www.coinbase.com/careers/positions/8175471?gh_jid=8175471",
+"posted": "2026-09-08",
+"pay": {
+"min": 50.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "fore they reach downstream consumers. Required Skills and Experience: Currently pursuing a degree in computer science, data science, statistics, economics, or"
+},
+"ats": "greenhouse",
+"board": "coinbase",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Coinbase",
+"title": "Forward Deployed Engineer Intern (HR Technology)",
+"locations": [
+"Hybrid - New York, NY"
+],
+"url": "https://www.coinbase.com/careers/positions/8175510?gh_jid=8175510",
+"posted": "2026-10-09",
+"pay": {
+"min": 50.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "iterations and communicate outcomes. Required Skills and Experience: Currently pursuing a degree in Computer Science, Software Engineering, or a related tech"
+},
+"ats": "greenhouse",
+"board": "coinbase",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Coinbase",
+"title": "Machine Learning Engineer Intern",
+"locations": [
+"Hybrid - San Francisco, CA"
+],
+"url": "https://www.coinbase.com/careers/positions/8175441?gh_jid=8175441",
+"posted": "2026-09-08",
+"pay": {
+"min": 60.0,
+"max": 60.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "at the conclusion of your internship Required Skills and Experience: Currently pursuing a Ph.D. with published or in-progress research in machine learning, d"
+},
+"ats": "greenhouse",
+"board": "coinbase",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Coinbase",
+"title": "Software Engineer Intern",
+"locations": [
+"Hybrid - San Francisco, CA"
+],
+"url": "https://www.coinbase.com/careers/positions/8168315?gh_jid=8168315",
+"posted": "2026-09-08",
+"pay": {
+"min": 60.0,
+"max": 60.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "coinbase",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Robinhood",
+"title": "Investment Analyst MBA Intern, Robinhood Ventures (Summer 2027)",
+"locations": [
+"Menlo Park, CA"
+],
+"url": "https://boards.greenhouse.io/robinhood/jobs/8198187?t=gh_src=&gh_jid=8198187",
+"posted": "2026-09-14",
+"pay": {
+"min": 47.0,
+"max": 47.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "r both retail investors and portfolio companies.&nbsp; What you bring Currently enrolled in a full-time MBA program&nbsp; Prior experience in investment banking, p"
+},
+"ats": "greenhouse",
+"board": "robinhood",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Samsara",
+"title": "Electrical Engineering Co-Op",
+"locations": [
+"San Francisco - SF9"
+],
+"url": "https://www.samsara.com/company/careers/roles/8226608?gh_jid=8226608",
+"posted": "2026-11-10",
+"pay": {
+"min": 35.0,
+"max": 58.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "Thursdays and remote work days on Mondays and Fridays. As part of the co-op program, we do provide relocation and housing support for the duration of the",
+"masters_ok": "s. Ideally, this student is in their junior year of school as an undergraduate student and has previous internship and/or co-op experience.&nbsp; You should"
+},
+"ats": "greenhouse",
+"board": "samsara",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Samsara",
+"title": "Firmware Engineer Co-Op",
+"locations": [
+"San Francisco - SF9"
+],
+"url": "https://www.samsara.com/company/careers/roles/8226602?gh_jid=8226602",
+"posted": "2026-09-24",
+"pay": {
+"min": 38.0,
+"max": 58.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "ment lifecycle, from concept to deployment Requirements for the role: Enrolled in a Bachelor’s degree in Computer Science, Computer Engineering, Electric"
+},
+"ats": "greenhouse",
+"board": "samsara",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Samsara",
+"title": "Software Engineering Internship - San Francisco",
+"locations": [
+"San Francisco - SF9"
+],
+"url": "https://www.samsara.com/company/careers/roles/8358786?gh_jid=8358786",
+"posted": "2026-11-06",
+"pay": {
+"min": 61.9,
+"max": 61.9,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "samsara",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus AI Research Engineer – Deep Learning (Full-Time)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8052343",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus AI Research Engineer - Deep Learning (Intern)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8052338",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus AI Research Engineer (Full-Time)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8052313",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus AI Research Engineer (Intern)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8052281",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus AI Research Engineer – Research Automation (Intern)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8052351",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus AI Researcher, PhD/Postdoc (Intern)",
+"locations": [
+"London"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7976964",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Crypto Researcher (Full-Time)",
+"locations": [
+"London"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7217856",
+"posted": "2025-10-29",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Crypto Researcher (Intern)",
+"locations": [
+"London"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7362318",
+"posted": "2025-10-29",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus ML Research Engineer (Full-Time)",
+"locations": [
+"London"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7977132",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Researcher (Full-Time)",
+"locations": [
+"London; Amsterdam"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8050796",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Researcher (Intern)",
+"locations": [
+"London; Amsterdam"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8010307",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Researcher (M1/M2 Intern)",
+"locations": [
+"London; Paris"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8059384",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Researcher, PhD (Intern)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8049938",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"must_be_enrolled": "mer progresses Other duties as assigned or needed. Skills You'll Need Currently pursuing a PhD in Statistics, Mathematics, Computer Science, Physics, or any h"
+},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Researcher | Trading Team PhD/Postdoc (Full-Time)",
+"locations": [
+"New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8209424",
+"posted": "2026-09-22",
+"pay": {
+"min": 200000.0,
+"max": 250000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"must_be_enrolled": "live trading. Other duties as assigned or needed. Skills You’ll Need: Currently pursuing a PhD in Statistics, Mathematics, Physics, Machine Learning, or any h"
+},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Researcher, UG/MS (Intern)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7982648",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Trader (Full-Time)",
+"locations": [
+"London; Amsterdam"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8050801",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Trader (Intern)",
+"locations": [
+"London; Amsterdam"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8050772",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Quantitative Trader (Intern)",
+"locations": [
+"Chicago; New York"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7848371",
+"posted": "2026-07-08",
+"pay": {
+"min": 300000.0,
+"max": 300000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Systems Engineer (Full-Time)",
+"locations": [
+"London"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7215943",
+"posted": "2025-09-26",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Jump Trading",
+"title": "Campus Systems Engineer (Intern)",
+"locations": [
+"London; Amsterdam"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=8000323",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Jump Trading",
+"title": "Campus UI Software Engineer (Intern)",
+"locations": [
+"London"
+],
+"url": "https://www.jumptrading.com/hr/job?gh_jid=7974943",
+"posted": "2026-07-13",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "jumptrading",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Helsing",
+"title": "AI Research Intern (PhD) – 3D Computer Vision",
+"locations": [
+"Barcelona; Berlin; London; Munich; Paris"
+],
+"url": "https://helsing.ai/jobs/4941957101?gh_jid=4941957101",
+"posted": "2026-07-30",
+"pay": null,
+"elig": {
+"must_be_enrolled": "ten reports and present them to the team. You should apply if you Are currently pursuing a PhD in computer vision, machine learning, robotics, or a closely re"
+},
+"ats": "greenhouse",
+"board": "helsing",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Helsing",
+"title": "Early Careers - Aerospace and Aeronautical Engineering",
+"locations": [
+"London; Munich"
+],
+"url": "https://helsing.ai/jobs/5035173101?gh_jid=5035173101",
+"posted": "2026-11-12",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "helsing",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Helsing",
+"title": "Early Careers - Electronics and RF Engineering",
+"locations": [
+"London; Munich"
+],
+"url": "https://helsing.ai/jobs/5035194101?gh_jid=5035194101",
+"posted": "2026-11-12",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "helsing",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Lyft",
+"title": "Applied Scientist Intern, PhD (Summer 2027)",
+"locations": [
+"San Francisco, CA"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8843341002?gh_jid=8843341002",
+"posted": "2026-09-28",
+"pay": {
+"min": 64.0,
+"max": 68.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "cial Intelligence, Data Science, or a related technical field, with a graduation date between December 2027 and Summer 2028 (required) Proficiency with Python and working in a production coding",
+"must_be_enrolled": "mmendations to science, engineering, and product partners Experience: Currently pursuing a PhD degree in Computer Science, Machine Learning, Artificial Intell",
+"final_year_ok": "cial Intelligence, Data Science, or a related technical field, with a graduation date between December 2027 and Summer 2028 (required) Proficiency with Python and working in a p"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Business Systems Engineer Intern, Finance Technology (Summer 2027)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8802222002?gh_jid=8802222002",
+"posted": "2026-09-28",
+"pay": {
+"min": 43.0,
+"max": 43.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "ering, Information Systems, Finance, or a related field,&nbsp; with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's students who worked b",
+"must_be_enrolled": "keholder meetings, process mapping sessions, and training Experience: Currently pursuing a Bachelor's or Master's degree at a university in Canada (required)",
+"final_year_ok": "ering, Information Systems, Finance, or a related field,&nbsp; with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's stude",
+"masters_ok": "sessions, and training Experience: Currently pursuing a Bachelor's or Master's degree at a university in Canada (required) in Computer Science, Data"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Data Engineer Intern (Summer 2027)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8797376002?gh_jid=8797376002",
+"posted": "2026-09-11",
+"pay": {
+"min": 45.0,
+"max": 45.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "ence or related major from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required) . For any candidates who are master's students who worked",
+"must_be_enrolled": "the lives of every Lyft driver and every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science, Data Science or",
+"final_year_ok": "ence or related major from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required) . For any candidates who are master's stud",
+"masters_ok": "every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science, Data Science or related major from a univ"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Data Science Intern, Algorithms (Summer 2027 - SF/NYC)",
+"locations": [
+"New York, NY"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8796124002?gh_jid=8796124002",
+"posted": "2026-09-11",
+"pay": {
+"min": 58.0,
+"max": 62.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "ory, Econometrics etc.), Data Engineering; or a related field; with a graduation date between December 2027 and June 2028 (required) Available during&nbsp; Summer 2027 for an internship in Ne",
+"must_be_enrolled": "tner teams and presentations; facilitate launch decisions Experience: Currently pursuing a Masters or PhD degree in mathematical sciences ( Operations Researc",
+"final_year_ok": "ory, Econometrics etc.), Data Engineering; or a related field; with a graduation date between December 2027 and June 2028 (required) Available during&nbsp; Summer 2027 for an in",
+"masters_ok": ", modeling, inference, transportation, and mapping. We're looking for Masters or PhD students who are passionate about solving mathematical problem"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Data Science Intern, Algorithms (Summer 2027 - SF/NYC)",
+"locations": [
+"San Francisco, CA"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8767723002?gh_jid=8767723002",
+"posted": "2026-09-11",
+"pay": {
+"min": 58.0,
+"max": 62.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "ory, Econometrics etc.), Data Engineering; or a related field; with a graduation date between December 2027 and June 2028 (required) Available during&nbsp; Summer 2027 for an internship in Sa",
+"must_be_enrolled": "tner teams and presentations; facilitate launch decisions Experience: Currently pursuing a Masters or PhD degree in mathematical sciences ( Operations Researc",
+"final_year_ok": "ory, Econometrics etc.), Data Engineering; or a related field; with a graduation date between December 2027 and June 2028 (required) Available during&nbsp; Summer 2027 for an in",
+"masters_ok": ", modeling, inference, transportation, and mapping. We're looking for Masters or PhD students who are passionate about solving mathematical problem"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Data Science Intern, Algorithms (Summer 2027 - Toronto)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8767697002?gh_jid=8767697002",
+"posted": "2026-09-11",
+"pay": {
+"min": 48.0,
+"max": 48.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "metrics etc.), Data Engineering; or a related field; AND with&nbsp; a graduation date between December 2027 and June 2028 (required) Available during Summer 2027 for an internship in Toronto",
+"must_be_enrolled": "tner teams and presentations; facilitate launch decisions Experience: Currently pursuing a Masters or PhD degree at a university in Canada (required) &nbsp;in",
+"final_year_ok": "metrics etc.), Data Engineering; or a related field; AND with&nbsp; a graduation date between December 2027 and June 2028 (required) Available during Summer 2027 for an internsh",
+"masters_ok": ", modeling, inference, transportation, and mapping. We're looking for Masters or PhD students who are passionate about solving mathematical problem"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Hardware Field Quality Engineer Intern (Summer 2027)",
+"locations": [
+"Longueuil, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8862215002?gh_jid=8862215002",
+"posted": "2026-10-02",
+"pay": {
+"min": 34.0,
+"max": 36.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "Industrial Engineering, or a related field, at a Canadian university, graduating between December 2027 and summer 2028 (required) . Master's students who worked between degrees should have",
+"must_be_enrolled": "king with engineers on root cause and corrective actions. Experience: Currently enrolled in a Bachelor's or Master's program in Mechanical, Electrical, Mechatronic",
+"final_year_ok": "Industrial Engineering, or a related field, at a Canadian university, graduating between December 2027 and summer 2028 (required) . Master's students who worked between deg",
+"masters_ok": "corrective actions. Experience: Currently enrolled in a Bachelor's or Master's program in Mechanical, Electrical, Mechatronics, or Industrial Engine"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Industrialization Engineer Intern (Summer 2027)",
+"locations": [
+"Longueuil, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8817930002?gh_jid=8817930002",
+"posted": "2026-09-28",
+"pay": {
+"min": 34.0,
+"max": 36.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "Mechanical Engineering, or a related field, at a Canadian university, graduating between December 2027 and summer 2028 (required) . Master's students who worked between degrees should have",
+"must_be_enrolled": "and contribute to root cause analysis and PFMEA updates. Experience: Currently enrolled in a Bachelor's or Master's program in Industrial, Manufacturing, or Mecha",
+"final_year_ok": "Mechanical Engineering, or a related field, at a Canadian university, graduating between December 2027 and summer 2028 (required) . Master's students who worked between deg",
+"masters_ok": "and PFMEA updates. Experience: Currently enrolled in a Bachelor's or Master's program in Industrial, Manufacturing, or Mechanical Engineering, or a"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "PhD Machine Learning Software Engineer Intern (Summer 2027)",
+"locations": [
+"San Francisco, CA"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8817974002?gh_jid=8817974002",
+"posted": "2026-10-06",
+"pay": {
+"min": 65.0,
+"max": 68.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "cal field, and returning to your program after the internship, with a graduation date between December 2027 and Summer 2028 (required) A track record of ML research, shown through publications,",
+"must_be_enrolled": "c reviews to ensure code quality and distribute knowledge Experience: Currently pursuing a PhD in Computer Science, Machine Learning, Statistics, Operations R",
+"final_year_ok": "cal field, and returning to your program after the internship, with a graduation date between December 2027 and Summer 2028 (required) A track record of ML research, shown throu"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Software Engineer Intern, Backend (Summer 2027 - Montreal)",
+"locations": [
+"Montreal, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8796054002?gh_jid=8796054002",
+"posted": "2026-09-11",
+"pay": {
+"min": 34.0,
+"max": 36.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's students who worked b",
+"must_be_enrolled": "the lives of every Lyft driver and every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university",
+"final_year_ok": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's stude",
+"masters_ok": "every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university in Canada (required) , w"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Software Engineer Intern, Backend (Summer 2027 - SF)",
+"locations": [
+"San Francisco, CA"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8767726002?gh_jid=8767726002",
+"posted": "2026-09-11",
+"pay": {
+"min": 52.0,
+"max": 58.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "pursuing a Bachelor's or Master's degree in Computer Science , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's students who worked b",
+"must_be_enrolled": "the lives of every Lyft driver and every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science , with a graduati",
+"final_year_ok": "pursuing a Bachelor's or Master's degree in Computer Science , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's stude",
+"masters_ok": "every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science , with a graduation date between December"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Software Engineer Intern, Backend (Summer 2027 - Toronto)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8767710002?gh_jid=8767710002",
+"posted": "2026-09-11",
+"pay": {
+"min": 45.0,
+"max": 45.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's students who worked b",
+"must_be_enrolled": "the lives of every Lyft driver and every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university",
+"final_year_ok": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's stude",
+"masters_ok": "every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university in Canada (required) , w"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8797859002?gh_jid=8797859002",
+"posted": "2026-09-11",
+"pay": {
+"min": 45.0,
+"max": 45.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's students who worked b",
+"must_be_enrolled": "the lives of every Lyft driver and every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university",
+"final_year_ok": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's stude",
+"masters_ok": "every Lyft passenger! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university in Canada (required) , w"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Software Engineer Intern, Machine Learning (Summer 2027 - Toronto)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8802332002?gh_jid=8802332002",
+"posted": "2026-09-11",
+"pay": {
+"min": 53.0,
+"max": 53.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "lated technical field from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's students who worked b",
+"must_be_enrolled": "c reviews to ensure code quality and distribute knowledge Experience: Currently pursuing a Bachelor's, Master's, or PhD degree in Computer Science or a relate",
+"final_year_ok": "lated technical field from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required). For any candidates who are master's stude",
+"masters_ok": "and distribute knowledge Experience: Currently pursuing a Bachelor's, Master's, or PhD degree in Computer Science or a related technical field from"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "Software Engineer Intern, Test Automation (Summer 2027)",
+"locations": [
+"Montreal, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002",
+"posted": "2026-09-11",
+"pay": {
+"min": 34.0,
+"max": 36.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required) . For any candidates who are master's students who worked",
+"must_be_enrolled": "mproving the quality of every Lyft Urban Solutions rider! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university",
+"final_year_ok": "e in Computer Science from a university in Canada (required) , with a graduation date between December 2027 and Summer 2028 (required) . For any candidates who are master's stud",
+"masters_ok": "Urban Solutions rider! Experience: Currently pursuing a Bachelor's or Master's degree in Computer Science from a university in Canada (required) , w"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Lyft",
+"title": "UX Research Intern (Summer 2027)",
+"locations": [
+"Toronto, Canada"
+],
+"url": "https://app.careerpuck.com/job-board/lyft/job/8797069002?gh_jid=8797069002",
+"posted": "2026-09-11",
+"pay": {
+"min": 48.0,
+"max": 48.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"grad_2028_or_later": "Science, or a related field from a university in Canada with a&nbsp; graduation date between December 2027 and Summer 2028 (required) Available during Summer 2027 for an internship in&nbsp; To",
+"must_be_enrolled": "rive product innovation and design improvements for users Experience: Currently pursuing a&nbsp; Bachelor's, Master's &nbsp;or PhD degree in Human-Computer In",
+"final_year_ok": "Science, or a related field from a university in Canada with a&nbsp; graduation date between December 2027 and Summer 2028 (required) Available during Summer 2027 for an intern",
+"masters_ok": "ovements for users Experience: Currently pursuing a&nbsp; Bachelor's, Master's &nbsp;or PhD degree in Human-Computer Interaction, Anthropology, Desi"
+},
+"ats": "greenhouse",
+"board": "lyft",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Jobgether",
+"title": "Junior Grants Analyst",
+"locations": [
+"US"
+],
+"url": "https://jobs.lever.co/jobgether/f4c759f8-d42f-4a69-bfaa-3f8241430234",
+"posted": "2026-11-11",
+"pay": {
+"min": 65000.0,
+"max": 75000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "lever",
+"board": "jobgether",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Cresta",
+"title": "AI Quality Assurance Intern",
+"locations": [
+"Toronto, Ontario"
+],
+"url": "https://job-boards.greenhouse.io/cresta/jobs/5047247008",
+"posted": "2025-12-24",
+"pay": {
+"min": 30.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "cresta",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Cresta",
+"title": "Forward Deployed Engineering Intern (AI Agent)",
+"locations": [
+"Toronto, Canada (Hybrid)"
+],
+"url": "https://job-boards.greenhouse.io/cresta/jobs/5106468008",
+"posted": "2026-02-02",
+"pay": {
+"min": 30.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "ving in a fast-moving AI/Product environment. What We're Looking For: Enrolled in a Bachelor’s or Master’s degree program in Computer Science, Engineerin"
+},
+"ats": "greenhouse",
+"board": "cresta",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Cresta",
+"title": "Machine Learning Engineering Intern",
+"locations": [
+"Toronto, Canada (Hybrid)"
+],
+"url": "https://job-boards.greenhouse.io/cresta/jobs/4123863008",
+"posted": "2024-09-10",
+"pay": {
+"min": 45.0,
+"max": 70.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "t-efficiency, and reliability of AI systems. Qualifications We Value: Currently pursuing a Bachelor's or Master's degree in Computer Science, Artificial Intel",
+"masters_ok": "systems. Qualifications We Value: Currently pursuing a Bachelor's or Master's degree in Computer Science, Artificial Intelligence, Machine Learning"
+},
+"ats": "greenhouse",
+"board": "cresta",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Cresta",
+"title": "Product Design Intern for AI and Human Agents Platform",
+"locations": [
+"Toronto, Canada "
+],
+"url": "https://job-boards.greenhouse.io/cresta/jobs/4476000008",
+"posted": "2025-01-02",
+"pay": {
+"min": 30.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "s to supervisors and cross-functional teams. Qualifications We Value: Currently pursuing a Bachelor's Degree in Design, HCI, or a related field, with a strong"
+},
+"ats": "greenhouse",
+"board": "cresta",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Cresta",
+"title": "Software Engineer Intern",
+"locations": [
+"Toronto Canada"
+],
+"url": "https://job-boards.greenhouse.io/cresta/jobs/4123841008",
+"posted": "2024-09-10",
+"pay": {
+"min": 30.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "cresta",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "mthree",
+"title": "Développeur génie logiciel junior / Junior Software Developer",
+"locations": [
+"Montreal, QC"
+],
+"url": "https://mthree.com/careers/job/?gh_jid=4374332006",
+"posted": "2024-06-03",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthree",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree",
+"title": "Ingénieur(e) en soutien de production | Programme diplômés Cloud, DevOps et SRE / Production Support Engineer | Cloud, DevOps & SRE Graduate Programme",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://mthree.com/careers/job/?gh_jid=4454650006",
+"posted": "2025-04-22",
+"pay": {
+"min": 61250.0,
+"max": 67500.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthree",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree",
+"title": "Junior Software Engineer",
+"locations": [
+"USA"
+],
+"url": "https://mthree.com/careers/job/?gh_jid=4374344006",
+"posted": "2024-08-06",
+"pay": {
+"min": 48000.0,
+"max": 63000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthree",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree",
+"title": "Production Support Engineer | Cloud, DevOps & SRE Graduate Programme",
+"locations": [
+"USA"
+],
+"url": "https://mthree.com/careers/job/?gh_jid=4374336006",
+"posted": "2024-06-03",
+"pay": {
+"min": 48000.0,
+"max": 63000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthree",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Stripe",
+"title": "Data Analyst, Intern",
+"locations": [
+"New York, Seattle, South San Francisco HQ"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8194291",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "cs, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL Proficiency with AI tools to accelerate model dev",
+"must_be_enrolled": "boldly, even in the absence of consensus. &nbsp; Minimum requirements Enrolled in a quantitative Bachelor’s or Master's degree program (e.g. Data Analyti",
+"final_year_ok": "cs, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL Proficiency with AI tools t",
+"masters_ok": "&nbsp; Minimum requirements Enrolled in a quantitative Bachelor’s or Master's degree program (e.g. Data Analytics, Statistics, Economics, Mathemati"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Data Analyst, Intern",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8194287",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "cs, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL Proficiency with AI tools to accelerate model dev",
+"must_be_enrolled": "boldly, even in the absence of consensus. &nbsp; Minimum requirements Enrolled in a quantitative Bachelor’s or Master's degree program (e.g. Data Analyti",
+"final_year_ok": "cs, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL Proficiency with AI tools t",
+"masters_ok": "&nbsp; Minimum requirements Enrolled in a quantitative Bachelor’s or Master's degree program (e.g. Data Analytics, Statistics, Economics, Mathemati"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "High School Internship, Software Engineering (Summer 2027)",
+"locations": [
+"Seattle, San Francisco"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8241260",
+"posted": "2026-09-30",
+"pay": {
+"min": 60.0,
+"max": 60.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"final_year_ok": "This role is intended for current high school students graduating in 2027 or later. &nbsp; Who we are&nbsp; About Stripe Stripe is a technology"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Master's Machine Learning Engineer, Intern",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8333122",
+"posted": "2026-10-30",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and machine learning, evidence",
+"final_year_ok": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and mach",
+"masters_ok": ", Data Science, Risk, and Payments organizations are excited to offer Master's machine learning engineering internships for the summer of 2027. This"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Master's Machine Learning Engineer, Intern",
+"locations": [
+"San Francisco, New York City, Seattle"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8333074",
+"posted": "2026-10-30",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and machine learning, evidence",
+"final_year_ok": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and mach",
+"masters_ok": ", Data Science, Risk, and Payments organizations are excited to offer Master's machine learning engineering internships for the summer of 2027. This"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "PhD Data Scientist, Intern",
+"locations": [
+"New York, Seattle, South San Francisco HQ"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8194283",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "ce, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL and a scientific computing language (such as Pyth",
+"must_be_enrolled": "boldly, even in the absence of consensus. &nbsp; Minimum requirements Enrolled in a quantitative PhD program (e.g. Data Science, Statistics, Economics, M",
+"final_year_ok": "ce, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL and a scientific computing"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "PhD Data Scientist, Intern",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8194285",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "ce, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL and a scientific computing language (such as Pyth",
+"must_be_enrolled": "boldly, even in the absence of consensus. &nbsp; Minimum requirements Enrolled in a quantitative PhD program (e.g. Data Science, Statistics, Economics, M",
+"final_year_ok": "ce, Statistics, Economics, Mathematics, etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL and a scientific computing"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "PhD Machine Learning Engineer, Intern",
+"locations": [
+"San Francisco, New York City, Seattle"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8328662",
+"posted": "2026-10-30",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and machine learning, evidence",
+"final_year_ok": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and mach"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "PhD Machine Learning Engineer, Intern",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8328664",
+"posted": "2026-10-30",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and machine learning, evidence",
+"final_year_ok": "Machine Learning, or a closely related field, with the expectation of graduating in winter 2027 or spring/summer 2028. Practical experience with programming and mach"
+},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Early Career — Immediate Start",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8212517",
+"posted": "2026-09-17",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Early Career — Immediate Start",
+"locations": [
+"San Francisco, Seattle, New York"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8212508",
+"posted": "2026-09-17",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Intern",
+"locations": [
+"London"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8130867",
+"posted": "2026-08-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Intern (Summer)",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8130805",
+"posted": "2026-08-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, Intern (Summer)",
+"locations": [
+"San Francisco, Seattle, New York City"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8128745",
+"posted": "2026-08-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, New Grad",
+"locations": [
+"London"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8130930",
+"posted": "2026-08-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, New Grad",
+"locations": [
+"San Francisco, Seattle, New York"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8128744",
+"posted": "2026-08-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Stripe",
+"title": "Software Engineer, New Grad",
+"locations": [
+"Toronto"
+],
+"url": "https://stripe.com/jobs/search?gh_jid=8157838",
+"posted": "2026-08-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "stripe",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "Pinterest",
+"title": "Machine Learning Intern 2027 (Toronto)",
+"locations": [
+"Toronto, ON, CA"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138080",
+"posted": "2026-10-01",
+"pay": {
+"min": 8000.0,
+"max": 8600.0,
+"cur": "CAD",
+"period": "year"
+},
+"elig": {
+"masters_ok": "e correctness and quality. What we are looking for: Working towards a Master's or PhD degree in Computer Science, ML, NLP, Statistics, Information S"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "Master's Data Science Internship 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138097",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"must_be_enrolled": "help build the next experiences on Pinterest. What we’re looking for: Currently pursuing a Master’s degree in statistics, mathematics, economics, applied scie"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "Master's Machine Learning Internship 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138090",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"masters_ok": "mentor, manager, and peers What we are looking for: Working towards a Master's degree in Computer Science, ML, NLP, Statistics, Information Sciences"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "Master's University Grad Data Scientist (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140389",
+"posted": "2026-10-01",
+"pay": {
+"min": 124950.0,
+"max": 168000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Pinterest",
+"title": "Master's University Grad Machine Learning Engineer 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140219",
+"posted": "2026-10-01",
+"pay": {
+"min": 146000.0,
+"max": 196000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"masters_ok": "dependently solve moderately complex problems What we’re looking for: Master's in Computer Science, ML, NLP, Statistics, Information Sciences or rel"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Pinterest",
+"title": "PhD Data Science Internship 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140169",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"must_be_enrolled": "help build the next experiences on Pinterest. What we’re looking for: Currently pursuing a PhD degree in statistics, mathematics, economics, applied sciences,"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "PhD Machine Learning Internship 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140140",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "PhD University Grad Machine Learning Engineer (USA)",
+"locations": [
+"San Francisco, CA, US; Palo Alto, CA, US; Seattle, WA, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140363",
+"posted": "2026-10-01",
+"pay": {
+"min": 174078.0,
+"max": 229044.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Pinterest",
+"title": "Software Engineering Intern 2027 (Toronto)",
+"locations": [
+"Toronto, ON, CA"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138039",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"must_be_enrolled": "ough testing, review and engineering judgment What we’re looking for: Currently enrolled in a Bachelor's degree program in Computer Science, a related technical fi"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "Software Engineer Intern 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Remote, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=7838577",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "Master’s in Computer Science or a related technical field On track to graduate by June 2029 Ability to demonstrate an understanding of computer science fundament",
+"must_be_enrolled": "ipate in a variety of optional company events What we’re looking for: Currently enrolled in a degree or education program working toward a Bachelor’s or Master’s i"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "Solutions Engineer Intern 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Remote, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8214788",
+"posted": "2026-10-08",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Pinterest",
+"title": "University Grad Software Engineer 2027 (USA)",
+"locations": [
+"San Francisco, CA, US; Remote, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=7838591",
+"posted": "2026-10-01",
+"pay": {
+"min": 129022.0,
+"max": 174283.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Pinterest",
+"title": "UX Quantitative Research Intern (USA)",
+"locations": [
+"Remote, US; San Francisco, CA, US; Seattle, WA, US; New York, NY, US"
+],
+"url": "https://www.pinterestcareers.com/jobs/?gh_jid=8140217",
+"posted": "2026-10-01",
+"pay": null,
+"elig": {
+"must_be_enrolled": "ogy, applied sciences, computer science or related field by June 2028 Currently pursuing a PhD in statistics, psychology, sociology, applied sciences, compute"
+},
+"ats": "greenhouse",
+"board": "pinterest",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Coveoen",
+"title": "Frontend Developer Intern, Winter 2027",
+"locations": [
+"Montreal (Province of Quebec, Canada)"
+],
+"url": "https://www.coveo.com/en/company/careers/open-positions?gh_jid=8827775002",
+"posted": "2026-09-28",
+"pay": null,
+"elig": {
+"must_be_enrolled": "code and strengthen your programming skills. The Essentials: You are currently studying Software Engineering or Computer Science in a Bachelor’s degree or hi"
+},
+"ats": "greenhouse",
+"board": "coveoen",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Coveoen",
+"title": "Frontend Developer Intern, Winter 2027",
+"locations": [
+"Quebec City (Province of Quebec, Canada)"
+],
+"url": "https://www.coveo.com/en/company/careers/open-positions?gh_jid=8853969002",
+"posted": "2026-09-28",
+"pay": null,
+"elig": {
+"must_be_enrolled": "code and strengthen your programming skills. The Essentials: You are currently studying Software Engineering or Computer Science in a Bachelor’s degree or hi"
+},
+"ats": "greenhouse",
+"board": "coveoen",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Coveoen",
+"title": "Software Developer Intern (Solutions Engineering Core Team), Winter 2027",
+"locations": [
+"Montreal (Province of Quebec, Canada)"
+],
+"url": "https://www.coveo.com/en/company/careers/open-positions?gh_jid=8846052002",
+"posted": "2026-10-06",
+"pay": null,
+"elig": {
+"must_be_enrolled": "lving problems you notice in the team’s work. The Essentials: You are currently studying Software Engineering, Computer Science, or a related program in the p"
+},
+"ats": "greenhouse",
+"board": "coveoen",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "AlayaCare",
+"title": "Intern, Security Analyst - Winter Semester 2027",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://alayacare.com/open-positions?gh_jid=8811336002",
+"posted": "2026-09-17",
+"pay": null,
+"elig": {
+"must_be_enrolled": "usly improve AlayaCare’s security posture. What You Bring to the Team Currently pursuing a Bachelor’s or advanced degree in Computer Science, Cybersecurity, S"
+},
+"ats": "greenhouse",
+"board": "alayacare",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "AlayaCare",
+"title": "Junior Fullstack Developer (Python)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://alayacare.com/open-positions?gh_jid=8858343002",
+"posted": "2026-09-30",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "alayacare",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "Roku",
+"title": "AI Engineering Internship Program (Summer 2027)",
+"locations": [
+"Cambridge, United Kingdom"
+],
+"url": "https://www.weareroku.com/jobs/8345947?gh_jid=8345947",
+"posted": "2026-11-04",
+"pay": null,
+"elig": {
+"penultimate_only": "nd cross-functional partners. &nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year mast",
+"must_be_enrolled": "d automated workflows. &nbsp; &nbsp; We’re excited if you have &nbsp; Currently enrolled in a degree program in Artificial Intelligence, Computer Science, Engineer",
+"final_year_ok": "nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year master’s course. &nbsp; You h"
+},
+"ats": "greenhouse",
+"board": "roku",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Roku",
+"title": "AI Engineering Internship Program (Summer 2027)",
+"locations": [
+"Manchester, United Kingdom"
+],
+"url": "https://www.weareroku.com/jobs/8345954?gh_jid=8345954",
+"posted": "2026-11-04",
+"pay": null,
+"elig": {
+"penultimate_only": "nd cross-functional partners. &nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year mast",
+"must_be_enrolled": "d automated workflows. &nbsp; &nbsp; We’re excited if you have &nbsp; Currently enrolled in a degree program in Artificial Intelligence, Computer Science, Engineer",
+"final_year_ok": "nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year master’s course. &nbsp; You h"
+},
+"ats": "greenhouse",
+"board": "roku",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Roku",
+"title": "Software Engineering Internship Program (Summer 2027)",
+"locations": [
+"Cambridge, United Kingdom"
+],
+"url": "https://www.weareroku.com/jobs/8345963?gh_jid=8345963",
+"posted": "2026-11-04",
+"pay": null,
+"elig": {
+"penultimate_only": "your progress and learnings. &nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year mast",
+"must_be_enrolled": "d automated workflows. &nbsp; &nbsp; We’re excited if you have &nbsp; Currently enrolled in a degree program in Computer Science, Engineering or a related field. &",
+"final_year_ok": "nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year master’s course. &nbsp; You h"
+},
+"ats": "greenhouse",
+"board": "roku",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Roku",
+"title": "Software Engineering Internship Program (Summer 2027)",
+"locations": [
+"Manchester, United Kingdom"
+],
+"url": "https://www.weareroku.com/jobs/8345967?gh_jid=8345967",
+"posted": "2026-11-04",
+"pay": null,
+"elig": {
+"penultimate_only": "your progress and learnings. &nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year mast",
+"must_be_enrolled": "d automated workflows. &nbsp; &nbsp; We’re excited if you have &nbsp; Currently enrolled in a degree program in Computer Science, Engineering or a related field. &",
+"final_year_ok": "nbsp; &nbsp; Apply if &nbsp; You are a penultimate-year student, or a final-year student planning to go on to a one-year master’s course. &nbsp; You h"
+},
+"ats": "greenhouse",
+"board": "roku",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Symphony",
+"title": "Placement, Site Reliability Engineering SRE",
+"locations": [
+"Belfast, Northern Ireland"
+],
+"url": "https://symphony.com/company/apply?gh_jid=8113703",
+"posted": "2026-09-04",
+"pay": {
+"min": 14.0,
+"max": 14.0,
+"cur": "GBP",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "te safe, reliable software releases. &nbsp; Qualifications Education: Currently pursuing a Bachelor’s or Master’s degree in Computer Science, Computer Enginee"
+},
+"ats": "greenhouse",
+"board": "symphony",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Symphony",
+"title": "Placement, Software Developer",
+"locations": [
+"Belfast, Northern Ireland"
+],
+"url": "https://symphony.com/company/apply?gh_jid=8121113",
+"posted": "2026-10-02",
+"pay": null,
+"elig": {
+"must_be_enrolled": "ls, frameworks, and development methodologies. &nbsp; Qualifications: Currently pursuing a degree in Computer Science, Software Engineering, or a related fiel"
+},
+"ats": "greenhouse",
+"board": "symphony",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "ProCogia",
+"title": "AI Intern, Applied & Agentic AI (December 2026 to April 2027)",
+"locations": [
+"Vancouver, BC (on-site)"
+],
+"url": "https://procogia.com/about-us/careers/?gh_jid=5448664008",
+"posted": "2026-10-09",
+"pay": {
+"min": 23.0,
+"max": 23.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "ek Mon-Fri)&nbsp;&nbsp; Job Summary &nbsp; We are seeking AI Interns (Co-op Students) to join our team from December 2026 – April 2027. This is a hands-o",
+"final_year_ok": "of these is not expected. What You Bring &nbsp; Currently enrolled in final year or recently completed a Bachelor’s, Master’s, or PhD program in Compu"
+},
+"ats": "greenhouse",
+"board": "procogia",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "ProCogia",
+"title": "DevOps & Cloud Platform Intern (December 2026 to April 2027)",
+"locations": [
+"Vancouver, BC (on-site)"
+],
+"url": "https://procogia.com/about-us/careers/?gh_jid=5448713008",
+"posted": "2026-10-09",
+"pay": {
+"min": 23.0,
+"max": 23.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "| Vancouver, BC | Consulting | In-Person | Full-time | 40 hours/week Co-op Term: December 2026–April 2027 Location: Vancouver (On-site – Full-Time Wo",
+"final_year_ok": "ur Winter 2027 internship cohort. This role is designed primarily for final-year Bachelor’s and Master’s students who want hands-on experience across"
+},
+"ats": "greenhouse",
+"board": "procogia",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "ProCogia",
+"title": "LLM Research Intern (December 2026 to April 2027)",
+"locations": [
+"Vancouver, BC (on-site)"
+],
+"url": "https://procogia.com/about-us/careers/?gh_jid=5448685008",
+"posted": "2026-10-09",
+"pay": {
+"min": 23.0,
+"max": 23.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "procogia",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "ProCogia",
+"title": "Statistical Programming Intern",
+"locations": [
+"Vancouver, BC (on-site)"
+],
+"url": "https://procogia.com/about-us/careers/?gh_jid=5265312008",
+"posted": "2026-06-16",
+"pay": {
+"min": 23.0,
+"max": 23.0,
+"cur": "USD",
+"period": "hour"
+},
+"elig": {
+"must_be_enrolled": "to start early and work for part of the summer as well as the defined co-op term from September-December. In this role, you will contribute to the dev"
+},
+"ats": "greenhouse",
+"board": "procogia",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "ClinChoice",
+"title": "Junior Statistical Programmer Analyst _Permanent Role_(CANADA)",
+"locations": [
+"Mississauga, Ontario , Canada"
+],
+"url": "https://job-boards.eu.greenhouse.io/clinchoice/jobs/4989609101",
+"posted": "2026-09-29",
+"pay": {
+"min": 60000.0,
+"max": 70000.0,
+"cur": "CAD",
+"period": "year"
+},
+"elig": {
+"masters_ok": "and reusable functions. Qualification &amp; Experience Bachelor's or Master's degree in Computer Science, Statistics, Mathematics, Engineering, Lif"
+},
+"ats": "greenhouse",
+"board": "clinchoice",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "[2027 Bachelor's graduates] Analyst (European Competition practice)",
+"locations": [
+"London, United Kingdom"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8186465",
+"posted": "2026-09-15",
+"pay": null,
+"elig": {
+"must_return_to_study": "xperience and an insight into the world of economic consulting before returning to university for a postgraduate qualification; Strong foundation in microeconomics",
+"final_year_ok": "qualification (BSc/BA) in economics from well-regarded institutions, graduating between December 2026 and August 2027. The position is ideally suited to candidates considering post-gradua",
+"masters_ok": "the world of economic consulting before returning to university for a postgraduate qualification; Strong foundation in microeconomics, with a specialism"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"UK"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "(2027 Bachelor's/Master's graduates) Cyber & Forensic Technology Consulting Analyst/Associate",
+"locations": [
+"Toronto, ON, Canada"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8064581",
+"posted": "2026-07-14",
+"pay": {
+"min": 92500.0,
+"max": 97500.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating December 2026/Summer 2027 with an academic focus in Cybersecurity, Computer Science and Enginee",
+"masters_ok": "may be unofficial. Note: you must be graduating from a bachelor's or master's degree program for this role. If you are graduating from an MBA/PhD p"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "(2027 Bachelor's/Master's graduates) Cyber & Forensic Technology Consulting Analyst/Associate",
+"locations": [
+"Boston, MA, United States; Chicago, IL, United States; Dallas, Texas, United States; New York, NY, United States; Washington, DC, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8053945",
+"posted": "2026-07-14",
+"pay": {
+"min": 92500.0,
+"max": 100000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating December 2026/Summer 2027 with an academic focus in Cybersecurity, Computer Science and Enginee",
+"masters_ok": "may be unofficial. Note: you must be graduating from a bachelor's or master's degree program for this role. If you are graduating from an MBA/PhD p"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "(2027 Bachelor's/Master's graduates) Economics Consulting Analyst/Associate",
+"locations": [
+"Boston, MA, United States; Oakland, CA, United States; Tallahassee, FL, United States; Washington, DC, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/7894191",
+"posted": "2026-05-22",
+"pay": {
+"min": 92500.0,
+"max": 100000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"final_year_ok": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating December 2026/Summer 2027 with an academic focus on quantitative research (Economics, Business,",
+"masters_ok": "may be unofficial. Note: you must be graduating from a bachelor's or master's degree program for this role. If you are graduating from an MBA/PhD p"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "(2027 Bachelor's/Master's graduates) Management Advisory Analyst/Associate",
+"locations": [
+"Boston, MA, United States; New York, NY, United States; Washington, DC, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8053996",
+"posted": "2026-07-14",
+"pay": {
+"min": 92500.0,
+"max": 100000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"masters_ok": "and how you can make an impact ! Desired Qualifications Bachelor's or Master's degree with strong academic performance; Experience with, or keen int"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "(2027 Bachelor's/Master's graduates) Management Advisory Analyst/Associate (Energy)",
+"locations": [
+"Toronto, ON, Canada"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8212081",
+"posted": "2026-09-17",
+"pay": {
+"min": 92500.0,
+"max": 97500.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {
+"masters_ok": "and how you can make an impact ! Desired Qualifications Bachelor's or Master's degree with strong academic performance; Experience with, or keen int"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "Charles River Associates",
+"title": "(2028 Bachelor's/Master's graduates) Accounting/Business/Finance Consulting Analyst/Associate Intern (Summer 2027)",
+"locations": [
+"Boston, MA, United States; Chicago, IL, United States; Houston, Texas, United States; New York, NY, United States; Oakland, CA, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8160288",
+"posted": "2026-08-28",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating in December 2027/Summer 2028 with an academic focus in Accounting, Business, Finance, or a related",
+"final_year_ok": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating in December 2027/Summer 2028 with an academic focus in Accounting, Business, Finance,"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Charles River Associates",
+"title": "(2028 Bachelor's/Master's graduates) Cyber and Forensic Technology Consulting Analyst/Associate Intern (Summer 2027)",
+"locations": [
+"Boston, MA, United States; Chicago, IL, United States; Dallas, Texas, United States; Washington, DC, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8128811",
+"posted": "2026-08-28",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "red Qualifications Bachelor’s or Master’s (non-MBA) degree candidates graduating December 2027/Summer 2028 with a related academic focus (Cybersecurity, Computer Science and En",
+"final_year_ok": "red Qualifications Bachelor’s or Master’s (non-MBA) degree candidates graduating December 2027/Summer 2028 with a related academic focus (Cybersecurity, Computer Sc",
+"masters_ok": "may be unofficial. Note: you must be graduating from a bachelor's or master's degree program for this role. If you are graduating from an MBA/PhD p"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Charles River Associates",
+"title": "(2028 Bachelor's/Master's graduates) Economics Consulting Analyst/Associate Intern (Summer 2027)",
+"locations": [
+"Boston, MA, United States; Chicago, IL, United States; New York, NY, United States; Oakland, CA, United States; Salt Lake City, UT, United States; Washington, DC, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8120300",
+"posted": "2026-08-28",
+"pay": null,
+"elig": {
+"grad_2028_or_later": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating December 2027/Summer 2028 with an academic focus on quantitative research (Economics, Business,",
+"final_year_ok": "act ! Desired Qualifications Bachelor’s or Master’s degree candidates graduating December 2027/Summer 2028 with an academic focus on quantitative research (Economic"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Charles River Associates",
+"title": "Analyst Intern (Labor & Employment practice) - Winter/Spring 2027",
+"locations": [
+"College Station, TX, United States; Tallahassee, FL, United States"
+],
+"url": "https://job-boards.greenhouse.io/charlesriverassociates/jobs/8243522",
+"posted": "2026-09-30",
+"pay": null,
+"elig": {
+"final_year_ok": "red Qualifications Bachelor’s or Master’s (non-MBA) degree candidates graduating Summer/Fall 2027 with an academic focus on quantitative research (Economics, Business,",
+"masters_ok": "field of economics. Note: you must be graduating from a bachelor's or master's degree program for this role. If you are graduating from an MBA/PhD p"
+},
+"ats": "greenhouse",
+"board": "charlesriverassociates",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Analyste au soutien à la production / Graduate Production Support Analyst – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4374765006",
+"posted": "2024-07-05",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Analyste au soutien à la production / Graduate Production Support Analyst – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4713118006",
+"posted": "2026-09-14",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Analyste au soutien à la production / Graduate Production Support Analyst – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4374526006",
+"posted": "2024-06-04",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Analyste au soutien à la production / Graduate Production Support Analyst – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4374591006",
+"posted": "2024-07-01",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Développeur génie logiciel / Junior Software Developer  – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4713052006",
+"posted": "2026-09-14",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Développeur génie logiciel / Junior Software Developer  – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4374534006",
+"posted": "2024-06-04",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Développeur génie logiciel / Junior Software Developer  – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4628952006",
+"posted": "2025-12-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Développeur génie logiciel / Junior Software Developer  – Canada (Montreal)",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4374767006",
+"posted": "2024-07-30",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Entry-Level Analyst – Product & Accounting Control",
+"locations": [
+"Montréal, Quebec, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4697218006",
+"posted": "2026-07-15",
+"pay": null,
+"elig": {
+"final_year_ok": "a global financial services environment.&nbsp; This role is ideal for recent graduates and early-career professionals who are analytical, detail-oriented, a"
+},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Data Scientist",
+"locations": [
+"Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4313148006",
+"posted": "2023-12-11",
+"pay": {
+"min": 85000.0,
+"max": 85000.0,
+"cur": "CAD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Java Developer",
+"locations": [
+"Halifax, Nova Scotia, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4710618006",
+"posted": "2026-09-03",
+"pay": {
+"min": 61000.0,
+"max": 67000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Production Support/SRE Analyst",
+"locations": [
+"Halifax, Nova Scotia, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4668827006",
+"posted": "2026-03-31",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Production Support/SRE Analyst",
+"locations": [
+"Toronto, Ontario, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4683660006",
+"posted": "2026-05-21",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Production Support/SRE Analyst",
+"locations": [
+"Toronto, Ontario, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4595152006",
+"posted": "2026-06-15",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Production Support/SRE Analyst",
+"locations": [
+"Halifax, Nova Scotia, Canada"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4455218006",
+"posted": "2026-06-24",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"CA"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Software Engineer",
+"locations": [
+"USA"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4713126006",
+"posted": "2026-09-14",
+"pay": {
+"min": 48000.0,
+"max": 66000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Software Engineer",
+"locations": [
+"USA"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4383912006",
+"posted": "2024-07-08",
+"pay": {
+"min": 48000.0,
+"max": 66300.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Junior Software Engineer",
+"locations": [
+"USA"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4374540006",
+"posted": "2024-06-04",
+"pay": {
+"min": 61000.0,
+"max": 67000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "mthree Recruiting Portal",
+"title": "Production Support Engineer | Cloud, DevOps & SRE Graduate Programme",
+"locations": [
+"Salt Lake City, Utah, United States"
+],
+"url": "https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4589040006",
+"posted": "2025-07-31",
+"pay": {
+"min": 56000.0,
+"max": 56000.0,
+"cur": "USD",
+"period": "year"
+},
+"elig": {},
+"ats": "greenhouse",
+"board": "mthreerecruitingportal",
+"countries": [
+"US"
+],
+"type": "New Grad"
+},
+{
+"company": "Oscar Technology",
+"title": "Actuarial Intern",
+"locations": [
+"New York, New York, United States"
+],
+"url": "https://oscarhealth.com/careers/jobs?gh_jid=8303588",
+"posted": "2026-10-21",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "oscar",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Epic Games",
+"title": "AI Programmer Intern",
+"locations": [
+"Cary,North Carolina,United States"
+],
+"url": "https://epicgames.com/careers/jobs/6251540004?gh_jid=6251540004",
+"posted": "2026-11-09",
+"pay": null,
+"elig": {
+"must_be_enrolled": "r updates and a final presentation to the team What we're looking for Currently enrolled in an undergraduate (Bachelor's) or Master's degree program in Computer Sc",
+"masters_ok": "re looking for Currently enrolled in an undergraduate (Bachelor's) or Master's degree program in Computer Science, Machine Learning, Mathematics, En"
+},
+"ats": "greenhouse",
+"board": "epicgames",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Epic Games",
+"title": "Data Science Intern",
+"locations": [
+"Cary,North Carolina,United States"
+],
+"url": "https://epicgames.com/careers/jobs/6202675004?gh_jid=6202675004",
+"posted": "2026-09-21",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "epicgames",
+"countries": [
+"US"
+],
+"type": "Internship"
+},
+{
+"company": "Epic Games",
+"title": "Machine Learning Intern",
+"locations": [
+"Montreal,Quebec,Canada"
+],
+"url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004",
+"posted": "2026-08-07",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "epicgames",
+"countries": [
+"CA"
+],
+"type": "Internship"
+},
+{
+"company": "Epic Games",
+"title": "Machine Learning Intern",
+"locations": [
+"London,England,United Kingdom"
+],
+"url": "https://epicgames.com/careers/jobs/5708589004?gh_jid=5708589004",
+"posted": "2026-08-07",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "epicgames",
+"countries": [
+"UK"
+],
+"type": "Internship"
+},
+{
+"company": "Epic Games",
+"title": "Web Engineer Intern",
+"locations": [
+"London,England,United Kingdom"
+],
+"url": "https://epicgames.com/careers/jobs/6163851004?gh_jid=6163851004",
+"posted": "2026-08-28",
+"pay": null,
+"elig": {},
+"ats": "greenhouse",
+"board": "epicgames",
+"countries": [
+"UK"
+],
+"type": "Internship"
 }
 ],
 "errors": {

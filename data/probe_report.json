@@ -1,0 +1,442 @@
+{
+ "runs": [
+  {
+   "date": "2026-11-14",
+   "addresses_tried": 700,
+   "boards_found": [
+    {
+     "company": "XTX Markets",
+     "board": "greenhouse:xtxmarketstechnologies",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Monzo",
+     "board": "greenhouse:monzo",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Spotify",
+     "board": "lever:spotify",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Faculty",
+     "board": "ashby:faculty",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Wayve",
+     "board": "ashby:wayve",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Isomorphic Labs",
+     "board": "greenhouse:isomorphiclabs",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Synthesia",
+     "board": "ashby:synthesia",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "ElevenLabs",
+     "board": "ashby:elevenlabs",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Datadog",
+     "board": "greenhouse:datadog",
+     "early_career_roles": 2,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Roblox",
+     "board": "greenhouse:roblox",
+     "early_career_roles": 4,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Airbnb",
+     "board": "greenhouse:airbnb",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Coinbase",
+     "board": "greenhouse:coinbase",
+     "early_career_roles": 4,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Robinhood",
+     "board": "greenhouse:robinhood",
+     "early_career_roles": 1,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Okta",
+     "board": "greenhouse:okta",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Instacart",
+     "board": "greenhouse:instacart",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Plaid",
+     "board": "ashby:plaid",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Ada",
+     "board": "greenhouse:ada18",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Samsara",
+     "board": "greenhouse:samsara",
+     "early_career_roles": 3,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "1Password",
+     "board": "ashby:1password",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Wealthsimple",
+     "board": "ashby:wealthsimple",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Jump Trading",
+     "board": "greenhouse:jumptrading",
+     "early_career_roles": 21,
+     "uk_or_canada": 12
+    },
+    {
+     "company": "Millennium",
+     "board": "workday:mlp.wd5/mlpcareers",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "GoCardless",
+     "board": "greenhouse:gocardless",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Cleo",
+     "board": "greenhouse:cleo",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Octopus Energy",
+     "board": "lever:octoenergy",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Speechmatics",
+     "board": "greenhouse:speechmatics",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "PolyAI",
+     "board": "greenhouse:polyai",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Tractable",
+     "board": "ashby:tractable",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Motorway",
+     "board": "ashby:motorway",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Checkout.com",
+     "board": "ashby:checkout.com",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Helsing",
+     "board": "greenhouse:helsing",
+     "early_career_roles": 3,
+     "uk_or_canada": 3
+    },
+    {
+     "company": "Stability AI",
+     "board": "greenhouse:stabilityai",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "BenchSci",
+     "board": "lever:benchsci",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Tenstorrent",
+     "board": "greenhouse:tenstorrent",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Thinkific",
+     "board": "greenhouse:thinkific",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Borealis AI",
+     "board": "greenhouse:borealisai",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Lyft",
+     "board": "greenhouse:lyft",
+     "early_career_roles": 16,
+     "uk_or_canada": 11
+    },
+    {
+     "company": "Jobgether",
+     "board": "lever:jobgether",
+     "early_career_roles": 1,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Cresta",
+     "board": "greenhouse:cresta",
+     "early_career_roles": 5,
+     "uk_or_canada": 5
+    },
+    {
+     "company": "mthree",
+     "board": "greenhouse:mthree",
+     "early_career_roles": 4,
+     "uk_or_canada": 2
+    },
+    {
+     "company": "Stripe",
+     "board": "greenhouse:stripe",
+     "early_career_roles": 17,
+     "uk_or_canada": 9
+    },
+    {
+     "company": "Pinterest",
+     "board": "greenhouse:pinterest",
+     "early_career_roles": 13,
+     "uk_or_canada": 2
+    },
+    {
+     "company": "Coveoen",
+     "board": "greenhouse:coveoen",
+     "early_career_roles": 3,
+     "uk_or_canada": 3
+    },
+    {
+     "company": "AlayaCare",
+     "board": "greenhouse:alayacare",
+     "early_career_roles": 2,
+     "uk_or_canada": 2
+    },
+    {
+     "company": "Roku",
+     "board": "greenhouse:roku",
+     "early_career_roles": 4,
+     "uk_or_canada": 4
+    },
+    {
+     "company": "Tripadvisor",
+     "board": "greenhouse:tripadvisor",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Octoenergy",
+     "board": "lever:octoenergy",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Symphony",
+     "board": "greenhouse:symphony",
+     "early_career_roles": 2,
+     "uk_or_canada": 2
+    },
+    {
+     "company": "ProCogia",
+     "board": "greenhouse:procogia",
+     "early_career_roles": 4,
+     "uk_or_canada": 4
+    },
+    {
+     "company": "Parkland",
+     "board": "greenhouse:parkland",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "ClinChoice",
+     "board": "greenhouse:clinchoice",
+     "early_career_roles": 1,
+     "uk_or_canada": 1
+    },
+    {
+     "company": "GoMaterials",
+     "board": "lever:gomaterials",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Charles River Associates",
+     "board": "greenhouse:charlesriverassociates",
+     "early_career_roles": 10,
+     "uk_or_canada": 3
+    },
+    {
+     "company": "Confidential",
+     "board": "ashby:confidential",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Baringa",
+     "board": "greenhouse:baringa",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Mozilla",
+     "board": "greenhouse:mozilla",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "FanDuel",
+     "board": "greenhouse:fanduel",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "PhysicsX",
+     "board": "greenhouse:physicsx",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "mthree Recruiting Portal",
+     "board": "greenhouse:mthreerecruitingportal",
+     "early_career_roles": 19,
+     "uk_or_canada": 15
+    },
+    {
+     "company": "Oscar Technology",
+     "board": "greenhouse:oscar",
+     "early_career_roles": 1,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Brex",
+     "board": "greenhouse:brex",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Everway",
+     "board": "greenhouse:everway",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Dailypay",
+     "board": "ashby:dailypay",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Callosum",
+     "board": "ashby:callosum",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Unilever",
+     "board": "greenhouse:unilever",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Chainguard",
+     "board": "greenhouse:chainguard",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Trainline",
+     "board": "ashby:trainline",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Axiom",
+     "board": "greenhouse:axiom",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Incident",
+     "board": "ashby:incident",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Rapidfortinc",
+     "board": "greenhouse:rapidfortinc",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Epic Games",
+     "board": "greenhouse:epicgames",
+     "early_career_roles": 5,
+     "uk_or_canada": 3
+    },
+    {
+     "company": "Colonist",
+     "board": "ashby:colonist",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    }
+   ]
+  }
+ ]
+}
