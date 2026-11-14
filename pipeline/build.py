@@ -62,7 +62,7 @@ def add(src, company, title, locs, url, typ, posted=None, cat=None, salary=None,
     tl = title.lower()
     if re.search(r"new grad|graduate (program|scheme|software|engineer)|\bgrad\b 20|university grad|early career|entry.level", tl) and "intern" not in tl:
         typ = "New Grad"
-    elif re.search(r"\bintern(ship)?s?\b|co-?op|placement|summer 20\d\d|working student", tl):
+    elif re.search(r"\bintern(ship)?s?\b|co-?op|placement|summer 20\d\d|working student|summer (analyst|associate)|off[- ]?cycle|year in industry", tl):
         typ = "Internship"
     deg = 0
     for g in degrees or ():

@@ -25,7 +25,8 @@ RETRY_DAYS = 30
 MAX_PROBES = 700
 LIST_LINK = re.compile(r"csjobs\.ca|go\.vansh\.nyc|grind\.fyi|dreamworkhq\.com|simplify\.jobs|linkedin\.com|reed\.co\.uk")
 GENERIC = {"float", "neo", "ada", "cleo", "tide", "peak", "bell", "bolt", "wave", "flex", "loop", "nova", "apex", "atlas", "unity",
-           "relay", "ritual", "bench", "clear", "scale", "notion", "linear", "vital", "pivot", "orbit", "summit", "motion", "signal"}
+           "relay", "ritual", "bench", "clear", "scale", "notion", "linear", "vital", "pivot", "orbit", "summit", "motion", "signal",
+           "confidential", "stealth", "jobgether", "mthree", "mthreerecruitingportal"}
 
 # Employer, then board addresses worth trying: "greenhouse:slug", "lever:slug", "ashby:slug" or "workday:tenant.wdN/site".
 MUST = [
@@ -79,7 +80,7 @@ def guesses(jobs, known_names):
     for r in jobs:
         if set(r[3]) & {"UK", "CA"} and LIST_LINK.search(r[6]):
             k = norm(r[0])
-            if len(k) >= 4 and k not in known_names:
+            if len(k) >= 4 and k not in known_names and k not in GENERIC:
                 count[k] = count.get(k, 0) + 1
                 name.setdefault(k, r[0])
     out = []
@@ -126,12 +127,13 @@ def main():
     known_names = {norm(s.get("company", "")) for s in seeds}
     stale = lambda a: a.lower() in tried and (today - datetime.date.fromisoformat(tried[a.lower()])).days < RETRY_DAYS
 
-    plan = []
+    plan, planned = [], set()
     for company, cands, trusted in [(c, a, True) for c, a in MUST] + guesses(jobs, known_names):
         if trusted and any(a.lower() in known for a in cands):
             continue  # already have a working board for this employer
         for a in cands:
-            if a.lower() not in known and not stale(a):
+            if a.lower() not in known and a.lower() not in planned and not stale(a):
+                planned.add(a.lower())
                 plan.append((company, a, trusted))
     plan = plan[:MAX_PROBES]
 

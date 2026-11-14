@@ -2,7 +2,7 @@
 # Refresh the job board from this computer and publish it.
 #   refresh.sh quick   source lists + Reed + board discovery + posting checks (several minutes)
 #   refresh.sh full    the above plus the employer-board crawl (about an hour)
-#   refresh.sh auto    full when the last crawl is more than six days old, otherwise quick
+#   refresh.sh auto    full when the last crawl is over six days old or the crawler changed, otherwise quick
 # Run from inside a clone of the repository. Scratch files go in ../work.
 MODE="${1:-quick}"
 cd "$(dirname "$0")" || exit 1
@@ -25,8 +25,10 @@ if [ "$MODE" = "auto" ]; then
   MODE=$(python3 - <<'PY'
 import json, datetime
 try:
-    t = json.load(open("data/ats_jobs.json")).get("fetched_at", "")[:10]
-    old = (datetime.date.today() - datetime.date.fromisoformat(t)).days > 6
+    import re
+    d = json.load(open("data/ats_jobs.json"))
+    want = int(re.search(r"^CRAWL_VERSION = (\d+)", open("crawl.py").read(), re.M).group(1))
+    old = (datetime.date.today() - datetime.date.fromisoformat(d.get("fetched_at", "")[:10])).days > 6 or d.get("version", 1) != want
 except Exception:
     old = True
 print("full" if old else "quick")

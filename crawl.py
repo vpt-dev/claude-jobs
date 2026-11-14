@@ -19,7 +19,10 @@ import urllib.request
 UA = "early-career-jobs-board/0.1 (personal job search tool)"
 TIMEOUT = 25
 PAUSE = 0.4  # seconds between requests to the same host
-EARLY = re.compile(r"\bintern(ship)?s?\b|co-?op\b|new grad|graduate|early career|entry[- ]level|university|campus|junior|\bjr\b|placement|apprentice|associate (software|engineer)|\b20(26|27) (start|grad)", re.I)
+EARLY = re.compile(r"\bintern(ship)?s?\b|co-?op\b|new grad|graduate|early career|entry[- ]level|university|campus|junior|\bjr\b|placement|apprentice|associate (software|engineer)|\b20(26|27) (start|grad)|summer (analyst|associate|engineer|developer|technolog\w*|student|program(me)?|scheme)|year in industry|off[- ]?cycle|spring (week|insight)|insight (week|program(me)?|day)|trainee|\bstudents?\b|thesis", re.I)
+INTERN = re.compile(r"intern|co-?op|placement|summer (analyst|associate|engineer|developer|technolog|student|program|scheme)|year in industry|off[- ]?cycle|spring (week|insight)|insight (week|program|day)|\bstudents?\b|thesis", re.I)
+# Raise this when the filters above change, so the next automatic refresh re-crawls every board.
+CRAWL_VERSION = 2
 SENIOR = re.compile(r"\bsenior\b|\bsr\b|staff|principal|director|manager|\blead\b|head of|\bvp\b|architect|\bII+\b|\b[2-9]\b", re.I)
 TECH = re.compile(r"software|engineer|developer|data|machine learning|\bml\b|\bai\b|quant|trading|trader|research|statistic|analyst|scientist|hardware|firmware|fpga|security|devops|\bsre\b|product manager|actuar", re.I)
 
@@ -201,7 +204,7 @@ def run(seed):
         r["countries"] = countries(r["locations"])
         if not r["countries"]:
             continue
-        r["type"] = "Internship" if re.search(r"intern|co-?op|placement", t, re.I) else "New Grad"
+        r["type"] = "Internship" if INTERN.search(t) else "New Grad"
         seen.add(r["url"])
         keep.append(r)
     return seed, keep, ""
@@ -235,7 +238,7 @@ def main():
                 errors[f"{seed['ats']}:{seed['board']}"] = err
             progress(n, total, len(jobs), len(errors), start)
     sys.stderr.write("\n")
-    json.dump({"fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "jobs": jobs, "errors": errors},
+    json.dump({"fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "version": CRAWL_VERSION, "jobs": jobs, "errors": errors},
               open(sys.argv[2], "w"), ensure_ascii=False, indent=0)
     print(f"boards {len(seeds)} | failed {len(errors)} | early-career roles kept {len(jobs)} | with pay {sum(1 for j in jobs if j['pay'])} | with year-of-study wording {sum(1 for j in jobs if j['elig'])}")
     if seeds and len(errors) > len(seeds) * 0.5:
