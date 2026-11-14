@@ -1,11 +1,23 @@
 #!/usr/bin/env python3
-"""Turn the posting checker's output into site/elig.js.
+"""Judge every UK, Canada and unknown-location internship against the candidate profile.
 
-Usage: python3 pipeline/elig_build.py elig_crawl.json elig.json ... site/elig.js
+Usage: python3 pipeline/elig_build.py jobs.json work_dir data_dir site/elig.js [profile.json]
 
-Each posting that was read gets [score, reason, short quote], scored for a final-year
-bachelor's student who will start a master's after the summer.
+For each role the newest evidence is used: the requirement sentences stored by the crawler
+(work_dir/elig_crawl.json) or by the posting checker (data_dir/evidence.json). The result is one of
+four states, kept apart from how well the posting was read:
+
+  window.ELIG[id] = [state, quality, reason, sentence, checked, kind, deadline, rolling, failed]
+
+  state    M published match | C conditional | U unknown | X explicit mismatch
+  quality  full | partial | none          (none = the posting has not been read)
+  failed   the day the posting could last not be opened, if it could not
+
+A role is never ruled out without a sentence from its posting or title, and a posting that was not
+read is "unknown", never a match and never a mismatch.
 """
+import collections
+import datetime
 import html
 import json
 import os
@@ -13,70 +25,90 @@ import re
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from crawl import ELIG  # noqa: E402
+import eligibility as E  # noqa: E402
+from targets import better, in_scope, load  # noqa: E402
 
-RX = dict(ELIG)
-FINAL = re.compile(r"final[- ]year (student|undergrad)|or (a )?final[- ]year|final or penultimate|in (your|their|the) final year of|graduat\w+ in (the )?(summer |spring |june |july |may )?(of )?2027|class of 2027|recent(ly)? graduat\w*[^.]{0,60}(welcome|eligible|encouraged|may apply|can apply)|\bor recent(ly)? graduat", re.I)
-POSTGRAD_ONLY = re.compile(r"year of (a |an |your |their )?(master|msc|phd|doctora)|graduated from (a |an )?(master|msc|phd)|final[- ]year (phd|master|msc|doctoral|postgrad)|final year of\)? (a |an )?(postgrad|master|phd)|master'?s'? degree in progress", re.I)
-UNDERGRAD = re.compile(r"bachelor|undergrad|\\b(2nd|second|3rd|third)[- ]year|sophomore|junior", re.I)
-NOT_FINAL = re.compile(r"non[- ]?\s?final|not (be )?in (your|their|the) final|excluding final", re.I)
-COOP = re.compile(r"co-?op (program|term|student)|placement year|year in industry", re.I)
+MONTHS = "January February March April May June July August September October November December".split()
 
 
-def quote(key, excerpt):
-    """At most 14 words around the phrase that triggered the signal."""
-    excerpt = html.unescape(html.unescape(excerpt)).replace("\xa0", " ")
-    m = RX[key].search(excerpt)
-    if not m:
-        return ""
-    before = excerpt[:m.start()].split()[-5:]
-    hit = excerpt[m.start():m.end()].split()
-    after = excerpt[m.end():].split()[:max(0, 14 - len(before) - len(hit))]
-    words = (before + hit + after)[:14]
-    q = " ".join(words)
-    return "" if re.search(r'[{}\[\]"\\]|":', q) else q  # skip page code that is not prose
+def month(ym):
+    y, m = ym.split("-")[:2]
+    return f"{MONTHS[int(m) - 1]} {y}"
 
 
-def score(v):
-    s, x = set(v["s"]), v["x"]
-    fin = x.get("final_year_ok", "")
-    if fin and NOT_FINAL.search(fin):
-        return 1, "the posting asks for students who are not in their final year", quote("final_year_ok", fin)
-    if fin and FINAL.search(fin) and not re.search(r"or later", fin, re.I):
-        if POSTGRAD_ONLY.search(fin):
-            return 1, "the posting asks for master's or PhD students", quote("final_year_ok", fin)
-        return 5, "Posting read: names final-year students or 2027 graduates.", quote("final_year_ok", fin)
-    if "penultimate_only" in s:
-        return 1, "the posting asks for penultimate-year students", quote("penultimate_only", x["penultimate_only"])
-    for k in ("must_be_enrolled", "must_return_to_study"):
-        if k in s and COOP.search(x[k]):
-            return 1, "the posting asks for co-op or placement-year students", quote(k, x[k])
-    if "grad_2028_or_later" in s and UNDERGRAD.search(x["grad_2028_or_later"]):
-        return 1, "the posting asks for undergraduates finishing in 2028 or later", quote("grad_2028_or_later", x["grad_2028_or_later"])
-    if "grad_2028_or_later" in s:
-        return 3, "Posting read: asks for a 2028 or later graduation, which fits only if your master's counts.", quote("grad_2028_or_later", x["grad_2028_or_later"])
-    if "must_return_to_study" in s:
-        return 3, "Posting read: asks you to return to study afterwards, which depends on your master's place.", quote("must_return_to_study", x["must_return_to_study"])
-    return 4, "Posting read: no year-of-study limit found.", ""
+def describe(prof):
+    """The facts the judgement rests on, in plain words, shown on the page so they can be checked."""
+    d, m, a = prof["degree"], prof["masters"], prof["available"]
+    lines = [f"Final-year {d['level']}'s student in {d['field']}: teaching ends {month(d['study_ends'])}, degree awarded {month(d['award'])}."]
+    where = " or ".join({"US": "the US", "CA": "Canada", "UK": "the UK"}.get(c, c) for c in m.get("countries", []))
+    status = {"applied": "applied for, not yet confirmed", "offer": "offer held, not yet accepted", "confirmed": "place confirmed", "none": "not planned"}
+    if m.get("status") and m["status"] != "none":
+        lines.append(f"Master's in {where}: {status.get(m['status'], m['status'])}; it would start {month(m['starts'])}.")
+    else:
+        lines.append("No master's planned.")
+    lines.append("Right to work: " + " and ".join({"UK": "the UK", "CA": "Canada", "US": "the US"}.get(c, c) for c in prof["work_rights"]) + ".")
+    lines.append(f"Free to work from {month(a['from'])} to {month(a['to'])}. " + ("On a co-op programme." if prof.get("coop_registered") else "Not on a co-op programme."))
+    return lines
+
+
+def sentences(ev):
+    """Requirement sentences from an evidence record. Older records hold short fragments rather than whole sentences."""
+    if not ev:
+        return []
+    if "req" in ev:
+        return ev["req"] or []
+    out = []
+    for x in (ev.get("legacy") or {}).values():
+        x = re.sub(r"\s+", " ", html.unescape(html.unescape(x or "")).replace("\xa0", " ")).strip()
+        if x and x not in out:
+            out.append(x)
+    return out
+
+
+def shown(text, ev):
+    """The sentence as displayed. Fragments kept by the older reader are cut mid-sentence, so they are marked as cut."""
+    text = (text or "").strip()
+    if text and ev and "req" not in ev:
+        text = ("" if text[:1].isupper() else "… ") + text + ("" if text[-1:] in ".!?" else " …")
+    return text[:340]
 
 
 def main():
-    """Later files win, so list the posting checker's output after the crawl's."""
-    *inputs, dest = sys.argv[1:]
-    read, checked = {}, ""
-    for path in inputs:
-        if os.path.exists(path):
-            src = json.load(open(path))
-            read.update(src["read"])
-            checked = max(checked, src.get("checked", ""))
-    out = {jid: list(score(v)) for jid, v in read.items()}
-    with open(dest, "w") as f:
+    jobs, work, data, out_path = sys.argv[1:5]
+    prof = E.load_profile(sys.argv[5] if len(sys.argv) > 5 else None)
+    rows = json.load(open(jobs))
+    crawl = load(os.path.join(work, "elig_crawl.json"), {"read": {}})["read"]
+    store = load(os.path.join(data, "evidence.json"), {"read": {}, "tried": {}})
+    out, states, quals = {}, collections.Counter(), collections.Counter()
+    for r in rows:
+        if not in_scope(r):
+            continue
+        jid = r[18]
+        ev = better(crawl.get(jid), store["read"].get(jid))
+        quality = (ev or {}).get("quality", "none")
+        res = E.evaluate(r[1], r[17], sentences(ev), prof, quality=quality, lang=(ev or {}).get("lang", ""))
+        if res["state"] == "X" and res["from"] == "posting" and ev and "req" not in ev:
+            # The older reader kept short excerpts, which can cut a sentence in half. A role is not ruled out on
+            # half a sentence: it is held as conditional until the posting has been read again in full.
+            res["state"] = "C"
+            res["reason"] += " This rests on an excerpt, not the whole sentence; the posting is due to be read again."
+        failed = store["tried"].get(jid, "")
+        if ev and failed and failed <= ev.get("checked", ""):
+            failed = ""
+        out[jid] = [res["state"], quality, res["reason"], shown(res["evidence"], ev), (ev or {}).get("checked", ""), res["kind"],
+                    r[20] or (ev or {}).get("deadline", ""), 1 if (ev or {}).get("rolling") else 0, failed]
+        states[res["state"]] += 1
+        quals[quality] += 1
+    info = {"date": datetime.date.today().isoformat(), "reader": E.EXTRACT_VERSION, "profile": describe(prof),
+            "states": dict(states), "quality": dict(quals)}
+    tmp = out_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
         f.write("window.ELIG=" + json.dumps(out, ensure_ascii=False, separators=(",", ":")) + ";\n")
-        f.write("window.ELIG_INFO=" + json.dumps({"checked": checked, "read": len(out)}) + ";\n")
-    tally = {}
-    for v in out.values():
-        tally[v[0]] = tally.get(v[0], 0) + 1
-    print("scores", dict(sorted(tally.items())))
+        f.write("window.ELIG_INFO=" + json.dumps(info, ensure_ascii=False) + ";\n")
+    os.replace(tmp, out_path)
+    names = {"M": "published match", "C": "conditional", "U": "unknown", "X": "explicit mismatch"}
+    print("internships judged:", len(out), "|", ", ".join(f"{names[k]} {states.get(k, 0)}" for k in "MCUX"),
+          "| read in full", quals.get("full", 0), "partly", quals.get("partial", 0), "not read", quals.get("none", 0))
 
 
 if __name__ == "__main__":

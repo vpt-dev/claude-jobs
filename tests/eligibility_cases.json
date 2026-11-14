@@ -1,0 +1,1018 @@
+[
+ {
+  "name": "review 1: finalists excluded",
+  "req": [
+   "Final-year students are not eligible for this internship."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "review 2: graduates excluded and co-op mandatory",
+  "req": [
+   "Recent graduates are not eligible.",
+   "Must be currently enrolled in a university co-op program."
+  ],
+  "state": "X",
+  "kind": "coop"
+ },
+ {
+  "name": "review 3: PhD enrolment",
+  "req": [
+   "You must currently be enrolled in a PhD program in computer science."
+  ],
+  "state": "X",
+  "kind": "degree"
+ },
+ {
+  "name": "review 4: penultimate not needed",
+  "req": [
+   "You do not need to be a penultimate-year student to apply."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "review 5: co-op optional",
+  "req": [
+   "You may participate as a co-op student, but registration in a co-op program is not required."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "review 6: window and both degrees",
+  "req": [
+   "Must be pursuing a bachelor or master degree and graduating between 2027 and 2028."
+  ],
+  "state": "M",
+  "kind": "grad"
+ },
+ {
+  "name": "review 7: allowance then semester remaining in current degree",
+  "req": [
+   "Open to students graduating in 2027.",
+   "You must have at least one semester remaining in your current degree after the internship."
+  ],
+  "state": "X",
+  "kind": "return"
+ },
+ {
+  "name": "review 8: plain positive",
+  "req": [
+   "This internship is open to penultimate and final-year students."
+  ],
+  "state": "M",
+  "kind": "year"
+ },
+ {
+  "name": "finalists continuing to master's",
+  "req": [
+   "Apply if you are a penultimate-year student, or a final-year student planning to go on to a one-year master's course."
+  ],
+  "state": "M",
+  "kind": "year"
+ },
+ {
+  "name": "LSEG wording",
+  "req": [
+   "You should be in the penultimate year of your undergraduate or final year of an Undergraduate degree and plan to continue to a Masters in academic year 2027/28."
+  ],
+  "state": "M",
+  "kind": "year"
+ },
+ {
+  "name": "penultimate only",
+  "req": [
+   "To be eligible, you must be a penultimate year undergraduate due to complete your degree summer 2028."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "penultimate of any level",
+  "req": [
+   "A university student in their penultimate year (can be undergraduates, masters or PhD students)."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "penultimate or first-year master's",
+  "req": [
+   "A penultimate year undergraduate/junior or 1st year master's or PhD student at a recognised university."
+  ],
+  "state": "C",
+  "kind": "year"
+ },
+ {
+  "name": "final or penultimate of a master's",
+  "req": [
+   "Be in the final or penultimate year of a Masters or PhD in a highly technical or quantitative subject."
+  ],
+  "state": "X",
+  "kind": "degree"
+ },
+ {
+  "name": "final-year PhD",
+  "req": [
+   "We are looking for a final-year PhD student in robotics, computer science or machine learning."
+  ],
+  "state": "X",
+  "kind": "degree"
+ },
+ {
+  "name": "both programmes in separate sentences",
+  "req": [
+   "We run penultimate-year internships for students who are studying towards a degree.",
+   "We also offer final-year internships for students in their final year."
+  ],
+  "state": "C",
+  "kind": "year"
+ },
+ {
+  "name": "both programmes in one sentence",
+  "req": [
+   "We offer both final-year and penultimate-year internships in our London office."
+  ],
+  "state": "M",
+  "kind": "year"
+ },
+ {
+  "name": "all years",
+  "req": [
+   "Penultimate or final year ideal, though students of all years are welcome to apply."
+  ],
+  "state": "M",
+  "kind": "year"
+ },
+ {
+  "name": "window later, bachelor only",
+  "req": [
+   "Class of 2028 pursuing a Bachelor's degree in Computer Science."
+  ],
+  "state": "X",
+  "kind": "grad"
+ },
+ {
+  "name": "window later, any degree",
+  "req": [
+   "Currently pursuing a degree with an expected graduation date between December 2027 and June 2028."
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "window later open ended",
+  "req": [
+   "Expected graduation date of November 2027 or later."
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "window with seasons",
+  "req": [
+   "Candidates should be expected to graduate between Winter 2027 and Summer 2028."
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "window includes summer 2027",
+  "req": [
+   "Open to students graduating between December 2026 and August 2027."
+  ],
+  "state": "M",
+  "kind": "grad"
+ },
+ {
+  "name": "graduation not confused with internship dates",
+  "req": [
+   "Internships: must be available June 2027 to August 2027.",
+   "Students graduating in 2027 or 2028 are welcome."
+  ],
+  "state": "M",
+  "kind": "grad"
+ },
+ {
+  "name": "programme name is not a graduation date",
+  "req": [
+   "See also our Graduate Programme 2027: Applied AI Engineer."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "return to study",
+  "req": [
+   "Students are expected to return to school following the completion of the internship."
+  ],
+  "state": "C",
+  "kind": "return"
+ },
+ {
+  "name": "return to same degree",
+  "req": [
+   "You must be returning to your undergraduate degree for at least one term after the placement."
+  ],
+  "state": "X",
+  "kind": "return"
+ },
+ {
+  "name": "final year ok but must return",
+  "req": [
+   "Open to penultimate and final-year students.",
+   "You must return to full-time education after the internship."
+  ],
+  "state": "C",
+  "kind": "return"
+ },
+ {
+  "name": "current bachelor's or master's",
+  "req": [
+   "Currently pursuing a Bachelor's or Master's degree in Computer Science or a related field."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "current master's or PhD",
+  "req": [
+   "Currently enrolled in a Master's or PhD program in Machine Learning."
+  ],
+  "state": "X",
+  "kind": "enrol"
+ },
+ {
+  "name": "enrolled during internship",
+  "req": [
+   "You must be enrolled in a degree programme for the duration of the internship."
+  ],
+  "state": "C",
+  "kind": "enrol"
+ },
+ {
+  "name": "mandatory co-op",
+  "req": [
+   "Currently enrolled in a post-secondary co-op program in a related field."
+  ],
+  "state": "X",
+  "kind": "coop"
+ },
+ {
+  "name": "co-op label only",
+  "title": "Software Developer Co-op",
+  "req": [
+   "As a co-op you will work with the platform team on real features."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "recent graduates welcome",
+  "req": [
+   "Recent graduates with strong analytical skills are welcome to apply."
+  ],
+  "state": "M",
+  "kind": "grad"
+ },
+ {
+  "name": "marketing line is not eligibility",
+  "req": [
+   "We were named one of Canada's Best Employers for Recent Graduates for the 5th consecutive year."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "twelve-month placement",
+  "req": [
+   "This is a 12-month industrial placement starting in July 2027."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "four or eight months",
+  "req": [
+   "The work term is 4 or 8 months."
+  ],
+  "state": "C",
+  "kind": "dates"
+ },
+ {
+  "name": "twelve weeks",
+  "req": [
+   "The internship runs for 12 weeks from June 2027."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "experience is not duration",
+  "req": [
+   "You have 6 months of experience with Python from an internship or project."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "title: winter term",
+  "title": "Software Developer Intern (Winter 2027)",
+  "req": [],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "terms: winter",
+  "title": "Programmer Analyst Intern",
+  "terms": [
+   "Winter 2027"
+  ],
+  "req": [],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "terms include summer 2027",
+  "title": "Applied Scientist Intern",
+  "terms": [
+   "Winter 2027",
+   "Summer 2027"
+  ],
+  "req": [],
+  "state": "U"
+ },
+ {
+  "name": "title: 4 months is not seniority and not a mismatch",
+  "title": "Software Engineer Intern - 4 months",
+  "req": [],
+  "state": "C",
+  "kind": "dates"
+ },
+ {
+  "name": "title: 8 months",
+  "title": "Data Analyst, Winter 2027 (Co-op/Internship) - 8 months",
+  "req": [],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "title: PhD",
+  "title": "Research Scientist Intern (PhD)",
+  "req": [],
+  "state": "X",
+  "kind": "degree"
+ },
+ {
+  "name": "title: master's or PhD",
+  "title": "2027 Internship - Quantitative Researcher (Master or PhD)",
+  "req": [],
+  "state": "C",
+  "kind": "degree"
+ },
+ {
+  "name": "title: bilingual, not excluded by accents",
+  "title": "Intern Developer / Stagiaire développeur",
+  "req": [],
+  "state": "U"
+ },
+ {
+  "name": "title: spring week",
+  "title": "Technology Spring Week 2027",
+  "req": [],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "title: apprenticeship",
+  "title": "Software Engineering Degree Apprenticeship",
+  "req": [],
+  "state": "X",
+  "kind": "programme"
+ },
+ {
+  "name": "French required",
+  "req": [
+   "Bilingual (English and French) is required for this role."
+  ],
+  "state": "X",
+  "kind": "language"
+ },
+ {
+  "name": "French an asset",
+  "req": [
+   "Fluency in French is an asset."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "starts in January",
+  "req": [
+   "The placement will start in January 2027 and run until April."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "non-final year",
+  "req": [
+   "We are looking for non-final year students graduating in December 2027 or June 2028."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "rising seniors",
+  "req": [
+   "This program is designed for rising seniors."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "first-year programme",
+  "req": [
+   "This insight programme is open to first year students on a three-year degree."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "final year project mention",
+  "req": [
+   "You will complete a technical report and presentation in the final year of the programme."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "real 00 (penultimate_only)",
+  "req": [
+   "be based in New York City Office To be eligible, you should be in the penultimate year of your undergraduate or final year of an Undergraduate degree and pl"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 01 (penultimate_only)",
+  "req": [
+   "rk and share results and recommendations with the team. Requirements: Rising senior or recent graduate in Computer Science, Computer Engineering, Electri"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 02 (penultimate_only)",
+  "req": [
+   "plemented\n\n\n\nWhat we're looking for\n\n - A university student in their penultimate year (can be undergraduates, masters or PhD students)\n\n - Must have coding"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 03 (penultimate_only)",
+  "req": [
+   "ffectively to guide decision making Qualifications & Requirements • A penultimate year undergraduate / junior or 1st year Master’s student at a recognized U"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 04 (penultimate_only)",
+  "req": [
+   "aders/researchers for internships in Summer 2027 (open exclusively to penultimate-year or final-year students). This year, we are excited to launch a brand-"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 05 (penultimate_only)",
+  "req": [
+   "lectrical Engineering, Computer Science, or a related technical field Rising junior, senior, or graduate student at the time of the internship Strong C/C"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 06 (penultimate_only)",
+  "req": [
+   "Programmes offered: Final-year internship, penultimate-year internship &nbsp; Location: London, Paris , Wrocław, Zurich, Dubai, A"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 07 (penultimate_only)",
+  "req": [
+   "Programmes offered: &nbsp;Final-year internship, penultimate-year internship,&nbsp;some permanent opportunities &nbsp; Programme durati"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 08 (penultimate_only)",
+  "req": [
+   "space Engineering, or a related field; undergraduate students must be rising juniors or rising seniors Experience with CAD / 3D modeling through coursewo"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 09 (grad_2028_or_later)",
+  "req": [
+   "e, ML, NLP, Statistics, Information Sciences or related field and are graduating between Fall 2027 &amp; Summer 2028 Have a mastery of at least one systems languages (Jav"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 10 (grad_2028_or_later)",
+  "req": [
+   "degree in Computer Science, Engineering, or a related field Expected graduation date: 2027 or 2028 Strong proficiency in either C++ or Python (with some exposure to the"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 11 (grad_2028_or_later)",
+  "req": [
+   "gust or June–September 2027. This internship is designed for students graduating between December 2027 and June 2028.\n\n\n\n\n\nABOUT THE ROLE\n\nWhat you will do:\n\n - Make an i"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 12 (grad_2028_or_later)",
+  "req": [
+   "bases, cloud computing, or software architecture. Must be planning on graduating in 2028. This should be your final internship before graduating. An updated r"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 13 (grad_2028_or_later)",
+  "req": [
+   "ter Science, or a related technical field\n\n - Rising Junior or Senior graduating in 2027 or 2028\n\n - Hands-on experience with engineering projects involving hardware,"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 14 (grad_2028_or_later)",
+  "req": [
+   "er Engineering or equivalent, with the ability to work full time upon graduation in 2028 Passionate for clean code, simple, well-architected systems and conti"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 15 (grad_2028_or_later)",
+  "req": [
+   "2027 (8 week programme) Eligibility: &nbsp; Penultimate year students graduating in Summer 2028 Who we are: Rothesay is the UK’s largest pensions insurance specialis"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 16 (grad_2028_or_later)",
+  "req": [
+   "n our New York office during Summer 2027. We are targeting candidates graduating in 2027 or 2028. The internship concludes with a presentation to senior management an"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 17 (grad_2028_or_later)",
+  "req": [
+   "deas, expressing your thoughts, and listening to the views of others. Class of 2027 or 2028: PhDs (in penultimate or final year) and Research Masters students in"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 18 (final_year_ok)",
+  "req": [
+   "user lifecycle administration. Must Have(s) Currently enrolled in or recently graduated from an accredited University degree or College diploma program in Cy"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 19 (final_year_ok)",
+  "req": [
+   "e\",\"VIEW_RESULTS\":\"View Results\",\"DIDYOUMEAN\":\"Did you mean\",\"TAGS1\":\"Recent Graduate\",\"ITEMS_PER_PAGE\":\"Items per page\",\"RESULTS_CLOSE_TO\":\"These results"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 20 (final_year_ok)",
+  "req": [
+   "cutive year and the 2022 Career Directory Canada’s Best Employers for Recent Graduates for the 5th consecutive year . Position Title: Optical Algorithms and"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 21 (final_year_ok)",
+  "req": [
+   "2027 Internship – Security Engineer &nbsp; Programmes offered: Final-year internship, penultimate-year internship Location: London, Paris, New"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 22 (final_year_ok)",
+  "req": [
+   "ree in Nuclear Engineering, Chemical Engineering, or a related field (recent graduate or upcoming). Coursework in nuclear engineering fundamentals, reactor"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 23 (final_year_ok)",
+  "req": [
+   "ology, Ag Business, or another closely related field of study, with a graduation date of December 2027 or later. Must be a current student continuing their education upon"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 24 (final_year_ok)",
+  "req": [
+   "ust be available May or June 2027 - August or September 2027 Expected graduation date of November 2027 or later. 1+ years of academic experience with programming language"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 25 (final_year_ok)",
+  "req": [
+   "y. We are seeking several passionate Graduate .NET Developer who have recently graduated with a degree in Computer Science (or a related subject) and have a b"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 26 (final_year_ok)",
+  "req": [
+   "oughout the internship What we are looking for You are enrolled in or recently graduated from a master's or PhD program in Computer Science, Machine Learning,"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 27 (final_year_ok)",
+  "req": [
+   "our fellow Summer Interns, you'll connect with year-round interns and recent graduates who began their careers through the same program. Many have chosen to"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 28 (must_return_to_study)",
+  "req": [
+   "gree or diploma program at a Canadian post-secondary institution, and must be returning to undergraduate studies following the completion of the work term En"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 29 (must_return_to_study)",
+  "req": [
+   "o an early employment offer upon graduation. Essential Requirements · Must be returning to the final year of a relevant postsecondary program in September 20"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 30 (must_return_to_study)",
+  "req": [
+   "s Currently enrolled in electrical engineering or related field. Must return to school after the work term ends. Strong communication and interpersonal skil"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 31 (must_return_to_study)",
+  "req": [
+   "ergraduates in their penultimate year of university. If you intend to return to university after the internship to complete an MSc, you will also be eligible fo"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 32 (must_return_to_study)",
+  "req": [
+   "hanical Engineering, Aerospace Engineering, or a related field.&nbsp; Must be returning to school at the end of the internship to continue academic studies f"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 33 (must_return_to_study)",
+  "req": [
+   "ngineering, Electrical Engineering, Robotics, or a related field, and returning to a degree-granting program after the internship\n\n - Proficiency in Python, incl"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 34 (must_return_to_study)",
+  "req": [
+   "or’s or master’s degree in Engineering, or a related technical field. Must be returning to school at the end of the internship to continue academic studies f"
+  ],
+  "state": "C",
+  "quality": "partial"
+ },
+ {
+  "name": "real 35 (must_be_enrolled)",
+  "req": [
+   "ngs to improve team knowledge and future designs Basic Qualifications Currently pursuing a BS or MS in Computer Engineering, Electrical Engineering, Computer"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 36 (must_be_enrolled)",
+  "req": [
+   "al requirements in real-world systems\n\n \n\n\nWHAT WE'RE LOOKING FOR\n\n - Currently pursuing a Bachelor's degree in Computer Science, Computer Engineering, Electr"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 37 (must_be_enrolled)",
+  "req": [
+   "tegration and qualification testing. What You Need to Have to Succeed Currently pursuing a bachelor’s degree in Software Engineering, Computer Engineering, El"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 38 (must_be_enrolled)",
+  "req": [
+   "learned at the end of the internship. Required Experience and Skills: Currently pursuing an accredited Bachelor's Degree in Computer Engineering, Computer Sci"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 39 (must_be_enrolled)",
+  "req": [
+   "Please Note: To be eligible for this position you should be a student currently enrolled in a post-secondary program, available for a full-time 3-6 month internshi"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 40 (must_be_enrolled)",
+  "req": [
+   "e &nbsp; What we're looking for: &nbsp; Minimum Qualifications &nbsp; Currently pursuing or recently completed a BS or MS in Computer Science or a closely rel"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 41 (must_be_enrolled)",
+  "req": [
+   "o improve detection and response capabilities. Minimum Qualifications Currently enrolled in an accredited Cybersecurity, Computer Science, Information Technology,"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 42 (must_be_enrolled)",
+  "req": [
+   "nt contract obligations and export control regulations (ITAR/EAR)\n\n - Currently pursuing or recently completed a degree in Computer Science, Computer Engineer"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "real 43 (masters_ok)",
+  "req": [
+   "m's research roadmap. About the ideal candidate: Currently pursuing a Master's or PhD in Computer Science, Robotics, Electrical Engineering, Machine"
+  ],
+  "state": "X",
+  "quality": "partial"
+ },
+ {
+  "name": "real 44 (masters_ok)",
+  "req": [
+   "dustrial experience, for example through a placement year or relevant postgraduate experience. A good understanding of fundamental engineering, computin"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 45 (masters_ok)",
+  "req": [
+   "ilicon performance. Minimum Qualifications Currently pursuing a BEng, MEng, MSc or PhD in Electronic/Electrical Engineering, Microelectronics or"
+  ],
+  "state": "U",
+  "quality": "partial"
+ },
+ {
+  "name": "real 46 (masters_ok)",
+  "req": [
+   "re issues in collaboration with cross-functional teams. Requirements: Graduate student or recent graduate in Electrical Engineering or related field. Minimu"
+  ],
+  "state": "M",
+  "quality": "partial"
+ },
+ {
+  "name": "working dates outside the summer",
+  "req": [
+   "Internships: must be available January 2027 to April 2027.",
+   "Students graduating in 2027 or 2028 are welcome."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "sixteen months of availability",
+  "req": [
+   "Internships: must be available May/June 2027 - August/September 2028.",
+   "Expected graduation date of November 2028 or later."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "several term lengths, one fits",
+  "req": [
+   "4-month internships: must be available May 2027 - August 2027.",
+   "16-month internships: must be available May 2027 - August 2028."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "season in the title with a word between",
+  "title": "Winter Co-op 2027 – Accounting Analyst",
+  "req": [
+   "Currently pursuing or recently completed a bachelor's degree in accounting."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "year before season in the title",
+  "title": "2027 Winter Software Developer Co-op",
+  "req": [],
+  "state": "X",
+  "kind": "dates",
+  "quality": "none"
+ },
+ {
+  "name": "two seasons in the title, one is summer",
+  "title": "Software Engineer Intern (Summer/Fall 2027)",
+  "req": [],
+  "state": "U",
+  "quality": "none"
+ },
+ {
+  "name": "months in the title",
+  "title": "DevOps & Cloud Platform Intern (December 2026 to April 2027)",
+  "req": [
+   "This role is designed primarily for final-year Bachelor's and Master's students."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "season of the role named in the posting",
+  "req": [
+   "We are hiring for our Winter 2027 internship cohort.",
+   "This role is designed primarily for final-year Bachelor's and Master's students."
+  ],
+  "state": "X",
+  "kind": "dates"
+ },
+ {
+  "name": "graduation season is not the role's season",
+  "req": [
+   "Our Summer 2027 internship is open to students graduating in Winter 2027 or Spring 2028."
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "entering the final year after the internship",
+  "req": [
+   "You should have: Will be entering the final year of an undergraduate degree in Computer Science or another technical subject."
+  ],
+  "state": "X",
+  "kind": "year"
+ },
+ {
+  "name": "returning for the final year",
+  "req": [
+   "This role is suited to students who will be returning for their final year after the summer."
+  ],
+  "state": "C",
+  "kind": "year"
+ },
+ {
+  "name": "entered the final year this year",
+  "req": [
+   "Open to students entering their final year in September 2026."
+  ],
+  "state": "M",
+  "kind": "year"
+ },
+ {
+  "name": "penultimate or recently graduated",
+  "req": [
+   "Penultimate-year or recently graduated student: You should have completed 3 years at university by June 2027."
+  ],
+  "state": "M"
+ },
+ {
+  "name": "a preference is not a rule",
+  "req": [
+   "Enrolled in a BS or MS degree in EE or ECE (preferably a rising Senior or a candidate with prior internship experience)."
+  ],
+  "state": "C",
+  "kind": "year"
+ },
+ {
+  "name": "MS Excel is not a master's degree",
+  "req": [
+   "Currently enrolled in a degree in a STEM field, preferably Computer Science. Proficient in MS Excel and MS Word."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "UK graduate programme is not a master's",
+  "req": [
+   "You could join one of our graduate programmes once you've graduated.",
+   "Currently studying towards a degree in Electronic Engineering."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "mastery is not a master's",
+  "req": [
+   "You are graduating between Fall 2027 & Summer 2028 and have a mastery of at least one systems language."
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "application form drop-down",
+  "req": [
+   "When is your expected graduation date? * -- No answer -- 2027 2028 2029 2030 2031 Graduated"
+  ],
+  "state": "U"
+ },
+ {
+  "name": "application form question",
+  "req": [
+   "Are you currently enrolled in a co-op program at your university?"
+  ],
+  "state": "U"
+ },
+ {
+  "name": "co-op rule about a different kind of role",
+  "title": "Software Engineering Intern (2027 Start)",
+  "req": [
+   "This is a Summer 12-week internship. Co-ops are only available to students enrolled in a co-op program."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "co-op rule on a co-op role",
+  "title": "Software Developer Co-op",
+  "req": [
+   "Co-ops are only available to students enrolled in a co-op program."
+  ],
+  "state": "X",
+  "kind": "coop"
+ },
+ {
+  "name": "bachelor's or equivalent",
+  "req": [
+   "A graduation date in Fall 2027 or Spring 2028 with a Bachelor's degree (or equivalent) in a relevant field."
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "open-ended graduation before other dates",
+  "req": [
+   "This opportunity is available to students with a graduation date of April 2027 or later Term: May 2027 to August 2027 (4 months)"
+  ],
+  "state": "M",
+  "kind": "grad"
+ },
+ {
+  "name": "graduation range before unrelated wording",
+  "req": [
+   "Expected graduation date between December 2027 and July 2028 - Ability to commit to a 12-week summer 2027 internship"
+  ],
+  "state": "C",
+  "kind": "grad"
+ },
+ {
+  "name": "back at university a year later",
+  "req": [
+   "You're currently an undergraduate studying at University and returning to full time education in Autumn 2028."
+  ],
+  "state": "X",
+  "kind": "dates"
+ }
+]

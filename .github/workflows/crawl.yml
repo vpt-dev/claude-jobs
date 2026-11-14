@@ -1,38 +1,37 @@
-name: Daily job crawl
+name: Daily refresh
+# Runs the same complete pipeline as refresh.sh on the Mac: download the lists, read the employer boards
+# (weekly), read postings, judge them, check the result and publish. A test run with a limit never
+# touches the published data: crawl.py writes limited runs to a separate ".partial" file.
 on:
   schedule:
     - cron: "17 5 * * *"   # 05:17 UTC every day
   workflow_dispatch:
     inputs:
-      limit:
-        description: "Only crawl the first N boards (blank for all)"
+      mode:
+        description: "auto, quick or full"
         required: false
-        default: ""
+        default: "auto"
 permissions:
   contents: write
+concurrency:
+  group: refresh
+  cancel-in-progress: false
 jobs:
-  crawl:
+  refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Crawl employer job boards
-        env:
-          LIMIT: ${{ github.event.inputs.limit }}
-        run: |
-          if [ -n "$LIMIT" ]; then python3 crawl.py seeds.json data/ats_jobs.json --limit "$LIMIT"; else python3 crawl.py seeds.json data/ats_jobs.json; fi
-      - name: Fetch UK roles from Reed
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Refresh and publish
         env:
           REED_API_KEY: ${{ secrets.REED_API_KEY }}
+          MODE: ${{ github.event.inputs.mode }}
         run: |
-          if [ -n "$REED_API_KEY" ]; then python3 reed.py data/reed_jobs.json; else echo "No Reed key set; skipping"; fi
-      - name: Commit results
-        run: |
-          git config user.name "job-crawler"
-          git config user.email "job-crawler@users.noreply.github.com"
-          git add data/ats_jobs.json data/reed_jobs.json 2>/dev/null || git add data/ats_jobs.json
-          git diff --cached --quiet || git commit -m "Daily crawl $(date -u +%F)"
-          git push
+          if [ -n "$REED_API_KEY" ]; then printf '%s' "$REED_API_KEY" > "$RUNNER_TEMP/reed_key.txt"; export REED_KEY_FILE="$RUNNER_TEMP/reed_key.txt"; fi
+          bash refresh.sh "${MODE:-auto}"

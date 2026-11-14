@@ -3,7 +3,17 @@
 mkdir -p "$1"; cd "$1"
 G=https://raw.githubusercontent.com
 # A list that fails to download keeps its previous copy, so one missing source never stops a refresh.
-get() { if curl -sSf -m 90 -L -o "$1.new" "$G/$2" && [ -s "$1.new" ]; then mv "$1.new" "$1"; else rm -f "$1.new"; echo "  could not fetch $2 (kept the last copy)"; [ -f "$1" ] || : > "$1"; fi; }
+STATUS=fetch_status.tsv; : > "$STATUS.new"
+# A download much smaller than the copy from the last few days is treated as cut short and not used.
+get() {
+  old=0; [ -f "$1" ] && old=$(wc -c < "$1" | tr -d ' ')
+  if curl -sSf -m 90 -L -o "$1.new" "$G/$2" && [ -s "$1.new" ]; then
+    new=$(wc -c < "$1.new" | tr -d ' ')
+    if [ "$old" -gt 20000 ] && [ "$new" -lt $((old / 2)) ] && [ -z "$(find "$1" -mtime +3 2>/dev/null)" ]; then
+      rm -f "$1.new"; echo "  $2 came back much smaller than before (kept the last copy)"; printf '%s\tshrunk\n' "$1" >> "$STATUS.new"
+    else mv "$1.new" "$1"; printf '%s\tok\n' "$1" >> "$STATUS.new"; fi
+  else rm -f "$1.new"; echo "  could not fetch $2 (kept the last copy)"; [ -f "$1" ] || : > "$1"; printf '%s\tfailed\n' "$1" >> "$STATUS.new"; fi
+}
 get simplify_intern.out SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json
 get simplify_newgrad.out SimplifyJobs/New-Grad-Positions/dev/.github/scripts/listings.json
 get vansh_intern.out vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json
@@ -35,3 +45,4 @@ get grind_ca.md grind-fyi/Software-Internships-Canada/HEAD/README.md
 get grind_uk_ng.md grind-fyi/Software-NewGrad-UK/HEAD/README.md
 get grind_ca_ng.md grind-fyi/Software-NewGrad-Canada/HEAD/README.md
 echo fetched
+mv "$STATUS.new" "$STATUS"

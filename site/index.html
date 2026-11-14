@@ -12,6 +12,7 @@
   --bg:#f3f5f7; --surface:#ffffff; --ink:#111a2c; --muted:#5a6578; --line:#d9dee6;
   --accent:#1f4fd8; --accent-ink:#ffffff; --pay:#0b7a52; --pay-bg:#e3f4ec; --chip:#e9edf3;
   --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --seq-lo:#cde2fb; --seq-hi:#104281; --warn:#b45309;
+  --st-m:#0b7a52; --st-c:#b45309; --st-u:#5a6578; --st-x:#b42318;
   --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
@@ -21,6 +22,7 @@
     --bg:#0d1320; --surface:#151d2e; --ink:#e8ecf4; --muted:#9aa5b8; --line:#28334a;
     --accent:#7da2ff; --accent-ink:#0d1320; --pay:#5fd6a4; --pay-bg:#143327; --chip:#1f2a40;
     --s1:#3987e5; --s2:#d95926; --s3:#199e70; --seq-lo:#184f95; --seq-hi:#b7d3f6; --warn:#fbbf24;
+    --st-m:#12805a; --st-c:#a8540c; --st-u:#55607a; --st-x:#b3261e;
     color-scheme:dark;
   }
 }
@@ -28,6 +30,7 @@
   --bg:#0d1320; --surface:#151d2e; --ink:#e8ecf4; --muted:#9aa5b8; --line:#28334a;
   --accent:#7da2ff; --accent-ink:#0d1320; --pay:#5fd6a4; --pay-bg:#143327; --chip:#1f2a40;
   --s1:#3987e5; --s2:#d95926; --s3:#199e70; --seq-lo:#184f95; --seq-hi:#b7d3f6; --warn:#fbbf24;
+    --st-m:#12805a; --st-c:#a8540c; --st-u:#55607a; --st-x:#b3261e;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -82,8 +85,13 @@ input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,te
 .meta{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--muted)}
 .tag{background:var(--chip);border-radius:6px;padding:2px 7px;color:var(--ink)}
 .tag.tier{border:1px solid var(--accent);background:transparent;color:var(--accent);font-weight:600}
-.tag.bar2{background:var(--pay-bg);color:var(--pay);font-weight:600}
+.tag.bar3{background:var(--pay-bg);color:var(--pay);font-weight:600}
+.tag.bar2{border:1px solid var(--pay);background:transparent;color:var(--pay);font-weight:600}
 .tag.bar1{border:1px dashed var(--pay);background:transparent;color:var(--pay)}
+.tag.due{border:1px solid var(--line);background:transparent}
+.tag.due.soon{color:var(--warn);border-color:var(--warn);font-weight:600}
+.tag.due.gone{color:var(--muted);text-decoration:line-through}
+.reqno{font-family:var(--mono);font-size:11.5px}
 .tag.new{background:var(--accent);color:var(--accent-ink);font-weight:600}
 .tag.chk{color:var(--warn);border:1px dashed var(--warn);background:transparent}
 .tag.fit{background:var(--accent);color:var(--accent-ink)}
@@ -133,10 +141,23 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
   .app>div:first-child{grid-column:1/-1}
 }
 @media (prefers-reduced-motion:no-preference){.funnel i{transition:width .2s}}
-.conf{flex-basis:100%;font-size:13px;color:var(--muted,#9aa4b2)}
-.conf b{display:inline-block;min-width:2.6em;padding:1px 6px;margin-right:6px;border-radius:999px;text-align:center;color:#fff;background:#6b7280}
-.conf.c5 b{background:#1baf7a}.conf.c4 b{background:#2a78d6}.conf.c1 b{background:#b4532a}
-.quote{flex-basis:100%;font-size:12.5px;font-style:italic;color:var(--muted,#9aa4b2)}
+.why{grid-column:1/-1;font-size:14px;margin:2px 0 0}
+.st{display:inline-block;padding:1px 8px;margin-right:6px;border-radius:999px;font-size:12px;font-weight:600;color:#fff;background:var(--st-u)}
+.st.M,.st.Y{background:var(--st-m)}.st.C{background:var(--st-c)}.st.X{background:var(--st-x)}
+.quote{grid-column:1/-1;margin:0;font-size:13px;font-style:italic;color:var(--muted);border-left:3px solid var(--line);padding-left:10px;overflow-wrap:anywhere}
+.src{grid-column:1/-1;font-size:12.5px;color:var(--muted)}
+.src .bad{color:var(--warn)}
+.facts{margin:0 0 12px;padding-left:18px;font-size:14px}
+.facts li{margin:2px 0}
+.fy-sec{margin:22px 0 8px;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.fy-sec h3{font-family:var(--display);font-size:18px;margin:0}
+.fy-sec p{margin:0;color:var(--muted);font-size:13.5px;flex:1 1 20rem}
+.audit{width:100%;border-collapse:collapse;font-size:14px}
+.audit td{padding:7px 8px 7px 0;border-top:1px solid var(--line);vertical-align:top}
+.audit td:nth-child(2){font-family:var(--mono);text-align:right;white-space:nowrap}
+.note{background:var(--surface);border:1px solid var(--warn);border-radius:10px;padding:10px 14px;margin:0 0 14px;font-size:14px}
+.health{margin:0;padding-left:18px;font-size:14px}
+.health li{margin:3px 0}.health .bad{color:var(--warn);font-weight:600}
 .watch{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
 .watch li{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:8px 0;border-top:1px solid var(--line)}
 .watch a{font-weight:600}.watch .why{flex:1 1 14rem;font-size:13px;color:var(--muted)}
@@ -150,6 +171,7 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
     <h1>Early-career tech &amp; quant jobs</h1>
     <p class="sub">Internships and new grad roles across the US, UK and Canada, with your own application tracker. Listings last refreshed <span id="snap"></span>.</p>
   </header>
+  <p class="note" id="stale" hidden></p>
 
   <nav class="tabs" aria-label="Views">
     <a href="#board" data-v="board">Board</a>
@@ -188,7 +210,8 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
           <select id="bar">
             <option value="all">All roles</option>
             <option value="bar">Clears the band or likely to</option>
-            <option value="sure">Clears the band, with evidence</option>
+            <option value="sure">Stated in the posting, or reported for the firm</option>
+            <option value="stated">Stated in the posting</option>
           </select></fieldset>
         <fieldset><label class="l" for="pay">Salary</label>
           <select id="pay">
@@ -196,12 +219,12 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
             <option value="stated">Stated by the employer</option>
             <option value="listed">Stated or estimated</option>
             <option value="median">Above the national median</option>
-            <option value="60">$60k+ a year</option>
-            <option value="80">$80k+ a year</option>
-            <option value="100">$100k+ a year</option>
-            <option value="150">$150k+ a year</option>
-            <option value="200">$200k+ a year</option>
-            <option value="300">$300k+ a year</option>
+            <option value="60">About $60k+ a year</option>
+            <option value="80">About $80k+ a year</option>
+            <option value="100">About $100k+ a year</option>
+            <option value="150">About $150k+ a year</option>
+            <option value="200">About $200k+ a year</option>
+            <option value="300">About $300k+ a year</option>
           </select></fieldset>
         <fieldset><label class="l" for="age">Posted</label>
           <select id="age">
@@ -213,7 +236,7 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
           </select></fieldset>
         <fieldset><legend>Employer</legend><div class="chips" id="f-tier"></div></fieldset>
         <label class="check"><input type="checkbox" id="hidedone" checked> Hide roles I've applied to or dismissed</label>
-        <label class="check"><input type="checkbox" id="onlynew"> New since my last visit <span id="nnew"></span></label>
+        <label class="check"><input type="checkbox" id="onlynew"> First listed since my last visit <span id="nnew"></span></label>
         <button class="link" id="reset" type="button">Clear all filters</button>
       </div></details></aside>
 
@@ -236,21 +259,19 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
   <section class="view" id="v-for-you" hidden>
     <div class="card">
       <h2>Summer 2027 internships for you</h2>
-      <p>Software and data, AI and ML internships in Greater London, Greater Toronto, or remote in the UK or Canada. Each role has a confidence score out of 5 that you can apply as a final-year student heading to a master's, highest first. 5 means the posting names final-year students; 4 means it was read and sets no year limit; 3 means it depends on your master's place, or the posting has not been read but is listed for summer 2027; 2 means not read and no season given. Roles with a sign of turning you away are taken out.</p>
-      <div class="chips" id="fy-country">
-        <button type="button" class="chip" data-c="UK" aria-pressed="true">London and UK remote</button>
-        <button type="button" class="chip" data-c="CA" aria-pressed="true">Toronto and Canada remote</button>
-      </div>
-      <p style="margin:12px 0 0"><label class="check"><input type="checkbox" id="fy-maybe"> <span id="fy-maybe-l">Also show the roles taken out</span></label></p>
+      <p>Every UK and Canada internship is compared with the facts below, using sentences from the posting itself. Nothing is taken out on a guess: a posting that has not been read is “unknown”, and a role is only ruled out when its title or posting states something you do not meet. Roles outside the places and fields you choose are counted at the bottom, one press away.</p>
+      <ul class="facts" id="fy-facts"></ul>
+      <fieldset style="margin-bottom:10px"><legend>Places</legend><div class="chips" id="fy-place"></div></fieldset>
+      <fieldset style="margin-bottom:10px"><legend>Fields</legend><div class="chips" id="fy-field"></div></fieldset>
+      <label class="check"><input type="checkbox" id="fy-done" checked> Hide roles I have applied to or dismissed</label>
     </div>
     <details class="card" id="fy-watch">
       <summary><b>Sites to check by hand</b> <span id="fy-watch-n" class="sync"></span></summary>
-      <p>These sites do not allow automated reading, so their roles cannot be pulled into the list below. Open each one yourself every few days. Press “Checked” and the date is remembered on this device.</p>
+      <p>These sites do not allow automated reading, so their roles cannot be pulled into the lists below. Open each one yourself every few days. Press “Checked” and the date is remembered on this device.</p>
       <ul class="watch" id="fy-watch-list"></ul>
     </details>
-    <div class="bar"><p id="fy-count"></p></div>
-    <ul class="list" id="fy-list"></ul>
-    <button class="btn more" id="fy-more" type="button">Show 60 more</button>
+    <div id="fy-groups"></div>
+    <div class="card" id="fy-audit" style="margin-top:22px"></div>
   </section>
 
   <section class="view" id="v-tracker" hidden>
@@ -285,6 +306,11 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
 
   <section class="view" id="v-insights" hidden>
     <div class="card">
+      <h2>Data check</h2>
+      <p>What the last refresh read, and anything that looked wrong. A source that fails keeps its previous copy rather than vanishing, and is named here.</p>
+      <ul class="health" id="health"></ul>
+    </div>
+    <div class="card">
       <h2>New roles posted each week</h2>
       <p>Weekly count of roles by posting date over the last 20 weeks. Each country has its own scale.</p>
       <div class="mult" id="c-week"></div>
@@ -303,14 +329,18 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
   </section>
 
   <footer>
+    <h2>How “For you” decides</h2>
+    <p>Each posting that can be read is searched for the sentences that say who may apply: year of study, graduation date, enrolment, returning to study, co-op registration, dates and length. Those sentences are compared with your facts. A published match means the posting names your situation and nothing in it conflicts. Conditional means it turns on something not settled, usually your master's place. Unknown means the posting says nothing relevant, or has not been read. A mismatch always shows the sentence it rests on. How well a posting was read is shown separately: in full from the employer's own system, partly, or not at all.</p>
+    <h2>Which roles count as one</h2>
+    <p>A vacancy is identified by its requisition on the employer's system, so the same title in London and New York stays two roles, each with its own link. Lists that link through their own site are attached to an employer posting only when employer, title, type and town all agree.</p>
     <h2>The pay band</h2>
-    <p>Roles at firms that clear a pay band are tagged: £60,000 a year in the UK, and the same multiple of the national median elsewhere, about $95,000 in the US and C$100,000 in Canada. A solid tag means there is evidence: pay stated in a US listing, or published reports of graduate pay at that firm in that country. A dashed tag means likely: a top quant firm, big tech company or AI lab with no firm-specific figure, or a US estimate. Reported figures are often total first-year pay including bonus and stock, and intern pay is pro rata.</p>
+    <p>Roles are tagged against a graduate pay band: £60,000 a year in the UK, about $95,000 in the US and C$100,000 in Canada. A solid tag means this posting states pay at or above the band in that country's currency. An outlined tag means published reports put the firm's graduate pay there, which is a statement about the firm and not this role. A dashed tag is an estimate from the kind of firm. Intern pay is pro rata.</p>
     <h2>How pay is handled</h2>
-    <p>Stated pay comes straight from the source listing and is in US dollars. Where a US role states none, a dashed figure shows an estimate: the median of the same employer's stated pay for the same role type. Hourly intern pay is converted to a yearly figure at 2,080 hours. The green edge marks roles above the US median for full-time workers, $64,064 a year (BLS, Q3 2026). The UK median is £40,911 (ONS, April 2026) and Canada's is C$68,640 (Statistics Canada, 2025).</p>
-    <h2>Degree, season and visa labels</h2>
-    <p>These come from the source lists and from words in the job title. Many roles carry none, so the filters only narrow by what is stated. Visa notes exist for a few hundred US roles only.</p>
+    <p>Stated pay is shown in the currency the employer gave. For sorting and the salary filter it is converted to US dollars at a rough fixed rate. Where a US role states none, a dashed figure shows an estimate: the median of the same employer's stated pay for the same role type. Hourly pay is converted to a yearly figure at 2,080 hours. The green edge marks pay above the national median for full-time workers: $64,064 in the US (BLS, Q3 2026), £40,911 in the UK (ONS, April 2026) and C$68,640 in Canada (Statistics Canada, 2025).</p>
+    <h2>Dates</h2>
+    <p>“First listed” is the day a role first appeared here, which is what “new” means on this site. Posting dates come from the source and many roles have none. Closing dates are read from the posting when it states one.</p>
     <h2>Where the listings come from</h2>
-    <p>Combined and de-duplicated from public GitHub lists: SimplifyJobs, vanshb03, speedyapply, zshah101, sndsh404, negarprh, northwesternfintech and LorenzoLaCorte, plus a few roles read from employer career sites. Every title links to the listing itself.</p>
+    <p>Employer job boards read directly (Greenhouse, Lever, Ashby, SmartRecruiters, Workable and Workday), the Reed listings service for the UK, and public lists on GitHub: SimplifyJobs, vanshb03, speedyapply, zshah101, sndsh404, negarprh, northwesternfintech, LorenzoLaCorte, Emjumaev, frogg, the Toronto AI/ML radar, Francklin9999, quant-scraper, aprameyak, michelleokolie, mazentalsam, dreamworkhq and grind-fyi. LinkedIn, Indeed, Glassdoor, Trackr, Gradcracker, Bright Network, Bloomberg and Revolut do not allow automated reading and are listed under “Sites to check by hand”.</p>
   </footer>
 </div>
 <div id="tip" role="tooltip"></div>
@@ -323,11 +353,19 @@ const D = window.JOBS || [];
 const ALK = 'ecj-alerts-v1';
 (function(){ try { const seen = new Set(D.map(r => (r[0]+'|'+r[1]).toLowerCase().replace(/[^a-z0-9|]/g,'')));
   (JSON.parse(localStorage.getItem(ALK) || '[]') || []).forEach(r => { const k = (r[0]+'|'+r[1]).toLowerCase().replace(/[^a-z0-9|]/g,'');
-    if (Array.isArray(r) && r.length === 19 && !seen.has(k)) { seen.add(k); D.push(r); } }); } catch (e) {} })();
+    if (Array.isArray(r) && r.length >= 19 && !seen.has(k)) { seen.add(k);
+      if (r.length < 24) r = r.slice(0,19).concat([r[7] || '', '', '', [], '']); // rows from an older script: first listed, closing date, reference, other links, currency
+      D.push(r); } }); } catch (e) {} })();
 const SNAP = window.SNAP || new Date().toISOString().slice(0,10);
-const TODAY = new Date(SNAP+'T00:00:00Z');
-const C = {co:0,ti:1,locs:2,ctry:3,type:4,cat:5,url:6,date:7,pay:8,annual:9,tier:10,spons:11,srcs:12,above:13,est:14,bar:15,deg:16,terms:17,id:18};
-const NAMES = {US:'United States',UK:'United Kingdom',CA:'Canada'};
+const SNAPD = new Date(SNAP+'T00:00:00Z');
+/* Ages, closing dates and "new" are counted from the real date, not from the day the listings were built. */
+const TODAY = (d => d > SNAPD ? d : SNAPD)(new Date(new Date().toISOString().slice(0,10)+'T00:00:00Z'));
+const TODAY_ISO = TODAY.toISOString().slice(0,10);
+const C = {co:0,ti:1,locs:2,ctry:3,type:4,cat:5,url:6,date:7,pay:8,annual:9,tier:10,spons:11,srcs:12,above:13,est:14,bar:15,deg:16,terms:17,id:18,seen:19,due:20,req:21,alts:22,cur:23};
+const NAMES = {US:'United States',UK:'United Kingdom',CA:'Canada','??':'Location not stated'};
+const FX = {USD:1, GBP:1.27, CAD:0.73}, SYM = {USD:'$', GBP:'£', CAD:'C$'};
+/* What each posting says about who can apply: window.ELIG[id] = [state, how well read, reason, sentence, checked, kind, closing date, rolling, could not open] */
+const EL = window.ELIG || {}, EI = window.ELIG_INFO || {}, HEALTH = window.HEALTH || null;
 const STATUS = ['Saved','Applied','Online test','Interview','Offer','Rejected','Not interested'];
 const DONE = new Set(['Applied','Online test','Interview','Offer','Rejected','Not interested']);
 const BYID = new Map();
@@ -336,7 +374,10 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const num = n => n.toLocaleString('en-US');
 const today = () => new Date().toISOString().slice(0,10);
-$('snap').textContent = TODAY.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+const fmtDay = (d, y) => new Date(d+'T00:00:00Z').toLocaleDateString('en-GB', Object.assign({day:'numeric',month:'short',timeZone:'UTC'}, y ? {year:'numeric'} : {}));
+$('snap').textContent = SNAPD.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+(function(){ const n = Math.round((TODAY - SNAPD)/864e5); if (n >= 2) { $('stale').hidden = false;
+  $('stale').textContent = `The listings were last refreshed ${n} days ago. The daily refresh may have stopped: on your Mac, open the claude-jobs folder and run refresh-quick. Closing dates and ages below are still counted from today.`; } })();
 
 /* ---------- filters ---------- */
 const DEF = {q:'',loc:'',country:[],type:[],cat:[],tier:[],bar:'all',pay:'any',age:0,deg:'any',term:'any',visa:'any',hidedone:true,onlynew:false,sort:'new'};
@@ -348,9 +389,9 @@ function chips(el, key, idx, opts){
   $(el).addEventListener('click', e => { const b=e.target.closest('.chip'); if(!b) return;
     const v=b.dataset.v, a=st[key], i=a.indexOf(v); i<0?a.push(v):a.splice(i,1); sync(); render(); });
 }
-chips('f-country','country',C.ctry,[['US','US'],['UK','UK'],['CA','Canada']]);
+chips('f-country','country',C.ctry,[['US','US'],['UK','UK'],['CA','Canada'],['??','Not stated']]);
 chips('f-type','type',C.type,[['Internship','Internship'],['New Grad','New grad']]);
-chips('f-cat','cat',C.cat,[['Software','Software'],['Data, AI & Stats','Data, AI & stats'],['Quant','Quant'],['Hardware','Hardware'],['Product','Product']]);
+chips('f-cat','cat',C.cat,[['Software','Software'],['Data, AI & Stats','Data, AI & stats'],['Quant','Quant'],['Hardware','Hardware'],['Product','Product'],['Other','Other']]);
 chips('f-tier','tier',C.tier,[['FAANG+','Big tech'],['Quant firm','Quant firm']]);
 (function(){ const m=new Map(); for(const r of D) for(const l of r[2]) m.set(l,(m.get(l)||0)+1);
   $('loclist').innerHTML=[...m].sort((a,b)=>b[1]-a[1]).slice(0,150).map(([l])=>`<option value="${esc(l)}">`).join('');
@@ -363,9 +404,15 @@ function sync(){ // push state into the controls
   $('age').value = String(st.age); $('hidedone').checked = st.hidedone; $('onlynew').checked = st.onlynew; shown = 60;
 }
 function daysOld(d){ return d ? Math.round((TODAY - new Date(d+'T00:00:00Z'))/864e5) : 9999; }
-function ageLabel(d){ if(!d) return 'date unknown'; const n=daysOld(d); return n<=0?'today':n===1?'1 day ago':n<60?n+' days ago':Math.round(n/30)+' months ago'; }
+function ago(d){ const n=daysOld(d); return n<=0?'today':n===1?'1 day ago':n<60?n+' days ago':Math.round(n/30)+' months ago'; }
+/* The posting date when the source gives one, otherwise the day the role first appeared here. */
+function ageLabel(r){ return r[C.date] ? 'posted ' + ago(r[C.date]) : r[C.seen] ? 'first listed ' + ago(r[C.seen]) : 'date unknown'; }
+const when = r => r[C.date] || r[C.seen] || '';
 let prevVisit = '';
-const isNew = r => !!prevVisit && r[C.date] > prevVisit;
+/* New means first listed here after your previous visit, whatever date the posting carries. */
+const isNew = r => !!prevVisit && (r[C.seen] || r[C.date] || '') > prevVisit;
+function dueTag(d){ if (!d) return ''; const n = -daysOld(d);
+  return n < 0 ? `<span class="tag due gone">Closed ${fmtDay(d)}</span>` : `<span class="tag due${n <= 10 ? ' soon' : ''}">Closes ${fmtDay(d)}${n === 0 ? ', today' : n <= 21 ? `, ${n} day${n === 1 ? '' : 's'} left` : ''}</span>`; }
 
 function filtered(){
   const q=st.q.trim().toLowerCase().split(/\s+/).filter(Boolean), loc=st.loc.trim().toLowerCase();
@@ -376,6 +423,7 @@ function filtered(){
     if(st.tier.length && !st.tier.includes(r[C.tier])) return false;
     if(st.bar==='bar' && !r[C.bar]) return false;
     if(st.bar==='sure' && r[C.bar]<2) return false;
+    if(st.bar==='stated' && r[C.bar]<3) return false;
     if(loc && !r.l.includes(loc)) return false;
     if(st.deg==='ms' && !(r[C.deg]&2)) return false;
     if(st.deg==='nophd' && r[C.deg]===4) return false;
@@ -387,51 +435,52 @@ function filtered(){
     if(st.pay==='stated' && (!r[C.annual] || r[C.est])) return false;
     if(st.pay==='median' && !r[C.above]) return false;
     if(/^\d+$/.test(st.pay) && r[C.annual] < +st.pay*1000) return false;
-    if(st.age && daysOld(r[C.date])>st.age) return false;
+    if(st.age && daysOld(when(r))>st.age) return false;
     if(st.hidedone && DONE.has((store.apps[r[C.id]]||{}).s)) return false;
     if(st.onlynew && !isNew(r)) return false;
     for(const w of q) if(!r.s.includes(w)) return false;
     return true;
   });
-  if(st.sort==='pay') out.sort((a,b)=>b[C.annual]-a[C.annual] || (a[C.date]<b[C.date]?1:-1));
+  if(st.sort==='pay') out.sort((a,b)=>b[C.annual]-a[C.annual] || (when(a)<when(b)?1:-1));
   else if(st.sort==='co') out.sort((a,b)=>a[0].localeCompare(b[0]));
   return out;
 }
 const statusSelect = (id, cur) => `<select data-app="${id}" aria-label="Application status" class="${cur?'on':''}"><option value="">Track this role…</option>${STATUS.map(s=>`<option${s===cur?' selected':''}>${s}</option>`).join('')}</select>`;
 const DEGL = d => d===4?'PhD only':(d&2)?"Master's named":'';
-function row(r, extra, bare){
-  if (typeof extra !== 'string') extra = ''; bare = bare === true; // also called as a plain map() callback
-  const yr = /hr$/.test(r[C.pay]) ? `about $${Math.round(r[C.annual]/1000)}k a year` : '';
-  const pay = !r[C.annual] ? `<div class="pay none">Pay not listed</div>`
+function payBox(r){
+  const cur = r[C.cur] || 'USD', sym = SYM[cur] || '$', native = Math.round(r[C.annual] / (FX[cur] || 1) / 1000);
+  const yr = /hr$|month$|day$/.test(r[C.pay]) ? `about ${sym}${native}k a year` : '';
+  return !r[C.annual] ? `<div class="pay none">Pay not listed</div>`
     : r[C.est] ? `<div class="pay est">~${esc(r[C.pay])}<small>estimate from ${r[C.est]} other ${r[C.est]===1?'listing':'listings'} at this employer</small></div>`
     : `<div class="pay has">${esc(r[C.pay])}${yr?`<small>${yr}</small>`:''}</div>`;
-  const locs = r[C.locs].length ? r[C.locs].slice(0,3).join(' · ') + (r[C.locs].length>3?` +${r[C.locs].length-3} more`:'') : r[C.ctry].map(c=>NAMES[c]).join(', ');
-  const sp = r[C.spons], a = store.apps[r[C.id]];
-  if (bare) return `<li class="job">
-    <div><div class="co">${esc(r[C.co])}</div><a class="ti" href="${esc(r[C.url])}" target="_blank" rel="noopener">${esc(r[C.ti])}</a></div>
-    ${pay}
-    <div class="meta"><span>${esc(locs)}</span>${extra||''}<span>${ageLabel(r[C.date])}</span></div>
-    <div class="track">${statusSelect(r[C.id], a&&a.s)}</div>
-  </li>`;
+}
+const placeText = r => r[C.locs].length ? r[C.locs].slice(0,3).join(' · ') + (r[C.locs].length>3?` +${r[C.locs].length-3} more`:'') : r[C.ctry].map(c=>NAMES[c]||c).join(', ');
+const otherLinks = r => (r[C.alts]||[]).length ? `<span>Also at ${r[C.alts].map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener">link ${i+2}</a>`).join(', ')}</span>` : '';
+const reqNo = r => r[C.req] ? `<span class="reqno" title="The employer's reference for this vacancy">Ref ${esc(r[C.req])}</span>` : '';
+const BARTAG = ['', '<span class="tag bar1" title="An estimate from the kind of firm">Likely clears pay band</span>',
+  '<span class="tag bar2" title="Published reports of graduate pay at this firm, not a statement about this role">Firm clears pay band</span>',
+  '<span class="tag bar3" title="This posting states pay at or above the band">Pay stated above band</span>'];
+function row(r){
+  const sp = r[C.spons], a = store.apps[r[C.id]], due = (EL[r[C.id]] || [])[6] || r[C.due];
   return `<li class="job${r[C.above]?' above':''}">
     <div><div class="co">${esc(r[C.co])}</div><a class="ti" href="${esc(r[C.url])}" target="_blank" rel="noopener">${esc(r[C.ti])}</a></div>
-    ${pay}
-    <div class="meta"><span>${esc(locs)}</span>
-      ${extra||''}${isNew(r)?'<span class="tag new">New</span>':''}
+    ${payBox(r)}
+    <div class="meta"><span>${esc(placeText(r))}</span>
+      ${isNew(r)?'<span class="tag new">New</span>':''}${dueTag(due)}
       <span class="tag">${r[C.type]==='New Grad'?'New grad':'Internship'}</span><span class="tag">${esc(r[C.cat])}</span>
       ${r[C.terms].slice(0,2).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}
       ${DEGL(r[C.deg])?`<span class="tag">${DEGL(r[C.deg])}</span>`:''}
       ${r[C.tier]?`<span class="tag tier">${r[C.tier]==='FAANG+'?'Big tech':'Quant firm'}</span>`:''}
-      ${r[C.bar]===2?'<span class="tag bar2">Clears pay band</span>':r[C.bar]===1?'<span class="tag bar1">Likely clears pay band</span>':''}
+      ${BARTAG[r[C.bar]] || ''}
       ${sp?`<span class="tag${sp==='Sponsors'?'':' no'}">${esc(sp)}</span>`:''}
-      <span>${ageLabel(r[C.date])}</span></div>
+      <span>${ageLabel(r)}</span>${reqNo(r)}${otherLinks(r)}</div>
     <div class="track">${statusSelect(r[C.id], a&&a.s)}</div>
   </li>`;
 }
 function render(){
   const f=filtered();
   $('count').textContent = `${num(f.length)} of ${num(D.length)} roles`;
-  $('list').innerHTML = f.length ? f.slice(0,shown).map(row).join('')
+  $('list').innerHTML = f.length ? f.slice(0,shown).map(r => row(r)).join('')
     : '<li class="empty">No roles match these filters. Remove one, or clear them all.</li>';
   const left=f.length-shown; $('more').hidden = left<=0; $('more').textContent = `Show ${Math.min(60,left)} more`;
   $('nnew').textContent = prevVisit ? `(${num(D.filter(isNew).length)})` : '';
@@ -593,11 +642,34 @@ $('saved').addEventListener('submit', e => { e.preventDefault();
 /* ---------- tracker ---------- */
 document.addEventListener('change', e => {
   const s = e.target.closest('select[data-app]'); if (s) { setApp(s.dataset.app, {s: s.value}); s.classList.toggle('on', !!s.value); if (st.hidedone) render(); if (!$('v-for-you').hidden) paintFY(); return; }
+  const k = e.target.closest('select[data-check]'); if (k) { setCheck(k.dataset.check, k.value); if (!$('v-for-you').hidden) paintFY(); return; }
   const n = e.target.closest('[data-note]'); if (n) { setApp(n.dataset.note, {n: n.value.slice(0,2000)}); return; }
   const d = e.target.closest('[data-date]'); if (d) setApp(d.dataset.date, {ad: d.value});
 });
 document.addEventListener('click', e => { const b = e.target.closest('[data-rm]'); if (b) { setApp(b.dataset.rm, {s:''}); render(); } });
+/* A role's id can change: a list link is later traced to the employer's own posting, or the way roles are told apart improves.
+   Tracked roles whose id has gone are matched to the same role by link, then by employer, title and type, and moved across. */
+const linkKey = u => String(u || '').toLowerCase().split('#')[0].replace(/[?&](utm_[^=&]*|ref|source|src|gh_src)=[^&]*/g, '').replace(/[?&]$/, '').replace(/\/$/, '');
+let BYLINK = null, BYNAME = null;
+function rehome(){
+  const lost = Object.keys(store.apps).filter(id => !BYID.has(id)); if (!lost.length) return 0;
+  if (!BYLINK) { BYLINK = new Map(); BYNAME = new Map();
+    for (const r of D) { [r[C.url]].concat(r[C.alts] || []).forEach(u => BYLINK.set(linkKey(u), r));
+      const k = (r[C.co] + '|' + r[C.ti] + '|' + r[C.type]).toLowerCase(); BYNAME.set(k, BYNAME.has(k) ? null : r); } }
+  let moved = 0;
+  for (const id of lost) { const a = store.apps[id];
+    const r = BYLINK.get(linkKey(a.u)) || BYNAME.get(((a.c || '') + '|' + (a.t || '') + '|' + (a.ty || '')).toLowerCase());
+    if (!r || store.apps[r[C.id]]) continue;
+    const copy = Object.assign({}, a); delete store.apps[id];
+    store.apps[r[C.id]] = Object.assign(copy, {ts: Date.now()});
+    if (gs) { store.q.dirty[r[C.id]] = 1; store.q.gone[id] = Date.now(); delete store.q.dirty[id]; }
+    write('a' + id, remote && remote.apps.doc(id), null); write('a' + r[C.id], remote && remote.apps.doc(r[C.id]), store.apps[r[C.id]]);
+    moved++; }
+  if (moved) { saveLocal(); queueSync(); }
+  return moved;
+}
 function paintTracker(){
+  rehome();
   const ids = Object.keys(store.apps), by = {}; STATUS.forEach(s=>by[s]=[]);
   ids.forEach(id => { const a = store.apps[id]; (by[a.s] || (by[a.s]=[])).push(id); });
   $('ntrack').textContent = ids.length ? ids.length : '';
@@ -691,7 +763,7 @@ function openChart(){
   return s+'</svg>';
 }
 function payChart(){
-  const by=new Map(); for(const r of D){ if(!r[C.annual]||r[C.est]) continue; (by.get(r[C.co])||by.set(r[C.co],[]).get(r[C.co])).push(r[C.annual]); }
+  const by=new Map(); for(const r of D){ if(!r[C.annual]||r[C.est]||(r[C.cur]||'USD')!=='USD') continue; (by.get(r[C.co])||by.set(r[C.co],[]).get(r[C.co])).push(r[C.annual]); }
   const rows=[...by].map(([f,v])=>{ v.sort((a,b)=>a-b); return [f, v[Math.floor(v.length/2)], v.length]; }).sort((a,b)=>b[1]-a[1]).slice(0,20);
   if(!rows.length) return '<p>No stated pay in this snapshot.</p>';
   const max=rows[0][1], pl=150, w=640, bh=20, h=rows.length*bh+4;
@@ -702,75 +774,157 @@ function payChart(){
       <text class="v" x="${pl+bw+6}" y="${y+12}">$${Math.round(v/1000)}k</text>`; });
   return s+'</svg>';
 }
+function paintHealth(){
+  const out = [], h = HEALTH, bad = t => `<span class="bad">${t}</span>`;
+  if (!h) { $('health').innerHTML = '<li>No data check was recorded with this refresh.</li>'; return; }
+  const src = Object.entries(h.sources || {}), off = src.filter(([, v]) => v.state !== 'ok');
+  out.push(`Listings built on ${fmtDay(h.date, 1)} from ${src.length} sources.`);
+  off.forEach(([k, v]) => out.push(bad(v.state === 'none' ? `${esc(k)} gave no listings this time` : `${esc(k)} gave far fewer listings than usual (${num(v.rows)} against ${num(v.usual)})`)
+    + (v.last_ok ? `; last normal on ${fmtDay(v.last_ok, 1)}.` : '.')));
+  const files = Object.entries(h.files || {});
+  files.forEach(([f, st]) => out.push(bad(`${esc(f)} ${st === 'shrunk' ? 'came back much smaller than before' : 'could not be downloaded'}`) + ', so its previous copy was used.'));
+  if (!off.length && !files.length) out.push('Every source list downloaded and gave a normal number of listings.');
+  const c = h.crawl || {};
+  if (c.date) { const age = daysOld(c.date);
+    out.push(`Employer job boards were read on ${fmtDay(c.date, 1)}: ${num(c.boards)} boards, ${num(c.rows)} early-career roles`
+      + (c.failed ? `, ${bad(num(c.failed) + ' boards could not be reached')}` + (c.carried ? ` (their ${num(c.carried)} roles are kept from the previous read for up to two weeks)` : '') : '') + '.'
+      + (age > 9 ? ' ' + bad(`That was ${age} days ago; the weekly read may have stopped.`) : '')
+      + (c.version < 3 ? ' This read predates the current reader, so some locations show as not stated until the next full refresh.' : '')); }
+  if ((h.reed || {}).date) out.push(`Reed (UK) was read on ${fmtDay(h.reed.date, 1)}: ${num(h.reed.rows)} roles.`);
+  const q = EI.quality || {}, n = (q.full||0) + (q.partial||0) + (q.none||0);
+  if (n) out.push(`Of ${num(n)} UK, Canada and unplaced internships, ${num(q.full||0)} postings were read in full, ${num(q.partial||0)} partly and ${num(q.none||0)} not at all`
+    + ((q.partial||0) > (q.full||0) ? '. Partly read postings come from the earlier reader and are read again in full at the next refresh.' : '.'));
+  $('health').innerHTML = out.map(x => `<li>${x}</li>`).join('');
+}
 let chartsDone = false;
-function paintCharts(){ if (chartsDone) return; chartsDone = true;
+function paintCharts(){ paintHealth(); if (chartsDone) return; chartsDone = true;
   $('c-week').innerHTML = weekChart('US','var(--s1)') + weekChart('UK','var(--s2)') + weekChart('CA','var(--s3)');
   $('c-open').innerHTML = openChart(); $('c-pay').innerHTML = payChart(); }
 
 /* ---------- For you ---------- */
-const FY_EX = /first.year|1st.year|spring week|insight|sophomore|freshman|high school|apprentice|school leaver|\bmba\b|ph\.?d|doctoral|stagiaire|\bstage\b|[éèêàç]|thesis|\b(6|8|9|10|12|16).?months?\b|year.long|winter|\bfall\b|autumn|january|september|off.?cycle|new grad|graduate (program|scheme)/i;
-const FY_CHK = /penultimate|placement|industrial|year in industry|sandwich|co-?op|second.year|2nd.year|rising|junior year|class of 2028|2028|returning/i;
-const FY_BANK = /barclays|goldman|morgan stanley|jpmorgan|j\.p\. morgan|jpmc|\bciti|\bubs\b|hsbc|deutsche|bnp|nomura|bank of america|\brbc\b|royal bank|\btd\b|scotiabank|\bbmo\b|cibc|lloyds|natwest|santander|standard chartered|macquarie|blackrock/i;
-const fy = {c:['UK','CA'], maybe:false, shown:60};
-const FY_RES = /research/i, FY_QENG = /developer|engineer|software|technolog|data|machine learning/i;
-const fyQuant = r => r[C.cat] === 'Quant';
-const fyFit = r => { const d27 = r[C.terms].includes('Summer 2027'); return d27 && (r[C.deg]&3) ? 3 : d27 ? 2 : 1; };
-const brand = r => r[C.bar] > 0 || !!r[C.tier];
-const FY_LON = /london|canary wharf|croydon|uxbridge|hounslow|wembley|ealing|kingston upon thames|stratford, (uk|london|england)/i;
+/* Scope: every internship in the UK or Canada, plus those whose country the listing does not state. Each is judged from its
+   posting (see elig.js). The chips below choose places and fields; they never remove a role for good. */
+const FYK = 'ecj-fy-v2';
+const fy = {place:['lon','gta','remote'], field:['sw','data'], done:true, open:{M:true,C:true,U:true,X:false}, shown:{M:40,C:40,U:40,X:40}};
+try { const j = JSON.parse(localStorage.getItem(FYK) || 'null'); if (j) { if (Array.isArray(j.place)) fy.place = j.place; if (Array.isArray(j.field)) fy.field = j.field; fy.done = j.done !== false; Object.assign(fy.open, j.open || {}); } } catch (e) {}
+const fySave = () => { try { localStorage.setItem(FYK, JSON.stringify({place:fy.place, field:fy.field, done:fy.done, open:fy.open})); } catch (e) {} };
+const PLACES = [['lon','London area'],['gta','Toronto area'],['remote','Remote, UK or Canada'],['uk','Elsewhere in the UK'],['ca','Elsewhere in Canada'],['unk','Country not stated']];
+const FIELDS = [['sw','Software'],['data','Data, AI and ML'],['quant','Quant research and trading'],['hw','Hardware'],['pm','Product'],['other','Other']];
+const FY_LON = /london|canary wharf|croydon|uxbridge|hounslow|wembley|ealing|kingston upon thames|westminster|shoreditch|paddington|king'?s cross|hammersmith|greenwich|stratford, (uk|london|england)/i;
 const FY_GTA = /toronto|mississauga|markham|brampton|vaughan|richmond hill|oakville|scarborough|north york|etobicoke|pickering|\bajax\b|whitby|oshawa|burlington, (on|canada)|milton, (on|canada)|newmarket|aurora, (on|canada)|thornhill|\bGTA\b/i;
-const fyCity = r => { const o = new Set();
-  for (const l of r[C.locs]) {
-    if (FY_LON.test(l) && !/\bON\b|ontario|canada/i.test(l)) o.add('UK');
-    if (FY_GTA.test(l)) o.add('CA');
-    if (/remote/i.test(l)) {
-      if (/\buk\b|united kingdom|england/i.test(l)) o.add('UK');
-      else if (/canada/i.test(l)) o.add('CA');
-      else if (/^remote$/i.test(l.trim()) && r[C.ctry].length === 1 && r[C.ctry][0] !== 'US') o.add(r[C.ctry][0]);
-    }
-  }
-  return [...o]; };
-const fyUnclear = r => !fyCity(r).length && r[C.ctry].some(c => c !== 'US') && r[C.locs].every(l => /^(canada|united kingdom|uk|england|ontario(, canada)?|on, canada)$/i.test(l.trim()));
-const fyBase = D.filter(r => {
-  const field = r[C.cat] === 'Software' || r[C.cat] === 'Data, AI & Stats' || (r[C.cat] === 'Quant' && FY_QENG.test(r[C.ti]));
-  if (r[C.type] !== 'Internship' || !field || r[C.deg] === 4 || FY_EX.test(r[C.ti])) return false;
-  if (!fyCity(r).length && !fyUnclear(r)) return false;
-  const t = r[C.terms]; return !t.length || t.includes('Summer 2027');
-});
-/* Posting text read by the checker: window.ELIG[id] = [score 1-5, reason, short quote] */
-const EL = window.ELIG || {};
-const fyRead = r => EL[r[C.id]];
-const fyRisk = r => { const e = fyRead(r), sure = e && e[0] === 5;
-  return e && e[0] === 1 ? 'Taken out: ' + e[1]
-  : !sure && FY_CHK.test(r[C.ti]) ? 'Taken out: title points to penultimate-year, placement or co-op students'
-  : !sure && FY_BANK.test(r[C.co]) ? 'Taken out: bank schemes usually want penultimate-year students'
-  : !sure && FY_RES.test(r[C.ti]) ? 'Taken out: research posts often need you to be enrolled'
-  : fyUnclear(r) ? 'Taken out: city not stated' : ''; };
-/* Confidence that a final-year student heading to a master's can apply, 1 to 5. */
-function fyConf(r){
-  if (fyRisk(r)) return [1, fyRisk(r).replace('Taken out: ','')];
-  const e = fyRead(r), dated = r[C.terms].includes('Summer 2027');
-  if (e) return [e[0], e[1]];
-  return dated ? [3, 'Posting not read yet. Listed for summer 2027.'] : [2, 'Posting not read yet. Season not stated.'];
+const FY_ENG = /developer|engineer|software|technolog|infrastructure|systems|platform|devops|security/i, FY_DATA = /\bdata\b|machine learning|\bml\b|\bai\b|analytics/i;
+function fyPlaces(r){ // which place chips a role belongs under; worked out when the listings are built
+  if (Array.isArray(r[24]) && r[24].length) return new Set(r[24]);
+  const c = r[C.ctry], o = new Set(), text = r[C.locs].join(' | '); // a role added from a job-alert email
+  if (c.includes('UK')) o.add(FY_LON.test(text) ? 'lon' : 'uk');
+  if (c.includes('CA')) o.add(FY_GTA.test(text) ? 'gta' : 'ca');
+  if (/remote/i.test(text) && (c.includes('UK') || c.includes('CA'))) o.add('remote');
+  if (!o.size) o.add('unk');
+  return o;
 }
-const fyQuote = r => (fyRead(r) || [])[2] || '';
-const fyRank = (a,b) => (fyConf(b)[0]-fyConf(a)[0]) || (fyFit(b)-fyFit(a)) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1);
-function fyList(){
-  const here = r => fyCity(r).some(c => fy.c.includes(c)) || (fyUnclear(r) && r[C.ctry].some(c => fy.c.includes(c)));
-  const open = fyBase.filter(r => here(r) && !DONE.has((store.apps[r[C.id]]||{}).s));
-  return [open.filter(r => !fyRisk(r)).sort(fyRank), open.filter(r => fyRisk(r)).sort(fyRank)];
+function fyField(r){ const k = r[C.cat], t = r[C.ti];
+  return k === 'Software' ? 'sw' : k === 'Data, AI & Stats' ? 'data' : k === 'Hardware' ? 'hw' : k === 'Product' ? 'pm'
+    : k === 'Quant' ? (FY_DATA.test(t) ? 'data' : FY_ENG.test(t) ? 'sw' : 'quant') : 'other'; }
+const fyAll = D.filter(r => r[C.type] === 'Internship' && r[C.ctry].some(c => c === 'UK' || c === 'CA' || c === '??'));
+fyAll.forEach(r => { r.fp = fyPlaces(r); r.ff = fyField(r); });
+/* Your own check with the employer is kept in the tracker note, so it syncs like everything else. */
+const CHECKS = ['Asked employer', 'Employer confirmed', 'Employer said no'], CHECK_RE = /^\[(Asked employer|Employer confirmed|Employer said no)(?: (\d{4}-\d{2}-\d{2}))?\]\s*/;
+const myCheck = id => { const m = CHECK_RE.exec((store.apps[id] || {}).n || ''); return m ? {v: m[1], d: m[2] || ''} : null; };
+function setCheck(id, v){ const a = store.apps[id] || {}, rest = (a.n || '').replace(CHECK_RE, '');
+  setApp(id, {s: a.s || 'Saved', n: (v ? `[${v} ${today()}] ` : '') + rest}); }
+const NOREAD = /(^|\.)(csjobs\.ca|linkedin\.com|indeed\.com|glassdoor\.[a-z.]+|simplify\.jobs|dreamworkhq\.com|the-trackr\.com|gradcracker\.com|brightnetwork\.co\.uk|bloomberg\.com|bloomberg\.avature\.net|revolut\.com)$/;
+const hostOf = u => { try { return new URL(u).hostname.toLowerCase(); } catch (e) { return ''; } };
+const NONE = ['U','none','This role has not been judged yet.','','','','',0,''];
+/* Where a role sits, with the reason. Your own record from the employer outranks the reading of the posting; a closing date that has passed rules a role out. */
+function fyJudge(r){
+  const e = EL[r[C.id]] || NONE, mine = myCheck(r[C.id]), due = e[6] || r[C.due] || '';
+  let g = e[0], why = e[2], quote = e[3], badge = {M:'Match', C:'Conditional', U:'Unknown', X:'Mismatch'}[e[0]];
+  if (mine && mine.v === 'Employer said no') { g = 'X'; badge = 'Ruled out by you'; why = `You recorded that the employer said no${mine.d ? ' on ' + fmtDay(mine.d) : ''}.`; quote = ''; }
+  else if (due && due < TODAY_ISO) { g = 'X'; badge = 'Closed'; why = `Applications closed on ${fmtDay(due, 1)}.` + (e[0] !== 'U' ? ' Before that: ' + e[2] : ''); }
+  else if (mine && mine.v === 'Employer confirmed') { g = 'M'; badge = 'Confirmed by you'; why = `You recorded that the employer confirmed you can apply${mine.d ? ' on ' + fmtDay(mine.d) : ''}. The posting: ` + e[2]; }
+  else if (mine && g !== 'X') why = `You asked the employer${mine.d ? ' on ' + fmtDay(mine.d) : ''}; no answer recorded yet. ` + why;
+  return {g, why, quote, badge, e, due, cls: badge === 'Confirmed by you' ? 'Y' : g};
+}
+function readLine(r, e){
+  const d = e[4] ? ', checked ' + fmtDay(e[4]) : '';
+  const how = e[1] === 'full' ? 'Read in full' + d : e[1] === 'partial' ? 'Partly read' + d
+    : NOREAD.test(hostOf(r[C.url])) ? 'Not read: this site does not allow automated reading, so open the posting yourself' : 'Not read yet';
+  const failed = e[8] ? ` <span class="bad">· Could not be opened on ${fmtDay(e[8])}; it may have closed</span>` : '';
+  return how + (e[7] ? ' · Applications are reviewed as they arrive' : '') + failed;
+}
+function fyRow(r){
+  const j = r.j, a = store.apps[r[C.id]], mine = myCheck(r[C.id]);
+  return `<li class="job">
+    <div><div class="co">${esc(r[C.co])}</div><a class="ti" href="${esc(r[C.url])}" target="_blank" rel="noopener">${esc(r[C.ti])}</a></div>
+    ${payBox(r)}
+    <div class="meta"><span>${esc(placeText(r))}</span>${isNew(r)?'<span class="tag new">New</span>':''}${dueTag(j.due)}<span>${ageLabel(r)}</span>${reqNo(r)}${otherLinks(r)}</div>
+    <p class="why"><span class="st ${j.cls}">${esc(j.badge)}</span>${esc(j.why)}</p>
+    ${j.quote ? `<blockquote class="quote">${esc(j.quote)}</blockquote>` : ''}
+    <div class="src">${readLine(r, j.e)}</div>
+    <div class="track">${statusSelect(r[C.id], a&&a.s)}
+      <select data-check="${r[C.id]}" aria-label="Your own check with the employer" class="${mine?'on':''}"><option value="">Checked with the employer?</option>${CHECKS.map(c=>`<option${mine&&mine.v===c?' selected':''}>${c}</option>`).join('')}</select></div>
+  </li>`;
+}
+const QRANK = {full:0, partial:1, none:2};
+/* Order inside a group: a closing date still ahead comes first, soonest first; then how well the posting was read; then newest. */
+function fyOrder(a, b){
+  const da = a.j.due && a.j.due >= TODAY_ISO ? a.j.due : '9', db = b.j.due && b.j.due >= TODAY_ISO ? b.j.due : '9';
+  return da < db ? -1 : da > db ? 1 : (QRANK[a.j.e[1]] - QRANK[b.j.e[1]]) || (when(a) < when(b) ? 1 : when(a) > when(b) ? -1 : 0);
+}
+const GROUPS = [
+  ['M', 'Published match', 'The posting names your situation and nothing in it conflicts. Still read it before you apply.'],
+  ['C', 'Conditional', 'It turns on something not settled: usually whether your master’s place counts, or exact dates.'],
+  ['U', 'Unknown', 'The posting sets no rule on year of study, or it has not been read. Nothing here has been ruled out.'],
+  ['X', 'Ruled out, with the reason', 'The title or posting states something you do not meet, the closing date has passed, or you recorded a no. Check any you care about.'],
+];
+function fyLists(){
+  const inPlace = r => fy.place.some(p => r.fp.has(p)), inField = r => fy.field.includes(r.ff);
+  const done = r => DONE.has((store.apps[r[C.id]]||{}).s);
+  const out = {M:[], C:[], U:[], X:[], offPlace:0, offField:0, hiddenDone:0};
+  for (const r of fyAll) {
+    if (!inField(r)) { out.offField++; continue; }
+    if (!inPlace(r)) { out.offPlace++; continue; }
+    if (fy.done && done(r)) { out.hiddenDone++; continue; }
+    r.j = fyJudge(r); out[r.j.g].push(r);
+  }
+  for (const g of 'MCUX') out[g].sort(fyOrder);
+  return out;
+}
+function chipRow(el, opts, picked, countOf){
+  $(el).innerHTML = opts.map(([v, label]) => `<button type="button" class="chip" aria-pressed="${picked.includes(v)}" data-v="${v}">${esc(label)}<small>${num(countOf(v))}</small></button>`).join('');
 }
 function paintFY(){
   paintWatch();
-  const [ok, out] = fyList(), f = fy.maybe ? ok.concat(out) : ok;
-  $('fy-count').textContent = `${num(ok.length)} internships`;
-  $('fy-maybe-l').textContent = `Also show the ${num(out.length)} roles taken out`;
-  $('fy-list').innerHTML = f.length ? f.slice(0,fy.shown).map(r => { const [n, why] = fyConf(r), q = fyQuote(r);
-      return row(r, `<span class="conf c${n}" title="${esc(why)}"><b>${n}/5</b> ${esc(why)}</span>${q ? `<span class="quote">\u201c\u2026${esc(q)}\u2026\u201d</span>` : ''}`, true); }).join('')
-    : '<li class="empty">Nothing matches. Select a place above.</li>';
-  const left = f.length - fy.shown; $('fy-more').hidden = left <= 0; $('fy-more').textContent = `Show ${Math.min(60,left)} more`;
+  $('fy-facts').innerHTML = (EI.profile || ['Your details have not been loaded.']).map(x => `<li>${esc(x)}</li>`).join('')
+    + '<li>If any of this is wrong, tell Claude or edit profile.json in the repository; every role is judged again at the next refresh.</li>';
+  chipRow('fy-place', PLACES, fy.place, v => fyAll.filter(r => r.fp.has(v)).length);
+  chipRow('fy-field', FIELDS, fy.field, v => fyAll.filter(r => r.ff === v).length);
+  $('fy-done').checked = fy.done;
+  const L = fyLists();
+  $('fy-groups').innerHTML = GROUPS.map(([g, name, note]) => { const rows = L[g], n = fy.shown[g], left = rows.length - n;
+    return `<details class="fy-g" data-g="${g}"${fy.open[g] ? ' open' : ''}><summary class="fy-sec"><h3>${name} <small style="font-family:var(--mono);font-weight:400">${num(rows.length)}</small></h3><p>${note}</p></summary>
+      <ul class="list">${rows.length ? rows.slice(0, n).map(fyRow).join('') : '<li class="empty">None in the places and fields selected.</li>'}</ul>
+      ${left > 0 ? `<button class="btn more" type="button" data-more="${g}">Show ${Math.min(40, left)} more</button>` : ''}</details>`; }).join('');
+  const us = D.filter(r => r[C.type] === 'Internship' && !r[C.ctry].some(c => c === 'UK' || c === 'CA' || c === '??')).length;
+  $('fy-audit').innerHTML = `<h2>Not shown above</h2><p>Every role this tab leaves out, and why. None of these has been judged unsuitable; they are outside what you asked to see.</p>
+    <table class="audit">
+      <tr><td>Internships in fields you have not selected</td><td>${num(L.offField)}</td><td><button class="link" type="button" data-all="field">Show every field</button></td></tr>
+      <tr><td>Internships in places you have not selected</td><td>${num(L.offPlace)}</td><td><button class="link" type="button" data-all="place">Show every place</button></td></tr>
+      <tr><td>Roles you have applied to or dismissed</td><td>${num(L.hiddenDone)}</td><td><button class="link" type="button" data-all="done">Show them</button></td></tr>
+      <tr><td>Internships in the US only, where you have no right to work</td><td>${num(us)}</td><td><a href="#board">On the Board</a></td></tr>
+      <tr><td>Graduate roles rather than internships</td><td>${num(D.length - D.filter(r => r[C.type] === 'Internship').length)}</td><td><a href="#board">On the Board</a></td></tr>
+    </table>`;
 }
-$('fy-country').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return;
-  const c = b.dataset.c, i = fy.c.indexOf(c); i<0 ? fy.c.push(c) : fy.c.splice(i,1); b.setAttribute('aria-pressed', i<0); fy.shown = 60; paintFY(); });
+$('fy-place').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return;
+  const i = fy.place.indexOf(b.dataset.v); i < 0 ? fy.place.push(b.dataset.v) : fy.place.splice(i, 1); fySave(); paintFY(); });
+$('fy-field').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return;
+  const i = fy.field.indexOf(b.dataset.v); i < 0 ? fy.field.push(b.dataset.v) : fy.field.splice(i, 1); fySave(); paintFY(); });
+$('fy-done').addEventListener('change', e => { fy.done = e.target.checked; fySave(); paintFY(); });
+$('fy-groups').addEventListener('click', e => { const b = e.target.closest('[data-more]'); if (!b) return; fy.shown[b.dataset.more] += 40; paintFY(); });
+$('fy-groups').addEventListener('toggle', e => { const d = e.target.closest && e.target.closest('details[data-g]'); if (!d) return; fy.open[d.dataset.g] = d.open; fySave(); }, true);
+$('fy-audit').addEventListener('click', e => { const b = e.target.closest('[data-all]'); if (!b) return;
+  if (b.dataset.all === 'field') fy.field = FIELDS.map(f => f[0]); else if (b.dataset.all === 'place') fy.place = PLACES.map(f => f[0]); else fy.done = false;
+  fySave(); paintFY(); $('v-for-you').scrollIntoView({behavior:'smooth'}); });
 /* ---------- sites that must be checked by hand ---------- */
 const WATCH = [
   ['Bloomberg', 'https://bloomberg.avature.net/careers/SearchJobs/intern', 'Internships and graduate roles. Its terms bar automated tools.'],
@@ -796,8 +950,6 @@ function paintWatch(){
 }
 $('fy-watch-list').addEventListener('click', e => { const b = e.target.closest('[data-watch]'); if (!b) return;
   watched[WATCH[+b.dataset.watch][0]] = today(); try { localStorage.setItem(WK, JSON.stringify(watched)); } catch (err) {} paintWatch(); });
-$('fy-maybe').addEventListener('change', e => { fy.maybe = e.target.checked; fy.shown = 60; paintFY(); });
-$('fy-more').addEventListener('click', () => { fy.shown += 60; paintFY(); });
 
 /* ---------- views ---------- */
 function route(){ const VS = ['board','for-you','tracker','insights'], v = VS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'board';
@@ -808,10 +960,10 @@ function route(){ const VS = ['board','for-you','tracker','insights'], v = VS.in
 addEventListener('hashchange', route);
 
 if (window.matchMedia('(min-width:821px)').matches) $('fd').open = true;
-const week = D.filter(r=>daysOld(r[C.date])<=7).length;
+const week = D.filter(r=>daysOld(r[C.seen] || r[C.date])<=7).length;
 $('stats').innerHTML = [
   [num(D.length),'open roles'],[num(count(C.type,'Internship')),'internships'],[num(count(C.type,'New Grad')),'new grad'],
-  [num(D.filter(r=>r[C.bar]).length),'clear the pay band or likely to'],[num(week),'posted this week']
+  [num(D.filter(r=>r[C.bar]).length),'clear the pay band or likely to'],[num(week),'first listed this week']
 ].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('');
 paintSaved(); paintSync(); paintTracker(); route(); render(); connect();
 setTimeout(settleVisit, 6000);

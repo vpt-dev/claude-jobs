@@ -6,6 +6,7 @@ reed_key.txt next to this script. It is never printed or written to the output.
 Usage: python3 reed.py reed_jobs.json
 """
 import base64
+import datetime
 import json
 import os
 import re
@@ -14,7 +15,8 @@ import time
 import urllib.parse
 import urllib.request
 
-from crawl import EARLY, SENIOR, TECH, eligibility, text
+import eligibility as E
+from crawl import INTERN, text, wanted
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUERIES = ["software engineer intern", "software developer internship", "data science intern", "machine learning intern",
@@ -44,6 +46,7 @@ def get(url, k):
 
 def main():
     k, seen, out = key(), set(), []
+    today = datetime.date.today().isoformat()
     for q in QUERIES:
         for skip in (0, 100):
             url = "https://www.reed.co.uk/api/1.0/search?" + urllib.parse.urlencode({"keywords": q, "resultsToTake": 100, "resultsToSkip": skip})
@@ -53,32 +56,44 @@ def main():
                 print(f"query '{q}' failed: {type(e).__name__}")
                 break
             for j in res:
-                t = j.get("jobTitle", "")
-                if j.get("jobId") in seen or not EARLY.search(t) or SENIOR.search(t) or not TECH.search(t):
+                t = (j.get("jobTitle") or "").strip()
+                if j.get("jobId") in seen or not wanted(t):
                     continue
                 seen.add(j["jobId"])
-                d = j.get("date", "")
-                m = re.match(r"(\d\d)/(\d\d)/(\d{4})", d)
                 lo, hi = j.get("minimumSalary"), j.get("maximumSalary")
-                out.append({"company": j.get("employerName", ""), "title": t.strip(), "locations": [(j.get("locationName") or "") + ", UK"],
-                            "countries": ["UK"], "url": j.get("jobUrl", ""), "posted": f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else "",
-                            "pay": {"min": lo, "max": hi or lo, "cur": j.get("currency") or "GBP", "period": "year" if lo >= 5000 else "day" if lo >= 60 else "hour"} if lo else None,
-                            "elig": eligibility(text(j.get("jobDescription", ""))), "reed_id": j["jobId"],
-                            "type": "Internship" if re.search(r"intern|placement", t, re.I) else "New Grad", "ats": "reed", "board": "reed"})
+                out.append({"company": j.get("employerName", ""), "title": t, "locations": [(j.get("locationName") or "") + ", UK"],
+                            "countries": ["UK"], "url": j.get("jobUrl", ""), "posted": _iso(j.get("date")),
+                            "pay": {"min": lo, "max": hi or lo, "cur": j.get("currency") or "GBP",
+                                    "period": "year" if lo >= 5000 else "day" if lo >= 60 else "hour"} if lo else None,
+                            "reed_id": j["jobId"], "type": "Internship" if INTERN.search(t) else "New Grad", "ats": "reed", "board": "reed",
+                            "seen": today, "deadline": _iso(j.get("expirationDate")), "rolling": False,
+                            # The search result carries only an excerpt: partial evidence until the full posting is read below.
+                            "_desc": j.get("jobDescription") or "", "quality": "partial"})
             if len(res) < 100:
                 break
             time.sleep(PAUSE)
         time.sleep(PAUSE)
-    # The search only returns a short excerpt, so read the full description of each kept role for year-of-study wording.
     for r in out[:400]:
         try:
             full = get(f"https://www.reed.co.uk/api/1.0/jobs/{r['reed_id']}", k)
-            r["elig"] = eligibility(text(full.get("jobDescription", ""))) or r["elig"]
+            if len(text(full.get("jobDescription", ""))) >= 400:
+                r["_desc"], r["quality"] = full["jobDescription"], "full"
+                r["deadline"] = _iso(full.get("expirationDate")) or r["deadline"]
         except Exception:
-            pass
+            pass  # stays partial
         time.sleep(0.5)
+    for r in out:
+        req, info = E.requirements(r.pop("_desc"))
+        r["req"] = req if r["type"] == "Internship" else []
+        r["hash"], r["lang"] = info["hash"], info["lang"]
     json.dump({"fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "jobs": out}, open(sys.argv[1], "w"), ensure_ascii=False, indent=0)
-    print(f"Reed: kept {len(out)} early-career tech roles | with pay {sum(1 for r in out if r['pay'])} | with year-of-study wording {sum(1 for r in out if r['elig'])}")
+    print(f"Reed: kept {len(out)} early-career tech roles | with pay {sum(1 for r in out if r['pay'])} | "
+          f"read in full {sum(1 for r in out if r['quality'] == 'full')} | with a closing date {sum(1 for r in out if r['deadline'])}")
+
+
+def _iso(d):
+    m = re.match(r"(\d\d)/(\d\d)/(\d{4})", d or "")
+    return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else ""
 
 
 if __name__ == "__main__":

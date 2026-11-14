@@ -1,0 +1,22 @@
+{
+  "about": "The facts each posting is compared with. Edit these to match your situation, then run a refresh. Dates are year-month.",
+  "degree": {
+    "level": "bachelor",
+    "field": "computer science",
+    "study_ends": "2027-06",
+    "award": "2027-07"
+  },
+  "masters": {
+    "status": "applied",
+    "status_options": "planned, applied, offered, accepted, enrolled",
+    "countries": ["US", "CA"],
+    "starts": "2027-09",
+    "ends_earliest": "2028-05",
+    "ends_latest": "2029-06"
+  },
+  "coop_registered": false,
+  "work_rights": ["UK", "CA"],
+  "available": {"from": "2027-06", "to": "2027-09"},
+  "languages": ["en"],
+  "target": {"season": "summer", "year": 2027}
+}

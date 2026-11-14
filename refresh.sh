@@ -37,13 +37,16 @@ PY
   echo "Automatic run: doing a $MODE refresh."
 fi
 
+step "Checking the code"
+python3 tests/run.py >"$WORK/tests.log" 2>&1 || { tail -5 "$WORK/tests.log"; fail "the built-in checks did not pass"; }
+
 step "Downloading the source lists"
 sh pipeline/fetch.sh "$RAW"
 cp data/manual.json "$RAW/manual.json"
 
 if [ "$MODE" = "full" ]; then
   step "Crawling employer job boards (about an hour)"
-  if python3 crawl.py seeds.json "$WORK/ats_jobs.json"; then cp "$WORK/ats_jobs.json" data/ats_jobs.json
+  if python3 crawl.py seeds.json "$WORK/ats_jobs.json" --previous data/ats_jobs.json; then cp "$WORK/ats_jobs.json" data/ats_jobs.json
   else echo "The crawl did not finish cleanly, so the previous crawl results are kept."; fi
 fi
 cp data/ats_jobs.json "$RAW/ats_jobs.json"
@@ -55,7 +58,7 @@ if [ -s "$KEY" ]; then
 fi
 [ -f data/reed_jobs.json ] && cp data/reed_jobs.json "$RAW/reed_jobs.json"
 
-build() { rm -f "$WORK/jobs.json"; python3 pipeline/build.py "$RAW" "$WORK/jobs.json" | tail -4; [ -s "$WORK/jobs.json" ]; }
+build() { rm -f "$WORK/jobs.json"; python3 pipeline/build.py "$RAW" "$WORK/jobs.json" data | tail -4; [ -s "$WORK/jobs.json" ]; }
 step "Building the dataset"
 build || fail "the build produced no data"
 
@@ -66,19 +69,18 @@ if python3 probe.py "$WORK/jobs.json" seeds.json data/ats_jobs.json data/probe_t
 else
   echo "Board discovery did not finish; carrying on without it."; git checkout -q -- seeds.json data/ats_jobs.json 2>/dev/null
 fi
-cp "$WORK/elig_crawl.json" data/elig_crawl.json
 
-step "Reading postings for year-of-study wording"
-python3 pipeline/targets.py links "$WORK/jobs.json" data -
-python3 pipeline/targets.py make "$WORK/jobs.json" data "$WORK/targets.json"
+step "Reading postings for what they say about who can apply"
+python3 pipeline/targets.py make "$WORK/jobs.json" "$WORK" data "$WORK/targets.json"
 if python3 check_postings.py "$WORK/targets.json" "$WORK/elig_new.json"; then
   python3 pipeline/targets.py merge "$WORK/elig_new.json" data "$WORK/targets.json"
-  python3 pipeline/targets.py links "$WORK/jobs.json" data -
+  build || fail "the build produced no data"   # short links that were traced now point at the employer's posting
 fi
 
 step "Assembling the site"
-python3 pipeline/elig_build.py data/elig_crawl.json data/elig.json site/elig.js || fail "could not write the eligibility scores"
-python3 pipeline/assemble.py pipeline/template.html "$WORK/jobs.json" site || fail "the dataset looked too small, so it was not published"
+python3 pipeline/elig_build.py "$WORK/jobs.json" "$WORK" data site/elig.js || fail "could not judge the postings"
+python3 pipeline/assemble.py pipeline/template.html "$WORK/jobs.json" site || fail "the dataset looked wrong, so it was not published"
+if command -v node >/dev/null 2>&1; then node tests/page_check.js site >"$WORK/page.log" 2>&1 || { tail -5 "$WORK/page.log"; git checkout -q -- site 2>/dev/null; fail "the page did not pass its checks"; }; fi
 
 step "Publishing"
 git add -A
