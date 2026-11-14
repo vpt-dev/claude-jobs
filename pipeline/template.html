@@ -309,6 +309,11 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
 <script src="elig.js"></script>
 <script>
 const D = window.JOBS || [];
+/* Roles from the user's own job-alert emails, kept on this device between visits and added to the board. */
+const ALK = 'ecj-alerts-v1';
+(function(){ try { const seen = new Set(D.map(r => (r[0]+'|'+r[1]).toLowerCase().replace(/[^a-z0-9|]/g,'')));
+  (JSON.parse(localStorage.getItem(ALK) || '[]') || []).forEach(r => { const k = (r[0]+'|'+r[1]).toLowerCase().replace(/[^a-z0-9|]/g,'');
+    if (Array.isArray(r) && r.length === 19 && !seen.has(k)) { seen.add(k); D.push(r); } }); } catch (e) {} })();
 const SNAP = window.SNAP || new Date().toISOString().slice(0,10);
 const TODAY = new Date(SNAP+'T00:00:00Z');
 const C = {co:0,ti:1,locs:2,ctry:3,type:4,cat:5,url:6,date:7,pay:8,annual:9,tier:10,spons:11,srcs:12,above:13,est:14,bar:15,deg:16,terms:17,id:18};
@@ -460,6 +465,8 @@ async function gsSync(){
     store.apps = next;
     if (q.pt === sentPt) { q.pt = 0; if (j.prefs) store.prefs = {saved: (j.prefs.saved||[]).slice(), lastVisit: j.prefs.lastVisit||'', prevVisit: j.prefs.prevVisit||''}; }
     saveLocal(); mode = 'sheet'; syncNote = '';
+    if (Array.isArray(j.alerts)) { const a = JSON.stringify(j.alerts); let old = '[]'; try { old = localStorage.getItem(ALK) || '[]'; } catch (e) {}
+      if (a !== old) { try { localStorage.setItem(ALK, a); } catch (e) {} if (j.alerts.length) syncNote = 'New roles arrived from your job alerts. <button class="link" type="button" onclick="location.reload()">Reload to see them</button>'; } }
   } catch (e) {
     mode = 'sheet';
     syncNote = GS_ERR[e && e.code] || 'The sheet could not be reached just now. Changes are kept on this device and will be sent when it is back.';
@@ -511,7 +518,7 @@ function paintSync(){
     : mode==='sheet' ? '<b>Synced with your Google Sheet.</b> Connect the same sheet on your other devices and the tracker follows you. <button class="link" type="button" id="gsoff">Disconnect this device</button>'
     : mode==='wait' ? 'Connecting…'
     : STANDALONE ? '<b>Saved on this device only.</b> Connect your Google Sheet below to sync between devices.'
-    : '<b>Saved on this device only.</b> Account sync is not available in this view.') + (syncNote ? ' ' + esc(syncNote) : '');
+    : '<b>Saved on this device only.</b> Account sync is not available in this view.') + (syncNote ? ' ' + (syncNote.indexOf('<button') > 0 ? syncNote : esc(syncNote)) : '');
   $('gscard').hidden = !(STANDALONE && !gs);
 }
 function settleVisit(){ if (settleVisit.done) return; settleVisit.done = true;
