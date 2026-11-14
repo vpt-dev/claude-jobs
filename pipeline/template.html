@@ -231,7 +231,7 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
   <section class="view" id="v-for-you" hidden>
     <div class="card">
       <h2>Summer 2027 internships for you</h2>
-      <p>Software and data, AI and ML internships in Greater London, Greater Toronto, or remote in the UK or Canada. Each role has a confidence score out of 5 that you can apply as a final-year student heading to a master's, highest first. 5 means the posting names final-year students; 4 means it was read and sets no year limit; 3 and 2 mean it depends on your master's place or has not been read yet. Roles with a sign of turning you away are taken out.</p>
+      <p>Software and data, AI and ML internships in Greater London, Greater Toronto, or remote in the UK or Canada. Each role has a confidence score out of 5 that you can apply as a final-year student heading to a master's, highest first. 5 means the posting names final-year students; 4 means it was read and sets no year limit; 3 means it depends on your master's place, or the posting has not been read but is listed for summer 2027; 2 means not read and no season given. Roles with a sign of turning you away are taken out.</p>
       <div class="chips" id="fy-country">
         <button type="button" class="chip" data-c="UK" aria-pressed="true">London and UK remote</button>
         <button type="button" class="chip" data-c="CA" aria-pressed="true">Toronto and Canada remote</button>
@@ -718,26 +718,23 @@ const fyBase = D.filter(r => {
   if (!fyCity(r).length && !fyUnclear(r)) return false;
   const t = r[C.terms]; return !t.length || t.includes('Summer 2027');
 });
-/* Posting text read by the checker: window.ELIG[id] = {s:[signals], x:{signal: excerpt}} */
+/* Posting text read by the checker: window.ELIG[id] = [score 1-5, reason, short quote] */
 const EL = window.ELIG || {};
 const fyRead = r => EL[r[C.id]];
-const fyHas = (r,k) => { const e = fyRead(r); return !!e && e.s.includes(k); };
-const fyShut = r => (fyHas(r,'penultimate_only') && !fyHas(r,'final_year_ok')) ? 'penultimate_only' : fyHas(r,'grad_2028_or_later') ? 'grad_2028_or_later' : '';
-const fyRisk = r => fyShut(r) ? (fyShut(r)==='penultimate_only' ? 'Taken out: the posting asks for penultimate-year students' : 'Taken out: the posting asks for a 2028 or later graduation')
-  : FY_CHK.test(r[C.ti]) ? 'Taken out: title points to penultimate-year, placement or co-op students'
-  : FY_BANK.test(r[C.co]) && !fyHas(r,'final_year_ok') ? 'Taken out: bank schemes usually want penultimate-year students'
-  : FY_RES.test(r[C.ti]) && !fyHas(r,'final_year_ok') ? 'Taken out: research posts often need you to be enrolled'
-  : fyUnclear(r) ? 'Taken out: city not stated' : '';
+const fyRisk = r => { const e = fyRead(r), sure = e && e[0] === 5;
+  return e && e[0] === 1 ? 'Taken out: ' + e[1]
+  : !sure && FY_CHK.test(r[C.ti]) ? 'Taken out: title points to penultimate-year, placement or co-op students'
+  : !sure && FY_BANK.test(r[C.co]) ? 'Taken out: bank schemes usually want penultimate-year students'
+  : !sure && FY_RES.test(r[C.ti]) ? 'Taken out: research posts often need you to be enrolled'
+  : fyUnclear(r) ? 'Taken out: city not stated' : ''; };
 /* Confidence that a final-year student heading to a master's can apply, 1 to 5. */
 function fyConf(r){
   if (fyRisk(r)) return [1, fyRisk(r).replace('Taken out: ','')];
   const e = fyRead(r), dated = r[C.terms].includes('Summer 2027');
-  if (!e) return dated ? [3, 'Posting not read yet. Listed for summer 2027.'] : [2, 'Posting not read yet. Season not stated.'];
-  if (fyHas(r,'final_year_ok')) return [5, 'Posting read: names final-year students or 2027 graduates.'];
-  if (fyHas(r,'must_return_to_study') || fyHas(r,'must_be_enrolled')) return [3, 'Posting read: asks you to be enrolled or returning to study, which depends on your master\u2019s place.'];
-  return [4, 'Posting read: no year-of-study limit found.'];
+  if (e) return [e[0], e[1]];
+  return dated ? [3, 'Posting not read yet. Listed for summer 2027.'] : [2, 'Posting not read yet. Season not stated.'];
 }
-const fyQuote = r => { const e = fyRead(r); if (!e) return ''; const k = fyShut(r) || ['final_year_ok','must_return_to_study','must_be_enrolled'].find(k => e.s.includes(k)); return k && e.x[k] ? e.x[k] : ''; };
+const fyQuote = r => (fyRead(r) || [])[2] || '';
 const fyRank = (a,b) => (fyConf(b)[0]-fyConf(a)[0]) || (fyFit(b)-fyFit(a)) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1);
 function fyList(){
   const here = r => fyCity(r).some(c => fy.c.includes(c)) || (fyUnclear(r) && r[C.ctry].some(c => fy.c.includes(c)));
