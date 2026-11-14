@@ -207,6 +207,19 @@ def run(seed):
     return seed, keep, ""
 
 
+def progress(n, total, kept, failed, start):
+    """Draw a one-line progress bar. On a terminal it redraws in place; in logs it prints every 100 boards."""
+    tty = sys.stderr.isatty()
+    if not tty and n % 100 and n != total:
+        return
+    done = int(30 * n / total)
+    left = (time.time() - start) / n * (total - n)
+    eta = f"{int(left // 60)}m {int(left % 60):02d}s left" if n < total else "finished"
+    line = f"[{'#' * done}{'.' * (30 - done)}] {n}/{total} boards | {kept} roles kept | {failed} failed | {eta}"
+    sys.stderr.write(("\r" + line + "   ") if tty else (line + "\n"))
+    sys.stderr.flush()
+
+
 def main():
     seeds = json.load(open(sys.argv[1]))
     if "--limit" in sys.argv:
@@ -215,10 +228,13 @@ def main():
     jobs, errors = [], {}
     # Group by ATS host so each host sees a small, steady stream.
     with cf.ThreadPoolExecutor(max_workers=6) as ex:
-        for seed, rows, err in ex.map(run, seeds):
+        start, total = time.time(), len(seeds)
+        for n, (seed, rows, err) in enumerate(ex.map(run, seeds), 1):
             jobs += rows
             if err:
                 errors[f"{seed['ats']}:{seed['board']}"] = err
+            progress(n, total, len(jobs), len(errors), start)
+    sys.stderr.write("\n")
     json.dump({"fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "jobs": jobs, "errors": errors},
               open(sys.argv[2], "w"), ensure_ascii=False, indent=0)
     print(f"boards {len(seeds)} | failed {len(errors)} | early-career roles kept {len(jobs)} | with pay {sum(1 for j in jobs if j['pay'])} | with year-of-study wording {sum(1 for j in jobs if j['elig'])}")
