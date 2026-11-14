@@ -137,6 +137,11 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
 .conf b{display:inline-block;min-width:2.6em;padding:1px 6px;margin-right:6px;border-radius:999px;text-align:center;color:#fff;background:#6b7280}
 .conf.c5 b{background:#1baf7a}.conf.c4 b{background:#2a78d6}.conf.c1 b{background:#b4532a}
 .quote{flex-basis:100%;font-size:12.5px;font-style:italic;color:var(--muted,#9aa4b2)}
+.watch{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.watch li{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:8px 0;border-top:1px solid var(--line)}
+.watch a{font-weight:600}.watch .why{flex:1 1 14rem;font-size:13px;color:var(--muted)}
+.watch .due{color:#b4532a;font-weight:600}
+#fy-watch summary{cursor:pointer}
 </style>
 </head>
 <body>
@@ -238,6 +243,11 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
       </div>
       <p style="margin:12px 0 0"><label class="check"><input type="checkbox" id="fy-maybe"> <span id="fy-maybe-l">Also show the roles taken out</span></label></p>
     </div>
+    <details class="card" id="fy-watch">
+      <summary><b>Sites to check by hand</b> <span id="fy-watch-n" class="sync"></span></summary>
+      <p>These sites do not allow automated reading, so their roles cannot be pulled into the list below. Open each one yourself every few days. Press “Checked” and the date is remembered on this device.</p>
+      <ul class="watch" id="fy-watch-list"></ul>
+    </details>
     <div class="bar"><p id="fy-count"></p></div>
     <ul class="list" id="fy-list"></ul>
     <button class="btn more" id="fy-more" type="button">Show 60 more</button>
@@ -750,6 +760,7 @@ function fyList(){
   return [open.filter(r => !fyRisk(r)).sort(fyRank), open.filter(r => fyRisk(r)).sort(fyRank)];
 }
 function paintFY(){
+  paintWatch();
   const [ok, out] = fyList(), f = fy.maybe ? ok.concat(out) : ok;
   $('fy-count').textContent = `${num(ok.length)} internships`;
   $('fy-maybe-l').textContent = `Also show the ${num(out.length)} roles taken out`;
@@ -760,6 +771,31 @@ function paintFY(){
 }
 $('fy-country').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return;
   const c = b.dataset.c, i = fy.c.indexOf(c); i<0 ? fy.c.push(c) : fy.c.splice(i,1); b.setAttribute('aria-pressed', i<0); fy.shown = 60; paintFY(); });
+/* ---------- sites that must be checked by hand ---------- */
+const WATCH = [
+  ['Bloomberg', 'https://bloomberg.avature.net/careers/SearchJobs/intern', 'Internships and graduate roles. Its terms bar automated tools.'],
+  ['Revolut', 'https://www.revolut.com/careers/', 'Puts a security check in front of automated visitors.'],
+  ['Trackr: UK tech', 'https://app.the-trackr.com/uk-tech', 'Opening and closing dates for UK tech internships. Terms bar automated collection.'],
+  ['Gradcracker', 'https://www.gradcracker.com/search/technology-it/work-placements-internships', 'UK technology placements and internships. Blocks automated visitors.'],
+  ['Bright Network', 'https://www.brightnetwork.co.uk/application-deadlines/jobs/internships/technology/', 'UK technology internship deadlines. Human check on entry.'],
+  ['LinkedIn: UK', 'https://www.linkedin.com/jobs/search/?keywords=2027%20intern&location=United%20Kingdom', 'Terms bar scraping.'],
+  ['LinkedIn: Canada', 'https://www.linkedin.com/jobs/search/?keywords=2027%20intern&location=Canada', 'Terms bar scraping.'],
+  ['Indeed: UK', 'https://uk.indeed.com/jobs?q=2027+intern', 'Terms bar scraping.'],
+  ['Indeed: Canada', 'https://ca.indeed.com/jobs?q=2027+intern', 'Terms bar scraping.'],
+];
+const WK = 'ecj-watch-v1';
+let watched = {}; try { watched = JSON.parse(localStorage.getItem(WK) || '{}') || {}; } catch (e) {}
+function paintWatch(){
+  const days = d => d ? Math.round((new Date(today()) - new Date(d)) / 864e5) : null;
+  const due = WATCH.filter(w => { const n = days(watched[w[0]]); return n === null || n >= 3; }).length;
+  $('fy-watch-n').textContent = due ? `${due} due for a look` : 'all checked recently';
+  $('fy-watch-list').innerHTML = WATCH.map((w, i) => { const n = days(watched[w[0]]);
+    return `<li><a href="${esc(w[1])}" target="_blank" rel="noopener">${esc(w[0])}</a><span class="why">${esc(w[2])}</span>
+      <span class="${n === null || n >= 3 ? 'due' : 'sync'}">${n === null ? 'Not checked yet' : n === 0 ? 'Checked today' : n === 1 ? 'Checked yesterday' : `Checked ${n} days ago`}</span>
+      <button class="btn ghost" type="button" data-watch="${i}">Checked</button></li>`; }).join('');
+}
+$('fy-watch-list').addEventListener('click', e => { const b = e.target.closest('[data-watch]'); if (!b) return;
+  watched[WATCH[+b.dataset.watch][0]] = today(); try { localStorage.setItem(WK, JSON.stringify(watched)); } catch (err) {} paintWatch(); });
 $('fy-maybe').addEventListener('change', e => { fy.maybe = e.target.checked; fy.shown = 60; paintFY(); });
 $('fy-more').addEventListener('click', () => { fy.shown += 60; paintFY(); });
 
