@@ -51,7 +51,7 @@ jobs = []
 ALIAS = {"NYC": "New York, NY", "New York City, NY": "New York, NY", "SF": "San Francisco, CA", "United States (Remote)": "Remote in USA", "London, United Kingdom": "London, UK", "Toronto, Canada": "Toronto, ON, Canada", "LA": "Los Angeles, CA"}
 
 
-def add(src, company, title, locs, url, typ, posted=None, cat=None, salary=None, tier="", default_country="US", sponsor="", degrees=(), terms=()):
+def add(src, company, title, locs, url, typ, posted=None, cat=None, salary=None, tier="", default_country="US", sponsor="", degrees=(), terms=(), elig=None):
     company = html.unescape(re.sub(r"\s+", " ", company)).strip(" *")
     title = html.unescape(re.sub(r"\s+", " ", title)).replace("🆕", "").replace("🔥", "").strip(" *")
     if not company or not title or not url.startswith("http"):
@@ -83,7 +83,7 @@ def add(src, company, title, locs, url, typ, posted=None, cat=None, salary=None,
         if m:
             ts.append(f"{m.group(1)} start")
     jobs.append(dict(src=src, company=company, title=title, locs=locs, url=url.strip(), type=typ, posted=posted,
-                     cat=cat or classify(title), salary=salary, tier=tier, dc=default_country, sponsor=sponsor, deg=deg, terms=ts))
+                     cat=cat or classify(title), salary=salary, tier=tier, dc=default_country, sponsor=sponsor, deg=deg, terms=ts, elig=elig))
 
 
 def epoch_date(e):
@@ -335,6 +335,58 @@ for line in _rows("quantscraper.md"):
     locs = [CITY_HINT.get(x.strip(), x.strip()) for x in strip_md(c[2]).split(",")]
     add("quantscraper", comp, strip_md(c[1]), locs, first_url(c[1]), typ, None, cat="Quant", default_country="XX")
 
+# aprameyak: Company | Role | Location | Education | Link | Date
+prev = ""
+for line in _rows("aprameyak.md"):
+    c = cells(line) if line.startswith("|") else []
+    if len(c) < 6 or c[0] in ("Company", "") or set(c[0]) <= set("-: ") or not first_url(c[4]):
+        continue
+    comp = strip_md(c[0]); comp = prev if comp == "↳" else comp; prev = comp
+    edu = c[3].lower()
+    add("aprameyak", comp, strip_md(c[1]), split_locs(c[2]), re.sub(r"[?&]utm_source=aprameyak", "", first_url(c[4])), "Internship", None,
+        degrees=tuple(d for d, k in (("PhD", "phd"), ("Master's", "master"), ("Bachelor's", "undergrad")) if k in edu))
+
+# michelleokolie Canada list: Company | Role | Location | Link | Date
+for line in _rows("michelle.md"):
+    c = cells(line) if line.startswith("|") else []
+    if len(c) < 5 or c[0] in ("Company", "") or set(c[0]) <= set("-: ") or not first_url(c[3]):
+        continue
+    add("michelleokolie", strip_md(c[0]), strip_md(c[1]), split_locs(c[2]), first_url(c[3]), "Internship", nice_date(c[4]), default_country="CA")
+
+# mazentalsam / csjobs.ca: Company | Role | Location | Apply | Posted
+typ = "Internship"
+for line in _rows("mazen.md"):
+    if line.startswith("#"):
+        typ = "New Grad" if re.search(r"new.?grad|graduate|full.?time", line, re.I) else "Internship" if re.search(r"intern|co-?op", line, re.I) else typ
+        continue
+    c = cells(line) if line.startswith("|") else []
+    if len(c) < 5 or not first_url(c[3]) or strip_md(c[0]) in ("Company", ""):
+        continue
+    add("csjobs", strip_md(c[0]), strip_md(c[1]), split_locs(c[2]), re.sub(r"\?utm_.*$", "", first_url(c[3])), typ, None, default_country="CA")
+
+# dreamworkhq country pages: Company | Role | Location | Pay | Added
+for fn, dc in (("dw_uk.md", "UK"), ("dw_ca.md", "CA")):
+    for line in _rows(fn):
+        c = cells(line) if line.startswith("| **") or line.startswith("| [") else []
+        if len(c) < 4 or "](http" not in c[1]:
+            continue
+        loc = ", ".join(reversed([x.strip() for x in strip_md(c[2]).split(",")]))  # "Canada, Ottawa" -> "Ottawa, Canada"
+        add("dreamworkhq", strip_md(c[0]), strip_md(c[1]), [loc], re.sub(r"\?utm_.*$", "", first_url(c[1])), "Internship", age_date(c[4]) if len(c) > 4 else None, default_country=dc)
+
+# ---- employer boards crawled from the user's machine (crawl.py output) ----
+if os.path.exists(f"{RAW}/ats_jobs.json"):
+    for x in json.load(open(f"{RAW}/ats_jobs.json"))["jobs"]:
+        pay, sal = x.get("pay"), None
+        if pay and pay.get("cur") == "USD" and pay.get("min"):
+            v = (pay["min"] + (pay.get("max") or pay["min"])) / 2
+            if pay.get("period") == "hour" and 10 <= v <= 150:
+                sal = {"text": f"${v:g}/hr", "annual": round(v * 2080), "cur": "USD", "hourly": True}
+            elif pay.get("period") == "year" and 20000 <= v <= 600000:
+                sal = {"text": f"${v/1000:g}k/yr", "annual": round(v), "cur": "USD", "hourly": False}
+        read = bool(x.get("elig")) or x.get("ats") in ("greenhouse", "lever", "ashby")
+        add("employer-site", x["company"], x["title"], x.get("locations") or [], x["url"], x.get("type") or "Internship", (x.get("posted") or "")[:10] or None,
+            salary=sal, default_country=(x.get("countries") or ["US"])[0], elig=(x.get("elig") or {}) if read else None)
+
 # ---- collected by hand from employer career sites ----
 import os
 if os.path.exists(f"{RAW}/manual.json"):
@@ -356,6 +408,8 @@ def nurl(u):
     return re.sub(r"/(apply|application)$", "", u)
 
 
+INDIRECT = r"go\.vansh\.nyc|linkedin\.com|dreamworkhq\.com|csjobs\.ca|simplify\.jobs"
+ELIG_OUT = {}
 merged, by_url = {}, {}
 dropped = 0
 for j in jobs:
@@ -395,13 +449,15 @@ for j in jobs:
     if j["sponsor"] and not tgt["sponsor"]:
         tgt["sponsor"] = j["sponsor"]
     tgt["deg"] |= j["deg"]
+    if j["elig"] is not None and tgt["elig"] is None:
+        tgt["elig"] = j["elig"]
     for t in j["terms"]:
         if t not in tgt["terms"]:
             tgt["terms"].append(t)
     if j["posted"] and (not tgt["posted"] or j["posted"] < tgt["posted"]):
         tgt["posted"] = j["posted"]
     # prefer a direct employer link over a redirect/short link
-    if re.search(r"go\.vansh\.nyc|linkedin\.com", tgt["url"]) and not re.search(r"go\.vansh\.nyc|linkedin\.com", j["url"]):
+    if re.search(INDIRECT, tgt["url"]) and not re.search(INDIRECT, j["url"]):
         tgt["url"] = j["url"]
 
 BAR_US = 95000  # about 1.47x the US median, the same multiple as 60,000 pounds over the UK median
@@ -449,8 +505,11 @@ for j in merged.values():
                 s["text"] if s else "", s["annual"] if s else 0, j["tier"], j["sponsor"], j["srcs"],
                 1 if above else 0, est, hp, j["deg"], j["terms"][:4],
                 hashlib.sha1(f"{cn}|{nt(j['title'])}|{j['type']}".encode()).hexdigest()[:12]])
+    if j.get("elig") is not None:
+        ELIG_OUT[out[-1][18]] = {"s": sorted(j["elig"]), "x": {k: v[:170] for k, v in j["elig"].items()}}
 out.sort(key=lambda r: r[7], reverse=True)
 json.dump(out, open(OUT, "w"), ensure_ascii=False, separators=(",", ":"))
+json.dump({"checked": TODAY.isoformat(), "total": len(ELIG_OUT), "read": ELIG_OUT}, open(os.path.join(os.path.dirname(OUT) or ".", "elig_crawl.json"), "w"), ensure_ascii=False)
 
 C = collections.Counter
 print("raw rows", len(jobs), "| outside US/CA/UK dropped", dropped, "| unique jobs", len(out))

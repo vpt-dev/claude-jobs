@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Turn the posting checker's output into site/elig.js.
 
-Usage: python3 pipeline/elig_build.py elig.json site/elig.js
+Usage: python3 pipeline/elig_build.py elig_crawl.json elig.json ... site/elig.js
 
 Each posting that was read gets [score, reason, short quote], scored for a final-year
 bachelor's student who will start a master's after the summer.
@@ -61,11 +61,18 @@ def score(v):
 
 
 def main():
-    src = json.load(open(sys.argv[1]))
-    out = {jid: list(score(v)) for jid, v in src["read"].items()}
-    with open(sys.argv[2], "w") as f:
+    """Later files win, so list the posting checker's output after the crawl's."""
+    *inputs, dest = sys.argv[1:]
+    read, checked = {}, ""
+    for path in inputs:
+        if os.path.exists(path):
+            src = json.load(open(path))
+            read.update(src["read"])
+            checked = max(checked, src.get("checked", ""))
+    out = {jid: list(score(v)) for jid, v in read.items()}
+    with open(dest, "w") as f:
         f.write("window.ELIG=" + json.dumps(out, ensure_ascii=False, separators=(",", ":")) + ";\n")
-        f.write("window.ELIG_INFO=" + json.dumps({"checked": src.get("checked", ""), "total": src.get("total", 0), "read": len(out)}) + ";\n")
+        f.write("window.ELIG_INFO=" + json.dumps({"checked": checked, "read": len(out)}) + ";\n")
     tally = {}
     for v in out.values():
         tally[v[0]] = tally.get(v[0], 0) + 1

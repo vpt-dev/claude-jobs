@@ -25,4 +25,9 @@ get frogg.md seun-ipaye/frogg-canadian-internships/HEAD/README.md
 get krishi.md krishi-shah/Toronto-AI-ML-internship-radar/HEAD/README.md
 get francklin.md Francklin9999/canada-internship/HEAD/README.md
 get quantscraper.md quant-scraper/Quant-Internships-New-Grad-2027/HEAD/README.md
+get aprameyak.md aprameyak/2027-tech-jobs/HEAD/README.md
+get michelle.md michelleokolie/canada-tech-internships-summer-2027/HEAD/README.md
+get mazen.md mazentalsam/Canada-CS-Internships-New-Grad/HEAD/README.md
+get dw_uk.md dreamworkhq/Tech-Internships-2027/main/international/united-kingdom.md
+get dw_ca.md dreamworkhq/Tech-Internships-2027/main/international/canada.md
 echo fetched
