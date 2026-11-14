@@ -215,7 +215,7 @@ def progress(n, total, kept, failed, start):
     done = int(30 * n / total)
     left = (time.time() - start) / n * (total - n)
     eta = f"{int(left // 60)}m {int(left % 60):02d}s left" if n < total else "finished"
-    line = f"[{'#' * done}{'.' * (30 - done)}] {n}/{total} boards | {kept} roles kept | {failed} failed | {eta}"
+    line = f"[{'#' * done}{'.' * (30 - done)}] {n}/{total} boards | {kept} kept | {failed} failed | {eta}"
     sys.stderr.write(("\r" + line + "   ") if tty else (line + "\n"))
     sys.stderr.flush()
 

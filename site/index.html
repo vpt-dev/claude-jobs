@@ -133,6 +133,10 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
   .app>div:first-child{grid-column:1/-1}
 }
 @media (prefers-reduced-motion:no-preference){.funnel i{transition:width .2s}}
+.conf{flex-basis:100%;font-size:13px;color:var(--muted,#9aa4b2)}
+.conf b{display:inline-block;min-width:2.6em;padding:1px 6px;margin-right:6px;border-radius:999px;text-align:center;color:#fff;background:#6b7280}
+.conf.c5 b{background:#1baf7a}.conf.c4 b{background:#2a78d6}.conf.c1 b{background:#b4532a}
+.quote{flex-basis:100%;font-size:12.5px;font-style:italic;color:var(--muted,#9aa4b2)}
 </style>
 </head>
 <body>
@@ -227,7 +231,7 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
   <section class="view" id="v-for-you" hidden>
     <div class="card">
       <h2>Summer 2027 internships for you</h2>
-      <p>Software and data, AI and ML internships in Greater London, Greater Toronto, or remote in the UK or Canada. Anything with a sign of turning away a final-year student has been taken out: placement years, penultimate-year and co-op roles, bank schemes, research posts, and other seasons.</p>
+      <p>Software and data, AI and ML internships in Greater London, Greater Toronto, or remote in the UK or Canada. Each role has a confidence score out of 5 that you can apply as a final-year student heading to a master's, highest first. 5 means the posting names final-year students; 4 means it was read and sets no year limit; 3 and 2 mean it depends on your master's place or has not been read yet. Roles with a sign of turning you away are taken out.</p>
       <div class="chips" id="fy-country">
         <button type="button" class="chip" data-c="UK" aria-pressed="true">London and UK remote</button>
         <button type="button" class="chip" data-c="CA" aria-pressed="true">Toronto and Canada remote</button>
@@ -302,6 +306,7 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
 <div id="tip" role="tooltip"></div>
 
 <script src="data.js"></script>
+<script src="elig.js"></script>
 <script>
 const D = window.JOBS || [];
 const SNAP = window.SNAP || new Date().toISOString().slice(0,10);
@@ -713,11 +718,27 @@ const fyBase = D.filter(r => {
   if (!fyCity(r).length && !fyUnclear(r)) return false;
   const t = r[C.terms]; return !t.length || t.includes('Summer 2027');
 });
-const fyRisk = r => FY_CHK.test(r[C.ti]) ? 'Taken out: title points to penultimate-year, placement or co-op students'
-  : FY_BANK.test(r[C.co]) ? 'Taken out: bank schemes usually want penultimate-year students'
-  : FY_RES.test(r[C.ti]) ? 'Taken out: research posts often need you to be enrolled'
+/* Posting text read by the checker: window.ELIG[id] = {s:[signals], x:{signal: excerpt}} */
+const EL = window.ELIG || {};
+const fyRead = r => EL[r[C.id]];
+const fyHas = (r,k) => { const e = fyRead(r); return !!e && e.s.includes(k); };
+const fyShut = r => (fyHas(r,'penultimate_only') && !fyHas(r,'final_year_ok')) ? 'penultimate_only' : fyHas(r,'grad_2028_or_later') ? 'grad_2028_or_later' : '';
+const fyRisk = r => fyShut(r) ? (fyShut(r)==='penultimate_only' ? 'Taken out: the posting asks for penultimate-year students' : 'Taken out: the posting asks for a 2028 or later graduation')
+  : FY_CHK.test(r[C.ti]) ? 'Taken out: title points to penultimate-year, placement or co-op students'
+  : FY_BANK.test(r[C.co]) && !fyHas(r,'final_year_ok') ? 'Taken out: bank schemes usually want penultimate-year students'
+  : FY_RES.test(r[C.ti]) && !fyHas(r,'final_year_ok') ? 'Taken out: research posts often need you to be enrolled'
   : fyUnclear(r) ? 'Taken out: city not stated' : '';
-const fyRank = (a,b) => (fyFit(b)-fyFit(a)) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1);
+/* Confidence that a final-year student heading to a master's can apply, 1 to 5. */
+function fyConf(r){
+  if (fyRisk(r)) return [1, fyRisk(r).replace('Taken out: ','')];
+  const e = fyRead(r), dated = r[C.terms].includes('Summer 2027');
+  if (!e) return dated ? [3, 'Posting not read yet. Listed for summer 2027.'] : [2, 'Posting not read yet. Season not stated.'];
+  if (fyHas(r,'final_year_ok')) return [5, 'Posting read: names final-year students or 2027 graduates.'];
+  if (fyHas(r,'must_return_to_study') || fyHas(r,'must_be_enrolled')) return [3, 'Posting read: asks you to be enrolled or returning to study, which depends on your master\u2019s place.'];
+  return [4, 'Posting read: no year-of-study limit found.'];
+}
+const fyQuote = r => { const e = fyRead(r); if (!e) return ''; const k = fyShut(r) || ['final_year_ok','must_return_to_study','must_be_enrolled'].find(k => e.s.includes(k)); return k && e.x[k] ? e.x[k] : ''; };
+const fyRank = (a,b) => (fyConf(b)[0]-fyConf(a)[0]) || (fyFit(b)-fyFit(a)) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1);
 function fyList(){
   const here = r => fyCity(r).some(c => fy.c.includes(c)) || (fyUnclear(r) && r[C.ctry].some(c => fy.c.includes(c)));
   const open = fyBase.filter(r => here(r) && !DONE.has((store.apps[r[C.id]]||{}).s));
@@ -727,7 +748,8 @@ function paintFY(){
   const [ok, out] = fyList(), f = fy.maybe ? ok.concat(out) : ok;
   $('fy-count').textContent = `${num(ok.length)} internships`;
   $('fy-maybe-l').textContent = `Also show the ${num(out.length)} roles taken out`;
-  $('fy-list').innerHTML = f.length ? f.slice(0,fy.shown).map(r => row(r, fyRisk(r) ? `<span class="tag chk">${fyRisk(r)}</span>` : '', true)).join('')
+  $('fy-list').innerHTML = f.length ? f.slice(0,fy.shown).map(r => { const [n, why] = fyConf(r), q = fyQuote(r);
+      return row(r, `<span class="conf c${n}" title="${esc(why)}"><b>${n}/5</b> ${esc(why)}</span>${q ? `<span class="quote">\u201c\u2026${esc(q)}\u2026\u201d</span>` : ''}`, true); }).join('')
     : '<li class="empty">Nothing matches. Select a place above.</li>';
   const left = f.length - fy.shown; $('fy-more').hidden = left <= 0; $('fy-more').textContent = `Show ${Math.min(60,left)} more`;
 }
