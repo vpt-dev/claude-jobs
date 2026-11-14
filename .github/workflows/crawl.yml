@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: "17 5 * * *"   # 05:17 UTC every day
   workflow_dispatch:
+    inputs:
+      limit:
+        description: "Only crawl the first N boards (blank for all)"
+        required: false
+        default: ""
 permissions:
   contents: write
 jobs:
@@ -15,7 +20,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Crawl employer job boards
-        run: python3 crawl.py seeds.json data/ats_jobs.json
+        env:
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: |
+          if [ -n "$LIMIT" ]; then python3 crawl.py seeds.json data/ats_jobs.json --limit "$LIMIT"; else python3 crawl.py seeds.json data/ats_jobs.json; fi
       - name: Commit results
         run: |
           git config user.name "job-crawler"
