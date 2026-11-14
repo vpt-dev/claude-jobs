@@ -248,6 +248,15 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
 
   <section class="view" id="v-tracker" hidden>
     <p class="sync" id="sync"></p>
+    <div class="card" id="gscard" hidden>
+      <h2>Sync between your devices</h2>
+      <p>Connect your Google Sheet once on each device and the tracker follows you. Paste the web app address from the sheet's Apps Script, and the passphrase you set there.</p>
+      <form id="gsform" class="tools">
+        <input type="url" id="gsurl" placeholder="https://script.google.com/macros/s/…/exec" aria-label="Web app address" required style="flex:1;min-width:14rem">
+        <input type="password" id="gspass" placeholder="Passphrase" aria-label="Passphrase" required minlength="8" autocomplete="off">
+        <button class="btn" type="submit">Connect</button>
+      </form>
+    </div>
     <div class="card">
       <h2>Your pipeline</h2>
       <p>Counts of the roles you are tracking, by stage.</p>
@@ -417,11 +426,62 @@ $('onlynew').addEventListener('change', e=>{st.onlynew=e.target.checked; shown=6
 $('more').addEventListener('click', ()=>{shown+=60; render();});
 $('reset').addEventListener('click', ()=>{ Object.assign(st, JSON.parse(JSON.stringify(DEF))); sync(); render(); });
 
+/* ---------- Google Sheet sync, used when the page runs on its own site ---------- */
+const STANDALONE = !(window.claude && claude.use), CFG = 'ecj-sync-v1';
+let gs = null; try { gs = STANDALONE ? JSON.parse(localStorage.getItem(CFG) || 'null') : null; } catch (e) {}
+let gsBusy = false, gsAgain = false, gsTimer = null;
+const GS_ERR = {
+  wrong_passphrase: 'The passphrase does not match the one in your Apps Script.',
+  not_set_up: 'Set a passphrase of 8 or more characters in the Apps Script, then deploy it again.',
+  busy: 'The sheet was busy. It will try again shortly.',
+};
+function queueSync(){ if (!gs) return; clearTimeout(gsTimer); gsTimer = setTimeout(gsSync, 1500); }
+async function gsSync(){
+  if (!gs) return;
+  if (gsBusy) { gsAgain = true; return; }
+  gsBusy = true;
+  const q = store.q, sent = Object.keys(q.dirty), sentGone = Object.assign({}, q.gone), sentPt = q.pt, stamp = {}, apps = {};
+  sent.forEach(id => { if (store.apps[id]) { apps[id] = store.apps[id]; stamp[id] = store.apps[id].ts; } });
+  const before = JSON.stringify(store.apps) + JSON.stringify(store.prefs.saved);
+  try {
+    const r = await fetch(gs.url, {method:'POST', body: JSON.stringify({pass: gs.pass, op:'sync', apps, gone: sentGone, prefs: sentPt ? store.prefs : null, pt: sentPt})});
+    const j = await r.json();
+    if (!j.ok) throw Object.assign(new Error(j.error), {code: j.error});
+    sent.forEach(id => { if (!store.apps[id] || store.apps[id].ts === stamp[id]) delete q.dirty[id]; });
+    for (const id in sentGone) if (q.gone[id] === sentGone[id]) delete q.gone[id];
+    const next = Object.assign({}, j.apps);
+    for (const id in q.dirty) if (store.apps[id]) next[id] = store.apps[id]; // changed while the request was out
+    for (const id in q.gone) delete next[id];
+    store.apps = next;
+    if (q.pt === sentPt) { q.pt = 0; if (j.prefs) store.prefs = {saved: (j.prefs.saved||[]).slice(), lastVisit: j.prefs.lastVisit||'', prevVisit: j.prefs.prevVisit||''}; }
+    saveLocal(); mode = 'sheet'; syncNote = '';
+  } catch (e) {
+    mode = 'sheet';
+    syncNote = GS_ERR[e && e.code] || 'The sheet could not be reached just now. Changes are kept on this device and will be sent when it is back.';
+  }
+  gsBusy = false; paintSync();
+  if (before !== JSON.stringify(store.apps) + JSON.stringify(store.prefs.saved)) { paintTracker(); paintSaved(); render(); if (!$('v-for-you').hidden) paintFY(); }
+  settleVisit();
+  if (gsAgain) { gsAgain = false; queueSync(); }
+}
+$('gsform').addEventListener('submit', e => { e.preventDefault();
+  const url = $('gsurl').value.trim(), pass = $('gspass').value;
+  if (!/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(url)) { syncNote = 'That address should start with https://script.google.com/macros/s/ and end with /exec.'; paintSync(); return; }
+  gs = {url, pass}; try { localStorage.setItem(CFG, JSON.stringify(gs)); } catch (err) {}
+  for (const id in store.apps) { store.q.dirty[id] = 1; if (!store.apps[id].ts) store.apps[id].ts = 1; } // carry over what this device had
+  if ((store.prefs.saved||[]).length && !store.q.pt) store.q.pt = 1;
+  $('gspass').value = ''; mode = 'wait'; syncNote = ''; paintSync(); gsSync();
+  setInterval(() => { if (!document.hidden) gsSync(); }, 60000);
+});
+document.addEventListener('click', e => { if (e.target.id !== 'gsoff') return;
+  gs = null; try { localStorage.removeItem(CFG); } catch (err) {} mode = 'local'; syncNote = 'Disconnected. Your tracker is still saved on this device.'; paintSync(); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden) gsSync(); });
+
 /* ---------- storage: synced to the account when possible, else this device ---------- */
 const LS = 'ecj-tracker-v1';
-const store = {apps:{}, prefs:{saved:[], lastVisit:''}};
+const store = {apps:{}, prefs:{saved:[], lastVisit:''}, q:{dirty:{}, gone:{}, pt:0}};
 let remote = null, mode = 'local', syncNote = '';
-try { const j = JSON.parse(localStorage.getItem(LS) || 'null'); if (j) { store.apps = j.apps || {}; store.prefs = Object.assign(store.prefs, j.prefs || {}); } } catch (e) {}
+try { const j = JSON.parse(localStorage.getItem(LS) || 'null'); if (j) { store.apps = j.apps || {}; store.prefs = Object.assign(store.prefs, j.prefs || {}); if (j.q) store.q = {dirty:j.q.dirty||{}, gone:j.q.gone||{}, pt:j.q.pt||0}; } } catch (e) {}
 const saveLocal = () => { try { localStorage.setItem(LS, JSON.stringify(store)); } catch (e) {} };
 const chain = {};
 function write(key, ref, body){ // one write at a time per document
@@ -431,24 +491,28 @@ function write(key, ref, body){ // one write at a time per document
 }
 function setApp(id, patch){
   const r = BYID.get(id), cur = store.apps[id] || {};
-  const a = Object.assign({}, cur, patch, {up: today()});
+  const a = Object.assign({}, cur, patch, {up: today(), ts: Date.now()});
   if (r) Object.assign(a, {c:r[C.co], t:r[C.ti], ty:r[C.type], l:r[C.locs].slice(0,2).join('; ') || r[C.ctry].join(', '), u:r[C.url]});
   if (a.s === 'Applied' && !a.ad) a.ad = today();
   if (!a.s) delete store.apps[id]; else store.apps[id] = a;
+  if (gs) { if (a.s) { store.q.dirty[id] = 1; delete store.q.gone[id]; } else { store.q.gone[id] = a.ts; delete store.q.dirty[id]; } }
   saveLocal(); write('a'+id, remote && remote.apps.doc(id), a.s ? a : null);
-  paintTracker(); queuePush();
+  paintTracker(); queuePush(); queueSync();
 }
-function setPrefs(patch){ Object.assign(store.prefs, patch); saveLocal(); write('prefs', remote && remote.prefs, store.prefs); }
+function setPrefs(patch){ Object.assign(store.prefs, patch); if (gs) store.q.pt = Date.now(); saveLocal(); write('prefs', remote && remote.prefs, store.prefs); queueSync(); }
 function paintSync(){
   $('sync').innerHTML = (mode==='synced' ? '<b>Synced to your Claude account.</b> Open this page on any device where you are signed in and your tracker follows you.'
-    : mode==='wait' ? 'Connecting to your account…'
+    : mode==='sheet' ? '<b>Synced with your Google Sheet.</b> Connect the same sheet on your other devices and the tracker follows you. <button class="link" type="button" id="gsoff">Disconnect this device</button>'
+    : mode==='wait' ? 'Connecting…'
+    : STANDALONE ? '<b>Saved on this device only.</b> Connect your Google Sheet below to sync between devices.'
     : '<b>Saved on this device only.</b> Account sync is not available in this view.') + (syncNote ? ' ' + esc(syncNote) : '');
+  $('gscard').hidden = !(STANDALONE && !gs);
 }
 function settleVisit(){ if (settleVisit.done) return; settleVisit.done = true;
   prevVisit = store.prefs.lastVisit || ''; if (prevVisit !== today()) setPrefs({lastVisit: today(), prevVisit}); else prevVisit = store.prefs.prevVisit || '';
   render(); }
 async function connect(){
-  if (!(window.claude && claude.use)) { settleVisit(); return; }
+  if (STANDALONE) { if (gs) { mode = 'wait'; paintSync(); gsSync(); setInterval(() => { if (!document.hidden) gsSync(); }, 60000); } else { paintSync(); settleVisit(); } return; }
   mode = 'wait'; paintSync();
   const giveUp = setTimeout(() => { if (mode==='wait') { mode='local'; paintSync(); settleVisit(); } }, 10000);
   try {
@@ -566,7 +630,7 @@ async function pushSheet(manual){
 function queuePush(){ if (!mcp) return; clearTimeout(pushTimer); pushTimer = setTimeout(() => pushSheet(false), 2500); }
 $('copy').addEventListener('click', async () => {
   try { await navigator.clipboard.writeText(table('\t')); msg('Copied. Paste into any spreadsheet.'); }
-  catch (e) { msg('Copying was blocked here. Use Download CSV, or open the page on claude.ai.'); }
+  catch (e) { msg('Copying was blocked here. Open your Google Sheet instead.'); }
 });
 
 /* ---------- charts ---------- */
