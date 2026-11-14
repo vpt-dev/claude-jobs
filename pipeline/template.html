@@ -226,20 +226,13 @@ footer h2{font-size:16px;color:var(--ink);margin:18px 0 4px}
 
   <section class="view" id="v-for-you" hidden>
     <div class="card">
-      <h2>Summer 2027 internships in Greater London, Greater Toronto or remote</h2>
-      <p>Set up for you: final-year BSc computer science student, free to work in the UK and Canada, available for summer 2027 only, with a master's to follow. Software and data, AI and ML roles in Greater London, the Greater Toronto Area, or fully remote within the UK or Canada. Engineering roles at quant and finance firms and research internships are included with their own tags and can be hidden below. Left out: PhD-only, hardware, trading, product and MBA roles, first-year schemes, French-language postings, roles longer than a summer or dated for another season, and by default anything that looks like a placement year, penultimate-year scheme or co-op.</p>
-      <p><b>No listing here has been confirmed as open to final-year students.</b> The sources do not carry year-of-study rules, so read the eligibility line of each posting before you apply. Roles tagged “Check year eligibility” are the likeliest to turn finalists away.</p>
+      <h2>Summer 2027 internships for you</h2>
+      <p>Software and data, AI and ML internships in Greater London, Greater Toronto, or remote in the UK or Canada. Anything with a sign of turning away a final-year student has been taken out: placement years, penultimate-year and co-op roles, bank schemes, research posts, and other seasons.</p>
       <div class="chips" id="fy-country">
-        <button type="button" class="chip" data-c="UK" aria-pressed="true">Greater London and UK remote</button>
-        <button type="button" class="chip" data-c="CA" aria-pressed="true">Greater Toronto and Canada remote</button>
-        <button type="button" class="chip" data-c="??" aria-pressed="true">City not stated</button>
+        <button type="button" class="chip" data-c="UK" aria-pressed="true">London and UK remote</button>
+        <button type="button" class="chip" data-c="CA" aria-pressed="true">Toronto and Canada remote</button>
       </div>
-      <p style="margin:12px 0 0"><label class="check"><input type="checkbox" id="fy-dated"> Only roles dated summer 2027</label></p>
-      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-brand"> Well-known firms only</label></p>
-      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-check" checked> Hide placement-year, penultimate-year and co-op roles</label></p>
-      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-research"> Hide research internships, which often want current master's or PhD students</label></p>
-      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-quant"> Hide engineering roles at quant and finance firms</label></p>
-      <p style="margin:6px 0 0"><label class="check"><input type="checkbox" id="fy-bank"> Hide bank summer schemes, which often want penultimate-year students</label></p>
+      <p style="margin:12px 0 0"><label class="check"><input type="checkbox" id="fy-maybe"> <span id="fy-maybe-l">Also show the roles taken out</span></label></p>
     </div>
     <div class="bar"><p id="fy-count"></p></div>
     <ul class="list" id="fy-list"></ul>
@@ -386,13 +379,19 @@ function filtered(){
 }
 const statusSelect = (id, cur) => `<select data-app="${id}" aria-label="Application status" class="${cur?'on':''}"><option value="">Track this role…</option>${STATUS.map(s=>`<option${s===cur?' selected':''}>${s}</option>`).join('')}</select>`;
 const DEGL = d => d===4?'PhD only':(d&2)?"Master's named":'';
-function row(r, extra){
+function row(r, extra, bare){
   const yr = /hr$/.test(r[C.pay]) ? `about $${Math.round(r[C.annual]/1000)}k a year` : '';
   const pay = !r[C.annual] ? `<div class="pay none">Pay not listed</div>`
     : r[C.est] ? `<div class="pay est">~${esc(r[C.pay])}<small>estimate from ${r[C.est]} other ${r[C.est]===1?'listing':'listings'} at this employer</small></div>`
     : `<div class="pay has">${esc(r[C.pay])}${yr?`<small>${yr}</small>`:''}</div>`;
   const locs = r[C.locs].length ? r[C.locs].slice(0,3).join(' · ') + (r[C.locs].length>3?` +${r[C.locs].length-3} more`:'') : r[C.ctry].map(c=>NAMES[c]).join(', ');
   const sp = r[C.spons], a = store.apps[r[C.id]];
+  if (bare) return `<li class="job">
+    <div><div class="co">${esc(r[C.co])}</div><a class="ti" href="${esc(r[C.url])}" target="_blank" rel="noopener">${esc(r[C.ti])}</a></div>
+    ${pay}
+    <div class="meta"><span>${esc(locs)}</span>${extra||''}<span>${ageLabel(r[C.date])}</span></div>
+    <div class="track">${statusSelect(r[C.id], a&&a.s)}</div>
+  </li>`;
   return `<li class="job${r[C.above]?' above':''}">
     <div><div class="co">${esc(r[C.co])}</div><a class="ti" href="${esc(r[C.url])}" target="_blank" rel="noopener">${esc(r[C.ti])}</a></div>
     ${pay}
@@ -689,7 +688,7 @@ function paintCharts(){ if (chartsDone) return; chartsDone = true;
 const FY_EX = /first.year|1st.year|spring week|insight|sophomore|freshman|high school|apprentice|school leaver|\bmba\b|ph\.?d|doctoral|stagiaire|\bstage\b|[éèêàç]|thesis|\b(6|8|9|10|12|16).?months?\b|year.long|winter|\bfall\b|autumn|january|september|off.?cycle|new grad|graduate (program|scheme)/i;
 const FY_CHK = /penultimate|placement|industrial|year in industry|sandwich|co-?op|second.year|2nd.year|rising|junior year|class of 2028|2028|returning/i;
 const FY_BANK = /barclays|goldman|morgan stanley|jpmorgan|j\.p\. morgan|jpmc|\bciti|\bubs\b|hsbc|deutsche|bnp|nomura|bank of america|\brbc\b|royal bank|\btd\b|scotiabank|\bbmo\b|cibc|lloyds|natwest|santander|standard chartered|macquarie|blackrock/i;
-const fy = {c:['UK','CA','??'], brand:false, check:true, dated:false, bank:false, research:false, quant:false, shown:60};
+const fy = {c:['UK','CA'], maybe:false, shown:60};
 const FY_RES = /research/i, FY_QENG = /developer|engineer|software|technolog|data|machine learning/i;
 const fyQuant = r => r[C.cat] === 'Quant';
 const fyFit = r => { const d27 = r[C.terms].includes('Summer 2027'); return d27 && (r[C.deg]&3) ? 3 : d27 ? 2 : 1; };
@@ -714,36 +713,27 @@ const fyBase = D.filter(r => {
   if (!fyCity(r).length && !fyUnclear(r)) return false;
   const t = r[C.terms]; return !t.length || t.includes('Summer 2027');
 });
+const fyRisk = r => FY_CHK.test(r[C.ti]) ? 'Taken out: title points to penultimate-year, placement or co-op students'
+  : FY_BANK.test(r[C.co]) ? 'Taken out: bank schemes usually want penultimate-year students'
+  : FY_RES.test(r[C.ti]) ? 'Taken out: research posts often need you to be enrolled'
+  : fyUnclear(r) ? 'Taken out: city not stated' : '';
+const fyRank = (a,b) => (fyFit(b)-fyFit(a)) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1);
 function fyList(){
-  return fyBase.filter(r => {
-    const here = fyCity(r).some(c => fy.c.includes(c)) || (fy.c.includes('??') && fyUnclear(r));
-    if (!here) return false;
-    if (fy.brand && !brand(r)) return false;
-    if (fy.dated && fyFit(r) < 2) return false;
-    if (fy.check && FY_CHK.test(r[C.ti])) return false;
-    if (fy.bank && FY_BANK.test(r[C.co])) return false;
-    if (fy.research && FY_RES.test(r[C.ti])) return false;
-    if (fy.quant && fyQuant(r)) return false;
-    if (DONE.has((store.apps[r[C.id]]||{}).s)) return false;
-    return true;
-  }).sort((a,b) => ((fyFit(b)-(FY_RES.test(b[C.ti])?.5:0))-(fyFit(a)-(FY_RES.test(a[C.ti])?.5:0))) || (brand(b)-brand(a)) || (a[C.date]<b[C.date]?1:-1));
+  const here = r => fyCity(r).some(c => fy.c.includes(c)) || (fyUnclear(r) && r[C.ctry].some(c => fy.c.includes(c)));
+  const open = fyBase.filter(r => here(r) && !DONE.has((store.apps[r[C.id]]||{}).s));
+  return [open.filter(r => !fyRisk(r)).sort(fyRank), open.filter(r => fyRisk(r)).sort(fyRank)];
 }
 function paintFY(){
-  const f = fyList();
-  $('fy-count').textContent = `${num(f.length)} internships`;
-  $('fy-list').innerHTML = f.length ? f.slice(0,fy.shown).map(r => row(r,
-      (fyFit(r)===3?'<span class="tag bar2">Summer 2027, your degree level</span>':fyFit(r)===2?'<span class="tag bar2">Summer 2027</span>':'<span class="tag">Season not stated</span>') + (brand(r)?'<span class="tag fit">Well-known firm</span>':'') + (fyUnclear(r)?'<span class="tag chk">Location unclear</span>':'') + (FY_RES.test(r[C.ti])?'<span class="tag chk">Research: check enrolment rules</span>':'') + (fyQuant(r)?'<span class="tag">Engineering at a finance firm</span>':'') + (FY_CHK.test(r[C.ti])||FY_BANK.test(r[C.co])?'<span class="tag chk">Check year eligibility</span>':''))).join('')
-    : '<li class="empty">Nothing matches. Select a city above or untick a box.</li>';
+  const [ok, out] = fyList(), f = fy.maybe ? ok.concat(out) : ok;
+  $('fy-count').textContent = `${num(ok.length)} internships`;
+  $('fy-maybe-l').textContent = `Also show the ${num(out.length)} roles taken out`;
+  $('fy-list').innerHTML = f.length ? f.slice(0,fy.shown).map(r => row(r, fyRisk(r) ? `<span class="tag chk">${fyRisk(r)}</span>` : '', true)).join('')
+    : '<li class="empty">Nothing matches. Select a place above.</li>';
   const left = f.length - fy.shown; $('fy-more').hidden = left <= 0; $('fy-more').textContent = `Show ${Math.min(60,left)} more`;
 }
 $('fy-country').addEventListener('click', e => { const b = e.target.closest('.chip'); if (!b) return;
   const c = b.dataset.c, i = fy.c.indexOf(c); i<0 ? fy.c.push(c) : fy.c.splice(i,1); b.setAttribute('aria-pressed', i<0); fy.shown = 60; paintFY(); });
-$('fy-brand').addEventListener('change', e => { fy.brand = e.target.checked; fy.shown = 60; paintFY(); });
-$('fy-dated').addEventListener('change', e => { fy.dated = e.target.checked; fy.shown = 60; paintFY(); });
-$('fy-research').addEventListener('change', e => { fy.research = e.target.checked; fy.shown = 60; paintFY(); });
-$('fy-quant').addEventListener('change', e => { fy.quant = e.target.checked; fy.shown = 60; paintFY(); });
-$('fy-bank').addEventListener('change', e => { fy.bank = e.target.checked; fy.shown = 60; paintFY(); });
-$('fy-check').addEventListener('change', e => { fy.check = e.target.checked; fy.shown = 60; paintFY(); });
+$('fy-maybe').addEventListener('change', e => { fy.maybe = e.target.checked; fy.shown = 60; paintFY(); });
 $('fy-more').addEventListener('click', () => { fy.shown += 60; paintFY(); });
 
 /* ---------- views ---------- */
