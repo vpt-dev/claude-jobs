@@ -1,7 +1,8 @@
 #!/bin/bash
 # Refresh the job board from this computer and publish it.
-#   refresh.sh quick   source lists + Reed + posting checks (a few minutes)
+#   refresh.sh quick   source lists + Reed + board discovery + posting checks (several minutes)
 #   refresh.sh full    the above plus the employer-board crawl (about an hour)
+#   refresh.sh auto    full when the last crawl is more than six days old, otherwise quick
 # Run from inside a clone of the repository. Scratch files go in ../work.
 MODE="${1:-quick}"
 cd "$(dirname "$0")" || exit 1
@@ -9,8 +10,30 @@ WORK="../work"; RAW="$WORK/raw"; mkdir -p "$RAW"
 step() { echo; echo "== $1"; }
 fail() { echo; echo "STOPPED: $1"; echo "Nothing was published. The live site is unchanged."; exit 1; }
 
+# Only one refresh at a time on this computer.
+LOCK="${TMPDIR:-/tmp}/claude-jobs-refresh.lock"
+if ! mkdir "$LOCK" 2>/dev/null; then
+  if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +360 2>/dev/null)" ]; then rmdir "$LOCK" 2>/dev/null; mkdir "$LOCK" 2>/dev/null || exit 1
+  else echo "Another refresh is already running. Try again when it finishes."; exit 0; fi
+fi
+trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+
 step "Getting the latest code"
 git pull --rebase --autostash -q || fail "could not update from GitHub (check your internet connection)"
+
+if [ "$MODE" = "auto" ]; then
+  MODE=$(python3 - <<'PY'
+import json, datetime
+try:
+    t = json.load(open("data/ats_jobs.json")).get("fetched_at", "")[:10]
+    old = (datetime.date.today() - datetime.date.fromisoformat(t)).days > 6
+except Exception:
+    old = True
+print("full" if old else "quick")
+PY
+)
+  echo "Automatic run: doing a $MODE refresh."
+fi
 
 step "Downloading the source lists"
 sh pipeline/fetch.sh "$RAW"
@@ -30,15 +53,26 @@ if [ -s "$KEY" ]; then
 fi
 [ -f data/reed_jobs.json ] && cp data/reed_jobs.json "$RAW/reed_jobs.json"
 
+build() { rm -f "$WORK/jobs.json"; python3 pipeline/build.py "$RAW" "$WORK/jobs.json" | tail -4; [ -s "$WORK/jobs.json" ]; }
 step "Building the dataset"
-rm -f "$WORK/jobs.json"
-python3 pipeline/build.py "$RAW" "$WORK/jobs.json" | tail -3
-[ -s "$WORK/jobs.json" ] || fail "the build produced no data"
+build || fail "the build produced no data"
+
+step "Looking for employers' own job boards"
+if python3 probe.py "$WORK/jobs.json" seeds.json data/ats_jobs.json data/probe_tried.json data/probe_report.json; then
+  cp data/ats_jobs.json "$RAW/ats_jobs.json"
+  build || fail "the build produced no data"
+else
+  echo "Board discovery did not finish; carrying on without it."; git checkout -q -- seeds.json data/ats_jobs.json 2>/dev/null
+fi
 cp "$WORK/elig_crawl.json" data/elig_crawl.json
 
 step "Reading postings for year-of-study wording"
+python3 pipeline/targets.py links "$WORK/jobs.json" data -
 python3 pipeline/targets.py make "$WORK/jobs.json" data "$WORK/targets.json"
-python3 check_postings.py "$WORK/targets.json" "$WORK/elig_new.json" && python3 pipeline/targets.py merge "$WORK/elig_new.json" data "$WORK/targets.json"
+if python3 check_postings.py "$WORK/targets.json" "$WORK/elig_new.json"; then
+  python3 pipeline/targets.py merge "$WORK/elig_new.json" data "$WORK/targets.json"
+  python3 pipeline/targets.py links "$WORK/jobs.json" data -
+fi
 
 step "Assembling the site"
 python3 pipeline/elig_build.py data/elig_crawl.json data/elig.json site/elig.js || fail "could not write the eligibility scores"

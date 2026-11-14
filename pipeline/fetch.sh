@@ -30,4 +30,8 @@ get michelle.md michelleokolie/canada-tech-internships-summer-2027/HEAD/README.m
 get mazen.md mazentalsam/Canada-CS-Internships-New-Grad/HEAD/README.md
 get dw_uk.md dreamworkhq/Tech-Internships-2027/main/international/united-kingdom.md
 get dw_ca.md dreamworkhq/Tech-Internships-2027/main/international/canada.md
+get grind_uk.md grind-fyi/Software-Internships-UK/HEAD/README.md
+get grind_ca.md grind-fyi/Software-Internships-Canada/HEAD/README.md
+get grind_uk_ng.md grind-fyi/Software-NewGrad-UK/HEAD/README.md
+get grind_ca_ng.md grind-fyi/Software-NewGrad-Canada/HEAD/README.md
 echo fetched

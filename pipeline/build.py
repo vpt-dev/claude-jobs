@@ -347,14 +347,18 @@ for line in _rows("aprameyak.md"):
         degrees=tuple(d for d, k in (("PhD", "phd"), ("Master's", "master"), ("Bachelor's", "undergrad")) if k in edu))
 
 # michelleokolie Canada list: Company | Role | Location | Link | Date
+_prev_mo = ""
 for line in _rows("michelle.md"):
     c = cells(line) if line.startswith("|") else []
     if len(c) < 5 or c[0] in ("Company", "") or set(c[0]) <= set("-: ") or not first_url(c[3]):
         continue
+    if strip_md(c[0]) == "↳":
+        c[0] = _prev_mo
+    _prev_mo = c[0]
     add("michelleokolie", strip_md(c[0]), strip_md(c[1]), split_locs(c[2]), first_url(c[3]), "Internship", nice_date(c[4]), default_country="CA")
 
 # mazentalsam / csjobs.ca: Company | Role | Location | Apply | Posted
-typ = "Internship"
+typ, _prev_cs = "Internship", ""
 for line in _rows("mazen.md"):
     if line.startswith("#"):
         typ = "New Grad" if re.search(r"new.?grad|graduate|full.?time", line, re.I) else "Internship" if re.search(r"intern|co-?op", line, re.I) else typ
@@ -362,6 +366,9 @@ for line in _rows("mazen.md"):
     c = cells(line) if line.startswith("|") else []
     if len(c) < 5 or not first_url(c[3]) or strip_md(c[0]) in ("Company", ""):
         continue
+    if strip_md(c[0]) == "↳":
+        c[0] = _prev_cs
+    _prev_cs = c[0]
     add("csjobs", strip_md(c[0]), strip_md(c[1]), split_locs(c[2]), re.sub(r"\?utm_.*$", "", first_url(c[3])), typ, None, default_country="CA")
 
 # dreamworkhq country pages: Company | Role | Location | Pay | Added
@@ -372,6 +379,16 @@ for fn, dc in (("dw_uk.md", "UK"), ("dw_ca.md", "CA")):
             continue
         loc = ", ".join(reversed([x.strip() for x in strip_md(c[2]).split(",")]))  # "Canada, Ottawa" -> "Ottawa, Canada"
         add("dreamworkhq", strip_md(c[0]), strip_md(c[1]), [loc], re.sub(r"\?utm_.*$", "", first_url(c[1])), "Internship", age_date(c[4]) if len(c) > 4 else None, default_country=dc)
+
+# grind.fyi UK and Canada feeds:  | flag | Company | [Role](link) | Location | Extracted |
+for fn, typ, dc in (("grind_uk.md", "Internship", "UK"), ("grind_ca.md", "Internship", "CA"), ("grind_uk_ng.md", "New Grad", "UK"), ("grind_ca_ng.md", "New Grad", "CA")):
+    for line in _rows(fn):
+        c = cells(line) if line.startswith("|") else []
+        if len(c) < 5 or "](https://grind.fyi/j?" not in c[2]:
+            continue
+        comp = strip_md(c[1])
+        comp = comp.title() if comp.islower() else comp  # some names are lower-case board names
+        add("grind.fyi", comp, strip_md(c[2]), split_locs(c[3]), re.sub(r"&utm_.*$", "", first_url(c[2])), typ, nice_date(c[4]), default_country=dc)
 
 # ---- employer boards crawled from the user's machine (crawl.py output) ----
 for _fn in ("ats_jobs.json", "reed_jobs.json"):
@@ -405,12 +422,19 @@ def nt(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+_TRACK = re.compile(r"^(utm_.*|ref|referrer|source|src|gh_src|lever-.*|trk|trackingid|refid|s|campaign|jobboardid|codes|mode|lang|locale)$")
+
+
 def nurl(u):
-    u = re.sub(r"[?#].*$", "", u.lower()).rstrip("/")
-    return re.sub(r"/(apply|application)$", "", u)
+    """A posting's address without tracking tags. Query values that identify the job are kept."""
+    u = u.lower().split("#")[0]
+    base, _, query = u.partition("?")
+    keep = sorted(p for p in query.split("&") if p and not _TRACK.match(p.split("=")[0]))
+    base = re.sub(r"/(apply|application)$", "", base.rstrip("/"))
+    return base + ("?" + "&".join(keep) if keep else "")
 
 
-INDIRECT = r"go\.vansh\.nyc|linkedin\.com|dreamworkhq\.com|csjobs\.ca|simplify\.jobs"
+INDIRECT = r"go\.vansh\.nyc|linkedin\.com|dreamworkhq\.com|csjobs\.ca|simplify\.jobs|grind\.fyi"
 ELIG_OUT = {}
 merged, by_url = {}, {}
 dropped = 0
@@ -476,6 +500,47 @@ pool = collections.defaultdict(list)
 for j in merged.values():
     if j["salary"]:
         pool[(nc(j["company"]), j["type"])].append(j["salary"])
+# ---- second pass: match roles known only through a list's own link to the employer's posting ----
+_STOP = re.compile(r"\b(20\d\d|summer|winter|fall|autumn|spring|intern(ship)?s?|co-?op|student|months?|term|new|grad(uate)?|the|and|of|for|in|a|an|\d+)\b")
+
+
+def _toks(t):
+    return frozenset(re.findall(r"[a-z0-9+#]+", _STOP.sub(" ", t.lower())))
+
+
+_direct = collections.defaultdict(list)
+for _k, _j in merged.items():
+    if not re.search(INDIRECT, _j["url"]):
+        _direct[(_k[0], _j["type"])].append(_j)
+folded = 0
+for _k in list(merged):
+    _j = merged[_k]
+    if not re.search(INDIRECT, _j["url"]):
+        continue
+    _a, _best, _score = _toks(_j["title"]), None, 0
+    for _d in _direct.get((_k[0], _j["type"]), ()):
+        _b = _toks(_d["title"])
+        _s = len(_a & _b) / max(1, len(_a | _b))
+        if _s > _score and set(_d["countries"]) & set(_j["countries"]):
+            _best, _score = _d, _s
+    if _best is None or _score < 0.85 or not _a:
+        continue
+    for _src in _j["srcs"]:
+        if _src not in _best["srcs"]:
+            _best["srcs"].append(_src)
+    for _l in _j["locs"]:
+        if _l not in _best["locs"] and len(_best["locs"]) < 8:
+            _best["locs"].append(_l)
+    for _t in _j["terms"]:
+        if _t not in _best["terms"]:
+            _best["terms"].append(_t)
+    _best["deg"] |= _j["deg"]
+    if _j["posted"] and (not _best["posted"] or _j["posted"] < _best["posted"]):
+        _best["posted"] = _j["posted"]
+    del merged[_k]
+    folded += 1
+print("list-only roles matched to an employer posting:", folded)
+
 out = []
 for j in merged.values():
     s, est = j["salary"], 0
