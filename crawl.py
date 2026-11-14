@@ -62,9 +62,32 @@ def find_pay(s):
     return None
 
 
+ELIG = [
+    ("penultimate_only", r"penultimate[- ]year|second[- ]to[- ]last year|one year (left|remaining)|at least (one|1) (more )?(year|semester|term) (left|remaining)|rising (junior|senior)"),
+    ("grad_2028_or_later", r"(graduat\w+|graduation|class of|completing your degree)[^.]{0,60}\b20(28|29)\b"),
+    ("must_return_to_study", r"return(ing)? to (school|university|college|your stud\w+|full[- ]time (study|education|studies)|a degree)|must be returning|returning student|continuing (your )?(studies|education) after"),
+    ("must_be_enrolled", r"(currently )?enrol+ed in (a|an|your)|currently (pursuing|studying|completing)|active(ly)? (student|enrol+ment)|co-?op (program|term|student)"),
+    ("final_year_ok", r"final[- ]year|last year of (your )?(study|studies|degree)|penultimate or final|graduat\w+[^.]{0,40}\b2027\b|class of 2027|recent(ly)? graduat\w+|new graduates? (are )?(also )?welcome"),
+    ("masters_ok", r"master'?s|\bmsc\b|\bmeng\b|postgraduate|graduate student"),
+]
+ELIG = [(k, re.compile(p, re.I)) for k, p in ELIG]
+
+
+def eligibility(desc):
+    """Return year-of-study signals found in a posting, with one short excerpt per signal."""
+    out = {}
+    for key, rx in ELIG:
+        m = rx.search(desc or "")
+        if m:
+            a, b = max(0, m.start() - 70), min(len(desc), m.end() + 70)
+            out[key] = desc[a:b].strip()
+    return out
+
+
 def job(seed, title, locs, url, posted="", desc="", pay=None):
     return {"company": seed["company"], "title": title.strip(), "locations": [l for l in locs if l], "url": url,
-            "posted": (posted or "")[:10], "pay": pay or find_pay(desc), "ats": seed["ats"], "board": seed["board"]}
+            "posted": (posted or "")[:10], "pay": pay or find_pay(desc), "elig": eligibility(desc),
+            "ats": seed["ats"], "board": seed["board"]}
 
 
 def greenhouse(s):
@@ -91,7 +114,7 @@ def lever(s):
                "period": "hour" if "hour" in (sr.get("interval") or "") else "year"} if sr.get("min") else None
         posted = time.strftime("%Y-%m-%d", time.gmtime(j["createdAt"] / 1000)) if j.get("createdAt") else ""
         out.append(job(s, j.get("text", ""), c.get("allLocations") or [c.get("location", "")], j.get("hostedUrl", ""),
-                       posted, j.get("descriptionPlain", "") + " " + text(j.get("additionalPlain", "")), pay))
+                       posted, (j.get("descriptionPlain") or "") + " " + " ".join(text(x.get("content", "")) for x in j.get("lists") or []) + " " + text(j.get("additionalPlain", "")), pay))
     return out
 
 
@@ -198,7 +221,7 @@ def main():
                 errors[f"{seed['ats']}:{seed['board']}"] = err
     json.dump({"fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "jobs": jobs, "errors": errors},
               open(sys.argv[2], "w"), ensure_ascii=False, indent=0)
-    print(f"boards {len(seeds)} | failed {len(errors)} | early-career roles kept {len(jobs)} | with pay {sum(1 for j in jobs if j['pay'])}")
+    print(f"boards {len(seeds)} | failed {len(errors)} | early-career roles kept {len(jobs)} | with pay {sum(1 for j in jobs if j['pay'])} | with year-of-study wording {sum(1 for j in jobs if j['elig'])}")
     if seeds and len(errors) > len(seeds) * 0.5:
         sys.exit("More than half the boards failed; treat this run as broken.")
 
