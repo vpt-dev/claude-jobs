@@ -1014,5 +1014,35 @@
   ],
   "state": "X",
   "kind": "dates"
+ },
+ {
+  "name": "other degrees shut out, not yours",
+  "req": [
+   "Students enrolled in PhD, MBA, or JD programs are not eligible to apply."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "months of support are not the length",
+  "req": [
+   "Opportunity to receive a full-time permanent offer after graduation and 12 months of customized support from our Emerging Talent team."
+  ],
+  "state": "U"
+ },
+ {
+  "name": "pay that depends on year is not a rule",
+  "req": [
+   "Our Undergraduate co-ops offer an hourly rate between $24.00 - $25.00 dependent upon academic year (rising Junior or Senior)."
+  ],
+  "state": "C",
+  "kind": "year"
+ },
+ {
+  "name": "master's, PhD or recent graduate",
+  "req": [
+   "Currently enrolled in a Master's or PhD program in Computer Science, NLP, Machine Learning, or a related field, or recently graduated."
+  ],
+  "state": "C",
+  "kind": "enrol"
  }
 ]

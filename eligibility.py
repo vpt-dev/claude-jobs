@@ -263,7 +263,7 @@ _RISING = re.compile(r"rising (junior|senior)s?", re.I)
 # "Will be entering their final year", "returning for your final year after the summer": the final year comes after the internship.
 _ENTER_FIN = re.compile(r"(entering|enter|going into|go into|returning (to|for)|return (to|for)|about to (start|begin|enter)|starting|commencing|progressing (in)?to|"
                         r"moving into|heading into|due to (start|begin|enter)|approaching|into) (the |your |their |his |her |a |an )?(final|last|senior)[- ]year", re.I)
-_PREFER = re.compile(r"(prefer\w*|ideal\w*|typically|usually|generally|normally|most suited|best suited|well suited|suited to|aimed primarily|primarily)\W+(\w+\W+){0,4}$", re.I)
+_PREFER = re.compile(r"(prefer\w*|ideal\w*|depend\w+ (up)?on|based on|according to|varies (by|with)|typically|usually|generally|normally|most suited|best suited|well suited|suited to|aimed primarily|primarily)\W+(\w+\W+){0,4}$", re.I)
 _PREFER_AFTER = re.compile(r"^[^.;]{0,30}\b(preferred|ideal|is a plus|desirable|but not (essential|required)|though|although)\b", re.I)
 
 
@@ -378,8 +378,14 @@ def _enrol(s, prof):
         out.append(F("enrol", "cond", "says graduates cannot apply, so you would need to count as a continuing student through your master's", s))
     elif (_RG_OK.search(s) or (_RG_ALT.search(s) and _RG_CUE.search(s))) and not (levels and "bachelor" not in levels and re.search(r"graduated from", s, re.I)):
         out.append(F("grad", "ok", "accepts recent graduates, which you will be", s))
-    if _ENR.search(s) and not re.search(r"co-?op", s, re.I):
-        if levels == {"phd"}:
+    excluded = re.search(r"\b(not|in)eligible\b|\bnot (be )?eligible|cannot apply|can't apply|not (be )?considered|are excluded|will not be accepted", s, re.I)
+    if _ENR.search(s) and excluded and levels and "bachelor" not in levels:
+        # "Students enrolled in PhD, MBA or JD programs are not eligible": this shuts those students out, not you.
+        out.append(F("enrol", "note", "rules out students on other degrees, not bachelor's students", s))
+    elif _ENR.search(s) and not re.search(r"co-?op", s, re.I):
+        if levels and "bachelor" not in levels and re.search(r"\bor\b[^.;]{0,20}recent(ly)? graduat\w*\b(?! from)", s, re.I):
+            out.append(F("enrol", "cond", "asks for master's or PhD students or recent graduates; whether a new bachelor's graduate counts is not stated", s))
+        elif levels == {"phd"}:
             out.append(F("degree", "fail", "asks for students currently on a PhD", s))
         elif levels and "bachelor" not in levels:
             out.append(F("enrol", "fail", "asks for students currently on a master's or PhD; yours would not have started", s))
@@ -435,7 +441,8 @@ def _degree(s):
 _DUR = re.compile(r"(\d{1,2})\s?(?:-|–|to|or|/)\s?(\d{1,2})[- ]?\s?(month|week)s?\b|(\d{1,2})[- ]?\s?(month|week)s?\b", re.I)
 _DUR_CUE = re.compile(r"internship|placement|co-?op|work term|\bterm\b|contract|program(me)?|duration|assignment|position|role|opportunity|scheme|length|lasting|lasts|"
                       r"runs for|full[- ]time for|\bfor \d", re.I)
-_DUR_NOT = re.compile(r"^\s?(of |'|’)?\s?(experience|notice|probation|of graduation|since graduat|old\b|prior|previous|or more of)|^[^.;]{0,12}\bexperience\b", re.I)
+_DUR_NOT = re.compile(r"^\s?(of |'|’)?\s?(experience|notice|probation|of graduation|since graduat|old\b|prior|previous|or more of)|^[^.;]{0,12}\bexperience\b|"
+                      r"^\s?of (\w+ ){0,3}(support|mentor\w*|training|coaching|access|membership|subscription|onboarding|development|benefits?|cover|leave)\b", re.I)
 _YEAR_LONG = re.compile(r"year[- ]long|one[- ]year (placement|internship|contract|program)|placement year|year in industry|industrial placement|sandwich (year|placement|course)|year[- ]out", re.I)
 _YEAR_LONG_HERE = re.compile(r"\b(this|our|the) (\w+ ){0,3}(placement year|year in industry|industrial placement|sandwich placement|year[- ]long|one[- ]year)|"
                              r"(placement year|year in industry|industrial placement|year[- ]long (internship|placement))[^.;]{0,40}(start|begin|commenc|from|run|last|opportunit|programme|program|scheme|role)", re.I)
