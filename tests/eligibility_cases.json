@@ -317,13 +317,13 @@
   "kind": "dates"
  },
  {
-  "name": "terms: winter",
+  "name": "terms: a list label alone does not rule out",
   "title": "Programmer Analyst Intern",
   "terms": [
    "Winter 2027"
   ],
   "req": [],
-  "state": "X",
+  "state": "C",
   "kind": "dates"
  },
  {

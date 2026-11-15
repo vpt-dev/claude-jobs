@@ -638,8 +638,11 @@ def title_findings(title, terms, prof):
             out.append(F("dates", "weak", f"listed for {want[0]} {want[1]}", t, "when"))
         else:
             named = ", ".join(sorted({f"{a.title()} {b}" for a, b in seasons}))
-            where = "the title says" if in_title else "the list it came from labels it"
-            out.append(F("dates", "fail", f"{where} {named}, not {want[0]} {want[1]}", t if in_title else named, "when"))
+            if in_title:
+                out.append(F("dates", "fail", f"the title says {named}, not {want[0]} {want[1]}", t, "when"))
+            else:
+                # A label put on by a list's maintainers is second-hand: worth checking, not grounds to rule a role out.
+                out.append(F("dates", "cond", f"the list it came from labels it {named}, not {want[0]} {want[1]}; the posting itself has not confirmed that", named, "when"))
     if re.search(r"off[- ]?cycle", t, re.I) and want not in seasons:
         out.append(F("dates", "cond", "is an off-cycle internship; check its dates against your summer", t, "when"))
     out += [f for f in _dates(t, prof, is_title=True) if f["verdict"] != "weak"]
