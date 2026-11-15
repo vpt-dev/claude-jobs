@@ -932,6 +932,35 @@ const WATCH = [
   ['Citadel and Citadel Securities', 'https://www.citadel.com/careers/open-opportunities/students/internships/', 'Own careers site. Roles are listed here from public lists, but the postings are not read.'],
   ['D. E. Shaw', 'https://www.deshaw.com/careers/internships', 'Own careers site. Not read automatically.'],
   ['Spotify', 'https://www.lifeatspotify.com/students', 'Own careers site. Not read automatically.'],
+  ['Google', 'https://www.google.com/about/careers/applications/students/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Meta', 'https://www.metacareers.com/students', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Apple', 'https://www.apple.com/careers/uk/students.html', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Amazon', 'https://www.amazon.jobs/en-gb/business_categories/student-programs', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Microsoft', 'https://careers.microsoft.com/v2/global/en/students', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Netflix', 'https://explore.jobs.netflix.net/careers', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Tesla', 'https://www.tesla.com/careers/internships', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['IBM', 'https://www.ibm.com/careers', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Uber', 'https://www.uber.com/careers/university', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Palantir', 'https://www.palantir.com/careers/students/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Google DeepMind', 'https://deepmind.google/careers/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Shopify', 'https://www.shopify.com/careers', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Wise', 'https://wise.jobs/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Ocado Technology', 'https://careers.ocadogroup.com/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Goldman Sachs', 'https://www.goldmansachs.com/careers/students', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['JPMorgan', 'https://careers.jpmorgan.com/global/en/students', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Morgan Stanley', 'https://www.morganstanley.com/careers/students-graduates', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Barclays', 'https://search.jobs.barclays/internships', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['HSBC', 'https://www.hsbc.com/careers/students-and-graduates', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['UBS', 'https://www.ubs.com/global/en/careers/early-careers.html', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['BlackRock', 'https://careers.blackrock.com/early-careers/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Two Sigma', 'https://careers.twosigma.com/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['G-Research', 'https://www.gresearch.com/vacancies/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['IMC Trading', 'https://www.imc.com/eu/careers/students-and-graduates', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Optiver', 'https://optiver.com/working-at-optiver/career-opportunities/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['RBC', 'https://jobs.rbc.com/ca/en/students', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['TD', 'https://jobs.td.com/en-CA/students-recent-grads/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Scotiabank', 'https://jobs.scotiabank.com/', 'Own careers site, not read by this site. Some of its roles arrive through public lists; check here for the rest.'],
+  ['Your university careers portal', '', 'Employers post there directly. This site cannot see it.'],
   ['Trackr: UK tech', 'https://app.the-trackr.com/uk-tech', 'Opening and closing dates for UK tech internships. Terms bar automated collection.'],
   ['Gradcracker', 'https://www.gradcracker.com/search/technology-it/work-placements-internships', 'UK technology placements and internships. Blocks automated visitors.'],
   ['Bright Network', 'https://www.brightnetwork.co.uk/application-deadlines/jobs/internships/technology/', 'UK technology internship deadlines. Human check on entry.'],
@@ -947,7 +976,7 @@ function paintWatch(){
   const due = WATCH.filter(w => { const n = days(watched[w[0]]); return n === null || n >= 3; }).length;
   $('fy-watch-n').textContent = due ? `${due} due for a look` : 'all checked recently';
   $('fy-watch-list').innerHTML = WATCH.map((w, i) => { const n = days(watched[w[0]]);
-    return `<li><a href="${esc(w[1])}" target="_blank" rel="noopener">${esc(w[0])}</a><span class="why">${esc(w[2])}</span>
+    return `<li>${w[1] ? `<a href="${esc(w[1])}" target="_blank" rel="noopener">${esc(w[0])}</a>` : `<b>${esc(w[0])}</b>`}<span class="why">${esc(w[2])}</span>
       <span class="${n === null || n >= 3 ? 'due' : 'sync'}">${n === null ? 'Not checked yet' : n === 0 ? 'Checked today' : n === 1 ? 'Checked yesterday' : `Checked ${n} days ago`}</span>
       <button class="btn ghost" type="button" data-watch="${i}">Checked</button></li>`; }).join('');
 }

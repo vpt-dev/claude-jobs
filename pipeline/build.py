@@ -423,6 +423,69 @@ for fn, typ, dc in (("grind_uk.md", "Internship", "UK"), ("grind_ca.md", "Intern
         add("grind.fyi", comp, strip_md(c[2]), split_locs(c[3]), re.sub(r"&utm_.*$", "", first_url(c[2])), typ, nice_date(c[4]), default_country=dc)
 
 # ---- employer boards crawled from the user's machine (crawl.py output) ----
+# ---- further public lists, all plain Markdown tables ----
+def any_date(s):
+    """A date written as "Nov 14, 2026", "2026-11-12", "Nov 14", "3d", "2 days ago", "today" or "yesterday"."""
+    s = re.sub(r"<[^>]+>", " ", s or "").strip()
+    d = nice_date(s) or age_date(s)
+    if d:
+        return d
+    m = re.match(r"(\d+)\s*(day|d\b)", s)
+    if m:
+        return (TODAY - datetime.timedelta(days=int(m.group(1)))).isoformat()
+    if re.match(r"today|just now|\d+\s*h", s, re.I):
+        return TODAY.isoformat()
+    if re.match(r"yesterday", s, re.I):
+        return (TODAY - datetime.timedelta(days=1)).isoformat()
+    for f in ("%b %d", "%B %d"):
+        try:
+            d = datetime.datetime.strptime(f"{s} {TODAY.year}", f + " %Y").date()
+            return (d if d <= TODAY else d.replace(year=TODAY.year - 1)).isoformat()
+        except ValueError:
+            pass
+    return None
+
+
+def link_text(cell):
+    """The words of the first Markdown link in a cell, without notes that follow it."""
+    m = re.search(r"\[([^\]]+)\]\(", cell)
+    return strip_md(m.group(1) if m else re.split(r"<br|<sub", cell)[0])
+
+
+# file, source name, columns (company, title, location, link, date, pay), default country, single-country list, type from heading
+MORE_LISTS = [
+    ("bobwillrule.md", "Bobwillrule", (0, 1, 2, 3, 4, None), "CA", True),
+    ("ottawa.md", "ottawa-radar", (1, 0, 3, 0, 5, None), "CA", True),
+    ("eurotech.md", "european-tech-2027", (0, 1, 2, 1, 4, 3), "XX", False),
+    ("nihal.md", "nihalmohammed18", (0, 1, 3, 1, 6, 4), "XX", False),
+    ("babbling.md", "babblinglabs", (0, 1, 2, 4, 6, 3), "US", False),
+]
+for fn, src, (ci, ti, li, ui, di, pi), dc, local in MORE_LISTS:
+    typ, prev, local_dc = "Internship", "", "XX"
+    for line in _rows(fn):
+        if line.startswith("#"):
+            low = line.lower()
+            typ = "New Grad" if re.search(r"new grad|entry[- ]level|graduate", low) else "Internship" if "intern" in low else typ
+            if dc == "XX":  # these lists say which region each section covers
+                local_dc = "US" if "united states" in low else "CA" if "canada" in low else "XX"
+            continue
+        if not line.startswith("|"):
+            continue
+        c = cells(line)
+        if len(c) <= max(ci, ti, li, ui, di) or set(c[0]) <= set("-: ") or c[ci].strip().lower() in ("company", "role"):
+            continue
+        comp = strip_md(c[ci])
+        comp = prev if comp in ("↳", "") else comp
+        prev = comp
+        url = first_url(c[ui])
+        title = link_text(c[ti]) if ui == ti else strip_md(c[ti])
+        if not url or not title:
+            continue
+        if src == "nihalmohammed18" and classify(title) == "Other":
+            continue  # this list covers every field; only its technical roles are taken
+        where = (local_dc if dc == "XX" else dc) if dc == "XX" else dc
+        add(src, comp, re.sub(r"\s*🆕\s*$", "", title), split_locs(c[li]), url, typ, any_date(c[di]),
+            salary=parse_salary(c[pi]) if pi is not None and c[pi].strip() else None, default_country=where, local=local)
 for _fn in ("ats_jobs.json", "reed_jobs.json"):
     if not os.path.exists(f"{RAW}/{_fn}"):
         continue

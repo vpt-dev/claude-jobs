@@ -24,7 +24,7 @@ for r in SWE AI; do l=$(echo $r | tr A-Z a-z)
   get speedy_${l}_intl.md speedyapply/2027-$r-College-Jobs/main/INTERN_INTL.md
   get speedy_${l}_ng_intl.md speedyapply/2027-$r-College-Jobs/main/NEW_GRAD_INTL.md
 done
-get negar.md negarprh/Canadian-Tech-Internships-2026/main/README.md
+get negar.md negarprh/Canadian-Tech-Internships-2027/HEAD/README.md
 get euro.md LorenzoLaCorte/european-tech-internships-2026/main/README.md
 get nu_quant.md northwesternfintech/2027QuantInternships/main/README.md
 get zshah.md zshah101/Automated-List-Of-Summer-2027-and-Fall-2026-Tech-Internships/main/README.md
@@ -36,6 +36,11 @@ get krishi.md krishi-shah/Toronto-AI-ML-internship-radar/HEAD/README.md
 get francklin.md Francklin9999/canada-internship/HEAD/README.md
 get quantscraper.md quant-scraper/Quant-Internships-New-Grad-2027/HEAD/README.md
 get aprameyak.md aprameyak/2027-tech-jobs/HEAD/README.md
+get bobwillrule.md Bobwillrule/Canadian-Internship-List/HEAD/README.md
+get ottawa.md Bhadri-Air/ottawa-internship/HEAD/README.md
+get eurotech.md jordan-belfort-ai/European-Tech-Internships-2027/HEAD/README.md
+get nihal.md nihalmohammed18/New-Grad-and-Internships-2027/HEAD/README.md
+get babbling.md babblinglabs/Internships-2027/HEAD/README.md
 get michelle.md michelleokolie/canada-tech-internships-summer-2027/HEAD/README.md
 get mazen.md mazentalsam/Canada-CS-Internships-New-Grad/HEAD/README.md
 get dw_uk.md dreamworkhq/Tech-Internships-2027/main/international/united-kingdom.md

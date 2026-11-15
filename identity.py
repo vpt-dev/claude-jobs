@@ -9,11 +9,11 @@ import re
 import urllib.parse
 
 # Links that go through a list or aggregator, so they do not reveal the employer's requisition.
-INDIRECT = re.compile(r"(^|\.)(go\.vansh\.nyc|grind\.fyi|csjobs\.ca|dreamworkhq\.com|simplify\.jobs|linkedin\.com|indeed\.com|"
+INDIRECT = re.compile(r"(^|\.)(firstjobby\.com|go\.vansh\.nyc|grind\.fyi|csjobs\.ca|dreamworkhq\.com|simplify\.jobs|linkedin\.com|indeed\.com|"
                       r"glassdoor\.[a-z.]+|bit\.ly|lnkd\.in|tinyurl\.com)$")
 # Sites whose terms or bot checks rule out automated reading. Nothing on them is fetched; their roles stay
 # "not read" unless the same role is found on the employer's own board.
-NO_READ = re.compile(r"(^|\.)(csjobs\.ca|linkedin\.com|indeed\.com|glassdoor\.[a-z.]+|simplify\.jobs|dreamworkhq\.com|the-trackr\.com|"
+NO_READ = re.compile(r"(^|\.)(firstjobby\.com|csjobs\.ca|linkedin\.com|indeed\.com|glassdoor\.[a-z.]+|simplify\.jobs|dreamworkhq\.com|the-trackr\.com|"
                      r"gradcracker\.com|brightnetwork\.co\.uk|bloomberg\.com|bloomberg\.avature\.net|revolut\.com)$")
 # Link shorteners used by some lists. Following one shows where the posting really lives.
 SHORT = re.compile(r"(^|\.)(go\.vansh\.nyc|grind\.fyi|bit\.ly|lnkd\.in|tinyurl\.com)$")
