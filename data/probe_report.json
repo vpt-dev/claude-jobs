@@ -2,6 +2,66 @@
  "runs": [
   {
    "date": "2026-11-15",
+   "addresses_tried": 28,
+   "boards_found": [
+    {
+     "company": "Thought Machine",
+     "board": "ashby:thought-machine",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Quantexa",
+     "board": "ashby:quantexa",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Starling Bank",
+     "board": "workable:starling-bank",
+     "early_career_roles": 1,
+     "uk_or_canada": 1
+    },
+    {
+     "company": "Neo Financial",
+     "board": "ashby:neofinancial",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "KOHO",
+     "board": "ashby:koho",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Moneybox",
+     "board": "ashby:moneybox",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Paddle",
+     "board": "ashby:paddle",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Mistplay",
+     "board": "lever:mistplay",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    },
+    {
+     "company": "Trulioo",
+     "board": "ashby:trulioo",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
    "addresses_tried": 492,
    "boards_found": [
     {

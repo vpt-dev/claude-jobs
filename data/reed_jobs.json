@@ -1,5 +1,5 @@
 {
-"fetched_at": "2026-11-15T12:11:12Z",
+"fetched_at": "2026-11-15T13:10:11Z",
 "jobs": [
 {
 "company": "McGregor Boyall",
@@ -93,30 +93,6 @@
 "company": "Saab UK",
 "title": "Software Engineering Graduate",
 "locations": [
-"Farnborough, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447758",
-"posted": "2026-10-12",
-"pay": null,
-"reed_id": 57447758,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-23",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "105334a2ebd7",
-"lang": ""
-},
-{
-"company": "Saab UK",
-"title": "Software Engineering Graduate",
-"locations": [
 "Bedford, UK"
 ],
 "countries": [
@@ -159,6 +135,30 @@
 "quality": "full",
 "req": [],
 "hash": "d0b48f33ec42",
+"lang": ""
+},
+{
+"company": "Saab UK",
+"title": "Software Engineering Graduate",
+"locations": [
+"Farnborough, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447758",
+"posted": "2026-10-12",
+"pay": null,
+"reed_id": 57447758,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-15",
+"deadline": "2026-11-23",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "105334a2ebd7",
 "lang": ""
 },
 {
@@ -215,35 +215,6 @@
 "lang": ""
 },
 {
-"company": "Spectrum IT Recruitment",
-"title": "Graduate Software Developer",
-"locations": [
-"London, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57545790",
-"posted": "2026-11-09",
-"pay": {
-"min": 45000.0,
-"max": 50000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57545790,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-23",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "2caf6f9b9786",
-"lang": ""
-},
-{
 "company": "Oscar Technology",
 "title": "Graduate Software Developer",
 "locations": [
@@ -270,6 +241,35 @@
 "quality": "full",
 "req": [],
 "hash": "964dfe5dead1",
+"lang": ""
+},
+{
+"company": "Spectrum IT Recruitment",
+"title": "Graduate Software Developer",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57545790",
+"posted": "2026-11-09",
+"pay": {
+"min": 45000.0,
+"max": 50000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57545790,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-15",
+"deadline": "2026-11-23",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "2caf6f9b9786",
 "lang": ""
 },
 {
@@ -537,35 +537,6 @@
 "company": "Penguin Recruitment Ltd",
 "title": "Graduate Civil Engineer",
 "locations": [
-"Cardiff, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
-"posted": "2026-11-13",
-"pay": {
-"min": 28000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57566379,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-25",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "18e8a4a4a67b",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
 "Chelmsford, UK"
 ],
 "countries": [
@@ -589,6 +560,35 @@
 "quality": "full",
 "req": [],
 "hash": "add2ca10f811",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Cardiff, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
+"posted": "2026-11-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57566379,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-15",
+"deadline": "2026-12-25",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "18e8a4a4a67b",
 "lang": ""
 },
 {
@@ -798,35 +798,6 @@
 "company": "Penguin Recruitment Ltd",
 "title": "Graduate Civil Engineer",
 "locations": [
-"Nottingham, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436154",
-"posted": "2026-10-08",
-"pay": {
-"min": 27500.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57436154,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-19",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "c3494e24d633",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
 "Wakefield, UK"
 ],
 "countries": [
@@ -850,6 +821,35 @@
 "quality": "full",
 "req": [],
 "hash": "42d5258e5058",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Nottingham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57436154",
+"posted": "2026-10-08",
+"pay": {
+"min": 27500.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57436154,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-15",
+"deadline": "2026-11-19",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "c3494e24d633",
 "lang": ""
 },
 {
@@ -940,35 +940,6 @@
 "lang": ""
 },
 {
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Louth, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57497907",
-"posted": "2026-10-27",
-"pay": {
-"min": 28000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57497907,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-08",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "3bd184f245a4",
-"lang": ""
-},
-{
 "company": "hayden nash consultants",
 "title": "graduate electrical engineer",
 "locations": [
@@ -995,6 +966,35 @@
 "quality": "full",
 "req": [],
 "hash": "c14717867cde",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Louth, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57497907",
+"posted": "2026-10-27",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57497907,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-15",
+"deadline": "2026-12-08",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "3bd184f245a4",
 "lang": ""
 },
 {
