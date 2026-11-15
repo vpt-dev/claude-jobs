@@ -19,7 +19,14 @@ fi
 trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 
 step "Getting the latest code"
+BEFORE=$(cksum < "$0")
 git pull --rebase --autostash -q || fail "could not update from GitHub (check your internet connection)"
+# If the update changed this script, start again with the new copy: a shell must not carry on reading a file that changed under it.
+if [ "$BEFORE" != "$(cksum < "$0")" ] && [ -z "$REFRESH_RESTARTED" ]; then
+  echo "The refresh script was updated; restarting with the new version."
+  trap - EXIT; rmdir "$LOCK" 2>/dev/null
+  REFRESH_RESTARTED=1 exec bash "$0" "$MODE"
+fi
 
 if [ "$MODE" = "auto" ]; then
   MODE=$(python3 - <<'PY'
