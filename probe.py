@@ -30,6 +30,15 @@ GENERIC = {"float", "neo", "ada", "cleo", "tide", "peak", "bell", "bolt", "wave"
 
 # Employer, then board addresses worth trying: "greenhouse:slug", "lever:slug", "ashby:slug" or "workday:tenant.wdN/site".
 MUST = [
+    # Employers found to have moved system, or to sit on one the first guesses did not try (checked November 2026).
+    ("Thought Machine", ["ashby:thoughtmachine", "ashby:thought-machine", "workable:thoughtmachine"]),
+    ("Quantexa", ["ashby:quantexa", "workable:quantexa"]), ("Starling Bank", ["workable:starling-bank"]),
+    ("Skyscanner", ["ashby:skyscanner"]), ("Neo Financial", ["ashby:neofinancial", "ashby:neo-financial", "ashby:neo"]),
+    ("KOHO", ["ashby:koho"]), ("Moneybox", ["ashby:moneybox", "workable:moneybox", "lever:moneybox"]),
+    ("Paddle", ["ashby:paddle", "lever:paddle"]), ("Nscale", ["lever:nscale", "workable:nscale"]),
+    ("Vidyard", ["lever:vidyard", "ashby:vidyard"]), ("Mistplay", ["lever:mistplay", "ashby:mistplay"]),
+    ("Trulioo", ["lever:trulioo", "ashby:trulioo", "smartrecruiters:Trulioo"]), ("ecobee", ["lever:ecobee", "ashby:ecobee", "workable:ecobee"]),
+    ("Hudson River Trading", ["greenhouse:wehrtyou"]), ("Spotify", ["lever:spotify", "ashby:spotify"]),
     ("XTX Markets", ["greenhouse:xtxmarketstechnologies", "greenhouse:xtxmarkets"]), ("Man Group", ["greenhouse:mangroup"]),
     ("Flow Traders", ["greenhouse:flowtraders"]), ("Balyasny Asset Management", ["greenhouse:bamfunds", "greenhouse:balyasny"]),
     ("Google DeepMind", ["greenhouse:deepmind"]), ("Monzo", ["greenhouse:monzo"]), ("Arm", ["workday:arm.wd1/Careers"]),
