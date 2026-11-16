@@ -1,5 +1,5 @@
 {
-"checked": "2026-11-15",
+"checked": "2026-11-16",
 "read": {
 "002e1bda7b3f": {
 "checked": "2026-11-14",
@@ -397,6 +397,20 @@
 "quality": "partial",
 "url": "https://jobs.smartrecruiters.com/PAConsulting/744000159817990",
 "v": 1
+},
+"06468d248277": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "58d47f5c3cbb",
+"lang": "",
+"quality": "full",
+"req": [
+"A $1,500 signing bonus will be paid after the 3-month probationary period.",
+"Opportunity to work for an ambitious and fast-moving startup in the automotive space"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/99824659-automotive-apprentice-technician-level-2-3-evening-shift#content",
+"v": 2
 },
 "065a0d3bc7a1": {
 "checked": "2026-11-14",
@@ -838,6 +852,20 @@
 "url": "https://jobs.smartrecruiters.com/CRB/744000139411025",
 "v": 1
 },
+"0dc020a8ab59": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "63294344e520",
+"lang": "",
+"quality": "full",
+"req": [
+"The ReEntry Program is a 15-week fellowship program, beginning April 2027 and ending July 2027 with the prospect of an offer for permanent employment with JPMorganChase at the end of the program.",
+"This role is intended to be for an initial term of approximately 15 weeks only, however, subject to business needs, the contract may be extended or converted to permanent employment."
+],
+"rolling": false,
+"url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210807232",
+"v": 2
+},
 "0ddb3664b3ca": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -974,6 +1002,19 @@
 "quality": "partial",
 "url": "https://cibc.wd3.myworkdayjobs.com/campus/job/Toronto-ON/AI-Scientist-Co-op_2622058",
 "v": 1
+},
+"1005e1a2b5b3": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "e43d8812ac23",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a degree in Computer Science, Software Engineering, or a related field, or have equivalent hands-on experience"
+],
+"rolling": false,
+"url": "https://jobright.ai/jobs/info/6afa391d48f3528e5a730a9a?utm_campaign=1079&utm_source=git",
+"v": 2
 },
 "103c3a621fab": {
 "checked": "2026-11-14",
@@ -2173,6 +2214,30 @@
 "url": "https://soti.wd3.myworkdayjobs.com/en-US/SOTI-Next-Gen/job/Mississauga-Canada--Meadowvale-Office-HQ/Software-Developer-Intern---SOTI-XSight--May-2027-12-Months-_R10611",
 "v": 2
 },
+"2134f4e63bab": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "60a80134f656",
+"lang": "",
+"quality": "partial",
+"req": [
+"…applicants only: In compliance with local laws, you may redact or remove any information that identifies your age, date of birth, or dates of attendance at or graduation from an educational institution):\"}, \"questionsApplyV2\": {\"fields\": [{\"questions\": [{\"templateApplyType\": [\"Belfast\"], \"type\": \"instruction\", \"label\"…",
+"Your answers will be used by us to prepare and submit a monitoring return to the Equality Commission, but your identity will be kept anonymous.",
+"…609\", \"label\": \"No\"}], \"type\": \"dropdown\", \"label\": \"In order to obtain or maintain employment eligibility, will you now or in the future require the company's sponsorship for an immigration-related employment benefit (i.e., a work visa, work permit, etc.)?\", \"required\": true, \"questionId\": \"q_cust_empEligibility\"}], \"…",
+"…609\", \"label\": \"No\"}], \"type\": \"dropdown\", \"label\": \"In order to obtain or maintain employment eligibility, will you now or in the future require the company's sponsorship for an immigration-related employment benefit (i.e., a work visa, work permit, etc.)?\", \"required\": true, \"questionId\": \"q_cust_empEligibility\"}], \"…",
+"…609\", \"label\": \"No\"}], \"type\": \"dropdown\", \"label\": \"In order to obtain or maintain employment eligibility, will you now or in the future require the company's sponsorship for an immigration-related employment benefit (i.e., a work visa, work permit, etc.)?\", \"required\": true, \"questionId\": \"q_cust_empEligibility\"}], \"…",
+"…609\", \"label\": \"No\"}], \"type\": \"dropdown\", \"label\": \"In order to obtain or maintain employment eligibility, will you now or in the future require the company's sponsorship for an immigration-related employment benefit (i.e., a work visa, work permit, etc.)?\", \"required\": true, \"questionId\": \"q_cust_empEligibility\"}], \"…",
+"…609\", \"label\": \"No\"}], \"type\": \"dropdown\", \"label\": \"In order to obtain or maintain employment eligibility, will you now or in the future require the company's sponsorship for an immigration-related employment benefit (i.e., a work visa, work permit, etc.)?\", \"required\": true, \"questionId\": \"q_cust_empEligibility\"}], \"…",
+"…(i.e., a work visa, work permit, etc.)?\", \"required\": true, \"questionId\": \"q_cust_empEligibility\"}], \"title\": \"Work Authorization - South Georgia and the South Sandwich Islands\"}, {\"countries\": [\"SS\"], \"questions\": [{\"type\": \"instruction\", \"label\": \"Please provide all the information requested.…",
+"…applicants only: In compliance with local laws, you may redact or remove any information that identifies your age, date of birth, or dates of attendance at or graduation from an educational institution):\"}, \"applicationLimiter\": {\"limit\": 999999, \"limitMessage\": \"\", \"condition\": \"\"}, \"questionsApplyV2\": {\"positionLoca…",
+"Your answers will be used by us to prepare and submit a monitoring return to the Equality Commission, but your identity will be kept anonymous.",
+"…: \"SO\", \"value\": \"Somalia\", \"label\": \"Somalia\"}, {\"id\": \"ZA\", \"value\": \"South Africa\", \"label\": \"South Africa\"}, {\"id\": \"GS\", \"value\": \"South Georgia and South Sandwich Islands\", \"label\": \"South Georgia and South Sandwich Islands\"}, {\"id\": \"SS\", \"value\": \"South Sudan\", \"label\": \"South Sudan\"}, {\"id\": \"ES\", \"value\": \"Sp…",
+"…: \"SO\", \"value\": \"Somalia\", \"label\": \"Somalia\"}, {\"id\": \"ZA\", \"value\": \"South Africa\", \"label\": \"South Africa\"}, {\"id\": \"GS\", \"value\": \"South Georgia and South Sandwich Islands\", \"label\": \"South Georgia and South Sandwich Islands\"}, {\"id\": \"SS\", \"value\": \"South Sudan\", \"label\": \"South Sudan\"}, {\"id\": \"ES\", \"value\": \"Sp…"
+],
+"rolling": false,
+"url": "https://apply.careers.microsoft.com/careers/job/1970393556986777?hl=en",
+"v": 2
+},
 "21b8166f1070": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -2191,6 +2256,22 @@
 ],
 "rolling": false,
 "url": "https://careers.qualcomm.com/careers/job/446721156800",
+"v": 2
+},
+"220859aaa1ca": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "89e972447866",
+"lang": "",
+"quality": "full",
+"req": [
+"The Xanadu Residency Program is a 16-week program designed to provide graduate and undergraduate students in engineering, science, and computer science the opportunity to learn, build technical skills, conduct innovative research and contribute towards technically challenging projects.",
+"This 16-week residency program will launch with a 1-week quantum computing bootcamp.",
+"Candidates currently enrolled in graduate programs (Masters or PhDs) are encouraged to apply.",
+"Please apply by submitting your Resume and statement of interest (including which area/topics/supervisor you'd like to work with) by November 15, 2026 at 11.59pm Eastern Time (EST)."
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/99824319-xanadu-residency-program#content",
 "v": 2
 },
 "221bf660218d": {
@@ -2504,6 +2585,19 @@
 "quality": "partial",
 "url": "https://saputo.wd5.myworkdayjobs.com/en-US/saputo_external_careers/job/Georgetown-ON/Intern--Trade-Promotion-Management-Business-and-Data-Analyst_JR68377-1",
 "v": 1
+},
+"265738bf5111": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "c4fbe0a6c027",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing any degree showcasing a strong commitment to continuous learning and professional growth"
+],
+"rolling": false,
+"url": "https://jobright.ai/jobs/info/6af9edd7a68705504bebab35?utm_campaign=1066&utm_source=git",
+"v": 2
 },
 "26794f017008": {
 "checked": "2026-11-14",
@@ -3112,6 +3206,21 @@
 "quality": "partial",
 "url": "https://app.careerpuck.com/job-board/lyft/job/8802222002?gh_jid=8802222002",
 "v": 1
+},
+"3147d7279369": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "3285dbc75438",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently enrolled in a relevant undergraduate program (e.g., Engineering, Computer Science, Data Science, Business).",
+"Opportunities for full time employment following Co-op Term or Co-op Term Extension",
+"Accommodation requests are available to candidates taking part in all aspects of the selection process for IPEX jobs."
+],
+"rolling": false,
+"url": "https://aliaxis.wd3.myworkdayjobs.com/IPEX/job/CA---Oakville-3---Office/Manufacturing-Excellence-Co-Op-Student--Winter-2027---Etudiant-Coop-excellence-manufacturire--Hiver-2027_R-58664-1",
+"v": 2
 },
 "31569c236eb4": {
 "checked": "2026-11-15",
@@ -3770,6 +3879,19 @@
 "quality": "partial",
 "url": "https://thermofisher.wd5.myworkdayjobs.com/thermofishercareers/job/Mississauga-Canada/Reliability-Engineering-Co-Op_R-01366617",
 "v": 1
+},
+"3b89782ad981": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "d41e5b9be80b",
+"lang": "",
+"quality": "partial",
+"req": [
+"Our Summer Analyst Program is a nine to ten week summer internship for students pursuing a bachelors / graduate degree."
+],
+"rolling": false,
+"url": "https://higher.gs.com/roles/175421?type=students",
+"v": 2
 },
 "3bb43b4c8642": {
 "checked": "2026-11-14",
@@ -4840,6 +4962,20 @@
 ],
 "rolling": false,
 "url": "https://amazon.jobs/en/jobs/10598579/data-analyst-apprentice-42-month-fixed-term-contract",
+"v": 2
+},
+"4b109f120985": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "40a9964255d1",
+"lang": "",
+"quality": "full",
+"req": [
+"Education and qualifications: ongoing Master's degree",
+"Potential for an earlier start in December 2026 in a part-time and remote model for proactive onboarding, after which resuming to a full-time hybrid model January 2027."
+],
+"rolling": false,
+"url": "https://lilly.wd115.myworkdayjobs.com/en-US/cmp/job/CA-Toronto-ON/Marketing-Intern---Cardiometabolic-Health_R-109737-1",
 "v": 2
 },
 "4b1c4837d1c3": {
@@ -7311,6 +7447,20 @@
 "url": "https://mbda.wd3.myworkdayjobs.com/MBDA-UK/job/Bristol/Guidance--Control-and-Navigation-Engineer---Undergraduate-Placement-2027_R37821",
 "v": 1
 },
+"716a05f1a9ee": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "2785f491a88b",
+"lang": "",
+"quality": "full",
+"req": [
+"Ongoing Master's degree, with interest in consumer marketing in the pharma industry",
+"Potential for an earlier start in December 2026 in a part-time and remote model for proactive onboarding, after which resuming to a full-time hybrid model January 2027."
+],
+"rolling": false,
+"url": "https://lilly.wd115.myworkdayjobs.com/en-US/cmp/job/CA-Toronto-ON/Consumer-Marketing-Intern_R-110095",
+"v": 2
+},
 "7176acb6ea3b": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -7934,6 +8084,25 @@
 "quality": "partial",
 "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Luton---Cap-Green-300/Industrial-Placement-Software-Engineer_R0032981",
 "v": 1
+},
+"7adf26ed2362": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "4c43c92fa966",
+"lang": "",
+"quality": "full",
+"req": [
+"Join Instil's agentic product development team for your placement year and learn to build software the way it will be built in the agentic age: engineers owning the problem, the architecture and the key decisions, with AI agents accelerating everything in between.",
+"Currently studying towards a degree in Computer Science, Software Engineering or a related discipline, with a placement year as part of your programme",
+"A head start into your final year – and a strong foundation for a graduate role",
+"Duration: 12 months",
+"Start date: June/July 2027",
+"Right to work: Applicants must already have the right to work in the UK",
+"Eligibility: Open to students in their penultimate year of an undergraduate or integrated master's degree, with a placement year as part of their programme"
+],
+"rolling": false,
+"url": "https://jobs.ashbyhq.com/instil/b1be07e8-60de-432c-82ff-6ffb220ce563/application?embed=true",
+"v": 2
 },
 "7ae7003fde92": {
 "checked": "2026-11-14",
@@ -9446,6 +9615,21 @@
 "url": "https://jobs.lever.co/oneimpression/738a8d2e-a51c-4f04-99ac-a91710060a23",
 "v": 2
 },
+"911d42cd1044": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "2b8942f93add",
+"lang": "",
+"quality": "full",
+"req": [
+"Are you a College Student in a Mechanical Engineering Program and looking for a Co-Op placement to gain experience and knowledge in a Research and Development Facility?",
+"Ability to prioritize multiple actions based on needs, importance and resources available to accomplish.",
+"Accommodation requests are available to candidates taking part in all aspects of the selection process for IPEX jobs."
+],
+"rolling": false,
+"url": "https://aliaxis.wd3.myworkdayjobs.com/en-US/aliaxis/job/CA---Mississauga---RD/R-D-Co-op-Student--Winter-2027---Etudiante-Coop-R-D--Hiver-2027_R-58835-1",
+"v": 2
+},
 "91819398f118": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -9539,6 +9723,21 @@
 "quality": "partial",
 "url": "https://citi.wd5.myworkdayjobs.com/2/job/London--United-Kingdom/Banking--Financing--Equity-Capital-Markets--Placement-Analyst--London---United-Kingdom-2027_26993441",
 "v": 1
+},
+"92a3fb62b37d": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "3285dbc75438",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently enrolled in a relevant undergraduate program (e.g., Engineering, Computer Science, Data Science, Business).",
+"Opportunities for full time employment following Co-op Term or Co-op Term Extension",
+"Accommodation requests are available to candidates taking part in all aspects of the selection process for IPEX jobs."
+],
+"rolling": false,
+"url": "https://aliaxis.wd3.myworkdayjobs.com/aliaxis/job/CA---Oakville-3---Office/Manufacturing-Excellence-Co-Op-Student--Winter-2027---Etudiant-Coop-excellence-manufacturire--Hiver-2027_R-58664-2",
+"v": 2
 },
 "92d5ae75cc09": {
 "checked": "2026-11-14",
@@ -11443,6 +11642,19 @@
 "url": "https://elementfleet.wd3.myworkdayjobs.com/External_Career_Site/job/Toronto/Forward-Deployed-Engineer--FDE--Intern--8-12-month-intern-_R105989",
 "v": 2
 },
+"b04e39218e5f": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "b758d5a51d3f",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a degree in Computer Science, Software Engineering, or a related field, or have equivalent hands-on experience"
+],
+"rolling": false,
+"url": "https://jobs.ashbyhq.com/steel/5fbdbebf-ddb2-4264-a941-3ab6d475208c/application?embed=true",
+"v": 2
+},
 "b0cc17b88229": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -13036,6 +13248,26 @@
 "url": "https://www.coveo.com/fr/company/careers/open-positions/8853984002?gh_jid=8853984002",
 "v": 2
 },
+"c88dc70a4dc1": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "63d374e18dcf",
+"lang": "",
+"quality": "full",
+"req": [
+"Pfizer UK Undergraduate Programme 2027/2028",
+"Integrated Insights & Strategy Undergraduate, UK",
+"Applicants must be completing a placement as part of a degree course at a UK University, either through Year in Industry/Industrial Placement or Gap Year.",
+"You can download the Word version of the Application Form here: Undergraduate Vacancies | Pfizer UK and find instructions as to how to complete your application and more about eligibility criteria.",
+"As an IIS Undergraduate, you'll work alongside experts in analytics, strategy, and market research within one of the world's leading biopharmaceutical companies.",
+"Placements will start on 1st September 2027 and will run for 12 months.",
+"Applicants must be completing placement as part of a degree course at a UK University, either through Year in Industry/Industrial Placement or Gap Year.",
+"Please access the Word version of the Application Form here: Undergraduate Vacancies | Pfizer UK and find instructions as to how to complete your application and more about eligibility criteria."
+],
+"rolling": false,
+"url": "https://pfizer.wd1.myworkdayjobs.com/en-US/PfizerCareers/job/United-Kingdom---Walton-Oaks/Integrated-Insights---Strategy-Undergraduate_4967524",
+"v": 2
+},
 "c8ddaa743e08": {
 "checked": "2026-11-14",
 "legacy": {
@@ -14165,6 +14397,19 @@
 "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Deep-Learning-Scientist-Intern--LLM--Multimodal-and-Agentic-AI---Summer-2027_JR2027548",
 "v": 2
 },
+"d79c42adb39d": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "e8b1f1bfe281",
+"lang": "",
+"quality": "full",
+"req": [
+"Opportunity to work for an ambitious and fast-moving startup in the automotive space"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/99823194-apprentice-automotive-service-technician-level-2-3#content",
+"v": 2
+},
 "d7cf048d2b4a": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -15023,6 +15268,21 @@
 "url": "https://jobs.l3harris.com/job/San-Diego-Software-Engineering-Intern-CA-92123/1428452400/?ats=successfactors",
 "v": 1
 },
+"e3427a76e072": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "05dc4b5dca9f",
+"lang": "",
+"quality": "full",
+"req": [
+"Current enrollment in, a PhD degree program with a major in Electrical Engineering, Electrical and Computer Engineering, or Electrical Engineering Technology from an accredited college or university.",
+"Completion of, or current enrollment in, power systems fundamentals class(es) (strongly preferred)",
+"Length: Long-Term Internship (up to 12-months) and 20 to 40 hours a week."
+],
+"rolling": false,
+"url": "https://careers-epeconsulting.icims.com/jobs/2433/power-systems-engineer-intern---co-op/job",
+"v": 2
+},
 "e36b94261ed5": {
 "checked": "2026-11-14",
 "legacy": {
@@ -15227,6 +15487,22 @@
 "url": "https://jobs.apple.com/en-us/details/200693133",
 "v": 1
 },
+"e4f5fe53e11d": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "4db29e9c13c9",
+"lang": "",
+"quality": "full",
+"req": [
+"Xanadu's mission is to build quantum computers that are useful and available to people everywhere.",
+"Currently pursuing a BSc, MS or PhD degree in Electrical Engineering, Physics, or related field.",
+"MS or Ph.D. degree in photonics, AMO, laser physics, optics, or electronics.",
+"This is a newly created position offered as an initial 4-month contract or internship , with the potential for extension based on business needs and mutual fit."
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/99824018-photonics-test-engineer#content",
+"v": 2
+},
 "e52357e01e59": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -15344,6 +15620,24 @@
 ],
 "rolling": false,
 "url": "https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/83098",
+"v": 2
+},
+"e74d4f05697f": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "6b16f35c3ec9",
+"lang": "",
+"quality": "full",
+"req": [
+"You will have an opportunity to present your achievements to the executive team at the end of your co-op.",
+"Strong performers will be considered for future co-op terms and for our Production Engineering Analyst roles.",
+"Currently enrolled in Mechanical, Mechatronics, Management, Systems Design, or a related engineering program.",
+"Some exposure to CAD (SolidWorks, AutoCAD, Fusion 360, or similar) through coursework, a design team, or a previous co-op.",
+"A previous co-op in manufacturing, automotive, logistics, or operations.",
+"Term: January–April 2027 (4 months), with the potential to extend through August 2027"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/99823368-production-development-engineering-intern-co-op-winter-2027#content",
 "v": 2
 },
 "e757235ebfe7": {
@@ -15895,6 +16189,19 @@
 "quality": "partial",
 "url": "https://jobs.smartrecruiters.com/Acumatica/744000161353959-intern-developer-stagiaire-developpeur-?oga=true",
 "v": 1
+},
+"f10047af347b": {
+"checked": "2026-11-16",
+"deadline": "",
+"hash": "b1747b6a0564",
+"lang": "",
+"quality": "partial",
+"req": [
+"Our Summer Associate Program is a nine to ten week summer internship for students pursuing an advanced degree such as MBA, PhD, JD, MD or LLM."
+],
+"rolling": false,
+"url": "https://higher.gs.com/roles/175427?type=students",
+"v": 2
 },
 "f148ba1b9836": {
 "checked": "2026-11-15",
@@ -16857,6 +17164,7 @@
 "tried": {
 "00363a421014": "2026-11-14",
 "0075f54b7771": "2026-11-15",
+"009216d08d46": "2026-11-16",
 "00ae15300916": "2026-11-14",
 "00d10f773b93": "2026-11-14",
 "016298a3741c": "2026-11-15",
@@ -17838,6 +18146,7 @@
 "b38c8c7bd773": "2026-11-15",
 "b3bb1e2e3309": "2026-11-14",
 "b3edad9c91e3": "2026-11-14",
+"b40331a3dec1": "2026-11-16",
 "b4100c0326d1": "2026-11-14",
 "b41d57b63dfe": "2026-11-14",
 "b4bcee3666b5": "2026-11-15",
@@ -18103,6 +18412,7 @@
 "e82e205f631c": "2026-11-15",
 "e85b04528137": "2026-11-15",
 "e896021e459e": "2026-11-14",
+"e8b9453d65a7": "2026-11-16",
 "e8d35d0b643b": "2026-11-14",
 "e8d9f02d6800": "2026-11-15",
 "e932215699e1": "2026-11-15",
