@@ -5,13 +5,14 @@
 #   refresh.sh auto    full when the last crawl is over six days old or the crawler changed, otherwise quick
 # Run from inside a clone of the repository. Scratch files go in ../work.
 MODE="${1:-quick}"
-cd "$(dirname "$0")" || exit 1
+SELF="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"   # a full path, so it still works after the cd below
+cd "$(dirname "$SELF")" || exit 1
 WORK="../work"; RAW="$WORK/raw"; mkdir -p "$RAW"
 step() { echo; echo "== $1"; }
 fail() { echo; echo "STOPPED: $1"; echo "Nothing was published. The live site is unchanged."; exit 1; }
 
 # Only one refresh at a time on this computer.
-LOCK="${TMPDIR:-/tmp}/claude-jobs-refresh.lock"
+LOCK="$HOME/.claude-jobs-refresh.lock"   # shared by every copy of the repository on this computer
 if ! mkdir "$LOCK" 2>/dev/null; then
   if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +360 2>/dev/null)" ]; then rmdir "$LOCK" 2>/dev/null; mkdir "$LOCK" 2>/dev/null || exit 1
   else echo "Another refresh is already running. Try again when it finishes."; exit 0; fi
@@ -19,13 +20,15 @@ fi
 trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 
 step "Getting the latest code"
-BEFORE=$(cksum < "$0")
-git pull --rebase --autostash -q || fail "could not update from GitHub (check your internet connection)"
+BEFORE=$(cksum < "$SELF")
+git rebase --abort >/dev/null 2>&1
+# Listings left unpublished by an earlier run are kept: where they clash with what is online, the copy here wins.
+git pull --rebase --autostash -q -X theirs || fail "could not update from GitHub (check your internet connection)"
 # If the update changed this script, start again with the new copy: a shell must not carry on reading a file that changed under it.
-if [ "$BEFORE" != "$(cksum < "$0")" ] && [ -z "$REFRESH_RESTARTED" ]; then
+if [ "$BEFORE" != "$(cksum < "$SELF")" ] && [ -z "$REFRESH_RESTARTED" ]; then
   echo "The refresh script was updated; restarting with the new version."
   trap - EXIT; rmdir "$LOCK" 2>/dev/null
-  REFRESH_RESTARTED=1 exec bash "$0" "$MODE"
+  REFRESH_RESTARTED=1 exec bash "$SELF" "$MODE"
 fi
 
 if [ "$MODE" = "auto" ]; then
@@ -93,5 +96,6 @@ step "Publishing"
 git add -A
 if git diff --cached --quiet; then echo "Nothing changed since the last refresh."; exit 0; fi
 git -c user.name="vpt-dev" -c user.email="vpt-dev@users.noreply.github.com" commit -q -m "Refresh listings $(date +%Y-%m-%d)" || fail "could not save the changes"
-git push -q || fail "could not publish to GitHub. If it asked for a password, use a GitHub access token, not your account password."
+# Another copy may have published while this one ran: put this run's listings on top of it, this run winning any clash.
+git push -q 2>/dev/null || { git pull --rebase -q -X theirs && git push -q; } || fail "could not publish to GitHub. If it asked for a password, use a GitHub access token, not your account password."
 echo; echo "Published. The live site updates in about a minute."
