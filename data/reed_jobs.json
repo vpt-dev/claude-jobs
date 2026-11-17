@@ -1,6 +1,35 @@
 {
-"fetched_at": "2026-11-15T13:10:11Z",
+"fetched_at": "2026-11-17T17:11:43Z",
 "jobs": [
+{
+"company": "Spectrum IT Recruitment",
+"title": "Graduate Software Developer",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57581494",
+"posted": "2026-11-17",
+"pay": {
+"min": 45000.0,
+"max": 50000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57581494,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-01",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "b9574985fb09",
+"lang": ""
+},
 {
 "company": "McGregor Boyall",
 "title": "Graduate Software Engineer",
@@ -22,7 +51,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-24",
 "rolling": false,
 "quality": "full",
@@ -39,15 +68,15 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/functions-internal-audit-summer-analyst-london-2027-citi/57480630",
-"posted": "2026-10-21",
+"url": "https://www.reed.co.uk/jobs/functions-internal-audit-summer-analyst-london-2027-citi/57574339",
+"posted": "2026-11-16",
 "pay": null,
-"reed_id": 57480630,
+"reed_id": 57574339,
 "type": "Internship",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-04",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [
@@ -81,12 +110,36 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-03",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "e83397ce7bde",
+"lang": ""
+},
+{
+"company": "Saab UK",
+"title": "Software Engineering Graduate",
+"locations": [
+"Farnborough, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447758",
+"posted": "2026-10-12",
+"pay": null,
+"reed_id": 57447758,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-11-23",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "105334a2ebd7",
 "lang": ""
 },
 {
@@ -105,7 +158,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-23",
 "rolling": false,
 "quality": "full",
@@ -129,36 +182,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-23",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "d0b48f33ec42",
-"lang": ""
-},
-{
-"company": "Saab UK",
-"title": "Software Engineering Graduate",
-"locations": [
-"Farnborough, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/software-engineering-graduate/57447758",
-"posted": "2026-10-12",
-"pay": null,
-"reed_id": 57447758,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-23",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "105334a2ebd7",
 "lang": ""
 },
 {
@@ -177,7 +206,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-23",
 "rolling": false,
 "quality": "full",
@@ -206,41 +235,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-23",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "79dfeeb3b5e9",
-"lang": ""
-},
-{
-"company": "Oscar Technology",
-"title": "Graduate Software Developer",
-"locations": [
-"Bristol, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57428456",
-"posted": "2026-10-06",
-"pay": {
-"min": 25000.0,
-"max": 35000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57428456,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-17",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "964dfe5dead1",
 "lang": ""
 },
 {
@@ -264,12 +264,41 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-23",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "2caf6f9b9786",
+"lang": ""
+},
+{
+"company": "Oscar Technology",
+"title": "Graduate Software Developer",
+"locations": [
+"Bristol, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-software-developer/57428456",
+"posted": "2026-10-06",
+"pay": {
+"min": 25000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57428456,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-11-17",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "964dfe5dead1",
 "lang": ""
 },
 {
@@ -293,7 +322,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-20",
 "rolling": false,
 "quality": "full",
@@ -322,7 +351,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-14",
 "rolling": false,
 "quality": "full",
@@ -351,7 +380,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-27",
 "rolling": false,
 "quality": "full",
@@ -380,7 +409,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-08",
 "rolling": false,
 "quality": "full",
@@ -409,12 +438,41 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-18",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "48505b16aefc",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Cardiff, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
+"posted": "2026-11-13",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57566379,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-25",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "18e8a4a4a67b",
 "lang": ""
 },
 {
@@ -438,7 +496,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-22",
 "rolling": false,
 "quality": "full",
@@ -467,7 +525,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-19",
 "rolling": false,
 "quality": "full",
@@ -496,99 +554,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-25",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "ebe17cdbbc8b",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Bedfordshire, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57468206",
-"posted": "2026-10-16",
-"pay": {
-"min": 25000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57468206,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-27",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "a742fe7b8776",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Chelmsford, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57506305",
-"posted": "2026-10-29",
-"pay": {
-"min": 28000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57506305,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-10",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "add2ca10f811",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Cardiff, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57566379",
-"posted": "2026-11-13",
-"pay": {
-"min": 28000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57566379,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-25",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "18e8a4a4a67b",
 "lang": ""
 },
 {
@@ -612,7 +583,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-19",
 "rolling": false,
 "quality": "full",
@@ -641,7 +612,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-22",
 "rolling": false,
 "quality": "full",
@@ -670,7 +641,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-10",
 "rolling": false,
 "quality": "full",
@@ -699,12 +670,41 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-10",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "0f792e894aa6",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Bedfordshire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57468206",
+"posted": "2026-10-16",
+"pay": {
+"min": 25000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57468206,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-11-27",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "a742fe7b8776",
 "lang": ""
 },
 {
@@ -728,7 +728,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-23",
 "rolling": false,
 "quality": "full",
@@ -740,12 +740,41 @@
 "company": "Penguin Recruitment Ltd",
 "title": "Graduate Civil Engineer",
 "locations": [
-"Wigan, UK"
+"Chelmsford, UK"
 ],
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57540922",
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57506305",
+"posted": "2026-10-29",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57506305,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-10",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "add2ca10f811",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Arlesey, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57540895",
 "posted": "2026-11-06",
 "pay": {
 "min": 28000.0,
@@ -753,74 +782,16 @@
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57540922,
+"reed_id": 57540895,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-18",
 "rolling": false,
 "quality": "full",
 "req": [],
-"hash": "a53f94c38b22",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Rotherham, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57497883",
-"posted": "2026-10-27",
-"pay": {
-"min": 28000.0,
-"max": 32000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57497883,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-08",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "e51cfb9200a6",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Civil Engineer",
-"locations": [
-"Wakefield, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57500823",
-"posted": "2026-10-28",
-"pay": {
-"min": 28000.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57500823,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-09",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "42d5258e5058",
+"hash": "ad7b4bb81ca0",
 "lang": ""
 },
 {
@@ -844,7 +815,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-19",
 "rolling": false,
 "quality": "full",
@@ -873,7 +844,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-10",
 "rolling": false,
 "quality": "full",
@@ -885,29 +856,29 @@
 "company": "Penguin Recruitment Ltd",
 "title": "Graduate Civil Engineer",
 "locations": [
-"Arlesey, UK"
+"Wigan, UK"
 ],
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57540895",
-"posted": "2026-11-06",
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57576086",
+"posted": "2026-11-16",
 "pay": {
-"min": 28000.0,
+"min": 27000.0,
 "max": 32000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57540895,
+"reed_id": 57576086,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-18",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [],
-"hash": "ad7b4bb81ca0",
+"hash": "004487e2c1df",
 "lang": ""
 },
 {
@@ -931,41 +902,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-25",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "5b84aece3b40",
-"lang": ""
-},
-{
-"company": "hayden nash consultants",
-"title": "graduate electrical engineer",
-"locations": [
-"Woking, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-electrical-engineer/57488941",
-"posted": "2026-10-23",
-"pay": {
-"min": 28000.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57488941,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-04",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "c14717867cde",
 "lang": ""
 },
 {
@@ -989,41 +931,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-08",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "3bd184f245a4",
-"lang": ""
-},
-{
-"company": "Penguin Recruitment Ltd",
-"title": "Graduate Geotechnical Engineer",
-"locations": [
-"London, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-geotechnical-engineer/57424611",
-"posted": "2026-10-05",
-"pay": {
-"min": 25000.0,
-"max": 28000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57424611,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-16",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "2ddf8c8d11aa",
 "lang": ""
 },
 {
@@ -1047,12 +960,128 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-04",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "9aa97ce5cf72",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Bath, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57572086",
+"posted": "2026-11-16",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57572086,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "8251437178a3",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Wigan, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57540922",
+"posted": "2026-11-06",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57540922,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-18",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "a53f94c38b22",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Rotherham, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57497883",
+"posted": "2026-10-27",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57497883,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-08",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "e51cfb9200a6",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"Wakefield, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57500823",
+"posted": "2026-10-28",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57500823,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-09",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "42d5258e5058",
 "lang": ""
 },
 {
@@ -1076,12 +1105,70 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-11",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "55ae82909112",
+"lang": ""
+},
+{
+"company": "hayden nash consultants",
+"title": "graduate electrical engineer",
+"locations": [
+"Woking, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-electrical-engineer/57488941",
+"posted": "2026-10-23",
+"pay": {
+"min": 28000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57488941,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-04",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "c14717867cde",
+"lang": ""
+},
+{
+"company": "Better People Ltd",
+"title": "Graduate Civil Engineer",
+"locations": [
+"GU350TN, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-civil-engineer/57572764",
+"posted": "2026-11-16",
+"pay": {
+"min": 33000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57572764,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "5186567c5faf",
 "lang": ""
 },
 {
@@ -1105,7 +1192,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-19",
 "rolling": false,
 "quality": "full",
@@ -1134,7 +1221,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-26",
 "rolling": false,
 "quality": "full",
@@ -1163,7 +1250,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-19",
 "rolling": false,
 "quality": "full",
@@ -1192,7 +1279,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-18",
 "rolling": false,
 "quality": "full",
@@ -1221,7 +1308,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-19",
 "rolling": false,
 "quality": "full",
@@ -1245,7 +1332,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-28",
 "rolling": false,
 "quality": "full",
@@ -1274,7 +1361,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-23",
 "rolling": false,
 "quality": "full",
@@ -1303,7 +1390,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-17",
 "rolling": false,
 "quality": "full",
@@ -1332,7 +1419,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-04",
 "rolling": false,
 "quality": "full",
@@ -1349,20 +1436,20 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/graduate-net-developer/57512005",
-"posted": "2026-11-02",
+"url": "https://www.reed.co.uk/jobs/graduate-net-developer/57570512",
+"posted": "2026-11-16",
 "pay": {
 "min": 35000.0,
 "max": 60000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57512005,
+"reed_id": 57570512,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-14",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [],
@@ -1390,7 +1477,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-02",
 "rolling": false,
 "quality": "full",
@@ -1419,7 +1506,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-20",
 "rolling": false,
 "quality": "full",
@@ -1448,12 +1535,41 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-04",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "064eb70272b9",
+"lang": ""
+},
+{
+"company": "Penguin Recruitment Ltd",
+"title": "Junior Acoustic Engineer",
+"locations": [
+"Hertfordshire, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/junior-acoustic-engineer/57581172",
+"posted": "2026-11-17",
+"pay": {
+"min": 28000.0,
+"max": 32000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57581172,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-29",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "f1d0111fad25",
 "lang": ""
 },
 {
@@ -1465,20 +1581,20 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/net-developer-graduate-junior/57512001",
-"posted": "2026-11-02",
+"url": "https://www.reed.co.uk/jobs/net-developer-graduate-junior/57570514",
+"posted": "2026-11-16",
 "pay": {
 "min": 35000.0,
 "max": 45000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57512001,
+"reed_id": 57570514,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-14",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [],
@@ -1494,20 +1610,20 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/net-developer-graduate-junior/57512901",
-"posted": "2026-11-02",
+"url": "https://www.reed.co.uk/jobs/net-developer-graduate-junior/57570652",
+"posted": "2026-11-16",
 "pay": {
 "min": 35000.0,
 "max": 45000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57512901,
+"reed_id": 57570652,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-14",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [],
@@ -1535,7 +1651,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-07",
 "rolling": false,
 "quality": "full",
@@ -1564,7 +1680,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-25",
 "rolling": false,
 "quality": "full",
@@ -1593,7 +1709,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-07",
 "rolling": false,
 "quality": "full",
@@ -1622,7 +1738,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-25",
 "rolling": false,
 "quality": "full",
@@ -1639,53 +1755,24 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-linux-c-java-london/57512004",
-"posted": "2026-11-02",
+"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-linux-c-java-london/57570511",
+"posted": "2026-11-16",
 "pay": {
 "min": 30000.0,
 "max": 40000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57512004,
+"reed_id": 57570511,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-14",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "ef0842933c70",
-"lang": ""
-},
-{
-"company": "ITOL Recruit",
-"title": "Coding and Programming Trainee",
-"locations": [
-"B736AB, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/coding-and-programming-trainee/57478686",
-"posted": "2026-10-21",
-"pay": {
-"min": 29000.0,
-"max": 35000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57478686,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-02",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "a0e1ce607daf",
 "lang": ""
 },
 {
@@ -1709,8 +1796,37 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-14",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "a0e1ce607daf",
+"lang": ""
+},
+{
+"company": "ITOL Recruit",
+"title": "Coding and Programming Trainee",
+"locations": [
+"B736AB, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/coding-and-programming-trainee/57581028",
+"posted": "2026-11-17",
+"pay": {
+"min": 29000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57581028,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-29",
 "rolling": false,
 "quality": "full",
 "req": [],
@@ -1738,7 +1854,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-02",
 "rolling": false,
 "quality": "full",
@@ -1755,24 +1871,48 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-javascript-php-london/57512006",
-"posted": "2026-11-02",
+"url": "https://www.reed.co.uk/jobs/graduate-junior-developer-python-javascript-php-london/57570508",
+"posted": "2026-11-16",
 "pay": {
 "min": 35000.0,
 "max": 50000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57512006,
+"reed_id": 57570508,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-14",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "8b135b3ab8f2",
+"lang": ""
+},
+{
+"company": "Robert Walters",
+"title": "Graduate AI Engineer- PE Firm",
+"locations": [
+"London, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-ai-engineer-pe-firm/57484884",
+"posted": "2026-10-22",
+"pay": null,
+"reed_id": 57484884,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-03",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "59a1b8dff38c",
 "lang": ""
 },
 {
@@ -1796,7 +1936,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-08",
 "rolling": false,
 "quality": "full",
@@ -1825,36 +1965,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-14",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "f67b98f93242",
-"lang": ""
-},
-{
-"company": "Robert Walters",
-"title": "Graduate AI Engineer- PE Firm",
-"locations": [
-"London, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-ai-engineer-pe-firm/57484884",
-"posted": "2026-10-22",
-"pay": null,
-"reed_id": 57484884,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-03",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "59a1b8dff38c",
 "lang": ""
 },
 {
@@ -1873,7 +1989,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-03",
 "rolling": false,
 "quality": "full",
@@ -1902,70 +2018,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-08",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "a1fe0e26b20e",
-"lang": ""
-},
-{
-"company": "Pareto",
-"title": "Graduate Commercial Programme",
-"locations": [
-"Basildon, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-commercial-programme/57554381",
-"posted": "2026-11-10",
-"pay": {
-"min": 28000.0,
-"max": 35000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57554381,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-08",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "a8bc48e88008",
-"lang": ""
-},
-{
-"company": "Pareto",
-"title": "Graduate Commercial Programme",
-"locations": [
-"Southend-on-Sea, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-commercial-programme/57520880",
-"posted": "2026-11-03",
-"pay": {
-"min": 30000.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57520880,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-01",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "18bef9832f8e",
 "lang": ""
 },
 {
@@ -1989,7 +2047,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-04",
 "rolling": false,
 "quality": "full",
@@ -2018,7 +2076,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-27",
 "rolling": false,
 "quality": "full",
@@ -2047,41 +2105,12 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-19",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "76fc6d376193",
-"lang": ""
-},
-{
-"company": "Pareto",
-"title": "Graduate Commercial Programme",
-"locations": [
-"London, UK"
-],
-"countries": [
-"UK"
-],
-"url": "https://www.reed.co.uk/jobs/graduate-commercial-programme/57471283",
-"posted": "2026-10-19",
-"pay": {
-"min": 30000.0,
-"max": 30000.0,
-"cur": "GBP",
-"period": "year"
-},
-"reed_id": 57471283,
-"type": "New Grad",
-"ats": "reed",
-"board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-11-16",
-"rolling": false,
-"quality": "full",
-"req": [],
-"hash": "18bef9832f8e",
 "lang": ""
 },
 {
@@ -2100,12 +2129,70 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-12-09",
 "rolling": false,
 "quality": "full",
 "req": [],
 "hash": "29853c58025e",
+"lang": ""
+},
+{
+"company": "Pareto",
+"title": "Graduate Commercial Programme",
+"locations": [
+"Southend-on-Sea, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-commercial-programme/57520880",
+"posted": "2026-11-03",
+"pay": {
+"min": 30000.0,
+"max": 30000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57520880,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-01",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "18bef9832f8e",
+"lang": ""
+},
+{
+"company": "Pareto",
+"title": "Graduate Commercial Programme",
+"locations": [
+"Basildon, UK"
+],
+"countries": [
+"UK"
+],
+"url": "https://www.reed.co.uk/jobs/graduate-commercial-programme/57554381",
+"posted": "2026-11-10",
+"pay": {
+"min": 28000.0,
+"max": 35000.0,
+"cur": "GBP",
+"period": "year"
+},
+"reed_id": 57554381,
+"type": "New Grad",
+"ats": "reed",
+"board": "reed",
+"seen": "2026-11-17",
+"deadline": "2026-12-08",
+"rolling": false,
+"quality": "full",
+"req": [],
+"hash": "a8bc48e88008",
 "lang": ""
 },
 {
@@ -2129,7 +2216,7 @@
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
+"seen": "2026-11-17",
 "deadline": "2026-11-24",
 "rolling": false,
 "quality": "full",
@@ -2138,32 +2225,32 @@
 "lang": ""
 },
 {
-"company": "James Frank Associates",
-"title": "Graduate Project Management Analyst - Legal",
+"company": "Hawke Search ",
+"title": "Computer Science Graduate - Systems Support / Consultancy",
 "locations": [
-"London, UK"
+"Canterbury, UK"
 ],
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/graduate-project-management-analyst-legal/57531454",
-"posted": "2026-11-04",
+"url": "https://www.reed.co.uk/jobs/computer-science-graduate-systems-support-consultancy/57583239",
+"posted": "2026-11-17",
 "pay": {
-"min": 40000.0,
-"max": 40000.0,
+"min": 28000.0,
+"max": 30000.0,
 "cur": "GBP",
 "period": "year"
 },
-"reed_id": 57531454,
+"reed_id": 57583239,
 "type": "New Grad",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-16",
+"seen": "2026-11-17",
+"deadline": "2026-12-29",
 "rolling": false,
 "quality": "full",
 "req": [],
-"hash": "f1ad4aaa1d73",
+"hash": "47b6ca21ca9c",
 "lang": ""
 },
 {
@@ -2175,15 +2262,15 @@
 "countries": [
 "UK"
 ],
-"url": "https://www.reed.co.uk/jobs/london-start-up-hiring-junior-quant-researcher-with-internship-experience/57527832",
-"posted": "2026-11-04",
+"url": "https://www.reed.co.uk/jobs/london-start-up-hiring-junior-quant-researcher-with-internship-experience/57574133",
+"posted": "2026-11-16",
 "pay": null,
-"reed_id": 57527832,
+"reed_id": 57574133,
 "type": "Internship",
 "ats": "reed",
 "board": "reed",
-"seen": "2026-11-15",
-"deadline": "2026-12-16",
+"seen": "2026-11-17",
+"deadline": "2026-12-28",
 "rolling": false,
 "quality": "full",
 "req": [
