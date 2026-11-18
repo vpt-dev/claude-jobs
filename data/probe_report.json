@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "date": "2026-11-18",
+   "addresses_tried": 9,
+   "boards_found": [
+    {
+     "company": "Chronograph",
+     "board": "greenhouse:chronograph",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    }
+   ]
+  },
+  {
    "date": "2026-11-17",
    "addresses_tried": 22,
    "boards_found": []
