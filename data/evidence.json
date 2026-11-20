@@ -1,5 +1,5 @@
 {
-"checked": "2026-11-19",
+"checked": "2026-11-20",
 "read": {
 "002e1bda7b3f": {
 "checked": "2026-11-14",
@@ -277,6 +277,26 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4421775009",
 "v": 1
+},
+"03cc2d72300a": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "24204d97b9a7",
+"lang": "",
+"quality": "full",
+"req": [
+"Join our Global Markets team as a Student Associate in this 4-month role and become part of a team focused on delivering innovative banking and investment solutions to CIBC's retail, wealth and business clients including corporates, governments and institutional clients around the world.",
+"You must be currently enrolled in an MBA or Master's program, with a graduation date no sooner than December 2027.",
+"Please indicate your expected graduation date on your resume.",
+"Duration of Work Term: 4 months (May 2027 – August 2027).",
+"Applications are being reviewed on a rolling basis; we encourage you to apply as soon as possible.",
+"You are highly motivated, accomplished, and a success-oriented individual who has a keen interest in pursuing a career in the financial services industry demonstrated through school courses, clubs, and/or related work experience.",
+"You need to be legally eligible to work at the location(s) specified above and, where applicable, must have a valid work or study permit",
+"We may ask you to complete an attribute-based assessment and other skills test (such as simulation, coding, French proficiency)."
+],
+"rolling": true,
+"url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Global-Markets--Global-Markets--Summer-2027-Associate---Equity-Research--4-months-_2624159",
+"v": 2
 },
 "03ea1a4952a5": {
 "checked": "2026-11-14",
@@ -690,6 +710,23 @@
 "url": "https://lifeattiktok.com/search/7696491615578589493",
 "v": 2
 },
+"09f1b69bb840": {
+"checked": "2026-11-20",
+"deadline": "2026-12-08",
+"hash": "5f78e6a68fa7",
+"lang": "",
+"quality": "full",
+"req": [
+"The deadline for applying to this role is Tuesday 8th December, end of day, anywhere on Earth",
+"We are looking for exceptional candidates currently studying for a PhD, or postdoctoral researchers who have submitted their PhD within the last 2 years, in machine learning, computer science, computer security or a related field.",
+"We will by default consider this a 6-month residency but are flexible to shorten or extend per candidate preferences and availability.",
+"Our priorities shift as the landscape of frontier AI changes rapidly, and projects often run to tight deadlines",
+"Generous paid parental leave (36 weeks of UK statutory leave shared between parents + 3 extra paid weeks + option for additional unpaid time)."
+],
+"rolling": false,
+"url": "https://job-boards.eu.greenhouse.io/aisi/jobs/5043106101",
+"v": 2
+},
 "09f8ab157b68": {
 "checked": "2026-11-19",
 "deadline": "",
@@ -841,6 +878,24 @@
 "quality": "partial",
 "url": "https://ciena.wd5.myworkdayjobs.com/Careers/job/Ottawa/Hardware-Engineering-Co-op--Winter-2027-_R032054",
 "v": 1
+},
+"0be6a8871852": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "6b1da7a51d9a",
+"lang": "",
+"quality": "full",
+"req": [
+"This is a full-time, 12-week internship based at our London HQ, starting in summer 2027.",
+"It's open to students currently enrolled in higher education and in the penultimate year of study.",
+"During your 12-week internship, you'll collaborate with your team to solve customer problems and help develop, maintain and ship products.",
+"You're pursuing a Bachelor's or Master's degree in Computer Science or an equivalent field and expect to graduate between autumn 2027 and summer 2028.",
+"You're available to start in June 2027 and work in person for the duration of the internship.",
+"You're authorised to work in the UK for the duration of the internship."
+],
+"rolling": false,
+"url": "https://job-boards.greenhouse.io/deliveroo/jobs/8398982",
+"v": 2
 },
 "0c0312ca638e": {
 "checked": "2026-11-14",
@@ -1185,6 +1240,22 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8623972002",
 "v": 1
+},
+"11c515cd8765": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "75f778378c40",
+"lang": "",
+"quality": "full",
+"req": [
+"Alongside fellow doctoral candidates and some of the world's best researchers, Research Interns learn, collaborate, and network for life.",
+"During the 12-week internship, Research Interns are paired with mentors and expected to collaborate with other Research Interns and researchers, present findings, and contribute to the vibrant life of the community.",
+"Research internships are available in all areas of research, and are offered year-round, though they typically begin in the summer.",
+"Currently enrolled in a Doctorate Degree program in Computer Science, Artificial Intelligence, Machine Learning, or a related STEM field."
+],
+"rolling": false,
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557076203",
+"v": 2
 },
 "11d3ac149f3d": {
 "checked": "2026-11-14",
@@ -2468,6 +2539,21 @@
 "url": "https://soti.wd3.myworkdayjobs.com/en-US/SOTI-Next-Gen/job/Mississauga-Canada--Meadowvale-Office-HQ/Software-Developer-Intern---SOTI-XSight--May-2027-12-Months-_R10611",
 "v": 2
 },
+"212646fe7c36": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "551c88533b98",
+"lang": "",
+"quality": "full",
+"req": [
+"The Process Engineering Operations Co-op participates in supporting the Process Engineering Department through analyzing and streamlining work processes, participating in integration activities and collaborating cross functionally with other departments in the organization and optimization of efforts in providing clari…",
+"Additionally, the Process Engineering Operations Co-op may be asked to:",
+"Currently enrolled in a Bachelor of Science or Engineering degree in Chemical Engineering, Mechanical Engineering, or other related technical discipline."
+],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/VeoliaEnvironnementSA/744000162595159",
+"v": 2
+},
 "2134f4e63bab": {
 "checked": "2026-11-16",
 "deadline": "",
@@ -2625,6 +2711,22 @@
 "quality": "partial",
 "url": "https://jobs.smartrecruiters.com/TTP1/744000149301389",
 "v": 1
+},
+"23ecedac3d22": {
+"checked": "2026-11-20",
+"deadline": "2026-12-16",
+"hash": "2c21a8a61134",
+"lang": "",
+"quality": "full",
+"req": [
+"The MBA internship program starts in June and runs for approximately 10 weeks.",
+"Currently pursuing a Master of Business Administration (MBA) degree with an expected graduation date between December 2027 and August 2028.",
+"3 – 5 years of industry or relevant work experience prior to pursuing your MBA degree.",
+"Application Deadline: Please apply by December 16, 2026, 11:59PM ET , if you would like to be considered for this role."
+],
+"rolling": false,
+"url": "https://accenture.wd103.myworkdayjobs.com/en-US/AccentureCareers/job/Toronto-40-King-St-W-Corp/Accenture-Strategy-Consultant-Development-Program---Summer-Consultant--MBA-Intern----Canada---NAELFY27_R00353362",
+"v": 2
 },
 "23f6b9746faf": {
 "checked": "2026-11-14",
@@ -2853,6 +2955,20 @@
 "quality": "partial",
 "url": "https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab/application?embed=true",
 "v": 1
+},
+"25e50c4b4707": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "58d47f5c3cbb",
+"lang": "",
+"quality": "full",
+"req": [
+"A $1,500 signing bonus will be paid after the 3-month probationary period.",
+"Opportunity to work for an ambitious and fast-moving startup in the automotive space"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100134111-automotive-apprentice-technician-level-2-3-evening-shift#content",
+"v": 2
 },
 "25e74cf5e920": {
 "checked": "2026-11-15",
@@ -3752,6 +3868,34 @@
 "url": "https://jobs.l3harris.com/job/Waterdown-Manufacturing-Engineering-Intern-Service-Co-op-ON-L9H-0C5/1430126700/",
 "v": 2
 },
+"32d0b0d261d1": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "d04e257d86f4",
+"lang": "",
+"quality": "full",
+"req": [
+"Motorola Solutions is hiring a Software Development Co-Op to help develop and test software products and a management platform.",
+"Pursuing a Bachelor's degree or Master's degree in Computer Science, Computer Engineering or allied disciplines",
+"Graduation date must occur on or after December 2026"
+],
+"rolling": false,
+"url": "https://jobright.ai/jobs/info/6aff1c5772b9be368528e670?utm_campaign=1079&utm_source=git",
+"v": 2
+},
+"32ea2a863116": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "d4782a171b40",
+"lang": "",
+"quality": "full",
+"req": [
+"BDO Canada LLP is hiring a Co-op or Intern, Full-Stack Developer for its AppDev team in BDO Digital."
+],
+"rolling": false,
+"url": "https://jobright.ai/jobs/info/6affce2c72b9be3685294293?utm_campaign=1079&utm_source=git",
+"v": 2
+},
 "32f85a5fbfcd": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -4069,6 +4213,22 @@
 "quality": "partial",
 "url": "https://go.vansh.nyc/fF",
 "v": 1
+},
+"36d651170094": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "67eae1145327",
+"lang": "",
+"quality": "partial",
+"req": [
+"16 Month Internship",
+"Ability to meet tight deadlines in a fast-paced environment",
+"Start Date: May 2027",
+"Education: Currently pursuing a degree in Business Administration or Supply Chain Management, entering their third or final year of a 4 or 5 year program."
+],
+"rolling": false,
+"url": "https://careers.celestica.com/job/Toronto-Student-Intern%2C-Aerospace-&-Defense-ON/1459038633/",
+"v": 2
 },
 "372c948f4e57": {
 "checked": "2026-11-15",
@@ -4760,6 +4920,17 @@
 "url": "https://jobs.realventures.com/companies/real-ventures/jobs/99942341-production-development-engineering-intern-co-op-winter-2027#content",
 "v": 2
 },
+"4080a1da0b01": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "c8cf15b265c8",
+"lang": "fr",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://job-boards.eu.greenhouse.io/horizontradingsolutions/jobs/5011271101",
+"v": 2
+},
 "408449f72ed5": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -5197,6 +5368,19 @@
 "url": "https://job-boards.greenhouse.io/capstoneinvestmentadvisors/jobs/8867730002",
 "v": 2
 },
+"461a493e90d4": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "8cffc07691c8",
+"lang": "",
+"quality": "full",
+"req": [
+"Position Type: Co-op"
+],
+"rolling": false,
+"url": "https://soti.wd3.myworkdayjobs.com/en-US/careers/job/Mississauga-Canada--Meadowvale-Office-HQ/Software-Developer-Intern--May-2027-12-Months-_R10703",
+"v": 2
+},
 "465836719891": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -5209,6 +5393,23 @@
 ],
 "rolling": false,
 "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--Gaming--Content-Creation--and-PC-AI---Summer-2027_JR2026962",
+"v": 2
+},
+"465c02a0e054": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "8e6eadd69a17",
+"lang": "",
+"quality": "full",
+"req": [
+"Undergraduate",
+"The anticipated duration of this assignment is normally 18 to 24 months.",
+"The candidate must be enrolled in the final year of studies and on track for graduation by June 2027 with an undergraduate degree.",
+"Graduating from an Undergraduate program in 2027, with the pursuit of a CFA designation considered an asset",
+"Bilingual in French/English would be an asset"
+],
+"rolling": false,
+"url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Investment-Management-Rotational-Analyst_R_1519193",
 "v": 2
 },
 "4683fb9a533a": {
@@ -6592,6 +6793,23 @@
 "url": "https://mbda.wd3.myworkdayjobs.com/MBDA-UK/job/Stevenage/Software-Engineer---Undergraduate-Placement-2027_R37757",
 "v": 1
 },
+"56cfe885bf49": {
+"checked": "2026-11-20",
+"deadline": "2026-12-01",
+"hash": "c233fc47e5d6",
+"lang": "",
+"quality": "full",
+"req": [
+"Duration: 8 or 12 months",
+"Receive financial assistance for travel expenses and co-op fees",
+"Gain a competitive edge, securing primary consideration for professional positions upon graduation",
+"Salary is commensurate with the number of academic semesters and prior co-op experiences completed.",
+"Application Deadline: December 1st, 2026"
+],
+"rolling": false,
+"url": "https://jobs.lever.co/evr/5e2bb870-428b-4c25-9caa-2c96068428f0",
+"v": 2
+},
 "56eea3902ef2": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -7535,6 +7753,17 @@
 "url": "https://apply.careers.microsoft.com/careers/job/1970393557045545",
 "v": 2
 },
+"661315fb904b": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "85499140374a",
+"lang": "fr",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://job-boards.eu.greenhouse.io/horizontradingsolutions/jobs/5011266101",
+"v": 2
+},
 "661e823fd85a": {
 "checked": "2026-11-14",
 "legacy": {
@@ -7715,6 +7944,23 @@
 "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270002007",
 "v": 1
 },
+"6885b0f5132b": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "2fb716356129",
+"lang": "",
+"quality": "full",
+"req": [
+"This is a newly created position with an anticipated start date of May 2027.",
+"Currently enrolled in a university or college program in Civil Engineering, Geological Engineering, or a closely related discipline, with at least 1 year of study completed.",
+"Recent graduates must have been enrolled in their bachelor's degree in the most previous school term with an interest in pursuing an advanced degree in the same or similar discipline at the conclusion of the internship.",
+"Sponsorship is not available for this position",
+"Relocation assistance is not available for this position"
+],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/AECOM2/744000162583857",
+"v": 2
+},
 "688bcf7a69bc": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -7845,6 +8091,22 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/janestreet/jobs/8617344002",
 "v": 1
+},
+"6a0c4cf55ed2": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "89e972447866",
+"lang": "",
+"quality": "full",
+"req": [
+"The Xanadu Residency Program is a 16-week program designed to provide graduate and undergraduate students in engineering, science, and computer science the opportunity to learn, build technical skills, conduct innovative research and contribute towards technically challenging projects.",
+"This 16-week residency program will launch with a 1-week quantum computing bootcamp.",
+"Candidates currently enrolled in graduate programs (Masters or PhDs) are encouraged to apply.",
+"Please apply by submitting your Resume and statement of interest (including which area/topics/supervisor you'd like to work with) by November 15, 2026 at 11.59pm Eastern Time (EST)."
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100133831-xanadu-residency-program#content",
+"v": 2
 },
 "6a4b73d5ecef": {
 "checked": "2026-11-14",
@@ -7979,6 +8241,22 @@
 "quality": "partial",
 "url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/CAN-Kanata-2-ON---WR/Engineering-Intern_J000704362",
 "v": 1
+},
+"6c2a06a87325": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "8ba4057f1105",
+"lang": "",
+"quality": "full",
+"req": [
+"This internship will start in May of 2027.",
+"As an Intern Bachelors Mechanical Engineer here at Honeywell, you will gain hands-on experience in mechanical engineering, work on real-world projects, and collaborate with experienced engineers to develop innovative solutions.",
+"Working towards a Bachelor's degree in Mechanical, Mechatronics, and Industrial Engineering from an accredited institution.",
+"Working towards a Bachelor's degree in Mechanical, Mechatronics, and Industrial Engineering from an accredited institution."
+],
+"rolling": false,
+"url": "https://icfcjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_4001/job/129350",
+"v": 2
 },
 "6c4ac1d4ecc1": {
 "checked": "2026-11-15",
@@ -8219,6 +8497,21 @@
 ],
 "rolling": false,
 "url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Application-Software-Developer-Co-op--Winter-2027---Enterprise-Technology---Business-Management_2621524-2",
+"v": 2
+},
+"6e0c706920e7": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "d9a8be3e78e5",
+"lang": "",
+"quality": "full",
+"req": [
+"The Informatics group are looking for qualified interns in the penultimate year of their study to support our team in our London office starting Summer 2027.",
+"This is a 12-month University Placement opportunity.",
+"Must be pursuing a bachelor's or master's degree in computer science/engineering, biomedical engineering, health information, statistics, bioinformatics, or related field"
+],
+"rolling": false,
+"url": "https://careers.medpace.com/jobs/13130?icims=1&lang=en-us",
 "v": 2
 },
 "6e195eca9f05": {
@@ -9879,6 +10172,24 @@
 ],
 "rolling": false,
 "url": "https://job-boards.greenhouse.io/waterloocoop/jobs/6180979004",
+"v": 2
+},
+"83ec37bd97df": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "6b16f35c3ec9",
+"lang": "",
+"quality": "full",
+"req": [
+"You will have an opportunity to present your achievements to the executive team at the end of your co-op.",
+"Strong performers will be considered for future co-op terms and for our Production Engineering Analyst roles.",
+"Currently enrolled in Mechanical, Mechatronics, Management, Systems Design, or a related engineering program.",
+"Some exposure to CAD (SolidWorks, AutoCAD, Fusion 360, or similar) through coursework, a design team, or a previous co-op.",
+"A previous co-op in manufacturing, automotive, logistics, or operations.",
+"Term: January–April 2027 (4 months), with the potential to extend through August 2027"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100132421-production-development-engineering-intern-co-op-winter-2027#content",
 "v": 2
 },
 "8406d469b134": {
@@ -11605,6 +11916,20 @@
 "url": "https://jobs.smartrecruiters.com/SyngentaGroup/744000146963221",
 "v": 1
 },
+"9b1ac6edabaf": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "edadae03d64b",
+"lang": "",
+"quality": "full",
+"req": [
+"Employment type: Internship/Co-op",
+"Pursuing or recently completed a bachelor's or higher degree in Computer Engineering, Electrical Engineering, Computer Science, or a related field."
+],
+"rolling": false,
+"url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4732319005",
+"v": 2
+},
 "9b1bd4343d0d": {
 "checked": "2026-11-14",
 "legacy": {
@@ -12057,6 +12382,21 @@
 "quality": "partial",
 "url": "https://www.weareroku.com/jobs/8345947?gh_jid=8345947",
 "v": 1
+},
+"9ecfb8743c1b": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "4af2cc983a5b",
+"lang": "",
+"quality": "full",
+"req": [
+"As a Business Systems Analyst Co-op, you will support the optimization of supply chain business processes to during system and process migration transition to vendor AI driven software, amongst other existing initiatives to improve overall organization performance using tech or non-tech operational improvements.",
+"The position available is an 8-month intern placement",
+"In this Business Systems Analyst Co-op role, your analysis and recommendations will help make system transitions simpler, improve operational performance and support the future of supply chain at FIS."
+],
+"rolling": false,
+"url": "https://fis.wd5.myworkdayjobs.com/searchjobs/job/CAN-TRNT-Virtual/Intern--Business-Systems-Analyst_JR0308628",
+"v": 2
 },
 "9f2015a8101f": {
 "checked": "2026-11-19",
@@ -12898,6 +13238,19 @@
 "url": "https://careers.qualcomm.com/careers/job/446721829439",
 "v": 2
 },
+"aafa788620df": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "0e00718b54bd",
+"lang": "",
+"quality": "partial",
+"req": [
+"Currently pursuing a Bachelor's degree in Electrical Engineering, Computer Engineering, Software Engineering, System Engineering, Mechanical Engineering or a related field."
+],
+"rolling": false,
+"url": "https://jobs.l3harris.com/job/Ottawa-Intern%2C-Systems-Engineering-ON-K2H-9N6/1441478000/",
+"v": 2
+},
 "aaffa80c579b": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -13198,6 +13551,21 @@
 ],
 "rolling": false,
 "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Toronto-Canada/Analog-Layout-Intern---BS-MS---2027-Co-Op_2604789",
+"v": 2
+},
+"b027cf785dee": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "920f395e87af",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently enrolled in a Bachelor of Science or Engineering degree in Electrical Engineering, Computer Engineering, Mechatronics Engineering, Software Engineering, Environmental Engineering, Chemical Engineering, or other related technical discipline.",
+"Ability to work a full-time co-op starting May 2027 for 12-16 months",
+"Candidates must be immediately eligible to work legally in Canada; the employer will not sponsor candidates for a work permit or any other Canadian work authorization for this opportunity."
+],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/VeoliaEnvironnementSA/744000162583119",
 "v": 2
 },
 "b048529a745d": {
@@ -14412,6 +14780,25 @@
 "url": "https://careers.synopsys.com/job/nepean/engineering-documentation-and-ai-automation-internship-16-month-co-op/44408/103136134960",
 "v": 2
 },
+"bfd8b44cda47": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "7697a69ff84a",
+"lang": "",
+"quality": "partial",
+"req": [
+"Français",
+"Français",
+"Français",
+"Zurich Canada is currently looking for a post-secondary student for an Internship/Coop position to provide support with transformation initiatives through project coordination, process improvement, analysis and reporting.",
+"This opportunity is part of our internship program and is also open to Co-op students.",
+"Currently enrolled in a university or college program and will be enrolled in the upcoming semester (ideally entering 3rd or 4th year), preferably in Business, Operations, Business Analytics, Project Management, or a related field.",
+"Be legally eligible to work in Canada"
+],
+"rolling": false,
+"url": "https://www.careers.zurich.com/job/Toronto-Transformation-&-Business-Process-Intern-ON/1377987957/",
+"v": 2
+},
 "bfee1fce1b79": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -14855,6 +15242,19 @@
 "quality": "partial",
 "url": "https://cranecompany.wd5.myworkdayjobs.com/Careers/job/Leicester-UK/Engineering-Intern_JR102711",
 "v": 1
+},
+"c551aeb9cf97": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "c170392cba34",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing or recently completed a Master's or PhD in computer science, robotics, electrical engineering or a related field, with a focus on machine learning, reinforcement learning or robotics."
+],
+"rolling": false,
+"url": "https://jobs.ashbyhq.com/georgian/62da47ff-0424-4e28-bffa-cff0de8ca228/application?embed=true",
+"v": 2
 },
 "c5753ecbbecf": {
 "checked": "2026-11-15",
@@ -15491,6 +15891,20 @@
 "url": "https://jobs.l3harris.com/job/Waterdown-Materials-Receiving-Co-op-%28Waterdown%2C-CAN%29-ON-L9H-0C5/1441484600/",
 "v": 2
 },
+"ce78daaee9cc": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "05d48edd8686",
+"lang": "",
+"quality": "full",
+"req": [
+"2026-11-19 Application Deadline:",
+"2026-12-03 Note : Applications will be accepted until 11:59 PM on the day prior to the application deadline date above"
+],
+"rolling": false,
+"url": "https://rbc.wd3.myworkdayjobs.com/en-US/rbcglobal1/job/HAMILTON-Ontario-Canada/Financial-Advisor_R-0000193009",
+"v": 2
+},
 "ce9bafae03cc": {
 "checked": "2026-11-15",
 "deadline": "2026-11-15",
@@ -15575,6 +15989,22 @@
 ],
 "rolling": false,
 "url": "https://careers.capgemini.com/job/Telford-Engineering-Digital-and-Technology-Solutions-Degree-Apprenticeship-2027/1447967833/?ats=successfactors",
+"v": 2
+},
+"cf4c4e4150d0": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "4db29e9c13c9",
+"lang": "",
+"quality": "full",
+"req": [
+"Xanadu's mission is to build quantum computers that are useful and available to people everywhere.",
+"Currently pursuing a BSc, MS or PhD degree in Electrical Engineering, Physics, or related field.",
+"MS or Ph.D. degree in photonics, AMO, laser physics, optics, or electronics.",
+"This is a newly created position offered as an initial 4-month contract or internship , with the potential for extension based on business needs and mutual fit."
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100133342-photonics-test-engineer#content",
 "v": 2
 },
 "cf54169bac2b": {
@@ -15916,6 +16346,21 @@
 ],
 "rolling": false,
 "url": "https://careers.qualcomm.com/careers/job/446722198182",
+"v": 2
+},
+"d31222392276": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "668642ae49ae",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing or holding a PhD or Master's degree in Computer Science, Machine Learning, Artificial Intelligence, Mathematics, or a related field.",
+"Huawei aims to support a French-speaking work environment for its employees in Quebec.",
+"We have taken steps to avoid requiring a language other than French for this position."
+],
+"rolling": false,
+"url": "https://huaweicanada.recruitee.com/o/intern-researcher-recursive-self-improvement-rsi",
 "v": 2
 },
 "d3329b709048": {
@@ -16564,6 +17009,19 @@
 "quality": "partial",
 "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138080",
 "v": 1
+},
+"d9730b83e30d": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "e8b1f1bfe281",
+"lang": "",
+"quality": "full",
+"req": [
+"Opportunity to work for an ambitious and fast-moving startup in the automotive space"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100132298-apprentice-automotive-service-technician-level-2-3#content",
+"v": 2
 },
 "d9a2f36f9de5": {
 "checked": "2026-11-14",
@@ -17507,6 +17965,21 @@
 "url": "https://careers.roblox.com/jobs/8386080?gh_jid=8386080",
 "v": 2
 },
+"e4d8de0843b3": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "29eec9627f4a",
+"lang": "",
+"quality": "full",
+"req": [
+"We are seeking exceptional PhD candidates to join our Quantitative Research teams in the London metro area where they will work with other researchers and developers on various research projects, including the design of novel predictive signals and the enhancement of our algorithms for prediction, trade execution, port…",
+"Over the 10-week internship program, you will have the opportunity to collaborate with senior team members to learn what it takes to be a successful quantitative researcher.",
+"Current PhD student in a quantitative or technical field such as statistics, mathematics, physics, electrical engineering, or computer science (ideally with one year left in your academic program)"
+],
+"rolling": false,
+"url": "https://job-boards.greenhouse.io/schonfeld/jobs/8400915",
+"v": 2
+},
 "e4da22d3ef0e": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -17801,6 +18274,22 @@
 "url": "https://careers.cisco.com/global/en/job/2023625",
 "v": 1
 },
+"e7f246016580": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "9561f9c39731",
+"lang": "",
+"quality": "full",
+"req": [
+"Lead Engineering co-op is accountable for all aspects of engineering necessary to deliver custom water treatment systems to industrial and municipal customers.",
+"The LE co-op assists a cross disciplinary team of engineers and designers to ensure on time and budget execution of the process, mechanical, electrical, instrumentation, and controls engineering tasks on the project.",
+"As a co-op, you will be directly working with Lead Engineers assigned to the projects to assist with assigned tasks as outlined below but not limited to:",
+"Enrolled in Engineering, technical degree, or diploma"
+],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/VeoliaEnvironnementSA/744000162590191",
+"v": 2
+},
 "e7f65109a460": {
 "checked": "2026-11-14",
 "legacy": {
@@ -18068,6 +18557,17 @@
 "quality": "partial",
 "url": "https://jobs.smartrecruiters.com/BoschGroup/744000156507176",
 "v": 1
+},
+"eb35f0492a6d": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "6f1ae46f0720",
+"lang": "",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://soti.wd3.myworkdayjobs.com/en-US/SOTI-Next-Gen/job/Mississauga-Canada--Meadowvale-Office-HQ/Software-Developer-Intern---SOTI-XSight--May-2027-12-Months-_R10718",
+"v": 2
 },
 "ebb6527c6713": {
 "checked": "2026-11-14",
@@ -18349,6 +18849,37 @@
 "quality": "partial",
 "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Falcon-Complete-Analyst-Intern-Graduate---Summer-2027--Reading--GBR-_R30675",
 "v": 1
+},
+"ef8033eab7a7": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "81be3d3a9e52",
+"lang": "",
+"quality": "full",
+"req": [
+"Our Marketing Communications (MarComm) Co-op is your launchpad to success, offering the support, structure, and exciting opportunities you need to thrive and make your mark.",
+"Are you an enthusiastic undergraduate student looking to gain hands-on experience in marketing communications, content development, digital channels, and stakeholder engagement?",
+"Currently pursuing an undergraduate degree in Marketing, Communications, Journalism, Business, Commerce, or a related field.",
+"As part of our co-op program, you will gain early access to Manulife John Hancock's premier early talent program, GRO, tailored to graduating students!",
+"Submit your resume, cover letter, academic transcript, and work term evaluation (if any) in one PDF file.",
+"The annual salary will be pro-rated based on the length of the work term."
+],
+"rolling": false,
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Winter-Co-op-2027---Marketing-Strategy---Operations--Office-of-the-CMO-_JR26080755",
+"v": 2
+},
+"ef999a69650c": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "5a2a23c22c51",
+"lang": "",
+"quality": "full",
+"req": [
+"…h the supervisor Design, implementation and evaluation of new machine learning methods and models Presentation and communication of research findings Currently enrolled in a Doctoral Degree program in Computer Science, Biomedical Informatics, Computational Biology, and other related STEM fields Prior experience with de…"
+],
+"rolling": false,
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557075448",
+"v": 2
 },
 "efbba3dd6061": {
 "checked": "2026-11-15",
@@ -18848,6 +19379,19 @@
 "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270025007",
 "v": 2
 },
+"f76613653373": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "b4b7dfc2f8c7",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently enrolled in a post-secondary program in business, communications, organizational change, human resources, project management, technology, or a related field."
+],
+"rolling": false,
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_adminJobs/job/Toronto-Ontario/Summer-Intern-2027---Change-Management_JR26080429-1",
+"v": 2
+},
 "f76aac3d601b": {
 "checked": "2026-11-17",
 "deadline": "",
@@ -19183,6 +19727,21 @@
 "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210800615",
 "v": 2
 },
+"fb74cc0ee7d2": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "9f4a3446220e",
+"lang": "",
+"quality": "full",
+"req": [
+"Altera is looking for talented, highly motivated undergraduate students to develop FPGA solutions in next-generation Ethernet IP.",
+"Diverse and inclusive environment and a dedicated intern's community to help you get started in your new job",
+"The candidate must be pursuing a Bachelor's Degree in Computer Engineering, Electrical Engineering, Engineering Science, Computer Science, Mathematics, or similar with 3+ months of experience or coursework in one or more of the following:"
+],
+"rolling": false,
+"url": "https://altera.wd1.myworkdayjobs.com/en-US/altera/job/Toronto-Ontario-Canada/FPGA-Software-Engineer-Intern_R03445",
+"v": 2
+},
 "fbb1b1b462ca": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -19374,6 +19933,26 @@
 ],
 "rolling": false,
 "url": "https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers/job/United-Kingdom---Reading/Intelligence-Launch-Intern---Summer-2027_R30500",
+"v": 2
+},
+"fd8a624de047": {
+"checked": "2026-11-20",
+"deadline": "",
+"hash": "f13e4fb93c1a",
+"lang": "",
+"quality": "full",
+"req": [
+"Internship/Co-op",
+"Work Term:",
+"Co-op and Internship opportunities allow you to gain valuable work experience across a number of the businesses at TD.",
+"Our Co-op/Intern Programming is offered with select Co-op and Internship roles and is designed to help you better understand the TD business, build on critical career capabilities, and broaden your professional network.",
+"Currently enrolled in an undergraduate degree in Finance, Accounting, Analytics, Data, Business/Commerce or related field",
+"Must be enrolled in an undergraduate degree with the intent of going back to school at the start of your work term (requirement of all co-op/intern positions)",
+"This position is a 4-month work term and will commence January 4th - April 23rd 2027.",
+"As such, work location and start dates are subject to change."
+],
+"rolling": false,
+"url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Commercial-Deposits--Money-Movement---Digital-Channels-Intern-Co-op--Winter-2027-_R_1503532",
 "v": 2
 },
 "fd9fa1606c0f": {
@@ -19615,6 +20194,7 @@
 "0c1e25986d26": "2026-11-15",
 "0c35192a3eca": "2026-11-15",
 "0c45f391ac52": "2026-11-15",
+"0d08ae678443": "2026-11-20",
 "0d4b6e2b5890": "2026-11-15",
 "0d5ce2e8907d": "2026-11-14",
 "0d5f6b9e5851": "2026-11-15",
@@ -19634,6 +20214,7 @@
 "0fc35f9aad87": "2026-11-17",
 "1071d5dd9365": "2026-11-15",
 "1072e1992659": "2026-11-15",
+"108dcc4f05cf": "2026-11-20",
 "109e08ad10be": "2026-11-14",
 "109f3d0411a6": "2026-11-14",
 "10bf6ba042e1": "2026-11-14",
@@ -19706,6 +20287,7 @@
 "1d6ac9c0f3ff": "2026-11-14",
 "1d78647402d0": "2026-11-15",
 "1d948e842abf": "2026-11-15",
+"1e15d5458e5a": "2026-11-20",
 "1e247ef87bd3": "2026-11-14",
 "1eb0ef7758e2": "2026-11-14",
 "1ed881566977": "2026-11-15",
@@ -19783,6 +20365,7 @@
 "2aedfa13af95": "2026-11-15",
 "2b083951d7de": "2026-11-15",
 "2b12f756b23c": "2026-11-15",
+"2b197d3e57ed": "2026-11-20",
 "2b318ed3ae0f": "2026-11-15",
 "2ba43f10c698": "2026-11-14",
 "2c0b08acb54a": "2026-11-14",
@@ -19945,6 +20528,7 @@
 "4520880961cf": "2026-11-15",
 "455a3d13d460": "2026-11-14",
 "4593e301b268": "2026-11-15",
+"45eff3b62c11": "2026-11-20",
 "463630d7a21f": "2026-11-15",
 "46385040680e": "2026-11-17",
 "463e26e865a7": "2026-11-15",
@@ -20173,6 +20757,7 @@
 "6901e8b22d86": "2026-11-15",
 "692ce08d3848": "2026-11-14",
 "69322f8225fb": "2026-11-15",
+"69873d76a060": "2026-11-20",
 "69c494e69f9e": "2026-11-15",
 "6a4cdb52de49": "2026-11-15",
 "6a595c05e056": "2026-11-14",
@@ -20182,6 +20767,7 @@
 "6b5411656251": "2026-11-15",
 "6b938f790463": "2026-11-15",
 "6c05d93d87b7": "2026-11-14",
+"6c2f7aea0270": "2026-11-20",
 "6c32d8d02864": "2026-11-15",
 "6c5bdaadfb24": "2026-11-14",
 "6c99956925a7": "2026-11-15",
@@ -20336,6 +20922,7 @@
 "880837272db3": "2026-11-15",
 "8811ce09cdfb": "2026-11-14",
 "88330c040da3": "2026-11-15",
+"8870b736a57d": "2026-11-20",
 "88b5b26dc475": "2026-11-15",
 "891939180a13": "2026-11-15",
 "896c7f5bbc03": "2026-11-15",
@@ -20473,6 +21060,7 @@
 "9ed89c4dad70": "2026-11-15",
 "9f472da06db5": "2026-11-14",
 "9f657fb2aab4": "2026-11-15",
+"9f84b1399d2c": "2026-11-20",
 "9f86c5ac5a37": "2026-11-15",
 "9fb62a07ce95": "2026-11-15",
 "9fc5d96ad982": "2026-11-14",
@@ -20491,6 +21079,7 @@
 "a2e0d261aa9b": "2026-11-14",
 "a34c8b30d8b9": "2026-11-15",
 "a3549b191e54": "2026-11-14",
+"a36999add59b": "2026-11-20",
 "a3d56c05632b": "2026-11-15",
 "a42fd2b9cea9": "2026-11-14",
 "a44d7ff7d112": "2026-11-14",
@@ -20653,6 +21242,7 @@
 "bdcc87422a19": "2026-11-14",
 "bdd72bdde57b": "2026-11-15",
 "be42415560d0": "2026-11-15",
+"be6d8820b2be": "2026-11-20",
 "bea14c529de8": "2026-11-14",
 "beb00a5dfb1f": "2026-11-15",
 "bee094f8bd6b": "2026-11-15",
@@ -20774,6 +21364,7 @@
 "d3a6464f0d47": "2026-11-14",
 "d3c3881ccd59": "2026-11-17",
 "d3f245f38f52": "2026-11-14",
+"d446c9c4d271": "2026-11-20",
 "d462c22ba3b3": "2026-11-15",
 "d4846d35186f": "2026-11-19",
 "d59a0d140b31": "2026-11-15",
