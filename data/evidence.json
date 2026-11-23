@@ -1,5 +1,5 @@
 {
-"checked": "2026-11-22",
+"checked": "2026-11-23",
 "read": {
 "002e1bda7b3f": {
 "checked": "2026-11-14",
@@ -367,7 +367,7 @@
 "v": 1
 },
 "049e4f328982": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "02eb0c77537f",
 "lang": "",
@@ -583,7 +583,7 @@
 "v": 2
 },
 "079c86b53011": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "0b724541bd4c",
 "lang": "",
@@ -604,7 +604,7 @@
 "v": 1
 },
 "08156c6a1515": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "3077e83edc18",
 "lang": "",
@@ -953,7 +953,7 @@
 "v": 1
 },
 "0b9b61e6ea27": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "90e9ae982680",
 "lang": "",
@@ -1074,7 +1074,7 @@
 "v": 2
 },
 "0c86721cacec": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "b1064466ff37",
 "lang": "",
@@ -1458,6 +1458,36 @@
 "url": "https://job-boards.greenhouse.io/graphcore/jobs/8894770002",
 "v": 1
 },
+"11ea85088cac": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "e960133dac02",
+"lang": "",
+"quality": "full",
+"req": [
+"The internship duration at Thomson Reuters Labs is typically six months with a flexible start date aligned with your schedule.",
+"Academic Foundation : Graduated / currently enrolled in a PhD program in Computer Science, Computational Linguistics, or a related field, with demonstrated research experience (at least 1 publication required)",
+"This builds upon our flexible work arrangements, including work from anywhere for up to 8 weeks per year, empowering employees to achieve a better work-life balance."
+],
+"rolling": false,
+"url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/external_career_site/job/United-Kingdom-London/Research-Intern---KG---Agentic-AI---ML_JREQ205376",
+"v": 2
+},
+"120331c0ef41": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "28e5acbfb132",
+"lang": "",
+"quality": "full",
+"req": [
+"Software Development Co-op– Summer 2026A Career at ClariusToday, as many as 25 million medical professionals globally don't have access to medical imaging, which is proven to improve patient care and reduce healthcare costs.",
+"…that make medical imaging more accessible and affordable through AI-powered solutions.We are seeking innovative, dedicated people to join our Cloud team for a co-op project and gain hands-on experience developing scalable, customer-focused software solutions.This cloud-focused project includes front-end and back-end d…",
+"…development (TDD) practicesAssist senior developers on larger and more difficult projectsBuild UIs with Vue, Tailwind and PrimeVueEducation, Experience & SkillsCurrently pursuing a degree in Software Development or a similar degree.Full-Stack Web Development with Python or JavaScriptFamiliarity with REST APIsExperience…"
+],
+"rolling": false,
+"url": "https://clarius.com/career/co/research-development-rd/A7.578/software-development-coop/all/",
+"v": 2
+},
 "12117afab398": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -1606,7 +1636,7 @@
 "v": 2
 },
 "1415c5c21fe6": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "c6030ee7d72a",
 "lang": "",
@@ -2822,6 +2852,19 @@
 "url": "https://careers.celestica.com/job/Toronto-Student-Intern%2C-Corporate-Sustainability-ON/1454470533/",
 "v": 2
 },
+"210b222b38ac": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "b4a1906adbb8",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently enrolled in an undergraduate, graduate, or MBA program in Business, Economics, Finance, Marketing, or a related field"
+],
+"rolling": false,
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Strategy-Intern_JR26091773",
+"v": 2
+},
 "210cbc212074": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -3499,6 +3542,23 @@
 "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7993738003",
 "v": 2
 },
+"27964490dbec": {
+"checked": "2026-11-23",
+"deadline": "2027-02-28",
+"hash": "ae6adc499d29",
+"lang": "",
+"quality": "full",
+"req": [
+"We're now looking to kick-start recruitment for our Digital and Technology Solutions Degree apprenticeship programme starting in September 2027.",
+"Minimum of 112 UCAS points (under the tariff for courses starting from September 2017)",
+"You must have the right to work in the UK for the duration of your apprenticeship and have lived in the UK/EEA for the past 3 years",
+"Closing date for applications – Sunday 28 February 2027",
+"AJ Bell is committed to providing an environment of mutual respect where equal employment opportunities are available to all applicants and all employees are empowered to bring their whole self to work."
+],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/AJBell1/744000163169494",
+"v": 2
+},
 "2805c1b4de42": {
 "checked": "2026-11-21",
 "deadline": "",
@@ -3627,6 +3687,21 @@
 ],
 "rolling": false,
 "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210788659",
+"v": 2
+},
+"2982306c68e3": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "e01b7a452425",
+"lang": "fr",
+"quality": "full",
+"req": [
+"Please note that this is a hybrid position (3 days per week at the office) for the Summer 2027 (May-August 2027 work term).",
+"Currently pursuing a degree in Computer Science, Software Engineering, Computer Engineering, or a related technical field, preferably in your second year or later, with a GPA of 3,5/4.0 or more.",
+"The 2027 Canada program runs for 16 weeks (May 3- August 20)."
+],
+"rolling": false,
+"url": "https://autodesk.eightfold.ai/careers/job/1443154572133",
 "v": 2
 },
 "29d3dbbfbbf7": {
@@ -4564,6 +4639,20 @@
 "url": "https://job-boards.eu.greenhouse.io/cambridgeconsultantslimited/jobs/4995733101",
 "v": 1
 },
+"3551ebcd1b1d": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "58d47f5c3cbb",
+"lang": "",
+"quality": "full",
+"req": [
+"A $1,500 signing bonus will be paid after the 3-month probationary period.",
+"Opportunity to work for an ambitious and fast-moving startup in the automotive space"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100486100-automotive-apprentice-technician-level-2-3-evening-shift#content",
+"v": 2
+},
 "359908f2c6ea": {
 "checked": "2026-11-14",
 "legacy": {
@@ -4590,7 +4679,7 @@
 "v": 2
 },
 "35fcb1e34f5a": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "643d5fddba40",
 "lang": "",
@@ -5103,9 +5192,9 @@
 "v": 1
 },
 "3bd8fcdd00e2": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "ff029137b1ce",
+"hash": "01241fe75860",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -5173,6 +5262,21 @@
 "url": "https://job-boards.greenhouse.io/hootsuite/jobs/8407535",
 "v": 2
 },
+"3cb65fba105f": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "b21e87094459",
+"lang": "",
+"quality": "partial",
+"req": [
+"16 Month Internship",
+"Start Date: May 2027",
+"Education: Currently enrolled in a formal Internship program, completing 2nd or 3rd year of a University program specialising in Commerce or Supply Chain Management."
+],
+"rolling": false,
+"url": "https://careers.celestica.com/job/Toronto-Student-Intern%2C-Supply-Chain-Management-ON/1459786533/",
+"v": 2
+},
 "3cf160e201d5": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -5218,9 +5322,9 @@
 "v": 2
 },
 "3d2ddbafe91d": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "e2a8aacc9a57",
+"hash": "7172a796528c",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -5639,7 +5743,7 @@
 "v": 1
 },
 "425c4654084f": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "2d3dfcc34a21",
 "lang": "",
@@ -5782,7 +5886,7 @@
 "v": 2
 },
 "445419fbb012": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "4f53d1d0fff3",
 "lang": "",
@@ -5899,7 +6003,7 @@
 "v": 1
 },
 "4570051c6232": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "bcf6782ea69c",
 "lang": "",
@@ -6034,7 +6138,7 @@
 "v": 2
 },
 "46bda0be43b8": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "14d7b23dc514",
 "lang": "",
@@ -6647,7 +6751,7 @@
 "v": 1
 },
 "4c177b84413f": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "16cc1f222ab0",
 "lang": "",
@@ -7408,7 +7512,7 @@
 "v": 2
 },
 "558e45574745": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "23d3660240fe",
 "lang": "",
@@ -8068,7 +8172,7 @@
 "v": 2
 },
 "606b085bc578": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "59bbe34544de",
 "lang": "",
@@ -8151,6 +8255,24 @@
 "url": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/Canada---Richmond-Hill-Ontario-Applanix/Navigation---Machine-Learning-Engineering-Intern--16-Months-_R57980",
 "v": 1
 },
+"6183b0063662": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "6b16f35c3ec9",
+"lang": "",
+"quality": "full",
+"req": [
+"You will have an opportunity to present your achievements to the executive team at the end of your co-op.",
+"Strong performers will be considered for future co-op terms and for our Production Engineering Analyst roles.",
+"Currently enrolled in Mechanical, Mechatronics, Management, Systems Design, or a related engineering program.",
+"Some exposure to CAD (SolidWorks, AutoCAD, Fusion 360, or similar) through coursework, a design team, or a previous co-op.",
+"A previous co-op in manufacturing, automotive, logistics, or operations.",
+"Term: January–April 2027 (4 months), with the potential to extend through August 2027"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100488437-production-development-engineering-intern-co-op-winter-2027#content",
+"v": 2
+},
 "6186c60a4a66": {
 "checked": "2026-11-14",
 "legacy": {
@@ -8206,7 +8328,7 @@
 "v": 2
 },
 "628d0f2d493c": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "b97f8af68e45",
 "lang": "",
@@ -8391,7 +8513,7 @@
 "v": 2
 },
 "64b3f16382f9": {
-"checked": "2026-11-21",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "eb09b7d048ed",
 "lang": "",
@@ -8614,7 +8736,7 @@
 "v": 1
 },
 "66ee706c2582": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "c499bdb4b2ff",
 "lang": "",
@@ -8723,7 +8845,7 @@
 "v": 2
 },
 "683c5a13019f": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "a02e2554229e",
 "lang": "",
@@ -9010,7 +9132,7 @@
 "v": 2
 },
 "6b867f4f59bf": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "756d1d7966f9",
 "lang": "",
@@ -9370,7 +9492,7 @@
 "v": 2
 },
 "6e195eca9f05": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "8c8f895e8089",
 "lang": "",
@@ -9493,6 +9615,22 @@
 "url": "https://careers-sig.icims.com/jobs/11005/job?mobile=true&needsRedirect=false",
 "v": 2
 },
+"7072a26c2b80": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "89e972447866",
+"lang": "",
+"quality": "full",
+"req": [
+"The Xanadu Residency Program is a 16-week program designed to provide graduate and undergraduate students in engineering, science, and computer science the opportunity to learn, build technical skills, conduct innovative research and contribute towards technically challenging projects.",
+"This 16-week residency program will launch with a 1-week quantum computing bootcamp.",
+"Candidates currently enrolled in graduate programs (Masters or PhDs) are encouraged to apply.",
+"Please apply by submitting your Resume and statement of interest (including which area/topics/supervisor you'd like to work with) by November 15, 2026 at 11.59pm Eastern Time (EST)."
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100486510-xanadu-residency-program#content",
+"v": 2
+},
 "7075565844c3": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -9516,7 +9654,7 @@
 "v": 1
 },
 "70dea8525f37": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "fe40e8410f47",
 "lang": "",
@@ -10222,7 +10360,7 @@
 "v": 2
 },
 "79e03d471bab": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "fa02b9fa3bda",
 "lang": "",
@@ -10276,6 +10414,19 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/graphcore-early-careers/jobs/8901885002",
 "v": 1
+},
+"7a5172ca4392": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "e8b1f1bfe281",
+"lang": "",
+"quality": "full",
+"req": [
+"Opportunity to work for an ambitious and fast-moving startup in the automotive space"
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100488600-apprentice-automotive-service-technician-level-2-3#content",
+"v": 2
 },
 "7a5a10cdc6e9": {
 "checked": "2026-11-21",
@@ -10808,6 +10959,20 @@
 "quality": "partial",
 "url": "https://thermofisher.wd5.myworkdayjobs.com/thermofishercareers/job/Paisley-United-Kingdom/Manufacturing-Engineering-Intern_R-01374099-1",
 "v": 1
+},
+"806bfbbf3f9f": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "14a4bfbd1777",
+"lang": "",
+"quality": "full",
+"req": [
+"Our Summer Associate Internship Program begins in June, depending on your academic calendar.",
+"Completed or Enrolled in a PhD in Econometrics, Finance/Accounting, Mathematics, Computer Science, Operations Research or related quantitative field with an expected graduation date no later than August 2028."
+],
+"rolling": false,
+"url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210806784",
+"v": 2
 },
 "806d16f0766c": {
 "checked": "2026-11-15",
@@ -11617,6 +11782,22 @@
 "url": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/Games-Research-Operations-Intern_R108306",
 "v": 1
 },
+"8871c8913422": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "4db29e9c13c9",
+"lang": "",
+"quality": "full",
+"req": [
+"Xanadu's mission is to build quantum computers that are useful and available to people everywhere.",
+"Currently pursuing a BSc, MS or PhD degree in Electrical Engineering, Physics, or related field.",
+"MS or Ph.D. degree in photonics, AMO, laser physics, optics, or electronics.",
+"This is a newly created position offered as an initial 4-month contract or internship , with the potential for extension based on business needs and mutual fit."
+],
+"rolling": false,
+"url": "https://jobs.realventures.com/companies/real-ventures/jobs/100487237-photonics-test-engineer#content",
+"v": 2
+},
 "889dec058533": {
 "checked": "2026-11-15",
 "deadline": "2026-11-30",
@@ -12116,7 +12297,7 @@
 "v": 1
 },
 "8fac24a80f24": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "2026-11-15",
 "hash": "8a96bffbea41",
 "lang": "",
@@ -12301,13 +12482,19 @@
 "v": 1
 },
 "924694eeb839": {
-"checked": "2026-11-14",
-"legacy": {
-"must_be_enrolled": "vel Requirements: Potential travel to office 2-3 times throughout the co-op term Tech Stack: React, Next.js, Python, Azure, Minio, Weaviate, Ollama, P"
-},
-"quality": "partial",
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "6bba2c4892f3",
+"lang": "",
+"quality": "full",
+"req": [
+"Start Date: January 11, 2027",
+"Duration: 4 month to start with potential to extend",
+"Travel Requirements: Potential travel to office 2-3 times throughout the co-op term"
+],
+"rolling": false,
 "url": "https://jobs.ashbyhq.com/NPX/048ca8da-bfb9-4454-8147-ac9497629634",
-"v": 1
+"v": 2
 },
 "927bc48d5703": {
 "checked": "2026-11-14",
@@ -12503,9 +12690,9 @@
 "v": 2
 },
 "95706bc7216a": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "6f9bdc0dd7db",
+"hash": "57a4dfce3fde",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -12685,7 +12872,7 @@
 "v": 2
 },
 "97ea3bc91873": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "491504557761",
 "lang": "",
@@ -12879,7 +13066,7 @@
 "v": 1
 },
 "99d88e1dd2aa": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "3b1c4f16a85f",
 "lang": "",
@@ -13633,15 +13820,16 @@
 "v": 2
 },
 "a048eb3a0914": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "2388d400dd76",
+"hash": "47f6196eae42",
 "lang": "",
 "quality": "full",
 "req": [
-"Are you pursuing a degree in data science and/or computer science with an interest in working with AI tools for interactive AI applications across various IT systems?",
-"Pursuing a Master's or PhD in Artificial Intelligence, Computer or Data Science, or related field.",
-"Available to work a full time schedule in our London office for ~9-12 months"
+"Are you pursuing a degree in data science and/or computer science and have an interest in working with AI tools for interactive AI applications across various IT systems?",
+"We are seeking an intern to join us on site in our London office for ~ 9-12 months.",
+"Pursuing a Master's or PhD in Artificial Intelligence, Computer or Data Science, or related field;",
+"Available to work a full-time schedule in our London office for ~9-12 months;"
 ],
 "rolling": false,
 "url": "https://careers.medpace.com/jobs/12863?icims=1",
@@ -13859,9 +14047,9 @@
 "v": 2
 },
 "a33b6583864a": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "1b3e99804667",
+"hash": "8ff1d374f8c7",
 "lang": "",
 "quality": "full",
 "req": [
@@ -13942,7 +14130,7 @@
 "v": 1
 },
 "a4bf1de64f71": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "699ff6c4f226",
 "lang": "",
@@ -14112,7 +14300,7 @@
 "v": 2
 },
 "a5a41582a936": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "9fa9a2b71252",
 "lang": "",
@@ -14164,6 +14352,17 @@
 "quality": "partial",
 "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Edinburgh/Summer-Placement-Electronic-Engineer_R0034554",
 "v": 1
+},
+"a68ee6515824": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "d1aad92d853d",
+"lang": "fr",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/QSL/744000162086264",
+"v": 2
 },
 "a6ab300b8caa": {
 "checked": "2026-11-15",
@@ -14478,9 +14677,9 @@
 "v": 1
 },
 "ab192033e999": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "9d83cfee7d3d",
+"hash": "9ee61248133f",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -14608,7 +14807,7 @@
 "v": 1
 },
 "ad4b659edec8": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "4bb066034e28",
 "lang": "",
@@ -14653,9 +14852,9 @@
 "v": 1
 },
 "ad885c11de07": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "5cb486217ce9",
+"hash": "db43904f0aab",
 "lang": "",
 "quality": "full",
 "req": [
@@ -15473,6 +15672,21 @@
 "url": "https://job-boards.greenhouse.io/later/jobs/8889650002",
 "v": 1
 },
+"b6fd2babf15b": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "9f3bca104cd8",
+"lang": "",
+"quality": "full",
+"req": [
+"Coordinate meetings and follow up on actions, deadlines, and project documentation with internal team members.",
+"Currently enrolled in a post-secondary program in Engineering, Business, Construction Management, Project Management , or another related discipline.",
+"Experience through academic projects, previous internships, co-op placements, or extracurricular activities involving planning, coordination, scheduling, or teamwork is an asset."
+],
+"rolling": false,
+"url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/99809",
+"v": 2
+},
 "b7174cc7f353": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -16158,7 +16372,7 @@
 "v": 2
 },
 "bfa854b2c919": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "3d6126b40697",
 "lang": "",
@@ -16207,9 +16421,9 @@
 "v": 2
 },
 "bfee1fce1b79": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "e947ce044fea",
+"hash": "e70131e7dd35",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -16399,7 +16613,7 @@
 "v": 2
 },
 "c1585ce6d57e": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "904f5d0eb9bf",
 "lang": "",
@@ -16538,6 +16752,20 @@
 "url": "https://vishay.wd3.myworkdayjobs.com/VishayCareers/job/Newport-UK/Industrial-Engineer_JR-20225",
 "v": 1
 },
+"c36e2cbbec19": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "c1da76e59acf",
+"lang": "",
+"quality": "full",
+"req": [
+"AI Engineer Cerebro Co-op",
+"We are seeking a motivated AI Engineer Co-op to join the Cerebro Team , FGF's innovation hub focused on leveraging Artificial Intelligence to solve real business challenges."
+],
+"rolling": false,
+"url": "https://careerscoopinternen-fgfbrands.icims.com/jobs/27239/ai-engineer-cerebro-co-op-%28winter-2027%29/job",
+"v": 2
+},
 "c3fd5f2e7de1": {
 "checked": "2026-11-21",
 "deadline": "",
@@ -16553,7 +16781,7 @@
 "v": 2
 },
 "c4174c9b66d9": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "2aa432c2b330",
 "lang": "",
@@ -16839,6 +17067,22 @@
 ],
 "rolling": false,
 "url": "https://careers.celestica.com/job/Toronto-Student-Intern%2C-Aerospace-&-Defense-ON/1444872533/",
+"v": 2
+},
+"c777696e444d": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "fbe389391171",
+"lang": "",
+"quality": "full",
+"req": [
+"Our Canadian Operations Management Internship/Co-op is your launchpad to success, offering the support, structure, and exciting opportunities you need to thrive and make your mark.",
+"We are seeking enthusiastic interns and co-ops to be placed in teams across Toronto, Waterloo, Montreal, and Halifax, contributing to projects that align with business strategy and transformation goals.",
+"Currently enrolled in a post-secondary program (e.g. Business, Data/Analytics, Communications, Operations, or related field).",
+"As part of our program, you will gain early access to Manulife John Hancock's premier early talent program, GRO, tailored to graduating students!"
+],
+"rolling": false,
+"url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-Intern-2027---Canadian-Operations-Management--8-Months-_JR26100180",
 "v": 2
 },
 "c7c991727d6c": {
@@ -17293,6 +17537,21 @@
 "url": "https://jobs.l3harris.com/job/Waterdown-Manufacturing-Engineer-Co-Op-%28Waterdown%2C-CAN%29-ON-L9H-0C5/1430143700/",
 "v": 2
 },
+"cd65b86c4b66": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "d5217dd80f8b",
+"lang": "",
+"quality": "full",
+"req": [
+"As an Intern (Bachelors) Program Control (PC Analyst) here at Honeywell, Aerospace, you will gain hands-on experience in project planning and control (PP&C) activities.",
+"Completed 3 rd year- Pursuing Bachelor's degree in Business, Economics, Finance, Mathematics or related field",
+"Completed 3 rd year- Pursuing Bachelor's degree in Business, Economics, Finance, Mathematics or related field"
+],
+"rolling": false,
+"url": "https://icfcjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Aerospace/job/129344",
+"v": 2
+},
 "cd6859b75bf8": {
 "checked": "2026-11-14",
 "legacy": {
@@ -17301,6 +17560,19 @@
 "quality": "partial",
 "url": "https://jobs.ashbyhq.com/conveo/00915c85-373b-4094-b17e-1dca197e644f/application?embed=true",
 "v": 1
+},
+"cd73efb3750b": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "c58444713ad2",
+"lang": "",
+"quality": "full",
+"req": [
+"Our teams at Meta AI offer twelve (12) to twenty-four (24) weeks long internships and we have various start dates throughout the year."
+],
+"rolling": false,
+"url": "https://www.metacareers.com/profile/job_details/1811645993254851/",
+"v": 2
 },
 "cd9153b665a5": {
 "checked": "2026-11-15",
@@ -17596,7 +17868,7 @@
 "v": 2
 },
 "cf712db76632": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "0553fee639bb",
 "lang": "",
@@ -18407,7 +18679,7 @@
 "v": 2
 },
 "d6c5c615e9d5": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "e207767f6e06",
 "lang": "",
@@ -18625,9 +18897,9 @@
 "v": 1
 },
 "d8eb7f1d7f00": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "53829dee14f5",
+"hash": "052d4431a5f6",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -19645,9 +19917,9 @@
 "v": 1
 },
 "e42f4b820831": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "ddc8d77c2da0",
+"hash": "ca206e482f74",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -19667,7 +19939,7 @@
 "v": 2
 },
 "e44d4defec50": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "f2a8163ab23e",
 "lang": "",
@@ -19826,7 +20098,7 @@
 "v": 2
 },
 "e570e0e2e8fc": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "57d489b26ff8",
 "lang": "",
@@ -20072,7 +20344,7 @@
 "v": 1
 },
 "e805b3299eaf": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "59bba69bcd37",
 "lang": "",
@@ -20181,7 +20453,7 @@
 "v": 1
 },
 "e8da190bce73": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "2027-01-31",
 "hash": "ebdcd890fb42",
 "lang": "",
@@ -20214,7 +20486,7 @@
 "v": 1
 },
 "e983b8b50965": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "d684621e2811",
 "lang": "",
@@ -20638,6 +20910,17 @@
 "quality": "partial",
 "url": "https://pg.wd5.myworkdayjobs.com/1000/job/READING-TECH-CENTER/Research---Development-Summer-Internship-2027_R000161362",
 "v": 1
+},
+"eed16a617368": {
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "edfb671ee045",
+"lang": "",
+"quality": "partial",
+"req": [],
+"rolling": false,
+"url": "https://jobs.ea.com/en_US/careers/SearchJobs",
+"v": 2
 },
 "eed347da3333": {
 "checked": "2026-11-14",
@@ -21110,15 +21393,21 @@
 "v": 1
 },
 "f4ae6a8f7775": {
-"checked": "2026-11-14",
-"legacy": {
-"final_year_ok": "ress and learnings. Apply if You are a penultimate-year student, or a final-year student planning to go on to a one-year master’s course. You hold a p",
-"must_be_enrolled": "building AI agents and automated workflows. We’re excited if you have Currently enrolled in a degree program in Computer Science, Engineering or a related field. P",
-"penultimate_only": "de reviews, and share your progress and learnings. Apply if You are a penultimate-year student, or a final-year student planning to go on to a one-year mast"
-},
-"quality": "partial",
-"url": "https://www.weareroku.com/jobs/8345967?gh_jid=8345967",
-"v": 1
+"checked": "2026-11-23",
+"deadline": "",
+"hash": "a992f7d187f5",
+"lang": "",
+"quality": "full",
+"req": [
+"We offer a paid 12-week internship, running from June to early September 2027.",
+"You are a penultimate-year student, or a final-year student planning to go on to a one-year master's course.",
+"You hold a permanent right to work in the UK.",
+"You are available for full-time work for the whole 12-week program, from June to early September in Manchester.",
+"Currently enrolled in a degree program in Computer Science, Engineering or a related field."
+],
+"rolling": false,
+"url": "https://www.weareroku.com/jobs/software-engineering-internship-program-summer-2027-manchester-england-united-kingdom?gh_jid=8345967",
+"v": 2
 },
 "f4ed3c9ea201": {
 "checked": "2026-11-15",
@@ -21293,9 +21582,9 @@
 "v": 1
 },
 "f77486aa5bf1": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
-"hash": "7a604dbef94b",
+"hash": "07fb0468567a",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -21948,7 +22237,7 @@
 "v": 1
 },
 "fde668118e43": {
-"checked": "2026-11-15",
+"checked": "2026-11-23",
 "deadline": "",
 "hash": "faeeb97eebf5",
 "lang": "",
@@ -22099,7 +22388,7 @@
 "tried": {
 "00363a421014": "2026-11-14",
 "0075f54b7771": "2026-11-22",
-"009216d08d46": "2026-11-16",
+"009216d08d46": "2026-11-23",
 "00ae15300916": "2026-11-14",
 "00d10f773b93": "2026-11-14",
 "016298a3741c": "2026-11-15",
@@ -22156,6 +22445,7 @@
 "0951bec111a3": "2026-11-21",
 "098d2db4f133": "2026-11-14",
 "09a5638bde7c": "2026-11-15",
+"09ab367c153c": "2026-11-23",
 "09c3e64f39ec": "2026-11-15",
 "09de2386e8a9": "2026-11-14",
 "0a24ae3579f1": "2026-11-15",
@@ -22294,6 +22584,7 @@
 "23757bb3fe8d": "2026-11-14",
 "23f6b9746faf": "2026-11-17",
 "242886a24527": "2026-11-15",
+"24843707c1af": "2026-11-23",
 "248f984d76ad": "2026-11-15",
 "2492875d9851": "2026-11-22",
 "24ac1bf6af3d": "2026-11-15",
@@ -22416,6 +22707,7 @@
 "3903243e5dca": "2026-11-15",
 "3933afcae145": "2026-11-14",
 "393f1105016a": "2026-11-15",
+"3942c9b23d50": "2026-11-23",
 "396ece37a445": "2026-11-14",
 "39a221f5d2c3": "2026-11-22",
 "39b002d53f90": "2026-11-14",
@@ -22521,6 +22813,7 @@
 "496997c856eb": "2026-11-15",
 "4a081281775f": "2026-11-22",
 "4a15a3605e4d": "2026-11-21",
+"4a1a68316a94": "2026-11-23",
 "4a80d115cd3a": "2026-11-15",
 "4a8bf9bc128e": "2026-11-15",
 "4a97d26bd840": "2026-11-18",
@@ -22583,6 +22876,7 @@
 "5450b42db2e4": "2026-11-15",
 "5457c105603d": "2026-11-15",
 "5460ef416341": "2026-11-15",
+"546f50fc4749": "2026-11-23",
 "54712f3c4b02": "2026-11-15",
 "54878932c5f4": "2026-11-14",
 "5492d9c27864": "2026-11-21",
@@ -22611,6 +22905,7 @@
 "577cd756cfb7": "2026-11-14",
 "57d79dd903c0": "2026-11-15",
 "58023f65242f": "2026-11-15",
+"582d1ac5c5ce": "2026-11-23",
 "583f4ce296f3": "2026-11-15",
 "58bcb250cc82": "2026-11-22",
 "58e37e77819b": "2026-11-15",
@@ -22729,6 +23024,7 @@
 "6add69f892a1": "2026-11-14",
 "6b06cfb29af9": "2026-11-15",
 "6b5411656251": "2026-11-15",
+"6b66e24b2afb": "2026-11-23",
 "6b938f790463": "2026-11-15",
 "6c05d93d87b7": "2026-11-14",
 "6c2d4766400e": "2026-11-21",
@@ -22799,6 +23095,7 @@
 "77a04e96e0a7": "2026-11-14",
 "77d0168052da": "2026-11-17",
 "77eee7767f6e": "2026-11-15",
+"785597671a0e": "2026-11-23",
 "78ee945e8926": "2026-11-15",
 "79395ee5a374": "2026-11-15",
 "796b1c6e0c1b": "2026-11-14",
@@ -22922,6 +23219,7 @@
 "8e816d59f9bd": "2026-11-15",
 "8e9a9e2b0f7d": "2026-11-22",
 "8eb4b9e00102": "2026-11-14",
+"8ed6a5a4772a": "2026-11-23",
 "8f268554353b": "2026-11-15",
 "8f3afb382baf": "2026-11-14",
 "8f8c1e2afe97": "2026-11-14",
@@ -22988,6 +23286,7 @@
 "994be88d808f": "2026-11-15",
 "9950453f4bbf": "2026-11-14",
 "998256c9ffef": "2026-11-15",
+"99ad3fa7264d": "2026-11-23",
 "9a184055bb7b": "2026-11-15",
 "9a55b9967fd5": "2026-11-22",
 "9a5dd59704da": "2026-11-18",
@@ -23011,6 +23310,7 @@
 "9d7efde1134b": "2026-11-14",
 "9de586fe73cb": "2026-11-15",
 "9df2390d40a1": "2026-11-14",
+"9dfa03e39f6d": "2026-11-23",
 "9e2d277260f1": "2026-11-14",
 "9e2d84cf457b": "2026-11-21",
 "9e7c3d57c58f": "2026-11-15",
@@ -23056,6 +23356,7 @@
 "a6c9718419b2": "2026-11-15",
 "a6d28efbfef8": "2026-11-22",
 "a6eae30b2359": "2026-11-15",
+"a711ba4807b4": "2026-11-23",
 "a7370c7776bd": "2026-11-14",
 "a76af20ff025": "2026-11-15",
 "a78e0fff5160": "2026-11-15",
@@ -23104,6 +23405,7 @@
 "b0c4eb4996ca": "2026-11-15",
 "b0fa086179d5": "2026-11-22",
 "b11768063978": "2026-11-15",
+"b1293fbc6b3a": "2026-11-23",
 "b13003d5c341": "2026-11-14",
 "b14708dd4029": "2026-11-15",
 "b1591d985bcd": "2026-11-15",
@@ -23148,6 +23450,7 @@
 "b6581ba856da": "2026-11-22",
 "b660a295e3bd": "2026-11-15",
 "b6615ca25529": "2026-11-15",
+"b693cd3a4fd4": "2026-11-23",
 "b6a38e890d31": "2026-11-15",
 "b6a58be78b64": "2026-11-14",
 "b6d8a4a166dc": "2026-11-15",
@@ -23206,6 +23509,7 @@
 "bf64415f1cd3": "2026-11-19",
 "bf9a88786a45": "2026-11-14",
 "bfa2e87c31f8": "2026-11-15",
+"bfe023345c51": "2026-11-23",
 "c008969fee87": "2026-11-15",
 "c034845a5888": "2026-11-14",
 "c06dedf1b78d": "2026-11-15",
@@ -23331,10 +23635,12 @@
 "d7a4f0cc30e7": "2026-11-14",
 "d7b56f399b7c": "2026-11-15",
 "d7ffbb15ca5d": "2026-11-14",
+"d8027bf988dc": "2026-11-23",
 "d80d61a41109": "2026-11-14",
 "d8bbbcb15d4d": "2026-11-14",
 "d932f8ec3eeb": "2026-11-15",
 "d951bce60baf": "2026-11-15",
+"d9a76956dfbd": "2026-11-23",
 "d9a9fbed17d0": "2026-11-17",
 "d9b286125075": "2026-11-14",
 "d9b6286a698f": "2026-11-15",
@@ -23401,6 +23707,7 @@
 "e6df943be60e": "2026-11-14",
 "e711ba77c88e": "2026-11-14",
 "e7615d1ff6fe": "2026-11-14",
+"e7941d34a9ab": "2026-11-23",
 "e7a2802f504b": "2026-11-14",
 "e7d717028552": "2026-11-14",
 "e816fbf3aa39": "2026-11-21",
@@ -23408,7 +23715,7 @@
 "e82e205f631c": "2026-11-15",
 "e85b04528137": "2026-11-15",
 "e896021e459e": "2026-11-14",
-"e8b9453d65a7": "2026-11-16",
+"e8b9453d65a7": "2026-11-23",
 "e8d35d0b643b": "2026-11-14",
 "e8d9f02d6800": "2026-11-22",
 "e932215699e1": "2026-11-15",
@@ -23490,6 +23797,7 @@
 "f50d296893b0": "2026-11-14",
 "f518947ac112": "2026-11-18",
 "f51e17ec210e": "2026-11-15",
+"f582d5a1d6f8": "2026-11-23",
 "f5acf66540f9": "2026-11-22",
 "f6309db69011": "2026-11-14",
 "f6380159a822": "2026-11-14",

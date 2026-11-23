@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "date": "2026-11-23",
+   "addresses_tried": 6,
+   "boards_found": [
+    {
+     "company": "Method",
+     "board": "greenhouse:method",
+     "early_career_roles": 4,
+     "uk_or_canada": 4
+    }
+   ]
+  },
+  {
    "date": "2026-11-22",
    "addresses_tried": 8,
    "boards_found": []

@@ -333888,6 +333888,138 @@
 "hash": "",
 "lang": "",
 "stale": "2026-11-14"
+},
+{
+"company": "Method",
+"title": "Residency Internship Program - Data Design",
+"locations": [
+"London"
+],
+"url": "https://job-boards.greenhouse.io/method/jobs/8207621003",
+"posted": "2026-11-20",
+"pay": null,
+"ats": "greenhouse",
+"board": "method",
+"hints": [
+"London, England, United Kingdom"
+],
+"countries": [
+"UK"
+],
+"type": "Internship",
+"seen": "2026-11-23",
+"quality": "full",
+"deadline": "",
+"rolling": false,
+"req": [
+"Currently pursuing or recently completed a degree in Data Science, Computer Science, Statistics, Mathematics, or a related quantitative field."
+],
+"hash": "ec20cf44d164",
+"lang": ""
+},
+{
+"company": "Method",
+"title": "Residency Internship Program - Engineering",
+"locations": [
+"Charlotte, New York, Santa Clara, Remote - US, Canada"
+],
+"url": "https://job-boards.greenhouse.io/method/jobs/8208724003",
+"posted": "2026-11-20",
+"pay": {
+"min": 20.0,
+"max": 20.0,
+"cur": "USD",
+"period": "hour"
+},
+"ats": "greenhouse",
+"board": "method",
+"hints": [
+"Atlanta, Georgia, United States",
+"Charlotte, North Carolina, United States",
+"Denver, Colorado, United States",
+"New York, New York, United States",
+"Remote - US, Canada"
+],
+"countries": [
+"US",
+"CA"
+],
+"type": "Internship",
+"seen": "2026-11-23",
+"quality": "full",
+"deadline": "",
+"rolling": false,
+"req": [
+"Currently pursuing or recently completed a degree in Computer Science or a related engineering field, or graduated from a technical bootcamp."
+],
+"hash": "eb09b7d048ed",
+"lang": ""
+},
+{
+"company": "Method",
+"title": "Residency Internship Program - Product Management",
+"locations": [
+"London"
+],
+"url": "https://job-boards.greenhouse.io/method/jobs/8207611003",
+"posted": "2026-11-20",
+"pay": null,
+"ats": "greenhouse",
+"board": "method",
+"hints": [
+"London, England, United Kingdom"
+],
+"countries": [
+"UK"
+],
+"type": "Internship",
+"seen": "2026-11-23",
+"quality": "full",
+"deadline": "",
+"rolling": false,
+"req": [
+"You are currently pursuing or have recently completed a degree in business, economics, computer science, information systems, data science, human-computer interaction, design, cognitive science or psychology, or a related field."
+],
+"hash": "a157fb54a616",
+"lang": ""
+},
+{
+"company": "Method",
+"title": "Residency Internship Program - Product Management",
+"locations": [
+"Charlotte, New York, Santa Clara, Remote - US, Canada"
+],
+"url": "https://job-boards.greenhouse.io/method/jobs/8207585003",
+"posted": "2026-11-20",
+"pay": {
+"min": 20.0,
+"max": 20.0,
+"cur": "USD",
+"period": "hour"
+},
+"ats": "greenhouse",
+"board": "method",
+"hints": [
+"Atlanta, Georgia, United States",
+"Charlotte, North Carolina, United States",
+"Denver, Colorado, United States",
+"New York, New York, United States",
+"Remote - US, Canada"
+],
+"countries": [
+"US",
+"CA"
+],
+"type": "Internship",
+"seen": "2026-11-23",
+"quality": "full",
+"deadline": "",
+"rolling": false,
+"req": [
+"You are currently pursuing or have recently completed a degree in business, economics, computer science, information systems, data science, human-computer interaction, design, cognitive science or psychology, or a related field."
+],
+"hash": "ad0b33a5c540",
+"lang": ""
 }
 ],
 "errors": {
