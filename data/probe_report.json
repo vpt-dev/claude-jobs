@@ -1,6 +1,11 @@
 {
  "runs": [
   {
+   "date": "2026-11-24",
+   "addresses_tried": 10,
+   "boards_found": []
+  },
+  {
    "date": "2026-11-23",
    "addresses_tried": 6,
    "boards_found": [
