@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "date": "2026-11-26",
+   "addresses_tried": 25,
+   "boards_found": [
+    {
+     "company": "Prophet",
+     "board": "greenhouse:prophet",
+     "early_career_roles": 0,
+     "uk_or_canada": 0
+    }
+   ]
+  },
+  {
    "date": "2026-11-25",
    "addresses_tried": 5,
    "boards_found": [
