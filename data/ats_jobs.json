@@ -322695,6 +322695,37 @@
 "hash": "fd065f57c91f",
 "lang": "",
 "stale": "2026-11-17"
+},
+{
+"company": "Workstream",
+"title": "Wearable Devices Engineer Intern",
+"locations": [
+"San Francisco, CA"
+],
+"url": "https://job-boards.greenhouse.io/workstream/jobs/6268345004",
+"posted": "2026-11-23",
+"pay": {
+"min": 35.0,
+"max": 50.0,
+"cur": "USD",
+"period": "hour"
+},
+"ats": "greenhouse",
+"board": "workstream",
+"hints": [
+"San Francisco, California, United States"
+],
+"countries": [
+"US"
+],
+"type": "Internship",
+"seen": "2026-11-27",
+"quality": "full",
+"deadline": "",
+"rolling": false,
+"req": [],
+"hash": "2036b6293a56",
+"lang": ""
 }
 ],
 "errors": {

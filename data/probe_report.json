@@ -1,6 +1,18 @@
 {
  "runs": [
   {
+   "date": "2026-11-27",
+   "addresses_tried": 19,
+   "boards_found": [
+    {
+     "company": "Workstream",
+     "board": "greenhouse:workstream",
+     "early_career_roles": 1,
+     "uk_or_canada": 0
+    }
+   ]
+  },
+  {
    "date": "2026-11-26",
    "addresses_tried": 25,
    "boards_found": [

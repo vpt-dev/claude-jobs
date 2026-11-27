@@ -1,5 +1,5 @@
 {
-"checked": "2026-11-26",
+"checked": "2026-11-27",
 "read": {
 "002e1bda7b3f": {
 "checked": "2026-11-14",
@@ -438,7 +438,7 @@
 "v": 2
 },
 "04e697a7e778": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "8beed6ec50ba",
 "lang": "",
@@ -462,6 +462,24 @@
 "quality": "partial",
 "url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/CAN-Kanata-2-ON---WR/Engineering-Intern_J000704381",
 "v": 1
+},
+"05341aae6f0a": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "078f75d43145",
+"lang": "",
+"quality": "full",
+"req": [
+"Application Deadline:",
+"Internship Start Date: The internship program begins on May 3rd 2027, and concludes on August 13th 2027.",
+"Due to the structured nature of the program, onboarding activities, and cohort experience, candidates are expected to be available for the full internship term.",
+"Availability for the entire program duration is required to successfully participate in the internship.",
+"Canada only: Registration to sell investment products completed or in progress (must be completed within 12 months) - as appropriate for the jurisdiction.",
+"For commission roles, the salary listed above represents BMO Financial Group's expected target for the first year in this position."
+],
+"rolling": false,
+"url": "https://bmo.wd3.myworkdayjobs.com/en-US/Privileged/job/Toronto-ON-CAN/Personal-Banking-Associate--Summer-2027--Co-op-Internship----4-months_R260031144",
+"v": 2
 },
 "053893af28ff": {
 "checked": "2026-11-14",
@@ -537,6 +555,22 @@
 ],
 "rolling": true,
 "url": "https://www.google.com/about/careers/applications/jobs/results/103464941339452102",
+"v": 2
+},
+"0696feb79b55": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "c13f548f5e50",
+"lang": "",
+"quality": "partial",
+"req": [
+"Summer 2027: Electronics Engineering Internship (16-Month Co-op)",
+"Currently pursuing a Bachelor's degree in Electrical Engineering, Electronics Engineering, Computer Engineering, Engineering Physics, or a related technical discipline",
+"Program Length: 16-month internship program (May 2027 - August 2028)",
+"Start Date: May 2027"
+],
+"rolling": false,
+"url": "https://synopsys.avature.net/careers/JobDetail/19725",
 "v": 2
 },
 "06b7275ea2cb": {
@@ -869,6 +903,21 @@
 "url": "https://giro.wd10.myworkdayjobs.com/giro/job/Montreal-Rosemont/Hiver-2027---Stagiaire-en-dveloppement-web--Front-end_R-100000317",
 "v": 2
 },
+"0a8308b91926": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "427e57615fb2",
+"lang": "",
+"quality": "full",
+"req": [
+"Are a current university student graduating in 2028, and available for an 11-week internship starting in June or July of 2027.",
+"Are pursuing a Bachelor's or Master's degree in Computer Science or a STEM/technical field.",
+"Possess a positive attitude, friendly to others, encouraging of co-operation, honesty, and respectfulness in the workplace."
+],
+"rolling": false,
+"url": "https://visa.wd5.myworkdayjobs.com/en-US/visa_talent_portal/job/GB---London-United-Kingdom/Software-Engineer-Intern_REF090469W-3",
+"v": 2
+},
 "0ad115698ebb": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -925,7 +974,7 @@
 "v": 2
 },
 "0af3cdc1733d": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "6e03050c72cf",
 "lang": "",
@@ -1381,6 +1430,26 @@
 "url": "https://kiewitcareers.kiewit.com/job/Burnaby-Geotechnical-Engineering-Intern-Kiewit-Infrastructure-Engineers-Summer-2027-Burnaby%2C-BC-Brit/1432644700/",
 "v": 2
 },
+"111cc4b1e6ec": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "68877bd0f88f",
+"lang": "",
+"quality": "full",
+"req": [
+"Are you an Engineering student or recent graduate passionate about Artificial Intelligence and looking to kickstart your career in a global banking environment?",
+"Project Coordination & Governance: Assist in the planning, organization, and execution of complex multi-stakeholder projects across technical functions, ensuring project deadlines and governance standards are maintained.",
+"Education: Current student or recent graduate (Bachelor's or Master's) in Engineering .",
+"High attention to detail, proactive mindset, and ability to manage multiple priorities under tight deadlines, combined with strong stakeholder coordination skills.",
+"Availability & Duration: Please note that this is NOT a summer internship .",
+"It is a full-time, off-cycle internship starting in January 2027 , with a minimum commitment of 6 months .",
+"Please only apply if you are available to start in January for at least 6 months.",
+"Right to Work: Applicants must possess a valid Right to Work (RTW) in the UK."
+],
+"rolling": false,
+"url": "https://bbva.wd3.myworkdayjobs.com/en-US/bbva/job/BBVA-One-Canada-Square-44th-Floor-Canary-Wharf--London-E14-5AA-UK/Business-Administration-Intern---Engineering_JR00116970",
+"v": 2
+},
 "113a98bc1e6f": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -1618,6 +1687,19 @@
 ],
 "rolling": false,
 "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40113",
+"v": 2
+},
+"132c4b8d1b44": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "ccd2a3f2e92b",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a Degree in Information Technology, Computer Science, Data Science, Information Systems, Statistics, Engineering, Accounting, Finance, or a related discipline."
+],
+"rolling": false,
+"url": "https://uobgroup.wd3.myworkdayjobs.com/en-US/uobexternal/job/Central-Region-City-Area/GenAI-and-Data-Analytics-Intern--Jan---Dec-2027-_JR102292",
 "v": 2
 },
 "136af8b5c187": {
@@ -1979,6 +2061,21 @@
 ],
 "rolling": false,
 "url": "https://thomsonreuters.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/United-Kingdom-London/Research-Intern---Agentic-AI---NLP---ML_JREQ205375",
+"v": 2
+},
+"16d08d76424d": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "3c995f320961",
+"lang": "",
+"quality": "full",
+"req": [
+"Application Deadline:",
+"Ability to multitask within tight deadlines.",
+"For commission roles, the salary listed above represents BMO Financial Group's expected target for the first year in this position."
+],
+"rolling": false,
+"url": "https://bmo.wd3.myworkdayjobs.com/en-US/Privileged/job/Toronto-ON-CAN/Private-Client-Intern_R260032565",
 "v": 2
 },
 "178748ac17f7": {
@@ -2817,8 +2914,23 @@
 "url": "https://jobs.realventures.com/companies/real-ventures/jobs/99778023-apprentice-automotive-service-technician-level-2-3#content",
 "v": 2
 },
+"1f05a61410db": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "3122f7ce794e",
+"lang": "",
+"quality": "full",
+"req": [
+"Onsite : This role requires the student to work full time onsite throughout the duration of the co-op/intern term",
+"Duration : July 1 st 2027 – Sept 10 th 2027",
+"You are currently pursuing a Bachelors or Masters in Electrical/Electronic Engineering, Computer Engineering or a related field"
+],
+"rolling": false,
+"url": "https://careers.amd.com/careers-home/jobs/102333?icims=1&lang=en-us",
+"v": 2
+},
 "1f23eed0e240": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "9b56ebc852b5",
 "lang": "",
@@ -4051,7 +4163,7 @@
 "v": 1
 },
 "2b398346e455": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "12abe43fa11c",
 "lang": "",
@@ -4641,6 +4753,21 @@
 "url": "https://pimco.wd1.myworkdayjobs.com/pimco-careers/job/London-GBR/XMLNAME-2027-Summer-Intern---Credit-Research-Analyst--EMEA_R106805",
 "v": 1
 },
+"3313b8d46b27": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "f8dff2d06428",
+"lang": "",
+"quality": "full",
+"req": [
+"Term: 4 months (January to April 2027)",
+"This opportunity is available to students with a graduation date of April 2027 or later",
+"Currently enrolled in a post-secondary co-op program, preferably in Business , Commerce , Operations , Strategy , Finance , Data Analytics , or a related field."
+],
+"rolling": false,
+"url": "https://sunlife.wd3.myworkdayjobs.com/en-US/Campus/job/Sun-Life-Toronto-One-York/Student--Strategy---Transformation--Winter-2027-_JR00130091",
+"v": 2
+},
 "337cb8e8e295": {
 "checked": "2026-11-14",
 "legacy": {
@@ -4851,9 +4978,9 @@
 "v": 2
 },
 "34e6cfeef22a": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "86fd2d00a335",
+"hash": "7dc2e95388d6",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -4898,7 +5025,7 @@
 "v": 1
 },
 "359f1c2d2d2c": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "2a89caac9322",
 "lang": "",
@@ -5096,7 +5223,7 @@
 "v": 1
 },
 "3785be190a1c": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "56522781e47d",
 "lang": "",
@@ -5132,6 +5259,20 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8777855002",
 "v": 1
+},
+"37be807982f7": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "9593233fdaac",
+"lang": "",
+"quality": "full",
+"req": [
+"As an Associate on Lilly Canada's CI&A team, you'll spend 12 months rotating across all three of our teams, turning data into proactive insights that help get medicines to the patients who need them.",
+"Currently enrolled in an undergraduate or graduate program in business, data science, analytics, economics, statistics, health sciences or a related field."
+],
+"rolling": false,
+"url": "https://lilly.wd115.myworkdayjobs.com/en-US/cmp/job/CA-Toronto-ON/Customer-Insights---Analytics-Intern_R-116221",
+"v": 2
 },
 "381c5d486b09": {
 "checked": "2026-11-25",
@@ -5283,7 +5424,7 @@
 "v": 2
 },
 "3a38c24896da": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "ee0d0a3b4c75",
 "lang": "",
@@ -5314,6 +5455,21 @@
 ],
 "rolling": false,
 "url": "https://jobs.l3harris.com/job/Niagara-on-the-Lake-Full-Stack-Developer-Co-op-1-ON/1430141300/?ats=successfactors",
+"v": 2
+},
+"3a64e6614e01": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "c378e9dcfca6",
+"lang": "",
+"quality": "full",
+"req": [
+"This position is exclusively open to students pursuing a university degree.",
+"Preferred Education: Pursuing an undergraduate/master's degree in business management, information technology or related field with at least 1 year completed",
+"Please take note that if you are on a student, work or international student permit, the delays for the security background check take minimum 16 weeks."
+],
+"rolling": false,
+"url": "https://cae.wd3.myworkdayjobs.com/career/job/Montreal-St-Laurent/C-GSS-156--Supplier-Data-Agent-Intern_124527-1",
 "v": 2
 },
 "3a91d96f59e4": {
@@ -5382,6 +5538,23 @@
 "quality": "partial",
 "url": "https://stripe.com/jobs/search?gh_jid=8194283",
 "v": 1
+},
+"3b0c2083fe34": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "5d820fa87412",
+"lang": "",
+"quality": "full",
+"req": [
+"Application Deadline:",
+"Internship Start Date: The internship program begins on May 3rd 2027, and concludes on August 13th 2027.",
+"Due to the structured nature of the program, onboarding activities, and cohort experience, candidates are expected to be available for the full internship term.",
+"Availability for the entire program duration is required to successfully participate in the internship.",
+"For commission roles, the salary listed above represents BMO Financial Group's expected target for the first year in this position."
+],
+"rolling": false,
+"url": "https://bmo.wd3.myworkdayjobs.com/en-US/Privileged/job/Toronto-ON-CAN/Business-Analyst--Summer-2027--Co-op-Internship----4-Months_R260031168-3",
+"v": 2
 },
 "3b316b6f30bf": {
 "checked": "2026-11-15",
@@ -5720,6 +5893,20 @@
 "url": "https://mlse.wd3.myworkdayjobs.com/en-US/MLSE/job/Toronto-Ontario/Digital-Operation-Intern_JR0000831-2",
 "v": 2
 },
+"3ee364ce76aa": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "283e78b8c5cc",
+"lang": "",
+"quality": "full",
+"req": [
+"As a Global Product Centre of Excellence Co-op/Intern, reporting to the Director, Global Technical Support, candidate will contribute to the development and maintenance of customer scripts and GCC automation tools.",
+"Enrolled in a Bachelors or Masters in Electrical Engineering, Computer Engineering, or Optical Communications and Photonics"
+],
+"rolling": false,
+"url": "https://ciena.wd5.myworkdayjobs.com/Careers/job/Ottawa/Automation-engineer---Global-Technical-Support-Intern_R032186",
+"v": 2
+},
 "3effd0a65154": {
 "checked": "2026-11-14",
 "legacy": {
@@ -5880,7 +6067,7 @@
 "v": 2
 },
 "40b988f73099": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "d27fe7d1364c",
 "lang": "",
@@ -5901,6 +6088,23 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/bitgowinter2027/jobs/8779857002",
 "v": 1
+},
+"40fb339c5d0a": {
+"checked": "2026-11-27",
+"deadline": "2027-02-08",
+"hash": "cadab8dc535f",
+"lang": "",
+"quality": "partial",
+"req": [
+"Internship – Software Engineer (Placement Year 2027) – PQShield Careers",
+"Internship - Software Engineer (Placement Year 2027)",
+"This is a year long internship beginning in July 2027",
+"Applications will close on 8th February 2027 with interviews taking place week commencing 15th February.",
+"Right to work in the UK"
+],
+"rolling": false,
+"url": "https://pqshield.com/careers/apply/5049820101/?gh_jid=5049820101",
+"v": 2
 },
 "411f9643f258": {
 "checked": "2026-11-15",
@@ -6113,7 +6317,7 @@
 "v": 2
 },
 "43070cb48fe8": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "0f0fdcde831c",
 "lang": "",
@@ -6281,7 +6485,7 @@
 "v": 2
 },
 "44f78b4c2ee3": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "412d83ca3df3",
 "lang": "",
@@ -6435,7 +6639,7 @@
 "v": 2
 },
 "46b1c6e8cb11": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "7f69dd1f631f",
 "lang": "",
@@ -6856,6 +7060,20 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/graphcore/jobs/8894868002",
 "v": 1
+},
+"4a4d68886940": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "52bd468ca546",
+"lang": "",
+"quality": "full",
+"req": [
+"Enrolled in a Computer Science, Data Analytics, Supply Chain, General Engineering, or a General Business program in a recognized university, completing 3rd of a 4-year program of study",
+"Ability to handle multiple tasks while maintaining attention to detail and accuracy and working under tight time deadlines"
+],
+"rolling": false,
+"url": "https://jobright.ai/jobs/info/6afac7e21460f8021289d048?utm_campaign=1066&utm_source=git",
+"v": 2
 },
 "4a80dd505779": {
 "checked": "2026-11-14",
@@ -7887,6 +8105,21 @@
 "url": "https://app.careerpuck.com/job-board/lyft/job/8802332002?gh_jid=8802332002",
 "v": 1
 },
+"54d8c52987c0": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "920f395e87af",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently enrolled in a Bachelor of Science or Engineering degree in Electrical Engineering, Computer Engineering, Mechatronics Engineering, Software Engineering, Environmental Engineering, Chemical Engineering, or other related technical discipline.",
+"Ability to work a full-time co-op starting May 2027 for 12-16 months",
+"Candidates must be immediately eligible to work legally in Canada; the employer will not sponsor candidates for a work permit or any other Canadian work authorization for this opportunity."
+],
+"rolling": false,
+"url": "https://jobs.smartrecruiters.com/VeoliaEnvironnementSA/744000163741165",
+"v": 2
+},
 "5540f0663da4": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -8520,7 +8753,7 @@
 "v": 2
 },
 "5e3f7bfe44bc": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "8bffc000efbf",
 "lang": "",
@@ -8842,6 +9075,20 @@
 "url": "https://amgen.wd1.myworkdayjobs.com/careers/job/Canada---Burnaby/Undergraduate---Graduate-Co-op-Student---Software-Engineer---Large-Molecule-Discovery---Technology_R-260920",
 "v": 2
 },
+"62d99aadd17f": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "527d389457c3",
+"lang": "",
+"quality": "full",
+"req": [
+"Current enrollment in an undergraduate or graduate degree program (Finance, Economics, Data Analytics, Computer Science, Mathematics, or a related field), returning to school in the fall.",
+"4 month Co-op Internship: January 11, 2027 to April 30, 2027"
+],
+"rolling": false,
+"url": "https://tmx.wd3.myworkdayjobs.com/en-US/TMX_Careers/job/Toronto---100-Adelaide-St-W/Canadian-Capital-Markets---Data-Analyst-Intern_R-6758",
+"v": 2
+},
 "6322f3ae2e88": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -8943,7 +9190,7 @@
 "v": 2
 },
 "6479622b0d4a": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "3de90a6aee0e",
 "lang": "",
@@ -9564,7 +9811,7 @@
 "v": 1
 },
 "6a8a58cee057": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "3ad3d796ad8c",
 "lang": "",
@@ -9822,9 +10069,9 @@
 "v": 1
 },
 "6d02ebec3a5a": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "7bf26c595ef9",
+"hash": "1f2736162803",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -10034,7 +10281,7 @@
 "v": 2
 },
 "6f089d79f3e0": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "1560f3e75960",
 "lang": "",
@@ -10321,6 +10568,27 @@
 "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Crawley/XMLNAME-2027-Data-Science-Apprentice_R0337752",
 "v": 1
 },
+"71b5eec53976": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "e1de436f41f0",
+"lang": "",
+"quality": "full",
+"req": [
+"You must be currently enrolled in an MBA or Master's program, with a graduation date no sooner than December 2027.",
+"Please indicate your expected graduation date on your resume.",
+"Students with a technical undergraduate or graduate degree (e.g. Mathematics, Engineering, Computer Science, etc.), along with a strong understanding of financial reporting preferred.",
+"Duration of work term: 4 months (May 2027 - August 2027)",
+"Applications are being reviewed on a rolling basis; we encourage you to apply as soon as possible.",
+"You are highly motivated, accomplished, and a success-oriented individual who has a keen interest in pursuing a career in the financial services industry demonstrated through school courses, clubs, and/or related work experience.",
+"It's an asset if you possess an undergraduate degree in computer science, data analytics, or financial engineering.",
+"You need to be legally eligible to work at the location(s) specified above and, where applicable, must have a valid work or study permit.",
+"We may ask you to complete an attribute-based assessment and other skills test (such as simulation, coding, French proficiency)."
+],
+"rolling": true,
+"url": "https://cibc.wd3.myworkdayjobs.com/en-US/campus/job/Toronto-ON/Global-Markets-Equity-Research--Summer-2027-Associate--4-months-_2618798",
+"v": 2
+},
 "71e5eff107ac": {
 "checked": "2026-11-14",
 "legacy": {
@@ -10339,7 +10607,7 @@
 "v": 1
 },
 "722e47cd62a8": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "a3d9b73bcdc6",
 "lang": "",
@@ -11413,31 +11681,31 @@
 "v": 2
 },
 "7f89d39ee762": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "bc8fff1733fa",
+"hash": "3ecf5cd4932d",
 "lang": "",
 "quality": "partial",
 "req": [
 "Research Intern, PhD, Summer 2027 — Google Careers",
+"Software Developer Intern, PhD, Summer 2027",
 "Research Intern, PhD, Summer 2027",
-"share Share Research Intern, PhD, Summer 2027",
-"share Share Research Intern, PhD, Summer 2027",
+"Research Intern, PhD, Summer 2027",
+"Student Researcher, PhD, Winter-Summer 2027",
+"Student Researcher, PhD, Winter-Summer 2027",
 "X Applications will be reviewed on a rolling basis and it's in the candidate's best interest to apply early.",
-"Participation in the internship program requires that you are located in Canada for the duration of the internship program.",
 "This internship is intended for students in their penultimate academic year, who are pursuing a PhD degree program in Computer Science or a related field.",
 "Please ensure your anticipated graduation date (in MM/YY) is listed on the resume.",
 "Currently enrolled in a PhD degree in Computer Science, Linguistics, Statistics, Biostatistics, Applied Mathematics, Operations Research, Economics, Natural Sciences, or related technical field.",
 "Currently attending a degree program in Canada and available to work full time for 12 weeks outside of university term time.",
-"Penultimate academic year or returning to a degree program after completion of the internship.",
-"Join us for a full-time, 12-14 week paid internship that offers personal and professional development, an executive speaker series, and community-building."
+"Penultimate academic year or returning to a degree program after completion of the internship."
 ],
 "rolling": true,
-"url": "https://www.google.com/about/careers/applications/jobs/results/104496653687235270-research-intern-phd-summer-2027",
+"url": "https://www.google.com/about/careers/applications/jobs/results/104496653687235270-research-intern-phd-summer-2027?q=intern&location=Canada",
 "v": 2
 },
 "7f92587902a6": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "edb595acc236",
 "lang": "",
@@ -11581,27 +11849,27 @@
 "v": 1
 },
 "80d5cae35cda": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "79172e987382",
+"hash": "d06339f6f89b",
 "lang": "",
 "quality": "partial",
 "req": [
 "Research Intern, PhD, Summer 2027 — Google Careers",
+"Software Developer Intern, PhD, Summer 2027",
 "Research Intern, PhD, Summer 2027",
-"share Share Research Intern, PhD, Summer 2027",
-"share Share Research Intern, PhD, Summer 2027",
+"Research Intern, PhD, Summer 2027",
+"Student Researcher, PhD, Winter-Summer 2027",
+"Student Researcher, PhD, Winter-Summer 2027",
 "X Applications will be reviewed on a rolling basis and it's in the candidate's best interest to apply early.",
-"Participation in the internship program requires that you are located in Canada for the duration of the internship program.",
 "This internship is intended for students in their penultimate academic year, who are pursuing a PhD degree program in Computer Science or a related field.",
 "Please ensure your anticipated graduation date (in MM/YY) is listed on the resume.",
 "Currently enrolled in a PhD degree in Computer Science, Linguistics, Statistics, Biostatistics, Applied Mathematics, Operations Research, Economics, Natural Sciences, or related technical field.",
 "Currently attending a degree program in Canada and available to work full time for 12 weeks outside of university term time.",
-"Penultimate academic year or returning to a degree program after completion of the internship.",
-"Join us for a full-time, 12-14 week paid internship that offers personal and professional development, an executive speaker series, and community-building."
+"Penultimate academic year or returning to a degree program after completion of the internship."
 ],
 "rolling": true,
-"url": "https://www.google.com/about/careers/applications/jobs/results/131287072689267398-research-intern-phd-summer-2027",
+"url": "https://www.google.com/about/careers/applications/jobs/results/131287072689267398-research-intern-phd-summer-2027?q=intern&location=Canada",
 "v": 2
 },
 "813339497b6f": {
@@ -11635,24 +11903,25 @@
 "v": 1
 },
 "81559ee1c67b": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "c1d2106bd64a",
+"hash": "c11924215d1a",
 "lang": "",
 "quality": "full",
 "req": [
 "Duration: 6 months",
 "Strong-performing interns may be considered for full-time opportunities upon graduation.",
-"Currently pursuing an undergraduate degree or a master's degree in a quantitative discipline, such as computer science, mathematics, statistics, physics, economics, engineering, or another data-focused field ."
+"Currently pursuing an undergraduate degree or a master's degree in a quantitative discipline, such as computer science, mathematics, statistics, physics, economics, engineering, or another data-focused field .",
+"The internship commitment is for at least 30 hours a week, in-person, based at Davidson Kempner's London office, starting in Q1 2027."
 ],
 "rolling": false,
 "url": "https://job-boards.greenhouse.io/5364856uhdfnvbkldfnbhrpkdfgbdvtyhro/jobs/8926928002",
 "v": 2
 },
 "81622cdce19b": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "2026-12-31",
-"hash": "579c145e43b7",
+"hash": "7ecdabe87752",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -11668,7 +11937,7 @@
 "Note that the duration of each cookie listed is a default period identified by the cookie, but the actual duration will be subject to your privacy choices."
 ],
 "rolling": false,
-"url": "https://jobs.exxonmobil.com/job/London-Placement-Global-Trading-Quantitative-Analyst-London-2027-LND/1439091600/?ats=successfactors",
+"url": "https://jobs.exxonmobil.com/ExxonMobil/job/London-Placement-Global-Trading-Quantitative-Analyst-London-2027-LND/1439091600/",
 "v": 2
 },
 "816d51142f1f": {
@@ -12206,9 +12475,9 @@
 "v": 2
 },
 "8636de03ac28": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "2f1b87f7e804",
+"hash": "cb5b00b6e7e2",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -12579,13 +12848,15 @@
 "v": 1
 },
 "8a9c90eab0cd": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "1d6ef7d32666",
+"hash": "b4e163394310",
 "lang": "",
 "quality": "partial",
 "req": [
-"3 MONTH or 12 MONTH INTERNSHIPS",
+"12 Month - Business Intelligence Intern - Job ID: 10567687 | Amazon.jobs",
+"12 Month - Business Intelligence Intern",
+"12 MONTH INTERNSHIP",
 "Depending on your location, country, job status and other requirements, some or all of the following benefits may be available to you as an intern.",
 "Internship start dates vary throughout the year.",
 "Internship lengths are either 3 or 12 months.",
@@ -12593,7 +12864,7 @@
 "Are enrolled in a Bachelor's degree or above in Computer Science, Computer Engineering, or related fields"
 ],
 "rolling": false,
-"url": "https://amazon.jobs/en/jobs/10567687/business-intelligence-intern-london",
+"url": "https://amazon.jobs/en/jobs/10567687/12-month-business-intelligence-intern",
 "v": 2
 },
 "8abd03d9ec6a": {
@@ -12647,6 +12918,23 @@
 "quality": "partial",
 "url": "https://jobs.smartrecruiters.com/CRB/744000151401119",
 "v": 1
+},
+"8bd1fa245118": {
+"checked": "2026-11-27",
+"deadline": "2027-02-08",
+"hash": "58b25b8d2652",
+"lang": "",
+"quality": "partial",
+"req": [
+"Internship – Hardware Engineer (Placement Year 2027) – PQShield Careers",
+"Internship - Hardware Engineer (Placement Year 2027)",
+"This is a year long internship beginning in July 2027",
+"Applications will close on 8th February 2027 with interviews taking place week commencing 15th February 2026.",
+"Right to work in the UK"
+],
+"rolling": false,
+"url": "https://pqshield.com/careers/apply/5049819101/?gh_jid=5049819101",
+"v": 2
 },
 "8be638a1b458": {
 "checked": "2026-11-15",
@@ -13019,7 +13307,7 @@
 "v": 2
 },
 "90d03d61cafa": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "0702f0748205",
 "lang": "",
@@ -14379,7 +14667,7 @@
 "v": 2
 },
 "9dfa0bf90797": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "4f9a19939b06",
 "lang": "",
@@ -14609,7 +14897,7 @@
 "v": 2
 },
 "a0cbf02720fe": {
-"checked": "2026-11-17",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "35ef579efab3",
 "lang": "",
@@ -15040,6 +15328,20 @@
 "url": "https://sunlife.wd3.myworkdayjobs.com/en-US/Campus/job/Sun-Life-Waterloo-King/Student---FRM-Consultant-Operation-Change---Execution--6-month-_JR00128573",
 "v": 2
 },
+"a5560eb553c6": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "6a5fe064a87a",
+"lang": "",
+"quality": "full",
+"req": [
+"2026-11-23 Application Deadline:",
+"2026-12-07 Note : Applications will be accepted until 11:59 PM on the day prior to the application deadline date above"
+],
+"rolling": false,
+"url": "https://rbc.wd3.myworkdayjobs.com/en-US/rbcglobal1/job/HAMILTON-Ontario-Canada/Financial-Advisor-Intern_R-0000193289",
+"v": 2
+},
 "a57f2a9cb9d2": {
 "checked": "2026-11-25",
 "deadline": "",
@@ -15455,7 +15757,7 @@
 "v": 2
 },
 "a9ae43a50585": {
-"checked": "2026-11-18",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "106976c74a2c",
 "lang": "",
@@ -16038,7 +16340,7 @@
 "v": 1
 },
 "b0fc99007223": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "add36d0d735e",
 "lang": "",
@@ -16067,7 +16369,7 @@
 "v": 2
 },
 "b1199ed8fd31": {
-"checked": "2026-11-17",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "fbfba262903e",
 "lang": "",
@@ -16521,7 +16823,7 @@
 "v": 2
 },
 "b5a60ef96bec": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "6ae8be264326",
 "lang": "",
@@ -17491,6 +17793,24 @@
 "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Toronto-Canada/Analog-Engineer-Intern---PhD_2502426",
 "v": 1
 },
+"c05ab4869db1": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "aa58614c17de",
+"lang": "",
+"quality": "full",
+"req": [
+"Data Engineer Co-op Student",
+"Co-op students work as embedded team members and contribute to practical projects while building experience in enterprise technology, collaboration and operational delivery.",
+"The role has been streamlined to emphasize achievable, hands-on learning for a co-op student.",
+"You may also be asked to take on additional duties, responsibilities and activities appropriate to the nature of this co-op role.",
+"Currently enrolled in a recognized post-secondary program and eligible for a Co-op work term",
+"Interest in pursuing a full-time technology role after graduation."
+],
+"rolling": false,
+"url": "https://axiscapital.wd1.myworkdayjobs.com/confidentialaxiscareers/job/Halifax-NS/Data-Engineer-Co-op_REQ06856",
+"v": 2
+},
 "c06870f2b203": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -17532,7 +17852,7 @@
 "v": 1
 },
 "c0903fe4b100": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "98b443ab2462",
 "lang": "",
@@ -17561,7 +17881,7 @@
 "v": 2
 },
 "c09942a9006f": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "7639c01bd9a1",
 "lang": "",
@@ -18106,6 +18426,23 @@
 "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-Intern-2027---Canadian-Operations-Management--8-Months-_JR26100180",
 "v": 2
 },
+"c79e183ddabd": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "5634201d129b",
+"lang": "",
+"quality": "full",
+"req": [
+"Duration: Four months, May to August 2027",
+"Currently pursuing a diploma, certificate or degree in Building Systems Technician or Technology, Facilities Management, HVAC or Refrigeration Technology, Mechanical Engineering Technology, or a related postsecondary program.",
+"Successful completion may lead to an offer of permanent employment commencing after graduation.",
+"Must be returning to the final year of a relevant postsecondary program in September 2027, with expected graduation no later than June 2028.",
+"Available for the full intern ship term and able to travel to the United States for the intern ship program."
+],
+"rolling": false,
+"url": "https://ttmtech.wd5.myworkdayjobs.com/en-US/jobs/job/Toronto-Canada/Facilities-Maintenance-Intern---Summer-2027_R19326",
+"v": 2
+},
 "c7c991727d6c": {
 "checked": "2026-11-14",
 "legacy": {
@@ -18294,6 +18631,17 @@
 "url": "https://soti.wd3.myworkdayjobs.com/SOTI-Next-Gen/job/Mississauga-Canada--Meadowvale-Office-HQ/Software-Developer-Intern---Android--May-2027---12-Months-_R10620",
 "v": 2
 },
+"ca1d801c2ec6": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "b4e682436018",
+"lang": "",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://job-boards.greenhouse.io/dept/jobs/8414501",
+"v": 2
+},
 "ca358cfc2cfe": {
 "checked": "2026-11-14",
 "legacy": {
@@ -18328,7 +18676,7 @@
 "v": 2
 },
 "caae1bec4328": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "55dbd71456c5",
 "lang": "",
@@ -18729,14 +19077,17 @@
 "v": 2
 },
 "ce6727e0c1cc": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "51ca3cb1cb1e",
+"hash": "e6ffe1ee07e9",
 "lang": "",
 "quality": "partial",
 "req": [
 "Bilingual Product Support Analyst (Canadian French)",
 "Content Strategist – 12 Month Contract",
+"Early Talent Acquisition Specialist (12 Month Contract)",
+"End User Support Program Manager (6 Month Contract)",
+"Talent Acquisition Partner/Senior Recruiter, Go to Market (12 Month Contract)",
 "Whether you're seeking a co-op opportunity or your first job out of school, you won't find a better place to grow your career than D2L."
 ],
 "rolling": false,
@@ -19615,7 +19966,7 @@
 "v": 2
 },
 "d54fa6f23cab": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "4217474eb8d7",
 "lang": "",
@@ -19889,6 +20240,23 @@
 ],
 "rolling": false,
 "url": "https://jobs.realventures.com/companies/real-ventures/jobs/99823194-apprentice-automotive-service-technician-level-2-3#content",
+"v": 2
+},
+"d7c328ab8df7": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "e1cd8a445494",
+"lang": "",
+"quality": "full",
+"req": [
+"This position is exclusively open to students pursuing a university degree.",
+"This 4-to-6-month internship, with the possibility of extension, will allow you to contribute directly to CAE's operational excellence, sustainable procurement and eco-design initiatives.",
+"Autonomy, attention to detail, flexibility, curiosity and an innovative mindset; bilingual proficiency in English and French is required.",
+"Currently pursuing an undergraduate degree in business analytics, software engineering, computer science, computer engineering, data science with a specialization in artificial intelligence or machine learning, or a related field.",
+"Please take note that if you are on a student, work or international student permit, the delays for the security background check take minimum 16 weeks."
+],
+"rolling": false,
+"url": "https://cae.wd3.myworkdayjobs.com/career/job/Montreal-St-Laurent/C-GSS-157-Business-Intelligence-and-Applied-AI-Intern---Sustainable-Procurement_124528",
 "v": 2
 },
 "d7cf048d2b4a": {
@@ -20264,7 +20632,7 @@
 "v": 2
 },
 "dbbb65f114df": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "b45a37fde2e8",
 "lang": "",
@@ -20635,9 +21003,9 @@
 "v": 1
 },
 "e0527f08260d": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
-"hash": "9b9e01c130fa",
+"hash": "86317925ede4",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -21845,6 +22213,23 @@
 "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Brampton-Ontario/Personal-Banker-Trainee_R_1524019",
 "v": 2
 },
+"ebb547f78322": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "6484e370b337",
+"lang": "",
+"quality": "full",
+"req": [
+"Application Deadline:",
+"Internship Start Date: The internship program begins on May 3rd 2027, and concludes on August 13th 2027.",
+"Due to the structured nature of the program, onboarding activities, and cohort experience, candidates are expected to be available for the full internship term.",
+"Availability for the entire program duration is required to successfully participate in the internship.",
+"For commission roles, the salary listed above represents BMO Financial Group's expected target for the first year in this position."
+],
+"rolling": false,
+"url": "https://bmo.wd3.myworkdayjobs.com/en-US/Privileged/job/Toronto-ON-CAN/Product-Associate--Summer-2027--Co-op-Internship----4-Months_R260031145-2",
+"v": 2
+},
 "ebb6527c6713": {
 "checked": "2026-11-14",
 "legacy": {
@@ -22074,6 +22459,19 @@
 "quality": "partial",
 "url": "https://mbda.wd3.myworkdayjobs.com/en-US/MBDA-UK/job/Bolton/Test--Calibration---Maintenance-Engineer---Undergraduate-Placement-2027_R39032",
 "v": 1
+},
+"ee5732a5774f": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "e6ef94070f63",
+"lang": "",
+"quality": "partial",
+"req": [
+"Currently enrolled in a Bachelor's or Master's Degree in Math/Statistics/Engineering or other equivalent quantitative discipline"
+],
+"rolling": false,
+"url": "https://www.amazon.jobs/en/jobs/10535149/system-dev-engineer-internship-2027",
+"v": 2
 },
 "ee687f2e64d4": {
 "checked": "2026-11-15",
@@ -22613,7 +23011,7 @@
 "v": 1
 },
 "f45cd22bd811": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "76b0a9b343c3",
 "lang": "",
@@ -22627,6 +23025,19 @@
 ],
 "rolling": false,
 "url": "https://jobs.l3harris.com/job/Waterdown-Software-Engineering-Co-Op-(Waterdown,-CAN)-ON-L9H-0C5/1430129400/?ats=successfactors",
+"v": 2
+},
+"f470f135bcb3": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "4e2d8588362f",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a Diploma in Information Technology, Computer Science, Data Science, Information Systems, Statistics, Engineering, Accounting, Finance, or a related discipline."
+],
+"rolling": false,
+"url": "https://uobgroup.wd3.myworkdayjobs.com/en-US/uobexternal/job/Central-Region-City-Area/GenAI-and-Data-Analytics-Intern--Mar---July-2027-_JR102293",
 "v": 2
 },
 "f47727689ccb": {
@@ -22752,7 +23163,7 @@
 "v": 2
 },
 "f65f34972571": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "bf01828c340d",
 "lang": "",
@@ -23663,8 +24074,25 @@
 "url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/210776860",
 "v": 2
 },
+"ff219f901226": {
+"checked": "2026-11-27",
+"deadline": "",
+"hash": "266420f05443",
+"lang": "",
+"quality": "full",
+"req": [
+"Application Deadline:",
+"Internship Start Date: The internship program begins on May 3rd 2027, and concludes on August 13th 2027.",
+"Due to the structured nature of the program, onboarding activities, and cohort experience, candidates are expected to be available for the full internship term.",
+"Availability for the entire program duration is required to successfully participate in the internship.",
+"For commission roles, the salary listed above represents BMO Financial Group's expected target for the first year in this position."
+],
+"rolling": false,
+"url": "https://bmo.wd3.myworkdayjobs.com/en-US/Privileged/job/Toronto-ON-CAN/Agile-Center-of-Excellence--Summer-2027--Co-op-Internship----4-Months_R260031148-3",
+"v": 2
+},
 "ff3619e9637b": {
-"checked": "2026-11-15",
+"checked": "2026-11-27",
 "deadline": "",
 "hash": "5793f79739a5",
 "lang": "",
@@ -23737,6 +24165,7 @@
 "078d2a80ef6b": "2026-11-15",
 "07aa4eabaa82": "2026-11-15",
 "07aaba869619": "2026-11-15",
+"07b5680f442f": "2026-11-27",
 "07dbf14339b3": "2026-11-14",
 "08000cba1c3e": "2026-11-22",
 "0833715f5ada": "2026-11-15",
@@ -23778,7 +24207,7 @@
 "0c1e25986d26": "2026-11-22",
 "0c35192a3eca": "2026-11-15",
 "0c45f391ac52": "2026-11-15",
-"0d08ae678443": "2026-11-20",
+"0d08ae678443": "2026-11-27",
 "0d4b6e2b5890": "2026-11-15",
 "0d5ce2e8907d": "2026-11-14",
 "0d5f6b9e5851": "2026-11-15",
@@ -23791,6 +24220,7 @@
 "0ea3480a31d2": "2026-11-22",
 "0ec8a64fc520": "2026-11-14",
 "0edffa881bf0": "2026-11-26",
+"0f1178356297": "2026-11-27",
 "0f19bc28d9e3": "2026-11-14",
 "0f293e87ca29": "2026-11-14",
 "0f30a2a16a32": "2026-11-15",
@@ -23801,7 +24231,7 @@
 "103afda53f5f": "2026-11-24",
 "1071d5dd9365": "2026-11-15",
 "1072e1992659": "2026-11-15",
-"108dcc4f05cf": "2026-11-20",
+"108dcc4f05cf": "2026-11-27",
 "109e08ad10be": "2026-11-14",
 "109f3d0411a6": "2026-11-14",
 "10bf6ba042e1": "2026-11-14",
@@ -23879,6 +24309,7 @@
 "1e15d5458e5a": "2026-11-20",
 "1e247ef87bd3": "2026-11-14",
 "1e32e7965183": "2026-11-24",
+"1e6e6701a4ee": "2026-11-27",
 "1eb0ef7758e2": "2026-11-14",
 "1ed881566977": "2026-11-15",
 "1f70248b5a66": "2026-11-15",
@@ -23922,6 +24353,7 @@
 "258754a9a89a": "2026-11-15",
 "2594a906662c": "2026-11-14",
 "25baa881ccad": "2026-11-15",
+"25d880f2e86f": "2026-11-27",
 "25ef8400ccea": "2026-11-15",
 "26070f0d26ae": "2026-11-14",
 "26794f017008": "2026-11-22",
@@ -24115,6 +24547,7 @@
 "433c6f5f6c00": "2026-11-14",
 "4359bafa2818": "2026-11-15",
 "436886f0deee": "2026-11-22",
+"43b54ff77ede": "2026-11-27",
 "43dc211ca96e": "2026-11-17",
 "4404195f65a9": "2026-11-15",
 "446248d987f2": "2026-11-14",
@@ -24124,7 +24557,8 @@
 "4520880961cf": "2026-11-22",
 "455a3d13d460": "2026-11-14",
 "4593e301b268": "2026-11-15",
-"45eff3b62c11": "2026-11-20",
+"45eff3b62c11": "2026-11-27",
+"461538736808": "2026-11-27",
 "463630d7a21f": "2026-11-15",
 "46385040680e": "2026-11-17",
 "463e26e865a7": "2026-11-22",
@@ -24152,6 +24586,7 @@
 "4a8bf9bc128e": "2026-11-15",
 "4a97d26bd840": "2026-11-18",
 "4ac185312cdb": "2026-11-14",
+"4ae9ddd56558": "2026-11-27",
 "4af60883124b": "2026-11-14",
 "4af947117b5a": "2026-11-14",
 "4af9c0138f0e": "2026-11-22",
@@ -24328,6 +24763,7 @@
 "642e3ad3cd73": "2026-11-15",
 "644740bf26d0": "2026-11-14",
 "646193d3e719": "2026-11-15",
+"65248a598e6f": "2026-11-27",
 "652cae76b448": "2026-11-22",
 "6558397146b5": "2026-11-15",
 "6589eade7724": "2026-11-15",
@@ -24349,6 +24785,7 @@
 "6785ac030c18": "2026-11-14",
 "679ac2479d32": "2026-11-17",
 "67c7bc635258": "2026-11-14",
+"67e2907fa32a": "2026-11-27",
 "6814c981b1b5": "2026-11-24",
 "685daccf40e4": "2026-11-17",
 "689790558c30": "2026-11-15",
@@ -24356,7 +24793,7 @@
 "6901e8b22d86": "2026-11-22",
 "692ce08d3848": "2026-11-14",
 "69322f8225fb": "2026-11-15",
-"69873d76a060": "2026-11-20",
+"69873d76a060": "2026-11-27",
 "69c494e69f9e": "2026-11-24",
 "6a4cdb52de49": "2026-11-15",
 "6a595c05e056": "2026-11-14",
@@ -24395,6 +24832,7 @@
 "6f83d057f24e": "2026-11-15",
 "6fa4cce50662": "2026-11-15",
 "6fd25588e2de": "2026-11-15",
+"70243fb988c5": "2026-11-27",
 "706b96b593d8": "2026-11-14",
 "70871227f920": "2026-11-15",
 "709965427e95": "2026-11-14",
@@ -24537,7 +24975,7 @@
 "880837272db3": "2026-11-15",
 "8811ce09cdfb": "2026-11-14",
 "88330c040da3": "2026-11-15",
-"8870b736a57d": "2026-11-20",
+"8870b736a57d": "2026-11-27",
 "88b5b26dc475": "2026-11-15",
 "891939180a13": "2026-11-15",
 "896c7f5bbc03": "2026-11-15",
@@ -24567,6 +25005,7 @@
 "8d6aec4386f0": "2026-11-26",
 "8d74f207922b": "2026-11-14",
 "8d923a1d85b8": "2026-11-14",
+"8dd67fdc1786": "2026-11-27",
 "8e2c868c073b": "2026-11-14",
 "8e2f70ae0a7a": "2026-11-15",
 "8e3fa1ab91d5": "2026-11-15",
@@ -24838,6 +25277,7 @@
 "b854a4ab8c4b": "2026-11-21",
 "b8a010e0248a": "2026-11-22",
 "b8b62a0af889": "2026-11-15",
+"b8ea0ac6a285": "2026-11-27",
 "b979404138a4": "2026-11-15",
 "b99987998ac4": "2026-11-14",
 "b99e4cff4923": "2026-11-15",
@@ -24876,6 +25316,7 @@
 "be42415560d0": "2026-11-22",
 "be6d8820b2be": "2026-11-20",
 "bea14c529de8": "2026-11-14",
+"bea22855aa7a": "2026-11-27",
 "beb00a5dfb1f": "2026-11-15",
 "bee094f8bd6b": "2026-11-22",
 "bef4b0ccd5c1": "2026-11-14",
@@ -24891,6 +25332,7 @@
 "c0a67b2d5f04": "2026-11-15",
 "c0c6e67bada9": "2026-11-15",
 "c0e4f7be4c95": "2026-11-22",
+"c10e14bea9b2": "2026-11-27",
 "c12850fd35c5": "2026-11-15",
 "c136784b85ad": "2026-11-15",
 "c13971724627": "2026-11-15",
@@ -25089,6 +25531,7 @@
 "e652901cc3dd": "2026-11-21",
 "e679cf65786c": "2026-11-15",
 "e6a8bfbbf6cb": "2026-11-21",
+"e6adde45b291": "2026-11-27",
 "e6df943be60e": "2026-11-14",
 "e711ba77c88e": "2026-11-14",
 "e7615d1ff6fe": "2026-11-14",
@@ -25232,6 +25675,7 @@
 "fdb9eb02a9e9": "2026-11-15",
 "fdc268e8f1cb": "2026-11-22",
 "fddd975993d4": "2026-11-21",
+"fe04e1faadc6": "2026-11-27",
 "fe109d816618": "2026-11-15",
 "fe1472a8af28": "2026-11-15",
 "fe86484b66fe": "2026-11-15",
