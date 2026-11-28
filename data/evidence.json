@@ -1,5 +1,5 @@
 {
-"checked": "2026-11-27",
+"checked": "2026-11-28",
 "read": {
 "002e1bda7b3f": {
 "checked": "2026-11-14",
@@ -53,6 +53,19 @@
 "quality": "partial",
 "url": "https://job-boards.greenhouse.io/aquaticcapitalmanagement/jobs/8489186002",
 "v": 1
+},
+"01308e1b6f0e": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "a486f8d0548b",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a Bachelor's or Master's degree in computer science, software engineering, data science, engineering, or a related technical field."
+],
+"rolling": false,
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Finance-AI-Engineering-Intern---Summer-2027_JR2029131",
+"v": 2
 },
 "013673ce9bc1": {
 "checked": "2026-11-25",
@@ -507,6 +520,26 @@
 "url": "https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1964",
 "v": 2
 },
+"0576e528633e": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "11a97e84744a",
+"lang": "",
+"quality": "full",
+"req": [
+"Test Engineer Internship (University Placement Year 2027)",
+"Bristol, UK | 12-Month University Placement | Start Date: June 2027 | Base Salary £29,000",
+"You're actively pursuing a Bachelor's degree in Electrical/Electronics at a UK university",
+"Income protection: Part of your base salary replaced if you're unable to work for 26 weeks or more due to illness or injury",
+"Perform well during your placement year, and you could have the option to join us on a permanent basis once you've completed your final year.",
+"Start date",
+"Your placement starts in June 2027.",
+"Relocation and visa sponsorship are not available."
+],
+"rolling": false,
+"url": "https://semtech.wd1.myworkdayjobs.com/SemtechCareers/job/GBR---Bristol/Test-Engineer-Internship--University-Placement-Year-2027-_REQ3737",
+"v": 2
+},
 "0614cec6c307": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -614,6 +647,20 @@
 "quality": "partial",
 "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Luton---Cap-Green-300/Industrial-Placement-Hardware-Engineer_R0032911",
 "v": 1
+},
+"074341915e39": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "aa14130c4eb7",
+"lang": "",
+"quality": "full",
+"req": [
+"Start Date : 1st July 2027",
+"You must be eligible to work in the UK and be available to commence the placement at the beginning of July 2027 for 13 months."
+],
+"rolling": false,
+"url": "https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Winnersh-Berkshire-United-Kingdom/Enterprise-Architect-Intern_1216773",
+"v": 2
 },
 "0786c0f0721e": {
 "checked": "2026-11-15",
@@ -814,9 +861,9 @@
 "v": 1
 },
 "098ae1ee5bc9": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "83b9a8b6ff3c",
+"hash": "80bf74143521",
 "lang": "",
 "quality": "full",
 "req": [
@@ -840,6 +887,24 @@
 ],
 "rolling": false,
 "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-Intern-2027---Enterprise-Strategy_JR26091796",
+"v": 2
+},
+"09ad0c32e051": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "72a9012ba2b4",
+"lang": "",
+"quality": "partial",
+"req": [
+"A2C Delivery focuses on accelerating career development for recent graduates and early career professionals entering technical roles, advancing their skills and helping customers design and build flexible and resilient cloud-based solutions.",
+"Applicants should have at a minimum one quarter/semester remaining after their internship concludes.",
+"Applications are reviewed on a rolling basis.",
+"Are enrolled in a academic program that is physically located in Canada",
+"Work 40 hours/week minimum and commit to 12 week internship maximum",
+"Enrolled in a Bachelors degree or greater degree program (e.g. Masters degree) in a STEM related field such as Computer Science, Computer Engineering, Information Technology, or other related fields, with a conferral date between December 2027 and June 2028"
+],
+"rolling": true,
+"url": "https://www.amazon.jobs/en/jobs/10601560/associate-delivery-consultant-intern-aiml-aws-professional-services",
 "v": 2
 },
 "09d01a8c6cf8": {
@@ -886,6 +951,21 @@
 ],
 "rolling": false,
 "url": "https://jobright.ai/jobs/info/6afe828194233208f6594921?utm_campaign=1079&utm_source=git",
+"v": 2
+},
+"0a46d777fd2b": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "167fc609f96e",
+"lang": "",
+"quality": "full",
+"req": [
+"The Baker Hughes 12-month Internship starting around June 2027 is designed to enable students either pursuing a Bachelors' or Masters' degree or recently graduated to gain hands-on work experience as the foundation of their professional lives.",
+"Be currently enrolled or recently graduated in a Bachelors' or Masters' level degree in Computer Science, Software Engineering or related programme.",
+"Be able to legally work in the country that you are applying in, without company sponsorship or time restriction."
+],
+"rolling": false,
+"url": "https://bakerhughes.wd5.myworkdayjobs.com/BakerHughes/job/GB-NU-CRAMLINGTON-ATLEY-WAY-NORTH-NELSON-INDUSTRIAL-ESTATE/Intern---Software-Developer---2027_R173441",
 "v": 2
 },
 "0a7e9757d505": {
@@ -1104,6 +1184,25 @@
 ],
 "rolling": false,
 "url": "https://jobs.realventures.com/companies/real-ventures/jobs/100349328-photonics-test-engineer#content",
+"v": 2
+},
+"0bf6ec4ef28c": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "9defb79946f5",
+"lang": "",
+"quality": "full",
+"req": [
+"About the co-op/internship program:",
+"The Home Depot Canada Internship/Co-op Program is your chance to apply what you've studied in a dynamic, hands-on environment.",
+"Over 16 weeks, you'll work on projects that make a real impact, sharpen your skills, and build confidence for your future career.",
+"Duration: January 4 – April 23, 2027 (16 weeks)",
+"Currently pursuing a university and/or college education in Canada and enrolled in a co-op program focused on Computer Science, Software Engineering, or a related field",
+"The successful student must remain enrolled in a Canadian accredited institution throughout the internship and be legally eligible to work in Canada (citizen, permanent resident, or valid permit).",
+"Potential opportunity for a full-time role upon graduation"
+],
+"rolling": false,
+"url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepotCanada/job/CANADA-STORE-SUPPORT-CENTER---7000/Intern--Full-Stack-Software-Developer_Req195012",
 "v": 2
 },
 "0c0312ca638e": {
@@ -2308,7 +2407,7 @@
 "v": 2
 },
 "19fd08f8c6ff": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "061b79f091b4",
 "lang": "",
@@ -2333,7 +2432,7 @@
 "v": 1
 },
 "1a1d0dac57f1": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "6f0a1ae78686",
 "lang": "",
@@ -2631,7 +2730,7 @@
 "v": 2
 },
 "1c0df054acf5": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "73e54890463c",
 "lang": "",
@@ -2704,7 +2803,7 @@
 "v": 2
 },
 "1cda1f6e6cf9": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "c1b184994e28",
 "lang": "",
@@ -2746,6 +2845,26 @@
 ],
 "rolling": false,
 "url": "https://td.wd3.myworkdayjobs.com/en-US/TD_Bank_Careers/job/Toronto-Ontario/Risk-Management---Market-Risk--Interest-Rate-Risk-and-P-L-Attribution---Intern---Co-Op_R_1522539-1",
+"v": 2
+},
+"1d67c78ef32e": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "be4a5f0d71d5",
+"lang": "",
+"quality": "full",
+"req": [
+"Product Engineer Internship (University Placement Year 2027)",
+"Bristol, UK | 12-Month University Placement | Start Date: June 2027 | Base Salary £29,000",
+"You're currently studying for a Bachelor's degree in Electrical/Electronics at a UK university, with at least three years of coursework completed",
+"Income protection: Part of your base salary replaced if you're unable to work for 26 weeks or more due to illness or injury",
+"Perform well during your placement year, and you could have the option to join us on a permanent basis once you've completed your final year.",
+"Start date",
+"Your placement starts in June 2027.",
+"Relocation and visa sponsorship are not available."
+],
+"rolling": false,
+"url": "https://semtech.wd1.myworkdayjobs.com/SemtechCareers/job/GBR---Bristol/Product-Engineer-Internship--University-Placement-Year-2027-_REQ3724",
 "v": 2
 },
 "1da8d4605c4f": {
@@ -3040,6 +3159,21 @@
 "url": "https://cvshealth.wd1.myworkdayjobs.com/en-US/CVS_Health_Careers/job/MN---Little-Canada/Pharmacy-Intern_R0995717",
 "v": 2
 },
+"20163e539d06": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "0d7a992ad882",
+"lang": "",
+"quality": "full",
+"req": [
+"Are pursuing a bachelor's degree in engineering, supply chain, logistics or equivalent education in operations management or warehousing; Lean Six Sigma, project management experience or Power BI knowledge is an asset.",
+"Have strong time-management and organizational skills and can manage multiple priorities and projects while meeting deadlines.",
+"This would include immigration laws pertaining to work authorization requirements and any other applicable government permissions or compliance."
+],
+"rolling": false,
+"url": "https://saputo.wd5.myworkdayjobs.com/en-US/Saputo_External_Careers/job/Vaughan-ON/Intern--Continuous-Improvement_JR68639",
+"v": 2
+},
 "2072f23e10de": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -3114,9 +3248,9 @@
 "v": 2
 },
 "210cbc212074": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "cbd1ee480979",
+"hash": "02ff380495b6",
 "lang": "",
 "quality": "full",
 "req": [
@@ -4256,6 +4390,21 @@
 "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Glasgow/XMLNAME-2027-AI-Engineer-Apprentice---AI-and-Data-Science-Graduate-Level-Apprenticeship_R0337760",
 "v": 1
 },
+"2ca4725dc4d9": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "4a6ced71ce6c",
+"lang": "",
+"quality": "full",
+"req": [
+"Our internships and Co-ops are designed to provide you with a business relevant project that will allow you to independently manage your own area of responsibility, while receiving support from an assigned Supervisor and Technical Mentor.",
+"We are seeking a student to join us for a 4 , 8 or 12 month co-op positions starting in May 2027 .",
+"You are currently enrolled in Civil, Mechanical, Structural Engineering, or Construction program"
+],
+"rolling": false,
+"url": "https://bird.wd3.myworkdayjobs.com/en-US/BirdConstructionCareers/job/Mississauga-ON/Student-Project-Coordinator_JR-9940",
+"v": 2
+},
 "2cb584f075cf": {
 "checked": "2026-11-14",
 "legacy": {
@@ -4273,7 +4422,7 @@
 "v": 1
 },
 "2d16c580c74b": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "22727da879d7",
 "lang": "",
@@ -4421,7 +4570,7 @@
 "v": 2
 },
 "2e3cdc66fb29": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "8540a57ca042",
 "lang": "",
@@ -4608,7 +4757,7 @@
 "v": 1
 },
 "3147d7279369": {
-"checked": "2026-11-16",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "3285dbc75438",
 "lang": "",
@@ -4623,7 +4772,7 @@
 "v": 2
 },
 "31569c236eb4": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "214f65f955e7",
 "lang": "",
@@ -4699,7 +4848,7 @@
 "v": 1
 },
 "327fa4b4ad01": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "7fa7c7e51c79",
 "lang": "",
@@ -5319,6 +5468,17 @@
 "url": "https://www.janestreet.com/join-jane-street/position/8537797002/",
 "v": 2
 },
+"3885839ee5e5": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "cbb3d82dde02",
+"lang": "",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://apply.careers.microsoft.com/careers/job/1970393557106762",
+"v": 2
+},
 "38ad6b49aa24": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -5488,7 +5648,7 @@
 "v": 2
 },
 "3aab4649e6f7": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "06c4b0415b5c",
 "lang": "",
@@ -5557,7 +5717,7 @@
 "v": 2
 },
 "3b316b6f30bf": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "766b4442fb54",
 "lang": "",
@@ -5591,7 +5751,7 @@
 "v": 1
 },
 "3b89782ad981": {
-"checked": "2026-11-16",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "d41e5b9be80b",
 "lang": "",
@@ -5869,6 +6029,24 @@
 "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Templecombe/XMLNAME-2027-Electronics-Engineer-Apprentice---Level-6-Electrical-and-Electronic-Engineering-Degree-Apprenticeship_R0337882",
 "v": 1
 },
+"3e94f3b94d99": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "f4dab85f40c8",
+"lang": "",
+"quality": "full",
+"req": [
+"Anticipated Duration in Months (for contracts and temporary assignments):",
+"Applications must be received BEFORE (YYYY/MM/DD):",
+"Bilingualism – French and English (spoken and written): If this is a front-line position with responsibilities to interact with students, selected candidates must be rated at the Low Advanced proficiency level or higher for both oral comprehension and reading comprehension in their second official language.",
+"The rating is determined by a proficiency test designed by the Official Languages and Bilingualism Institute.",
+"Teamwork and Cooperation: Cooperate and work well with other members of the team to reach common goal(s).",
+"The rating is determined by a proficiency test designed by the Official Languages and Bilingualism Institute."
+],
+"rolling": false,
+"url": "https://uottawa.wd3.myworkdayjobs.com/en-US/uOttawa_External_Career_Site/job/Lees-Campus/Intermediate-Liaison--Student-Recruitment_JR41393",
+"v": 2
+},
 "3ea68d30b635": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -5929,6 +6107,22 @@
 ],
 "rolling": true,
 "url": "https://lifeattiktok.com/search/7674944387893791029",
+"v": 2
+},
+"3fd0e93a74e2": {
+"checked": "2026-11-28",
+"deadline": "2026-12-11",
+"hash": "65e65956e2f9",
+"lang": "",
+"quality": "full",
+"req": [
+"Start date: September 2027",
+"Closing date: Friday 11th December",
+"Right to Work in the UK : To be considered for this role, you must already have the right to work in the UK for the full duration of the programme.",
+"We are unable to provide visa sponsorship for this role."
+],
+"rolling": false,
+"url": "https://awg.wd3.myworkdayjobs.com/broadbean_external/job/Peterborough/Data-Science-Degree-Apprentice_R41268-2",
 "v": 2
 },
 "3ffe32fd17b6": {
@@ -6335,9 +6529,9 @@
 "v": 2
 },
 "4322419dfcb5": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "8a2a44637a3b",
+"hash": "e9be5cb21a8f",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -6463,9 +6657,9 @@
 "v": 2
 },
 "44d8cdca9904": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "e0a8b80c3594",
+"hash": "89117061c42d",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -6595,9 +6789,9 @@
 "v": 2
 },
 "465836719891": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "722732e4dd22",
+"hash": "bc7d13acca81",
 "lang": "",
 "quality": "full",
 "req": [
@@ -6858,7 +7052,7 @@
 "v": 2
 },
 "48d548028c37": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "8dc7bcf2587e",
 "lang": "",
@@ -6898,6 +7092,22 @@
 ],
 "rolling": false,
 "url": "https://jobs.lever.co/tri/3a7510ff-7cef-4d6e-8c32-0b6e6b8a2476",
+"v": 2
+},
+"49529c0317f9": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "b4bc40b599f6",
+"lang": "",
+"quality": "full",
+"req": [
+"Start date: September 2027",
+"Closing date: Friday 11 th December",
+"Right to Work in the UK : To be considered for this role, you must already have the right to work in the UK for the full duration of the programme.",
+"We are unable to provide visa sponsorship for this role."
+],
+"rolling": false,
+"url": "https://awg.wd3.myworkdayjobs.com/en-US/AW/job/Huntingdon/AI-and-Automation-Apprentice_R41264-1",
 "v": 2
 },
 "495933635b58": {
@@ -7376,7 +7586,7 @@
 "v": 2
 },
 "4c8a3d4c3db6": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "6f0a1ae78686",
 "lang": "",
@@ -7479,7 +7689,7 @@
 "v": 1
 },
 "4da36f302199": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "930e7ff75854",
 "lang": "",
@@ -7694,6 +7904,25 @@
 "url": "https://job-boards.greenhouse.io/clutch/jobs/6206329004",
 "v": 2
 },
+"5018e8cbdeb5": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "bf513b535675",
+"lang": "",
+"quality": "full",
+"req": [
+"Please note: This posting is for a 4-month Summer Student placement with a start date of May 2027, and end date of August 2027.",
+"To be eligible for this 4-months Student position, you must either:",
+"Be returning back to school after the work term end-date of August 2027 ; or",
+"If you are not returning back to school (i.e. are graduating in April/August 2027), you must require the full 4-month work term as a mandatory component to in order to graduate successfully.",
+"Student/Coop (Fixed Term) Pay Type:",
+"2026-11-27 Application Deadline:",
+"2027-01-26 Note : Applications will be accepted until 11:59 PM on the day prior to the application deadline date above"
+],
+"rolling": false,
+"url": "https://rbc.wd3.myworkdayjobs.com/en-US/RBCEARLYTALENT1/job/GUELPH-Ontario-Canada/Summer-2027--Indigenous-Student-Internship--South-Western-Ontario_R-0000193767",
+"v": 2
+},
 "5019947918dd": {
 "checked": "2026-11-21",
 "deadline": "",
@@ -7886,9 +8115,9 @@
 "v": 1
 },
 "51b221d51471": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "ff029137b1ce",
+"hash": "844f03eb0dcc",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -7957,9 +8186,9 @@
 "v": 1
 },
 "526186b9841d": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "ff029137b1ce",
+"hash": "844f03eb0dcc",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -8038,7 +8267,7 @@
 "v": 2
 },
 "53ef362ba7e0": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "177480200ab8",
 "lang": "",
@@ -8245,7 +8474,7 @@
 "v": 2
 },
 "56eea3902ef2": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "1186eab28e37",
 "lang": "fr",
@@ -8268,7 +8497,7 @@
 "v": 1
 },
 "57589c23f7ea": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "81f0e8886786",
 "lang": "",
@@ -8450,6 +8679,21 @@
 ],
 "rolling": false,
 "url": "https://mmc.wd1.myworkdayjobs.com/mmc/job/Newcastle---Bank/Oliver-Wyman---Data---Analytics-Research-Fellowship---Newcastle-upon-Tyne_R_327852-1",
+"v": 2
+},
+"59b54c672f58": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "2028e8a345f5",
+"lang": "",
+"quality": "full",
+"req": [
+"At least 2nd year student, pursuing a degree in Data Science, Statistics, Mathematics, Operations Research, or related field.",
+"Right to work:",
+"Please ensure you have the appropriate right to work in the UK i.e. a British passport, settled or pre-settled status under the EU settlement scheme or have obtained a visa which gives you the right to live and work in the UK."
+],
+"rolling": false,
+"url": "https://ardian.wd103.myworkdayjobs.com/ArdianCareers/job/London/Secondaries---Primaries-Data-Science-Intern---March-2027---London_JR1002355",
 "v": 2
 },
 "59e0ac2caa2d": {
@@ -8701,7 +8945,7 @@
 "v": 1
 },
 "5d6afdf5192f": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "9ffd9aaefe03",
 "lang": "",
@@ -8750,6 +8994,20 @@
 ],
 "rolling": false,
 "url": "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Toronto-Ontario/Summer-Intern-2027---Digital-Marketing_JR26100419",
+"v": 2
+},
+"5e0cff5ffb9d": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "5fd5eb38cbe4",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a Bachelor's or Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or a related field.",
+"Job Req Type: Internship/Cooperative"
+],
+"rolling": false,
+"url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-CA-San-Jose-Rio-Robles/Product-Applications-Intern_R269555",
 "v": 2
 },
 "5e3f7bfe44bc": {
@@ -8806,7 +9064,7 @@
 "v": 1
 },
 "5fba01ac7cd0": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "f9cceea31316",
 "lang": "",
@@ -9097,9 +9355,9 @@
 "v": 1
 },
 "633cc624678f": {
-"checked": "2026-11-17",
+"checked": "2026-11-28",
 "deadline": "2026-11-30",
-"hash": "588a07656283",
+"hash": "b0e4ea4a3579",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -9372,7 +9630,7 @@
 "v": 2
 },
 "65e2e181d348": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "64f8d610fd0a",
 "lang": "",
@@ -9448,6 +9706,23 @@
 ],
 "rolling": false,
 "url": "https://www.shopify.com/careers/applied-machine-learning-engineering-internships-summer-2027_1d6b9bb9-a132-4ad9-b33f-3e55d2cfc536",
+"v": 2
+},
+"669e35dae76e": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "6bafc76c0d42",
+"lang": "",
+"quality": "full",
+"req": [
+"Citi's Internal Audit Summer Analyst Program is a 10-week internship opportunity in London.",
+"The Internal Audit Summer Analyst program begins in June with a 3-day training program, providing Summer Analysts with an overview of Citi and an introduction to Citi's Internal Audit Organization.",
+"The Summer Analysts will receive real-world work and will be expected to add value to their teams during the 10 weeks.",
+"Graduating in summer 2027 and on track for a 2.1 or equivalent.",
+"Cooperation and focus in achieving group and client objectives"
+],
+"rolling": false,
+"url": "https://www.reed.co.uk/jobs/functions-internal-audit-summer-analyst-london-2027-citi/57574339",
 "v": 2
 },
 "66ba4e841246": {
@@ -9783,7 +10058,7 @@
 "v": 1
 },
 "6a4d10b5486d": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "c7d5f60a1cb3",
 "lang": "",
@@ -9856,7 +10131,7 @@
 "v": 2
 },
 "6afcc2f67d58": {
-"checked": "2026-11-18",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "ad5c486dbea1",
 "lang": "",
@@ -9951,7 +10226,7 @@
 "v": 2
 },
 "6c6fec20c5c6": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "73bbde68de2e",
 "lang": "",
@@ -10280,6 +10555,25 @@
 "url": "https://careers.sig.com/jobs/11007",
 "v": 2
 },
+"6ef698b96e74": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "a6b38bb5cd04",
+"lang": "",
+"quality": "partial",
+"req": [
+"A2C Delivery focuses on accelerating career development for recent graduates and early career professionals entering technical roles, advancing their skills and helping customers design and build flexible and resilient cloud-based solutions.",
+"Applicants should have at a minimum one quarter/semester remaining after their internship concludes.",
+"Applications are reviewed on a rolling basis.",
+"Français",
+"Are enrolled in a academic program that is physically located in Canada",
+"Work 40 hours/week minimum and commit to 12 week internship maximum",
+"Enrolled in a Bachelors degree or greater degree program (e.g. Masters degree) in a STEM related field such as Computer Science, Computer Engineering, Information Technology, or other related fields, with a conferral date between December 2027 and June 2028"
+],
+"rolling": true,
+"url": "https://www.amazon.jobs/en/jobs/10602927/stagiaire-consultant-associe-en-livraison-aiml-associate-delivery-consultant-intern-aiml-aws-professional-services",
+"v": 2
+},
 "6f089d79f3e0": {
 "checked": "2026-11-27",
 "deadline": "",
@@ -10444,7 +10738,7 @@
 "v": 2
 },
 "70ea12e34914": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "754c91f26350",
 "lang": "",
@@ -10905,6 +11199,36 @@
 "url": "https://job-boards.greenhouse.io/graphcore/jobs/8894376002",
 "v": 1
 },
+"75be0d45e398": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "7107447f413a",
+"lang": "",
+"quality": "full",
+"req": [
+"Must be available to commit to the full program dates: 21st June – 27th August 2027",
+"Must be graduating with an undergraduate or master's degree in a technical subject (e.g. Computer Science, Information Technology) between December 2027 and July 2028",
+"Must be willing to relocate to the city of the job location if outside commuting distance and be graduating from a university in the same country as the internship location.",
+"Opportunity to receive a full-time permanent offer after graduation and 12 months of customized support from our Emerging Talent & Careers team"
+],
+"rolling": false,
+"url": "https://expedia.wd108.myworkdayjobs.com/search/job/UK---London/Mobile-Engineering-Intern---2027---London_R-110545-1",
+"v": 2
+},
+"75d1d48a480b": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "a7d8c55d7303",
+"lang": "",
+"quality": "full",
+"req": [
+"The internship is for a period of up to 6 months.",
+"Enrolled in master's or PhD program in Electrical or Computer Engineering"
+],
+"rolling": false,
+"url": "https://careers.qualcomm.com/careers/job/446722247294",
+"v": 2
+},
 "760d8f9291d5": {
 "checked": "2026-11-26",
 "deadline": "",
@@ -10989,7 +11313,7 @@
 "v": 1
 },
 "7748c49ee833": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "2ffbe9997f89",
 "lang": "",
@@ -11116,6 +11440,22 @@
 "quality": "partial",
 "url": "https://jobs.realventures.com/companies/real-ventures/jobs/99667028-xanadu-residency-program#content",
 "v": 1
+},
+"78e665bbf07c": {
+"checked": "2026-11-28",
+"deadline": "2026-12-11",
+"hash": "738c67a1d52c",
+"lang": "",
+"quality": "full",
+"req": [
+"Start date: September 2027",
+"Closing date: Friday 11th December",
+"Right to Work in the UK : To be considered for this role, you must already have the right to work in the UK for the full duration of the programme.",
+"We are unable to provide visa sponsorship for this role."
+],
+"rolling": false,
+"url": "https://awg.wd3.myworkdayjobs.com/broadbean_external/job/Huntingdon/Data-Engineer-Apprentice_R41298",
+"v": 2
 },
 "791afbc18fab": {
 "checked": "2026-11-14",
@@ -11338,7 +11678,7 @@
 "v": 2
 },
 "7adf26ed2362": {
-"checked": "2026-11-16",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "4c43c92fa966",
 "lang": "",
@@ -11655,6 +11995,19 @@
 "url": "https://jobs.smartrecruiters.com/QSL/744000163290977",
 "v": 2
 },
+"7f2c6ea812b3": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "2eeef2256e83",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a Bachelor's or Master's degree in accounting, finance, information systems, computer science, engineering, or a related field."
+],
+"rolling": false,
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Accounting-AI-Solution-Engineer-Intern---Summer-2027_JR2029155-1",
+"v": 2
+},
 "7f57f3d5502e": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -11960,7 +12313,7 @@
 "v": 2
 },
 "81ee11069aef": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "d1d6bf5f0816",
 "lang": "",
@@ -12399,7 +12752,7 @@
 "v": 2
 },
 "85bf9103e677": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "c7d574dc7fc5",
 "lang": "",
@@ -12825,7 +13178,7 @@
 "v": 2
 },
 "8a258426b474": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "8cc1e2d8254d",
 "lang": "",
@@ -12868,7 +13221,7 @@
 "v": 2
 },
 "8abd03d9ec6a": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "90f4a2cd0a18",
 "lang": "",
@@ -13166,7 +13519,7 @@
 "v": 2
 },
 "8efab45e4959": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "5d977a8d7843",
 "lang": "",
@@ -13385,7 +13738,7 @@
 "v": 1
 },
 "91adf55381fe": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "5334542aa6e6",
 "lang": "",
@@ -13497,7 +13850,7 @@
 "v": 1
 },
 "92a3fb62b37d": {
-"checked": "2026-11-16",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "3285dbc75438",
 "lang": "",
@@ -13717,6 +14070,19 @@
 "quality": "partial",
 "url": "https://altera.wd1.myworkdayjobs.com/altera/job/Toronto-Ontario-Canada/Software-Engineer----Intern_R03414",
 "v": 1
+},
+"961feef080e3": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "ab84d653cd85",
+"lang": "",
+"quality": "full",
+"req": [
+"Education and Experience: Working towards a Bachelor's or Master's degree in one of the fields of Engineering (Chemical, Mechanical, Industrial, Electrical or related disciplines) or the Sciences (Chemistry, Physics, Biology, or related disciplines)."
+],
+"rolling": false,
+"url": "https://ryan.wd1.myworkdayjobs.com/en-US/RyanCareers/job/Mississauga/Summer-2027-Intern--Scientific-Research-and-Development_R0020841-1",
+"v": 2
 },
 "967ebf71be2a": {
 "checked": "2026-11-14",
@@ -14198,6 +14564,21 @@
 "url": "https://jobs.apple.com/en-us/details/200690125",
 "v": 1
 },
+"9aa7deae775a": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "7ab1ca3010f3",
+"lang": "",
+"quality": "full",
+"req": [
+"The Baker Hughes 12-month Internship starting around June 2027 is designed to enable students either pursuing a Bachelors' or Masters' degree or recently graduated to gain hands-on work experience as the foundation of their professional lives.",
+"Be currently enrolled or recently graduated in a Bachelors' or Masters' level degree in Physics, Maths or an Engineering degree.",
+"Be able to legally work in the country that you are applying in, without company sponsorship or time restriction."
+],
+"rolling": false,
+"url": "https://bakerhughes.wd5.myworkdayjobs.com/BakerHughes/job/GB-HA-FARNBOROUGH-107-RANGE-ROAD/Intern---Modelling-and-Data-Analytics---2027_R173444",
+"v": 2
+},
 "9acc9281dfda": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -14299,7 +14680,7 @@
 "v": 2
 },
 "9b4b5a2569e4": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "9e2b33b5b8ab",
 "lang": "",
@@ -14613,7 +14994,7 @@
 "v": 2
 },
 "9dd4edb27996": {
-"checked": "2026-11-19",
+"checked": "2026-11-28",
 "deadline": "2026-12-04",
 "hash": "19b13aa4413f",
 "lang": "",
@@ -14781,7 +15162,7 @@
 "v": 2
 },
 "9ec9f7a8f6b9": {
-"checked": "2026-11-21",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "afa2fb84ccae",
 "lang": "",
@@ -14806,6 +15187,22 @@
 ],
 "rolling": false,
 "url": "https://fis.wd5.myworkdayjobs.com/searchjobs/job/CAN-TRNT-Virtual/Intern--Business-Systems-Analyst_JR0308628",
+"v": 2
+},
+"9eefb1572b9d": {
+"checked": "2026-11-28",
+"deadline": "2026-12-11",
+"hash": "738c67a1d52c",
+"lang": "",
+"quality": "full",
+"req": [
+"Start date: September 2027",
+"Closing date: Friday 11th December",
+"Right to Work in the UK : To be considered for this role, you must already have the right to work in the UK for the full duration of the programme.",
+"We are unable to provide visa sponsorship for this role."
+],
+"rolling": false,
+"url": "https://awg.wd3.myworkdayjobs.com/en-US/AW/job/Huntingdon/Data-Engineer-Apprentice_R41298-1",
 "v": 2
 },
 "9f2015a8101f": {
@@ -15237,7 +15634,7 @@
 "v": 1
 },
 "a513a8b16e13": {
-"checked": "2026-11-19",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "69e05faab5b1",
 "lang": "",
@@ -15342,6 +15739,19 @@
 "url": "https://rbc.wd3.myworkdayjobs.com/en-US/rbcglobal1/job/HAMILTON-Ontario-Canada/Financial-Advisor-Intern_R-0000193289",
 "v": 2
 },
+"a5780223f979": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "264caef8183c",
+"lang": "",
+"quality": "full",
+"req": [
+"Pursuing an MBA or a related field (graduating in winter or summer 2028)"
+],
+"rolling": false,
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Management-MBA-Intern--GenAI-Data-Strategy---Summer-2027_JR2029639",
+"v": 2
+},
 "a57f2a9cb9d2": {
 "checked": "2026-11-25",
 "deadline": "",
@@ -15432,6 +15842,19 @@
 ],
 "rolling": false,
 "url": "https://rbc.wd3.myworkdayjobs.com/en-US/ExternalPrivatePostingStudents/job/TORONTO-Ontario-Canada/GRM-Rotational-Associate_R-0000193252",
+"v": 2
+},
+"a6631af1fd83": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "c358b80dd0cf",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing BS, MS, or BS in engineering or Computer Science related discipline"
+],
+"rolling": false,
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Developer-Technology-Intern--AI---Summer-2027_JR2030178",
 "v": 2
 },
 "a688f08fba3d": {
@@ -15743,7 +16166,7 @@
 "v": 1
 },
 "a98cf858d2d2": {
-"checked": "2026-11-18",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "0665cf4364c9",
 "lang": "",
@@ -15768,6 +16191,23 @@
 ],
 "rolling": false,
 "url": "https://michaels.wd5.myworkdayjobs.com/en-US/external/job/Irving-Irving-Corporate-Office-3939-West-John-Carpenter-Freeway/Intern---Software-Engineering_R00328731",
+"v": 2
+},
+"a9c6e980838e": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "77ee5c7d43a9",
+"lang": "",
+"quality": "full",
+"req": [
+"This opportunity is available to students with a graduation date of April 2027 or later",
+"Term: 4 months (January to April 2027)",
+"As this position is posted in several locations, we specify that bilingualism (French, English, both oral and written) is required for Quebec only to answer calls from English and French-speaking clients across Canada or worldwide.",
+"Currently pursuing post-secondary education in Marketing, Communications, Business, Human Resources or a related field.",
+"Strong organizational and project coordination skills, with the ability to manage multiple activities, deadlines and stakeholders."
+],
+"rolling": false,
+"url": "https://sunlife.wd3.myworkdayjobs.com/en-US/Campus/job/Toronto-Ontario/Student--Advisor-Recruitment-Marketing---Program-Coordinator_JR00130117",
 "v": 2
 },
 "a9d0438b8ed2": {
@@ -16456,24 +16896,25 @@
 "v": 2
 },
 "b20232d0ef38": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "ad5b84c412ec",
+"hash": "6f7c5a670286",
 "lang": "",
 "quality": "full",
 "req": [
-"Are you pursuing a degree in data science and/or computer science with an interest in working with AI tools for interactive AI applications across various IT systems?",
-"Pursuing a Master's or PhD in Artificial Intelligence, Computer or Data Science, or related field.",
-"Available to work a full time schedule in our London office for ~9-12 months"
+"Are you pursuing a degree in data science and/or computer science and have an interest in working with AI tools for interactive AI applications across various IT systems?",
+"We are seeking an intern to join us on site in our London office for ~ 9-12 months.",
+"Pursuing a Master's or PhD in Artificial Intelligence, Computer or Data Science, or related field;",
+"Available to work a full-time schedule in our London office for ~9-12 months;"
 ],
 "rolling": false,
 "url": "https://international-medpace.icims.com/jobs/12863/job",
 "v": 2
 },
 "b207bbd40007": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "9401c5627729",
+"hash": "aeb1e8bbd8e8",
 "lang": "",
 "quality": "full",
 "req": [
@@ -16630,7 +17071,7 @@
 "v": 1
 },
 "b3c0186a268f": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "8c74fd729b74",
 "lang": "",
@@ -16679,6 +17120,17 @@
 ],
 "rolling": true,
 "url": "https://boards.greenhouse.io/cloudflare/jobs/8245197?gh_jid=8245197",
+"v": 2
+},
+"b4945f964029": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "16ac47016460",
+"lang": "",
+"quality": "full",
+"req": [],
+"rolling": false,
+"url": "https://careers.qualcomm.com/careers/job/446722197636",
 "v": 2
 },
 "b498d8a1af65": {
@@ -16885,7 +17337,7 @@
 "v": 1
 },
 "b6330367c289": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "e030c7b7d461",
 "lang": "",
@@ -17036,9 +17488,9 @@
 "v": 2
 },
 "b8bdc5409851": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "f8942839609d",
+"hash": "8e0bf9ffd44d",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -17227,7 +17679,7 @@
 "v": 2
 },
 "ba9c89f889a5": {
-"checked": "2026-11-26",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "9981b9c1e887",
 "lang": "",
@@ -17236,7 +17688,7 @@
 "French is required."
 ],
 "rolling": false,
-"url": "https://abb.wd3.myworkdayjobs.com/External_Career_Page/job/Dorval-Quebec-Canada/Software-Intern---Winter-2027_JR00053791",
+"url": "https://abb.wd3.myworkdayjobs.com/external_career_page/job/Dorval-Quebec-Canada/Software-Intern---Winter-2027_JR00053791",
 "v": 2
 },
 "babaedc08de0": {
@@ -17539,7 +17991,7 @@
 "v": 1
 },
 "beda1d16e3c0": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "61654ea3576c",
 "lang": "",
@@ -17652,7 +18104,7 @@
 "v": 2
 },
 "bf9aa8aff603": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "820326911037",
 "lang": "fr",
@@ -17812,7 +18264,7 @@
 "v": 2
 },
 "c06870f2b203": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "0185a9e4178e",
 "lang": "",
@@ -17913,7 +18365,7 @@
 "v": 2
 },
 "c12e982db455": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "e3b796e37192",
 "lang": "",
@@ -17992,6 +18444,25 @@
 ],
 "rolling": false,
 "url": "https://jobs.ashbyhq.com/certa/9f7caf0b-46ff-49ab-ae78-62deadec106e/application?embed=true",
+"v": 2
+},
+"c25e6352a48a": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "be806a16a6a5",
+"lang": "",
+"quality": "full",
+"req": [
+"Please note: This posting is for a 4-month Summer Student placement with a start date of May 2027, and end date of August 2027.",
+"To be eligible for this 4-months Student position, you must either:",
+"Be returning back to school after the work term end-date of August 2027 ; or",
+"If you are not returning back to school (i.e. are graduating in April/August 2027), you must require the full 4-month work term as a mandatory component to in order to graduate successfully.",
+"Student/Coop (Fixed Term) Pay Type:",
+"2026-11-27 Application Deadline:",
+"2027-01-26 Note : Applications will be accepted until 11:59 PM on the day prior to the application deadline date above"
+],
+"rolling": false,
+"url": "https://rbc.wd3.myworkdayjobs.com/en-US/RBCEARLYTALENT1/job/OTTAWA-Ontario-Canada/Summer-2027--Indigenous-Student-Internship--Ontario-North-and-East_R-0000193790",
 "v": 2
 },
 "c26ea7656289": {
@@ -18655,9 +19126,9 @@
 "v": 1
 },
 "ca35d4121e82": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "78b8d093b50a",
+"hash": "2126f62a53a3",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -19016,9 +19487,9 @@
 "v": 2
 },
 "cde5fedb7024": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "805fc50b84ed",
+"hash": "ceefbe41062d",
 "lang": "",
 "quality": "partial",
 "req": [
@@ -19515,6 +19986,19 @@
 ],
 "rolling": false,
 "url": "https://www.fitzii.com/job/100918",
+"v": 2
+},
+"d19bbc987fb4": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "3a5bd4e8b7c9",
+"lang": "",
+"quality": "full",
+"req": [
+"Currently pursuing a BS, MS, or PhD in Computer Science, Robotics, Applied Mathematics, Physics, Mechanical or Electrical Engineering, or equivalent program area."
+],
+"rolling": false,
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Engineering-Intern--Simulation-Technology---Summer-2027_JR2029531",
 "v": 2
 },
 "d1b3fef94aad": {
@@ -20060,7 +20544,7 @@
 "v": 2
 },
 "d617694f744f": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "08feed304b8f",
 "lang": "",
@@ -20281,9 +20765,9 @@
 "v": 2
 },
 "d7e1325c9d51": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
-"hash": "2451f9c1efb9",
+"hash": "a8bfa573130f",
 "lang": "",
 "quality": "full",
 "req": [
@@ -20309,7 +20793,7 @@
 "v": 2
 },
 "d814c83449a1": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "588a61a559d6",
 "lang": "",
@@ -20482,7 +20966,7 @@
 "v": 1
 },
 "da0ddec32bce": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "c178ec8a8daa",
 "lang": "",
@@ -21197,6 +21681,19 @@
 "url": "https://mmc.wd1.myworkdayjobs.com/en-US/mmc/job/Toronto---Bremner/Marsh-Risk-Early-Career-Internship-Program--Summer-2027---Toronto_R_373139",
 "v": 2
 },
+"e1e6728d8e03": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "e3f1b873b47b",
+"lang": "",
+"quality": "full",
+"req": [
+"Is currently enrolled in a Bachelor's or Master's program in Computer Science, Data Science, Engineering, or a related discipline."
+],
+"rolling": false,
+"url": "https://ia.wd3.myworkdayjobs.com/Professional/job/Toronto-Ontario/AI-Specialist_JR10028300",
+"v": 2
+},
 "e20d42e119d1": {
 "checked": "2026-11-21",
 "deadline": "",
@@ -21761,6 +22258,25 @@
 "url": "https://croesus.wd10.myworkdayjobs.com/en-US/ext/job/Laval/Internship---Technological-Innovation-Developer--AI-profile_JR100016-1",
 "v": 2
 },
+"e70421c73308": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "62130e397bb5",
+"lang": "",
+"quality": "full",
+"req": [
+"Please note: This posting is for a 4-month Summer Student placement with a start date of May 2027, and end date of August 2027.",
+"To be eligible for this 4-months Student position, you must either:",
+"Be returning back to school after the work term end-date of August 2027 ; or",
+"If you are not returning back to school (i.e. are graduating in April/August 2027), you must require the full 4-month work term as a mandatory component to in order to graduate successfully.",
+"Student/Coop (Fixed Term) Pay Type:",
+"2026-11-27 Application Deadline:",
+"2027-01-26 Note : Applications will be accepted until 11:59 PM on the day prior to the application deadline date above"
+],
+"rolling": false,
+"url": "https://rbc.wd3.myworkdayjobs.com/en-US/RBCEARLYTALENT1/job/TORONTO-Ontario-Canada/Summer-2027--Indigenous-Student-Internship--Greater-Toronto-Region_R-0000193788",
+"v": 2
+},
 "e70abd006197": {
 "checked": "2026-11-25",
 "deadline": "",
@@ -22149,7 +22665,7 @@
 "v": 2
 },
 "eaff12702e5a": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "c7fa6af72f6b",
 "lang": "",
@@ -22240,7 +22756,7 @@
 "v": 1
 },
 "ebd574cb781f": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "002f3710caeb",
 "lang": "",
@@ -22422,7 +22938,7 @@
 "v": 2
 },
 "ed51754bf29e": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "08f78c30e2d2",
 "lang": "",
@@ -22902,6 +23418,19 @@
 "url": "https://job-boards.greenhouse.io/graphcore-early-careers/jobs/8902082002",
 "v": 2
 },
+"f27d53cadc5c": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "12b30b30098c",
+"lang": "",
+"quality": "full",
+"req": [
+"Pursuing a Master's or PhD degree in Computer Science, Computer Engineering, or Electrical and Computer Engineering or related field."
+],
+"rolling": false,
+"url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/AI-and-Quant-DevTech-Engineering-Intern---Summer-2027_JR2030517",
+"v": 2
+},
 "f2b83af9e84b": {
 "checked": "2026-11-15",
 "deadline": "",
@@ -23201,6 +23730,22 @@
 ],
 "rolling": false,
 "url": "https://jobright.ai/jobs/info/6ae15beb05a39c3e2c71227d?utm_campaign=1079&utm_source=git",
+"v": 2
+},
+"f73945df3ddd": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "b4bc40b599f6",
+"lang": "",
+"quality": "full",
+"req": [
+"Start date: September 2027",
+"Closing date: Friday 11 th December",
+"Right to Work in the UK : To be considered for this role, you must already have the right to work in the UK for the full duration of the programme.",
+"We are unable to provide visa sponsorship for this role."
+],
+"rolling": false,
+"url": "https://awg.wd3.myworkdayjobs.com/broadbean_external/job/Huntingdon/AI-and-Automation-Apprentice_R41264",
 "v": 2
 },
 "f73ca6a3311d": {
@@ -23618,8 +24163,24 @@
 "url": "https://relx.wd3.myworkdayjobs.com/en-US/RiskSolutions/job/London-Wall/Intern_R119888",
 "v": 1
 },
+"fb30a9c808aa": {
+"checked": "2026-11-28",
+"deadline": "2026-12-11",
+"hash": "65e65956e2f9",
+"lang": "",
+"quality": "full",
+"req": [
+"Start date: September 2027",
+"Closing date: Friday 11th December",
+"Right to Work in the UK : To be considered for this role, you must already have the right to work in the UK for the full duration of the programme.",
+"We are unable to provide visa sponsorship for this role."
+],
+"rolling": false,
+"url": "https://awg.wd3.myworkdayjobs.com/en-US/AW/job/Peterborough/Data-Science-Degree-Apprentice_R41268",
+"v": 2
+},
 "fb342184bd3b": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "2026-11-23",
 "hash": "9da9bee383ee",
 "lang": "",
@@ -23717,6 +24278,22 @@
 "url": "https://huaweicanada.recruitee.com/o/intern-researcher-agentic-ai-1",
 "v": 2
 },
+"fbc80c4dd934": {
+"checked": "2026-11-28",
+"deadline": "",
+"hash": "7ca2374ecbc1",
+"lang": "",
+"quality": "full",
+"req": [
+"In study towards a bachelor's degree in one of the following: Engineering Science, Computer Engineering, Electrical Engineering, Engineering Physics, Computer Science, or related field",
+"For 16-month internships: must be available May/June 2027 - August/September 2028",
+"Expected graduation date of November 2028 or later.",
+"In addition to competitive hourly pay and accrued vacation time, you will receive housing stipend to accommodate for the duration of your internship."
+],
+"rolling": false,
+"url": "https://careers.qualcomm.com/careers/job/446722038614",
+"v": 2
+},
 "fbd7ded4b626": {
 "checked": "2026-11-14",
 "legacy": {},
@@ -23792,7 +24369,7 @@
 "v": 1
 },
 "fc423b693321": {
-"checked": "2026-11-15",
+"checked": "2026-11-28",
 "deadline": "",
 "hash": "5b603f6dbb0b",
 "lang": "",
@@ -24132,6 +24709,7 @@
 "00d10f773b93": "2026-11-14",
 "016298a3741c": "2026-11-15",
 "017a02a6079f": "2026-11-14",
+"01809d6bc420": "2026-11-28",
 "0186008fc90e": "2026-11-26",
 "0191fd32a65d": "2026-11-15",
 "0228ec203e39": "2026-11-15",
@@ -24187,7 +24765,7 @@
 "093cf4e90cdc": "2026-11-26",
 "094b44fd96dd": "2026-11-15",
 "094f9208358d": "2026-11-18",
-"0951bec111a3": "2026-11-21",
+"0951bec111a3": "2026-11-28",
 "098d2db4f133": "2026-11-14",
 "09a5638bde7c": "2026-11-15",
 "09ab367c153c": "2026-11-23",
@@ -24238,7 +24816,7 @@
 "10cefbdf2c65": "2026-11-22",
 "10d44e223aa8": "2026-11-15",
 "117804978023": "2026-11-15",
-"11911a502f64": "2026-11-21",
+"11911a502f64": "2026-11-28",
 "11cb5217b18d": "2026-11-15",
 "11e708f10c87": "2026-11-15",
 "120cd325c8e1": "2026-11-15",
@@ -24256,7 +24834,7 @@
 "14a029300f4e": "2026-11-15",
 "150ccc6ef91c": "2026-11-15",
 "157b3580f946": "2026-11-14",
-"157e8bd74304": "2026-11-21",
+"157e8bd74304": "2026-11-28",
 "15ced18947fb": "2026-11-15",
 "16247b56cfe7": "2026-11-14",
 "16389a83be00": "2026-11-22",
@@ -24268,7 +24846,7 @@
 "178748ac17f7": "2026-11-25",
 "17f97fd5e5c4": "2026-11-14",
 "1814af7f8040": "2026-11-15",
-"184dabed0e07": "2026-11-21",
+"184dabed0e07": "2026-11-28",
 "1852932e66fc": "2026-11-15",
 "18a13b9ca086": "2026-11-15",
 "18a9c93e3190": "2026-11-15",
@@ -24279,16 +24857,17 @@
 "197a5ab098d7": "2026-11-14",
 "198ba799b9ac": "2026-11-26",
 "1990c7a5a272": "2026-11-15",
+"19a1a62e98ef": "2026-11-28",
 "19ad61c5f58e": "2026-11-22",
 "19b856a35514": "2026-11-22",
 "19bafda41dd6": "2026-11-14",
-"19d1bd0084ad": "2026-11-21",
+"19d1bd0084ad": "2026-11-28",
 "19dc486d4a6a": "2026-11-14",
 "19eac6fb81ae": "2026-11-15",
 "1a4b94053ee0": "2026-11-25",
 "1aa440754420": "2026-11-26",
 "1aca305c41d6": "2026-11-15",
-"1aea60c31453": "2026-11-21",
+"1aea60c31453": "2026-11-28",
 "1b06bfaa3d2f": "2026-11-15",
 "1b3cf129d629": "2026-11-14",
 "1b4858b3f50f": "2026-11-14",
@@ -24301,12 +24880,13 @@
 "1cbb7877612a": "2026-11-14",
 "1cef84547a81": "2026-11-15",
 "1d09018f14e2": "2026-11-15",
+"1d2c16cd1e20": "2026-11-28",
 "1d535134cad4": "2026-11-14",
 "1d6ac9c0f3ff": "2026-11-14",
 "1d78647402d0": "2026-11-22",
 "1d948e842abf": "2026-11-15",
 "1de226253bf8": "2026-11-24",
-"1e15d5458e5a": "2026-11-20",
+"1e15d5458e5a": "2026-11-28",
 "1e247ef87bd3": "2026-11-14",
 "1e32e7965183": "2026-11-24",
 "1e6e6701a4ee": "2026-11-27",
@@ -24333,7 +24913,7 @@
 "21df1c92b8aa": "2026-11-24",
 "21ff1d0dccf0": "2026-11-15",
 "22175dcce16d": "2026-11-15",
-"2274a400813f": "2026-11-21",
+"2274a400813f": "2026-11-28",
 "22759a0d2ec1": "2026-11-15",
 "22c8d8d796f0": "2026-11-17",
 "22fed0e9d98b": "2026-11-22",
@@ -24387,6 +24967,7 @@
 "2b12f756b23c": "2026-11-22",
 "2b197d3e57ed": "2026-11-20",
 "2b318ed3ae0f": "2026-11-15",
+"2b7c66edac73": "2026-11-28",
 "2ba43f10c698": "2026-11-14",
 "2c0b08acb54a": "2026-11-14",
 "2c23e3aa2e71": "2026-11-15",
@@ -24413,9 +24994,10 @@
 "307d2e2629f2": "2026-11-14",
 "30b235c9e315": "2026-11-22",
 "30f908b9305a": "2026-11-14",
-"31491fde7e24": "2026-11-21",
+"31491fde7e24": "2026-11-28",
 "3150abdfe900": "2026-11-21",
 "3154c34bd1cb": "2026-11-22",
+"316de5f3b053": "2026-11-28",
 "316e82adcf3c": "2026-11-14",
 "318eefcc3516": "2026-11-15",
 "3196bb630181": "2026-11-18",
@@ -24424,6 +25006,7 @@
 "31c477154299": "2026-11-25",
 "31c7aa8673a1": "2026-11-22",
 "31edb94a3235": "2026-11-26",
+"31fc10cd8bf8": "2026-11-28",
 "32243d2503da": "2026-11-14",
 "324bc9ecda45": "2026-11-15",
 "325b67e7c269": "2026-11-15",
@@ -24441,13 +25024,13 @@
 "340ee8bcc37d": "2026-11-15",
 "346e1e3c94ff": "2026-11-15",
 "34711e70d856": "2026-11-15",
-"3476491537c1": "2026-11-21",
+"3476491537c1": "2026-11-28",
 "34ad1ff04b6e": "2026-11-22",
 "34e492ce85bf": "2026-11-24",
 "350e12d6c58a": "2026-11-15",
 "35524bfe846d": "2026-11-14",
 "359ec44cfbeb": "2026-11-14",
-"35af5ee8625c": "2026-11-21",
+"35af5ee8625c": "2026-11-28",
 "35cb308d259d": "2026-11-15",
 "35f6b9d52eb2": "2026-11-15",
 "360ddc77fea6": "2026-11-15",
@@ -24479,7 +25062,7 @@
 "39f7a9cd87cb": "2026-11-24",
 "3a19606371e0": "2026-11-15",
 "3a2feb5a94cf": "2026-11-14",
-"3a558bc593fc": "2026-11-21",
+"3a558bc593fc": "2026-11-28",
 "3a6148b536ba": "2026-11-14",
 "3ab244d8f7d3": "2026-11-22",
 "3ac9c1465d56": "2026-11-22",
@@ -24520,7 +25103,7 @@
 "402f8a236e8c": "2026-11-15",
 "4053ed3a2042": "2026-11-24",
 "408449f72ed5": "2026-11-15",
-"40af4f8cbde0": "2026-11-21",
+"40af4f8cbde0": "2026-11-28",
 "40ce6766d77a": "2026-11-14",
 "40d38f648f35": "2026-11-14",
 "40f8515878f3": "2026-11-22",
@@ -24552,7 +25135,7 @@
 "4404195f65a9": "2026-11-15",
 "446248d987f2": "2026-11-14",
 "446bf25b614e": "2026-11-15",
-"44771abcbf3b": "2026-11-21",
+"44771abcbf3b": "2026-11-28",
 "4520422f4e8f": "2026-11-14",
 "4520880961cf": "2026-11-22",
 "455a3d13d460": "2026-11-14",
@@ -24576,11 +25159,11 @@
 "48d20e63e513": "2026-11-15",
 "48d91011f9fc": "2026-11-14",
 "48e49975497e": "2026-11-15",
-"48fe39d1ffa0": "2026-11-21",
+"48fe39d1ffa0": "2026-11-28",
 "4949929b9716": "2026-11-15",
 "496997c856eb": "2026-11-15",
 "4a081281775f": "2026-11-22",
-"4a15a3605e4d": "2026-11-21",
+"4a15a3605e4d": "2026-11-28",
 "4a1a68316a94": "2026-11-23",
 "4a80d115cd3a": "2026-11-15",
 "4a8bf9bc128e": "2026-11-15",
@@ -24612,6 +25195,7 @@
 "4d9de908ef09": "2026-11-24",
 "4dd8ab98bcad": "2026-11-14",
 "4e0fc217a18e": "2026-11-15",
+"4e6abba32419": "2026-11-28",
 "4e8024d6a5be": "2026-11-22",
 "4e8c4b0e90cf": "2026-11-22",
 "4eda40d26b3c": "2026-11-15",
@@ -24625,6 +25209,7 @@
 "4f79d72bcec3": "2026-11-15",
 "4fd65e9dd4e6": "2026-11-22",
 "5010fc37c483": "2026-11-14",
+"501b5e41896f": "2026-11-28",
 "50640dd86bde": "2026-11-15",
 "50c6efbb0155": "2026-11-15",
 "50d233c16e13": "2026-11-15",
@@ -24633,7 +25218,7 @@
 "513c32001c40": "2026-11-15",
 "51538434634f": "2026-11-15",
 "5162a04857b9": "2026-11-15",
-"5196eb7b684e": "2026-11-21",
+"5196eb7b684e": "2026-11-28",
 "51b449b1ffda": "2026-11-14",
 "5271a884423b": "2026-11-15",
 "528ffcbd17ea": "2026-11-14",
@@ -24649,7 +25234,7 @@
 "546f50fc4749": "2026-11-23",
 "54712f3c4b02": "2026-11-15",
 "54878932c5f4": "2026-11-14",
-"5492d9c27864": "2026-11-21",
+"5492d9c27864": "2026-11-28",
 "54b21940cddc": "2026-11-22",
 "54f2913806d5": "2026-11-15",
 "552f1f12682e": "2026-11-15",
@@ -24716,10 +25301,11 @@
 "5da058acbc6e": "2026-11-15",
 "5dcd7504177a": "2026-11-15",
 "5debbb1e75c5": "2026-11-15",
+"5df4b5a09e6a": "2026-11-28",
 "5e0111e99e96": "2026-11-14",
 "5e26ffb7ecac": "2026-11-15",
 "5e5187f13a0c": "2026-11-15",
-"5e64c73c2623": "2026-11-21",
+"5e64c73c2623": "2026-11-28",
 "5e68d7eb2c20": "2026-11-14",
 "5e6fdaf956d1": "2026-11-15",
 "5e7ab3f07b5b": "2026-11-25",
@@ -24733,11 +25319,12 @@
 "5fcbd1003af0": "2026-11-15",
 "60346b460bf0": "2026-11-14",
 "603aca587c11": "2026-11-26",
+"607eae28c5ef": "2026-11-28",
 "6096af43fac0": "2026-11-14",
 "60aa7d262a96": "2026-11-15",
 "6186c60a4a66": "2026-11-22",
 "61e40d972401": "2026-11-15",
-"622709f5e586": "2026-11-21",
+"622709f5e586": "2026-11-28",
 "62496edbda2a": "2026-11-15",
 "628e9a15156e": "2026-11-24",
 "629a818a0165": "2026-11-25",
@@ -24752,8 +25339,8 @@
 "631b9f26c947": "2026-11-15",
 "63564ca23d4e": "2026-11-22",
 "637fb97dc316": "2026-11-15",
-"6391f14fc51d": "2026-11-21",
-"63ab98144668": "2026-11-21",
+"6391f14fc51d": "2026-11-28",
+"63ab98144668": "2026-11-28",
 "63c6f0f88f5e": "2026-11-15",
 "63c8f2d4950e": "2026-11-14",
 "63fa10033740": "2026-11-15",
@@ -24773,6 +25360,7 @@
 "65d9b63889f2": "2026-11-17",
 "65e759bf9876": "2026-11-14",
 "664a47069524": "2026-11-22",
+"6654f9475971": "2026-11-28",
 "6659f2f2ea9d": "2026-11-14",
 "66c12be4ed6f": "2026-11-14",
 "66c4c039f0c6": "2026-11-15",
@@ -24788,8 +25376,9 @@
 "67e2907fa32a": "2026-11-27",
 "6814c981b1b5": "2026-11-24",
 "685daccf40e4": "2026-11-17",
+"688bcf7a69bc": "2026-11-28",
 "689790558c30": "2026-11-15",
-"68c1945a267e": "2026-11-21",
+"68c1945a267e": "2026-11-28",
 "6901e8b22d86": "2026-11-22",
 "692ce08d3848": "2026-11-14",
 "69322f8225fb": "2026-11-15",
@@ -24824,7 +25413,7 @@
 "6e8006e6bde4": "2026-11-14",
 "6e80dd9615f0": "2026-11-22",
 "6e92bd3e722c": "2026-11-15",
-"6ea4bd6ba761": "2026-11-21",
+"6ea4bd6ba761": "2026-11-28",
 "6f19553cdce3": "2026-11-14",
 "6f4189d626db": "2026-11-15",
 "6f66d84ece42": "2026-11-22",
@@ -24846,7 +25435,7 @@
 "71f2f9a90e58": "2026-11-24",
 "723a24d288ca": "2026-11-15",
 "726f12b18578": "2026-11-22",
-"72920af5756f": "2026-11-21",
+"72920af5756f": "2026-11-28",
 "72bd9acc5f22": "2026-11-15",
 "72d3ceb5f87d": "2026-11-14",
 "72e6f943054d": "2026-11-24",
@@ -24885,11 +25474,11 @@
 "79395ee5a374": "2026-11-15",
 "796b1c6e0c1b": "2026-11-14",
 "7998255dc0b4": "2026-11-14",
-"79c4d49ea153": "2026-11-21",
+"79c4d49ea153": "2026-11-28",
 "7a10213d37b9": "2026-11-22",
 "7a67557069b1": "2026-11-25",
 "7a712f0818e2": "2026-11-14",
-"7a888ce2e1c4": "2026-11-21",
+"7a888ce2e1c4": "2026-11-28",
 "7aa03f8bb824": "2026-11-15",
 "7ad09e682370": "2026-11-14",
 "7b360b371e17": "2026-11-15",
@@ -24912,13 +25501,13 @@
 "7e9058b51ed3": "2026-11-15",
 "7e927d71d384": "2026-11-22",
 "7e96c8b8b51c": "2026-11-15",
-"7ec79644ba0c": "2026-11-21",
+"7ec79644ba0c": "2026-11-28",
 "7ed8b80eca09": "2026-11-15",
 "7ee32ca7d7f0": "2026-11-14",
 "7ee3b86d5cf7": "2026-11-24",
 "7f2614c779dd": "2026-11-24",
 "7f2bff27000a": "2026-11-15",
-"7f370e84e989": "2026-11-21",
+"7f370e84e989": "2026-11-28",
 "7f4af7da64dc": "2026-11-24",
 "7f5c22fa1b57": "2026-11-15",
 "7f64ee573759": "2026-11-24",
@@ -24927,7 +25516,7 @@
 "803791d59b95": "2026-11-14",
 "804ea4bb97a2": "2026-11-15",
 "804f816433f8": "2026-11-14",
-"806e94a710d1": "2026-11-21",
+"806e94a710d1": "2026-11-28",
 "80f0e0357a04": "2026-11-14",
 "80f8d712748c": "2026-11-15",
 "810a674e3ebd": "2026-11-26",
@@ -24960,14 +25549,14 @@
 "85f150d2d732": "2026-11-17",
 "86070b563a32": "2026-11-15",
 "860bf0ede015": "2026-11-15",
-"8644c7ad5d38": "2026-11-21",
+"8644c7ad5d38": "2026-11-28",
 "86a0538ad59f": "2026-11-14",
 "86c5049d5a6a": "2026-11-14",
 "86e3d5bf3686": "2026-11-26",
 "86e9932455f1": "2026-11-15",
 "87490eab9717": "2026-11-15",
 "87785fbfb846": "2026-11-14",
-"877bd50db72f": "2026-11-21",
+"877bd50db72f": "2026-11-28",
 "8784a667be92": "2026-11-15",
 "8785a8007aa9": "2026-11-14",
 "8791d14de233": "2026-11-24",
@@ -24996,6 +25585,7 @@
 "8ba3ef4c28a8": "2026-11-14",
 "8c41ab8be04c": "2026-11-14",
 "8c9cdab2562f": "2026-11-15",
+"8ca085c948be": "2026-11-28",
 "8ccd0d682409": "2026-11-15",
 "8ccda0fceefd": "2026-11-15",
 "8ce3da92c3a5": "2026-11-15",
@@ -25042,7 +25632,7 @@
 "92689ed29377": "2026-11-22",
 "9298ddade149": "2026-11-22",
 "92b751206a07": "2026-11-15",
-"92bb6e70e71e": "2026-11-21",
+"92bb6e70e71e": "2026-11-28",
 "92e929875c27": "2026-11-25",
 "92f6442738da": "2026-11-22",
 "92fa8531f5dd": "2026-11-14",
@@ -25066,13 +25656,14 @@
 "9666379d7ca8": "2026-11-19",
 "967822508918": "2026-11-24",
 "96ab645bb3fd": "2026-11-15",
-"96b78e18626a": "2026-11-21",
+"96b78e18626a": "2026-11-28",
 "96ce1bf37d63": "2026-11-15",
 "96ecaf3b3124": "2026-11-15",
-"96ef20b6b820": "2026-11-21",
+"96ef20b6b820": "2026-11-28",
 "970127c0af2e": "2026-11-15",
 "975cbe758665": "2026-11-15",
 "975cfb1d23b8": "2026-11-15",
+"975eaf2e7d79": "2026-11-28",
 "97a1e6b38f9f": "2026-11-21",
 "97a2ac43d8d0": "2026-11-22",
 "97b75cf3ae0a": "2026-11-22",
@@ -25094,13 +25685,13 @@
 "9acfa552e47a": "2026-11-15",
 "9b0aeed0fe83": "2026-11-17",
 "9b5b374807a9": "2026-11-22",
-"9ba1f0ebc6e6": "2026-11-21",
+"9ba1f0ebc6e6": "2026-11-28",
 "9be81ceab155": "2026-11-24",
 "9c1db1152004": "2026-11-15",
 "9c2d87fa5c2a": "2026-11-22",
 "9c7626002670": "2026-11-15",
-"9c8a627c7ee9": "2026-11-21",
-"9cc073ced558": "2026-11-21",
+"9c8a627c7ee9": "2026-11-28",
+"9cc073ced558": "2026-11-28",
 "9ce8baceed7e": "2026-11-14",
 "9d30ffc4c85c": "2026-11-15",
 "9d50b66ffc49": "2026-11-15",
@@ -25110,7 +25701,7 @@
 "9df2390d40a1": "2026-11-14",
 "9dfa03e39f6d": "2026-11-23",
 "9e2d277260f1": "2026-11-14",
-"9e2d84cf457b": "2026-11-21",
+"9e2d84cf457b": "2026-11-28",
 "9e7c3d57c58f": "2026-11-15",
 "9e7f69bbd6ce": "2026-11-14",
 "9e9d45562d76": "2026-11-22",
@@ -25118,6 +25709,7 @@
 "9ec638407ebc": "2026-11-15",
 "9ecf3034cf64": "2026-11-15",
 "9ed89c4dad70": "2026-11-15",
+"9f28c2b5f5ba": "2026-11-28",
 "9f472da06db5": "2026-11-14",
 "9f657fb2aab4": "2026-11-15",
 "9f84b1399d2c": "2026-11-20",
@@ -25129,7 +25721,7 @@
 "a0a202795c52": "2026-11-15",
 "a18a8d02f526": "2026-11-15",
 "a1906b7793f9": "2026-11-15",
-"a1c3c986fd51": "2026-11-21",
+"a1c3c986fd51": "2026-11-28",
 "a225b867a278": "2026-11-14",
 "a234125fdbda": "2026-11-15",
 "a25e1d37d1dc": "2026-11-22",
@@ -25176,8 +25768,9 @@
 "aa51b09d8947": "2026-11-15",
 "aa78c6892061": "2026-11-15",
 "aa9427279ae9": "2026-11-15",
-"aadec175266d": "2026-11-21",
+"aadec175266d": "2026-11-28",
 "ab11ac1d5f9d": "2026-11-15",
+"ab733b32862c": "2026-11-28",
 "ab7ac384ca1b": "2026-11-14",
 "abb6fcc4646b": "2026-11-14",
 "abb918e4c34c": "2026-11-14",
@@ -25189,7 +25782,7 @@
 "acc39e49c3fa": "2026-11-26",
 "acc3af019b1f": "2026-11-15",
 "ad6e70ae1009": "2026-11-22",
-"ad8b53c94fc1": "2026-11-21",
+"ad8b53c94fc1": "2026-11-28",
 "ad9e8ec78078": "2026-11-26",
 "adc3a809c4d0": "2026-11-22",
 "adc86383a47a": "2026-11-25",
@@ -25202,7 +25795,9 @@
 "af1a971b2fb1": "2026-11-22",
 "af3adc813037": "2026-11-24",
 "af8c9b0b9908": "2026-11-22",
+"afcd4afb8d59": "2026-11-28",
 "afd7cba2d4fc": "2026-11-15",
+"afec5819695f": "2026-11-28",
 "afeccf1c95f1": "2026-11-22",
 "afeff3378384": "2026-11-15",
 "b01bd0491f13": "2026-11-15",
@@ -25273,8 +25868,9 @@
 "b8102670c6a9": "2026-11-14",
 "b81b5a96ebd5": "2026-11-14",
 "b81c465f12ae": "2026-11-22",
+"b825786f70a0": "2026-11-28",
 "b853da669404": "2026-11-14",
-"b854a4ab8c4b": "2026-11-21",
+"b854a4ab8c4b": "2026-11-28",
 "b8a010e0248a": "2026-11-22",
 "b8b62a0af889": "2026-11-15",
 "b8ea0ac6a285": "2026-11-27",
@@ -25327,11 +25923,12 @@
 "c008969fee87": "2026-11-15",
 "c034845a5888": "2026-11-14",
 "c06dedf1b78d": "2026-11-15",
-"c0723cbb0a34": "2026-11-21",
+"c0723cbb0a34": "2026-11-28",
 "c07b93c36ae4": "2026-11-22",
 "c0a67b2d5f04": "2026-11-15",
 "c0c6e67bada9": "2026-11-15",
 "c0e4f7be4c95": "2026-11-22",
+"c101e40b29ac": "2026-11-28",
 "c10e14bea9b2": "2026-11-27",
 "c12850fd35c5": "2026-11-15",
 "c136784b85ad": "2026-11-15",
@@ -25340,7 +25937,7 @@
 "c1b8fdaa148b": "2026-11-14",
 "c1db4be853fd": "2026-11-22",
 "c2729e93df15": "2026-11-22",
-"c2fa80370aac": "2026-11-21",
+"c2fa80370aac": "2026-11-28",
 "c306683683bf": "2026-11-15",
 "c30bb9166897": "2026-11-15",
 "c3742932cc97": "2026-11-24",
@@ -25348,7 +25945,7 @@
 "c3b52159f890": "2026-11-14",
 "c3b66629caf9": "2026-11-15",
 "c3da1e9f6378": "2026-11-15",
-"c43a9f36cc08": "2026-11-21",
+"c43a9f36cc08": "2026-11-28",
 "c443571641e5": "2026-11-14",
 "c462d322f3d4": "2026-11-15",
 "c4754169c664": "2026-11-15",
@@ -25356,11 +25953,11 @@
 "c4aeae43fe70": "2026-11-14",
 "c4ff176f49c9": "2026-11-15",
 "c513a69b761c": "2026-11-15",
-"c588af9f2397": "2026-11-21",
+"c588af9f2397": "2026-11-28",
 "c5c06ba5ffa1": "2026-11-15",
 "c5f1968e331e": "2026-11-14",
 "c640e1eb1361": "2026-11-15",
-"c67403c71b82": "2026-11-21",
+"c67403c71b82": "2026-11-28",
 "c695eac59a1e": "2026-11-17",
 "c696da75cab0": "2026-11-15",
 "c6ec2b8aaf6f": "2026-11-14",
@@ -25390,6 +25987,7 @@
 "cb4f266ae256": "2026-11-26",
 "cb553a1a33d3": "2026-11-15",
 "cb5a0bdb005f": "2026-11-15",
+"cb6b4eea67dd": "2026-11-28",
 "cb9e5ae4d0a9": "2026-11-15",
 "cc08b9dc63be": "2026-11-15",
 "cc0f02467e7c": "2026-11-21",
@@ -25404,7 +26002,7 @@
 "ce4e228c8eb6": "2026-11-14",
 "ce65ba527f5e": "2026-11-15",
 "ce7ad7f87dbe": "2026-11-14",
-"ced46374f1ae": "2026-11-21",
+"ced46374f1ae": "2026-11-28",
 "cf40ec32523e": "2026-11-24",
 "cf586db2e5a8": "2026-11-22",
 "cf74ebe27ba5": "2026-11-14",
@@ -25433,7 +26031,7 @@
 "d2585497535d": "2026-11-15",
 "d29a8a64f2d5": "2026-11-15",
 "d2b0078d57b6": "2026-11-15",
-"d2be7d4f2ef0": "2026-11-21",
+"d2be7d4f2ef0": "2026-11-28",
 "d2d050832d79": "2026-11-22",
 "d2ef8d8cbd82": "2026-11-15",
 "d2f1ccd207c4": "2026-11-14",
@@ -25484,7 +26082,7 @@
 "de233c8401f3": "2026-11-15",
 "de6f1fb422e9": "2026-11-15",
 "de73bebb8f41": "2026-11-14",
-"deb5012302b0": "2026-11-21",
+"deb5012302b0": "2026-11-28",
 "debc071389cd": "2026-11-14",
 "dece605e403b": "2026-11-15",
 "ded7c2a77b88": "2026-11-22",
@@ -25498,8 +26096,8 @@
 "e053ca18e2f4": "2026-11-14",
 "e05ea83c57fa": "2026-11-15",
 "e097fba317c3": "2026-11-17",
-"e0c03265f20d": "2026-11-21",
-"e0fcd975bb6d": "2026-11-21",
+"e0c03265f20d": "2026-11-28",
+"e0fcd975bb6d": "2026-11-28",
 "e113459a1613": "2026-11-22",
 "e11350f80778": "2026-11-21",
 "e13701014f1e": "2026-11-17",
@@ -25510,7 +26108,7 @@
 "e2b9b41a58a4": "2026-11-15",
 "e2bc7e16fca2": "2026-11-15",
 "e2cf3edc91de": "2026-11-14",
-"e3027492c150": "2026-11-21",
+"e3027492c150": "2026-11-28",
 "e30328bd7710": "2026-11-14",
 "e32baeeb87e9": "2026-11-15",
 "e3589e5e3acd": "2026-11-15",
@@ -25528,9 +26126,9 @@
 "e51eaf8dbea9": "2026-11-15",
 "e52b423bd8fe": "2026-11-15",
 "e574a8ed6e59": "2026-11-22",
-"e652901cc3dd": "2026-11-21",
+"e652901cc3dd": "2026-11-28",
 "e679cf65786c": "2026-11-15",
-"e6a8bfbbf6cb": "2026-11-21",
+"e6a8bfbbf6cb": "2026-11-28",
 "e6adde45b291": "2026-11-27",
 "e6df943be60e": "2026-11-14",
 "e711ba77c88e": "2026-11-14",
@@ -25538,7 +26136,7 @@
 "e7941d34a9ab": "2026-11-23",
 "e7a2802f504b": "2026-11-14",
 "e7d717028552": "2026-11-14",
-"e816fbf3aa39": "2026-11-21",
+"e816fbf3aa39": "2026-11-28",
 "e822d6a59ad5": "2026-11-14",
 "e82e205f631c": "2026-11-15",
 "e85b04528137": "2026-11-15",
@@ -25550,6 +26148,7 @@
 "e932215699e1": "2026-11-15",
 "e93d860f9280": "2026-11-14",
 "e9d03d7babb3": "2026-11-15",
+"ea149f75f7ce": "2026-11-28",
 "ea41af7d8ca1": "2026-11-15",
 "ea6385e51431": "2026-11-15",
 "ea911a6451bb": "2026-11-14",
@@ -25561,7 +26160,8 @@
 "eb88006ed569": "2026-11-21",
 "ebda0c0ab27e": "2026-11-25",
 "ebffbeb4182b": "2026-11-15",
-"ec87041b1391": "2026-11-21",
+"ec5987bfcc44": "2026-11-28",
+"ec87041b1391": "2026-11-28",
 "ec90254dfdab": "2026-11-15",
 "ec935264c610": "2026-11-14",
 "ecdcec0a4234": "2026-11-15",
@@ -25579,7 +26179,8 @@
 "ee40312b23a0": "2026-11-15",
 "ee67e3b5a4e7": "2026-11-21",
 "ee6ae58f5406": "2026-11-15",
-"ee6ca2f23bb7": "2026-11-21",
+"ee6ca2f23bb7": "2026-11-28",
+"ee7168245301": "2026-11-28",
 "ee756c729990": "2026-11-14",
 "eea8f56b2904": "2026-11-14",
 "ef255c875122": "2026-11-15",
@@ -25588,7 +26189,7 @@
 "efa58b430150": "2026-11-15",
 "efc2e3abfae9": "2026-11-15",
 "f053d0eb5343": "2026-11-15",
-"f059f2f874be": "2026-11-21",
+"f059f2f874be": "2026-11-28",
 "f06a116f830c": "2026-11-22",
 "f086568d7040": "2026-11-22",
 "f089aacde44d": "2026-11-15",
@@ -25624,7 +26225,7 @@
 "f4933e921d8e": "2026-11-18",
 "f4a4490597ff": "2026-11-14",
 "f4ee6ba8e82a": "2026-11-22",
-"f4f89d776bdb": "2026-11-21",
+"f4f89d776bdb": "2026-11-28",
 "f50d296893b0": "2026-11-14",
 "f518947ac112": "2026-11-18",
 "f51e17ec210e": "2026-11-15",
@@ -25632,10 +26233,10 @@
 "f5acf66540f9": "2026-11-22",
 "f6309db69011": "2026-11-14",
 "f6380159a822": "2026-11-14",
-"f64b81b98b1e": "2026-11-21",
+"f64b81b98b1e": "2026-11-28",
 "f6efe0beca53": "2026-11-26",
 "f6fce7f0f547": "2026-11-15",
-"f70e5360724a": "2026-11-21",
+"f70e5360724a": "2026-11-28",
 "f74131ac1f45": "2026-11-15",
 "f743c5964864": "2026-11-14",
 "f7545c4d4708": "2026-11-15",
@@ -25668,17 +26269,18 @@
 "fc6618da48ce": "2026-11-15",
 "fcdb63876f59": "2026-11-15",
 "fd4ba95846c3": "2026-11-15",
-"fd595e26c497": "2026-11-21",
+"fd595e26c497": "2026-11-28",
 "fd6c58376c6b": "2026-11-14",
 "fd82d81b2cf5": "2026-11-22",
 "fd9268972d97": "2026-11-14",
 "fdb9eb02a9e9": "2026-11-15",
 "fdc268e8f1cb": "2026-11-22",
-"fddd975993d4": "2026-11-21",
+"fddd975993d4": "2026-11-28",
 "fe04e1faadc6": "2026-11-27",
 "fe109d816618": "2026-11-15",
 "fe1472a8af28": "2026-11-15",
 "fe86484b66fe": "2026-11-15",
+"fea85dfeafb7": "2026-11-28",
 "fed776de87b6": "2026-11-22",
 "ff169b3e9f82": "2026-11-22",
 "ff385057f8c3": "2026-11-15",
